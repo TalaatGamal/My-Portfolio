@@ -1,0 +1,131 @@
+.menu-icon{
+    display: none;
+}
+.sidebar{
+    display: none;
+}
+
+
+
+
+
+@media( max-width: 720px ){
+
+.menu-icon {
+    position: fixed;
+    top: 18px;
+    right: 10vw;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.sidebar .inpo{
+    width: 80vw; 
+    min-height: 5.5vh;
+    box-shadow: 16px 14px 20px rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+    display: none;
+}
+.sidebar .inpo::before {
+    content: "";
+    background-image: conic-gradient(#00aaff, rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    width: 100vw; 
+    height: 100vh;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+
+/* الشريط الجانبي */
+.sidebar {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    right: -500px;
+    background-color: #000000b4;
+    transition: right 0.4s ease;
+    z-index: 998;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 8vh;
+    /* z-index: 999; */
+}
+.sidebar input{
+    width: 98%;
+    height: 5vh;
+    z-index: 91;
+    background-color: #000000;
+    border: #4e4e4e solid 3px;
+    border-bottom: none;
+    color: #b6b6b6;
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 10px;
+}
+.sidebar input:focus {
+    outline: none;
+    border: none;
+}
+.sidebar input::placeholder{
+    color: #b0b0b0;
+    font-weight: 600;
+    font-size: large;
+    background-color: #000000d8;
+    box-shadow: #000000d8 0px 0px 40px 40px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+    display: block;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+.coloro{
+    display: block;
+    color: #ff0000;
+}
+}
