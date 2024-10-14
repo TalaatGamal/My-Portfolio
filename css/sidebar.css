@@ -157,7 +157,7 @@
     text-decoration: none;
     color: rgb(220, 220, 220);
     font-size: 20px;
-    border-bottom: rgba(0, 255, 247, 0.73) solid 5px; 
+    border-bottom: #00ffd5 solid 4px; 
     width: 100%;
     display: flex;
     align-items: center;
@@ -170,7 +170,7 @@
     width: 30px;
     margin-right: 10px;
     background-color: #000000;
-    border: #00e1ff solid 2px;
+    border: #00ffd5 solid 2px;
     padding: 5px;
     border-radius: 7px;
 }
