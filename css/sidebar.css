@@ -46,18 +46,18 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 5vh;
-    display: none;
+    /* display: none; */
 }
 .sidebar .inpo::before {
     content: "";
-    background-image: conic-gradient(#00aaff, rgb(255, 255, 255),rgba(255, 255, 255, 0));
+    background-image: conic-gradient(#008664, #008664 , rgb(255, 255, 255),rgba(255, 255, 255, 0));
     width: 100vw; 
     height: 100vh;
     position: absolute;
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    animation: rotate 5s linear infinite;
+    animation: rotate 10s linear infinite;
 }
 
 @keyframes rotate {
@@ -94,25 +94,27 @@
     flex-direction: column;
     flex-wrap: wrap;
     padding-top: 8vh;
-    padding-left: 15%;
-    padding-right: 15%;
-    gap: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* gap: 0px; */
     /* z-index: 999; */
 }
-.sidebar input{
-    width: 98%;
+.sidebar #password{
+    width: 98.5%;
     height: 5vh;
     z-index: 91;
     background-color: #000000;
-    border: #4e4e4e solid 3px;
+    border: #4e4e4e00 solid 3px;
     border-bottom: none;
     color: #b6b6b6;
-    text-align: center;
     font-weight: 600;
     font-size: large;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.sidebar input:focus {
+.sidebar #password:focus {
     outline: none;
     border: none;
 }
@@ -157,7 +159,7 @@
     text-decoration: none;
     color: rgb(220, 220, 220);
     font-size: 20px;
-    border-bottom: #00ffd5 solid 4px; 
+    border-bottom: #008670 solid 4px; 
     width: 100%;
     display: flex;
     align-items: center;
@@ -170,7 +172,7 @@
     width: 30px;
     margin-right: 10px;
     background-color: #00000077;
-    border: #00ffd5 solid 2px;
+    border: #007d60 solid 2px;
     padding: 3px;
     border-radius: 7px;
 }
