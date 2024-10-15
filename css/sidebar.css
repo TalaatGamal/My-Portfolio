@@ -169,9 +169,9 @@
 .imo{
     width: 30px;
     margin-right: 10px;
-    background-color: #000000;
+    background-color: #ffffff;
     border: #00ffd5 solid 2px;
-    padding: 5px;
+    padding: 3px;
     border-radius: 7px;
 }
 .sidebar ul li a:hover {
