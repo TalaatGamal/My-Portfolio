@@ -267,7 +267,7 @@ a{
 
   .image {
     position: absolute;
-    width: 24.8vw;
+    width: 376px;
     height: 29.8vh;
     background-size: cover;
     background-position: center;
@@ -286,7 +286,7 @@ a{
 
   #a2 h3{
     position: absolute;
-    width: 24.8vw;
+    width: 376px;
     height: 29.8vh;
     border-radius: 20px;
     /* clip-path: polygon(0 0, 100% 0, 0% 100%); */
@@ -387,7 +387,7 @@ a{
     text-decoration: underline;
 }
 .cards{
-    width: 25vw;
+    width: 380px;
     height: 30vh;
     border: #cfcfcf solid 2px;
     border-radius: 20px;
@@ -962,6 +962,24 @@ a{
         border-radius: 1000px;
         z-index: 4;
     }
+    @keyframes arrow1 {
+        0% {
+            opacity: 0;
+            transform: translateY(0%);
+        }
+        50% {
+            opacity: 20%;
+            transform: translateY(200%);
+        }
+        90% {
+            opacity: 20%;
+            transform: translateY(700%);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(800%);
+        }
+    }
     .star2{
         width: 40px;
         position: absolute;
@@ -971,6 +989,24 @@ a{
         border-radius: 1000px;
         z-index: 4;
     }
+    @keyframes arrow2 {
+        0% {
+            opacity: 0;
+            transform: translateY(0%);
+        }
+        20% {
+            opacity: 20%;
+            transform: translateY(150%);
+        }
+        90% {
+            opacity: 20%;
+            transform: translateY(550%);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(700%);
+    }
+}
     .image {
     position: absolute;
     width: 24.8vw;
@@ -1062,10 +1098,10 @@ a{
     border-radius: 0%;
 }
 .cards{
-    width: 95vw;
+    width: 415px;
 }
 .image {
-    width: 94.4vw;
+    width: 411px;;
 }
 #a2 h3{
     width: 94.4vw;
