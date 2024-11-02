@@ -357,6 +357,13 @@ a{
     gap: 20px;
     padding-top: 10vh;
     padding-bottom: 10vh;
+    z-index: 1;
+    /* background-color: #ff0000; */
+    background-image: url(../images/sky-stars.jpeg);
+    background-position: center;
+    background-size: 30%;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 .title-v{
     width: 100%;
@@ -1063,7 +1070,7 @@ a{
 .projects{
     padding-left: 0vw;
     padding-right: 0vw;
-    margin-top: 20vh;
+    padding-top: 40vh;
 }
 .title-v{
     width: 100%;

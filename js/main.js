@@ -8,7 +8,9 @@ let delayBetweenWords = 5000; // Delay between typing the next word
 const dynamicTextElement = document.getElementById("dynamic-text");
 const cursorElement = document.getElementById("cursor");
 
+
 function typeWord() {
+
   let word = words[currentWordIndex];
   let charIndex = 0;
 
