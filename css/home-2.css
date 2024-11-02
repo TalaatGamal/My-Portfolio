@@ -163,9 +163,9 @@
 }
 }
 .iva2{
-    animation: arrowa 10s linear infinite;
+    animation: arrowa2 10s linear infinite;
 }
-@keyframes arrowa {
+@keyframes arrowa2 {
     0% {
         opacity: 0;
         transform: translateY(200%);
@@ -230,7 +230,7 @@
         padding-left: 5vw;
     }
     #star img{
-        width: 70px;
+        width: 50px;
         animation: iva 5s linear infinite;
         display: block;
     }
@@ -240,11 +240,11 @@
     @keyframes arrowa2 {
         0% {
             opacity: 20%;
-            transform: translateY(-600%);
+            transform: translateY(-850%);
         }
         100% {
             opacity: 20%;
-            transform: translateY(-600%);
+            transform: translateY(-850%);
         }
         /* 0% {
             opacity: 0;
@@ -262,5 +262,26 @@
             opacity: 0;
             transform: translateY(-350%);
     } */
+    }
+    @keyframes arrowa {
+        0% {
+            opacity: 0;
+            transform: translateY(200%);
+        }
+        20% {
+            opacity: 1;
+            transform: translateY(-100%);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(-250%);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-500%);
+    }
+    }
+    .sec-2 img{
+        width: 300px;
     }
 }
