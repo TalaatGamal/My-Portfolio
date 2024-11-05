@@ -49,3 +49,93 @@ function eraseWord() {
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(typeWord, typingSpeed + 1000); // Initial delay before typing starts
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // الدالة التي تتحقق من موضع العنصر
+// function checkElementPosition() {
+//   const element = document.getElementById('tte'); // استبدل 'yourElementId' بمعرف العنصر الخاص بك
+//   const rect = element.getBoundingClientRect(); // الحصول على معلومات موضع العنصر
+//   const distanceFromTop = rect.top; // المسافة من أعلى الصفحة
+
+//   // التحقق مما إذا كانت المسافة تساوي 8vh
+//   if (distanceFromTop <= window.innerHeight * 0.09) {
+//       document.getElementById('tte').style.backgroundColor = '#00737b'; // تغيير لون الخلفية إلى الأحمر
+//       document.getElementById('tte').style.boxShadow = '#00737b 0px 10px 10px 5px'; // تغيير لون الخلفية إلى الأحمر
+//       console.log(': العنصر في نطاق 8vh'); // كتابة رسالة في وحدة التحكم
+//   } else {
+//     document.getElementById('tte').style.backgroundColor = '#00737b00'; // تغيير لون الخلفية إلى الأحمر
+//     document.getElementById('tte').style.boxShadow = '#00737b00 0px 35px 40px 4px'; // تغيير لون الخلفية إلى الأحمر
+//     console.log('العنصر خارج نطاق 8vh'); // كتابة رسالة في وحدة التحكم
+//   }
+// }
+
+// // استمع لحدث التمرير لتحديث الخلفية
+// window.addEventListener('scroll', checkElementPosition);
+
+// // تحقق من الموضع عند تحميل الصفحة
+// document.addEventListener('DOMContentLoaded', checkElementPosition);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// الدالة التي تتحقق من موضع العنصر
+function checkElementPosition() {
+  const element = document.getElementById('tte'); // استبدل 'yourElementId' بمعرف العنصر الخاص بك
+  const rect = element.getBoundingClientRect(); // الحصول على معلومات موضع العنصر
+  const distanceFromTop = rect.top; // المسافة من أعلى الصفحة
+
+  // التحقق مما إذا كانت المسافة تساوي 8vh
+  if (distanceFromTop <= window.innerHeight * 0.09) {
+      document.getElementById('v1').style.display = 'none' // تغيير لون الخلفية إلى الأحمر
+      document.getElementById('v2').style.display = 'block' // تغيير لون الخلفية إلى الأحمر
+      console.log(': العنصر في نطاق 8vh'); // كتابة رسالة في وحدة التحكم
+  } else {
+    document.getElementById('v1').style.display = 'block' // تغيير لون الخلفية إلى الأحمر
+    document.getElementById('v2').style.display = 'none' // تغيير لون الخلفية إلى الأحمر
+        console.log('العنصر خارج نطاق 8vh'); // كتابة رسالة في وحدة التحكم
+  }
+}
+
+// استمع لحدث التمرير لتحديث الخلفية
+window.addEventListener('scroll', checkElementPosition);
+
+// تحقق من الموضع عند تحميل الصفحة
+document.addEventListener('DOMContentLoaded', checkElementPosition);

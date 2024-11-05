@@ -35,7 +35,7 @@
 .hire-h-2{
     padding-left: 35px; 
     padding-right: 35px; 
-    box-shadow: #00c3b0 0px 0px 20px 1px; 
+    box-shadow: #00eeffa9 0px 0px 20px 1px; 
     font-weight: 700; 
     font-size: 20px;
     transition: 0.4s;
@@ -45,13 +45,13 @@
     justify-content: center;
     padding: 10px;
     width: 130px;
-    background-color: #00766883;
+    background-color: #005c7683;
     border: #000000 solid 2px;
     color: #a1a1a1;
     z-index: 6;
 }
 .hire-h-2:hover{
-    background-color: #00ffe157;
+    background-color: #006d9ca9;
     color: #ffffff;
     border: #ffffff solid 2px;
 }
@@ -66,8 +66,8 @@
     justify-content: center;
     padding: 10px;
     width: 150px;
-    border-bottom: #00ffd5 solid 2px;
-    color: #00ffd5;
+    border-bottom: #00eeffa9 solid 2px;
+    color: #00eeffa9;
 }
 .cv-h-2:hover{
     color: #ffffff;
@@ -85,24 +85,30 @@
     height: 100%;
 }
 .sec-2 img{
-    width: 380px;
+    width: 250px;
+    opacity: 85%;
     /* display: none; */
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #ffffff;
 }
 .sec-3{
     padding-top: 70vh;
     /* padding-left: 4vw; */
     padding-right: 10vw;
     height: 100%;
+    /* background-color: #00c3b0; */
+    width: 35vw;
 }
 .sec-3 .media{
     margin-top: 10px;
 }
 .star-h-1{
-    background-color: #00c3b036;
-    width: 20vw;
+    background-color: #00737b7c;
+    width: 15vw;
     height: 100vh;
-    position: absolute;
-    top: 10vh;
+    position: fixed;
+    top: 30vh;
     left: 20vw;
     transform: rotate(30deg); /* تغيير الزاوية هنا */
     margin: 50px; /* لتكون ديف مرئية بشكل أفضل */
@@ -113,11 +119,11 @@
     border-radius: 20px;
 }
 .star-h-2{
-    background-color: #00c3b035;
-    width: 20vw;
+    background-color: #00737b7c;
+    width: 15vw;
     height: 100vh;
-    position: absolute;
-    top: 10vh;
+    position: fixed;
+    top: 50vh;
     right: 20vw;
     transform: rotate(30deg); /* تغيير الزاوية هنا */
     margin: 50px; /* لتكون ديف مرئية بشكل أفضل */
