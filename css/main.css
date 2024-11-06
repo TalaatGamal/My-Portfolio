@@ -52,7 +52,7 @@ a{
     /* overflow: hidden; */
     width: 100vw;
     height: 8vh;
-    background-color: rgba(0, 255, 213, 0.1); /* لون الخلفية مع شفافية */
+    background-color: rgba(35, 186, 251, 0.093); /* لون الخلفية مع شفافية */
     backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
     -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* خط فاصل خفيف */
@@ -220,7 +220,7 @@ a{
     position: relative;
     /* top: 95vh;
     left: 48.9vw; */
-    animation: move-arrow-in 3s linear infinite;
+    animation: move-arrow-in 5s linear infinite;
     background-color: #00909d00;
 }
 @keyframes move-arrow-in {
@@ -362,13 +362,15 @@ a{
     display: flex;
     align-items: center;
     justify-content: left;
-    padding-left: 10vw;
-    /* background-color: #00737b; */
-    /* box-shadow: #00737b 0px 10px 10px 4px; */
-    background-color: rgba(0, 255, 213, 0.1); /* لون الخلفية مع شفافية */
+    /* padding-left: 10vw; */
+    /* background-color: #00737b79; */
+    /* box-shadow: #00737b7a 0px 0px 30px 10px; */
+
+    background-color: rgba(35, 186, 251, 0.093); /* لون الخلفية مع شفافية */
     backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
     -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* خط فاصل خفيف */
+
     margin-bottom: 50px;
     position: sticky;
     top: 8vh;
@@ -377,7 +379,7 @@ a{
     transition: background-color 0.3s ease; /* تأثير ناعم لتغيير اللون */
 }
 .v2-proj{
-    animation: v2-proj 2s linear infinite;
+    animation: v2-proj 5s linear infinite;
     display: none;
 }
 @keyframes v2-proj {
@@ -414,8 +416,7 @@ a{
 }
 .projects{
     width: 100vw;
-    height: max-content;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,11 +424,11 @@ a{
     padding-left: 10vw;
     padding-right: 10vw;
     gap: 20px;
-    padding-top: 10vh;
+    margin-top: 10vh;
     padding-bottom: 10vh;
     z-index: 1;
     /* background-color: #ff0000; */
-    background-image: url(../images/sky-stars.jpeg);
+    /* background-image: url(../images/sky-stars.jpeg); */
     background-position: center;
     background-size: 30%;
     background-repeat: repeat;
@@ -438,7 +439,7 @@ a{
     height: 8vh;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     /* background-color: #cfcfcf; */
     /* margin-bottom: 5vh; */
     padding-left: 1vw;
@@ -988,19 +989,19 @@ a{
 @keyframes mova {
     0% {
         opacity: 0;
-        transform: translateX(600%);
+        transform: translateX(400%);
     }
     20% {
         opacity: 1;
-        transform: translateX(400%);
+        transform: translateX(200%);
     }
     90% {
         opacity: 1;
-        transform: translateX(200%);
+        transform: translateX(-100%);
     }
     100% {
         opacity: 0;
-        transform: translateX(0%);
+        transform: translateX(-200%);
     }
 }
 .arrow3{
@@ -1145,7 +1146,9 @@ a{
 .projects{
     padding-left: 0vw;
     padding-right: 0vw;
-    padding-top: 40vh;
+    margin-top: 40vh;
+    padding-top: 5vh;
+    height: max-content;
 }
 .title-v{
     width: 100%;
@@ -1157,9 +1160,9 @@ a{
     /* background-color: #cfcfcf; */
     /* margin-bottom: 5vh; */
     padding-left: 5vw;
-    padding-right: 5vw;
+    /* padding-right: 5vw; */
     margin-bottom: 5vh;
-    gap: 20px;
+    /* gap: 20px; */
     /* display: none; */
 }
 .title-v a{
@@ -1168,11 +1171,11 @@ a{
     color: #eeeeee;
     display: inline-flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
 }
 .s-i4{
     font-size: 15px;
-    width: 100%;
+    /* width: 100%; */
     padding-left: 0vw;
     padding-right: 0vw;
     border-right: #00c3b000;
@@ -1197,7 +1200,7 @@ a{
     left: 48.9vw; */
     animation: movera 3s linear infinite;
     background-color: #00909d00;
-    display: block;
+    display: none;
 }
 @keyframes movera {
     0% {
@@ -1352,6 +1355,12 @@ a{
 }
 .mediaz{
     width: 90vw;
+}
+.title-sec{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10vw;
 }
 
 }
