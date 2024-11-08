@@ -444,15 +444,15 @@ a{
     /* margin-bottom: 5vh; */
     padding-left: 1vw;
     padding-right: 1vw;
-    gap: 40px;
+    gap: 30px;
 }
 .title-v a{
     /* padding-left: 20px; */ 
 
     color: #eeeeee;
-    /* display: inline-flex;
+    display:flex;
     align-items: center;
-    justify-content: space-between; */
+    justify-content: center;
 }
 .s-i4{
     font-size: 15px;
@@ -1155,12 +1155,12 @@ a{
     height: max-content;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     flex-wrap: wrap;
     /* background-color: #cfcfcf; */
     /* margin-bottom: 5vh; */
-    padding-left: 5vw;
-    /* padding-right: 5vw; */
+    /* padding-left: 5vw; */
+    padding-right: 10vw;
     margin-bottom: 5vh;
     /* gap: 20px; */
     /* display: none; */
@@ -1180,7 +1180,7 @@ a{
     padding-right: 0vw;
     border-right: #00c3b000;
     border-bottom: #00c3b0 solid 4px;
-    border-radius: 0%;
+    border-radius: 5px;
 }
 .cards{
     width: 390px;
