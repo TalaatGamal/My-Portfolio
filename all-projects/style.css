@@ -73,6 +73,47 @@ a{
     background-color: #00000066;
     width: 100%;
     height: 100%;
+    display: none;
+    
+}
+
+.vee2{
+    background-color: #00000066;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.vee2 h3{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: end;
+    justify-content: left; 
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: 0.5s;
+    background-color: #0000004d; 
+    color: #e8e8e8;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 5%;
+    /* display: none; */
+    /* padding-top: 20%; */
+    /* opacity: 0%; */
+}
+.vee2 h6{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: left; 
+    width: 100%;
+    height: 10%;
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 5%;
 }
 .pro{
     width: 300px;
@@ -87,7 +128,7 @@ a{
     flex-wrap: wrap;
     overflow: hidden;
 }
-.pro h3{
+.vee h3{
     width: 100%;
     height: 90%;
     display: flex;
@@ -97,12 +138,21 @@ a{
     gap: 20px;
     transition: 0.5s;
     background-color: #00000083; 
-    color: #ffffff00;
+    color: #e8e8e8;
     font-size: 25px;
     font-weight: 400;
+    /* display: none; */
     /* padding-top: 20%; */
-    opacity: 0%;
+    /* opacity: 0%; */
 }
+.pro:hover .vee{
+    display: block;
+}
+/* .pro h3:hover{
+    color: #000000;
+    opacity: 100%;
+    background-color: #00000000;
+} */
 .pro h3 a{
     /* width: 100px; */
     background-color: #000000;
@@ -121,7 +171,7 @@ a{
 .pro h3 a img{
     width: 40px;
 }
-.pro h6{
+.vee h6{
     background-color: black;
     display: flex;
     align-items: center;
@@ -131,11 +181,7 @@ a{
     color: #ffffff;
     font-size: 15px;
 }
-.pro h3:hover{
-    color: #000000;
-    opacity: 100%;
-    /* background-color: #00000000; */
-}
+
 .pro:hover{
     border: rgb(0, 121, 162)  solid 4px;
     box-shadow:  rgb(0, 97, 162) 0px 0px 20px 5px;
