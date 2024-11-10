@@ -416,7 +416,7 @@ a{
 }
 .projects{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1032,7 +1032,21 @@ a{
 }
 
 
-
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(0, 0, 0, 0.83);
+    font-weight: 700;
+    color: #747474;
+}
+.footer h4{
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 
 

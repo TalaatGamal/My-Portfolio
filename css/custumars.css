@@ -44,7 +44,7 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 10vh;
     gap: 40px;
     /* background-color: #00b3ff9b; */
