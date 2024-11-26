@@ -52,8 +52,8 @@
     z-index: 6;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 8vh;
-    padding-bottom: 20vh;
+    /* padding-top: 8vh; */
+    padding-bottom: 10vh;
 }
 
 .testimonial-card {

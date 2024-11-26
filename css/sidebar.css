@@ -25,7 +25,7 @@
 
 .menu-icon {
     position: fixed;
-    top: 18px;
+    /* top: 18px; */
     right: 10vw;
     font-size: 25px;
     cursor: pointer;

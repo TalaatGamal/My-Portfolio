@@ -1,20 +1,32 @@
+.serv{
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
+  /* background-color: #3575ff; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
 .services-new{
   /* background-color: rgb(76, 76, 76); */
   width: 100vw;
   min-height: 100vh;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  padding-top: 10vh;
+  margin-bottom: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 70px;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  /* padding-top: 10vh; */
+  /* padding-left: 10vw;
+  padding-right: 10vw; */
 }
 .services-new .cards{
   width: 300px;
+  /* margin-left: 35px;
+  margin-right: 35px; */
   min-height: 300px;
   border: none;
   border-left: rgb(0, 145, 255) solid 4px;
@@ -48,9 +60,12 @@
   background-color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
-  justify-content: space-between ;
+  justify-content: right ;
   padding-left: 2%;
   padding-right: 4%;
+}
+.right-o{
+  margin-left: 10px;
 }
 .services-new .cards .btn a{
   color: #ff2e2e;
@@ -94,7 +109,7 @@
   background-size: cover;
 }
 @media (max-width:870px) {
-  .services-new{
+  .services-new , .serv{
     padding-left: 0vw;
     padding-right: 0vw;
   }

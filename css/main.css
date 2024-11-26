@@ -245,7 +245,51 @@ a{
     }
 }
 .arrow5{
-   display: none;
+    display: none;
+}
+.arrow9{
+  width: 7px;
+  position: relative;
+  /* top: 95vh;
+  left: 48.9vw; */
+  animation: kamala 5s linear infinite;
+  background-color: #00909d00;
+}
+@keyframes kamala {
+  0% {
+      opacity: 0;
+      transform: translateX(500%);
+  }
+  20% {
+      opacity: 1;
+      transform: translateX(300%);
+  }
+  90% {
+      opacity: 1;
+      transform: translateX(100%);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(0%);
+  }
+}
+.rtv{
+  /* background-color: #00737b; */
+  animation: havala 5s linear infinite;
+}
+@keyframes havala {
+  0% {
+      opacity: 1;
+      transform: translateX(0%);
+  }
+  50% {
+      opacity: 0;
+      transform: translateX(0%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0%);
+  }
 }
 .a-arrow{
     /* background-color: #cfcfcf2e; */
@@ -375,7 +419,7 @@ a{
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* خط فاصل خفيف */
     padding-left: 5vw;
     margin-bottom: 50px;
-    position: sticky;
+    /* position: sticky; */
     top: 8vh;
     z-index: 10;
     /* background-color: transparent; الخلفية الأصلية */
@@ -1384,5 +1428,8 @@ a{
 .footero{
   padding-left: 10vw;
   padding-right: 10vw;
+}
+.arrow9{
+  display: none;
 }
 }

@@ -139,3 +139,29 @@ window.addEventListener('scroll', checkElementPosition);
 
 // تحقق من الموضع عند تحميل الصفحة
 document.addEventListener('DOMContentLoaded', checkElementPosition);
+
+
+
+
+
+
+
+
+const sections = document.querySelectorAll('section');
+const headerTitle = document.querySelector('.header-title'); // الهيدر الخاص بالتغيير
+
+window.addEventListener('scroll', () => {
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const sectionTitle = section.querySelector('.section-title'); // تأكد أن لكل قسم عنوان بهذا الكلاس
+
+        // تحقق إذا كان القسم الحالي في منتصف الشاشة
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+            // headerTitle.textContent = `Talaat Gamal  ${section.id}`;
+            headerTitle.innerHTML = `Talaat Gamal <span class="rtv" style="color: #00AEFF; font-size: 25px; font-weight: 600; margin-left: 10px;">${section.id}</span> <img src="images/arrow - Copy.png" alt="" class="arrow9"><img src="images/arrow - Copy.png" alt="" class="arrow9">`;
+
+        } else {
+            sectionTitle?.classList.remove('active-section-title'); // إزالة الكلاس عند مغادرة القسم
+        }
+    });
+});
