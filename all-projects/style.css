@@ -35,8 +35,8 @@ a{
     /* padding-top: 10vh; */
     padding-left: 8vw;
     padding-right: 8vw;
-    padding-bottom: 100px;
-    padding-top: 10vh;
+    padding-bottom: 20vh;
+    padding-top: 5vh;
 }
 .lista{
     display: flex;
@@ -70,12 +70,34 @@ a{
     padding: 5px;
 }
 .vee{
-    background-color: #00000066;
+    background-color: #000000b0;
     width: 100%;
     height: 100%;
+    transition: 0.5s;
     display: none;
 }
+/* .vee img{
+  animation: vee 20s linear infinite;
 
+} */
+@keyframes vee {
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+  2% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+  90% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+}
 .vee2{
     background-color: #00000066;
     width: 100%;
@@ -126,6 +148,7 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
+    transition: 0.5s;
 }
 .vee h3{
     width: 100%;
@@ -136,16 +159,37 @@ a{
     flex-wrap: wrap;
     gap: 20px;
     transition: 0.5s;
-    background-color: #00000083; 
+    /* background-color: #00000083;  */
     color: #e8e8e8;
     font-size: 25px;
     font-weight: 400;
     /* display: none; */
     /* padding-top: 20%; */
     /* opacity: 0%; */
+    animation: vee-h3 15s linear infinite;
+}
+@keyframes vee-h3 {
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+  1% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+  90% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
 }
 .pro:hover .vee{
     display: block;
+    transition: 2s;
+    
 }
 /* .pro h3:hover{
     color: #000000;
@@ -185,11 +229,18 @@ a{
     border: rgb(0, 121, 162)  solid 4px;
     box-shadow:  rgb(0, 97, 162) 0px 0px 20px 5px;
 }
+
 .span1 , .span2{
     color: #00d9ff;
     font-weight: 700;
     padding-right: 15px;
     padding-left: 0px;
+}
+.cover{
+  width: 100vw;
+  height: 110vh;
+  position: absolute;
+  top: 100vh;
 }
 #v-1{
     background-image: url(https://scholarships.af/wp-content/uploads/2023/05/USA-Diversity-Visa-lottery-2025.jpg);
@@ -290,6 +341,11 @@ a{
     background-position: center;
     background-size: cover;
 }
+#v-19{
+    background-image: url(https://images.pexels.com/photos/5553044/pexels-photo-5553044.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-size: cover;
+}
 .footer{
     display: flex;
     align-items: center;
@@ -314,5 +370,13 @@ a{
     .pro{
         width: 400px;
         height: 250px;
+    }
+    .cover{
+      width: 100vw;
+      height: 200vh;
+      position: absolute;
+      top: 190vh;
+      /* background-color: #002c3a5f;
+      box-shadow: #002c3a9d 0px 0px 20px 20px; */
     }
 }

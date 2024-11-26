@@ -13,7 +13,7 @@
     padding-bottom: 3px;
 }
 #homu li{
-    border-bottom: #00eeffa9 solid 2px; 
+    border-bottom: #0072a3 solid 2px; 
     padding-bottom: 3px;
 }
 
@@ -149,7 +149,7 @@
     border: none;
 }
 #homeu li{
-    border-bottom: #00eeffa9 solid 5px; 
+    /* border-bottom: #00eeffa9 solid 5px;  */
     /* padding-bottom: 3px; */
     padding-bottom: 0px;
     padding: 15px;
@@ -159,7 +159,7 @@
     text-decoration: none;
     color: rgb(220, 220, 220);
     font-size: 20px;
-    border-bottom: #00eeffa9 solid 4px; 
+    border-bottom: #029aa539 solid 4px; 
     width: 100%;
     display: flex;
     align-items: center;

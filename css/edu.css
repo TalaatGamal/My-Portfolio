@@ -1,0 +1,44 @@
+.materials{
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 10vw 10px 10vw;
+  /* background-color: rgb(52, 0, 0); */
+  z-index: 3;
+  background-color: rgba(35, 186, 251, 0.093); /* لون الخلفية مع شفافية */
+  backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
+  -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
+}
+.skille{
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 40px;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.skille i{
+  font-size: 80px;
+  /* transition: 0.5s; */
+}
+.skille:hover{
+  color: #00aeff;
+  cursor: pointer;
+}
+.light-line-sk-ex{
+  /* position: absolute; */
+  z-index: 0;
+  /* top: 329vh; */
+  /* overflow: hidden; */
+  width: 100vw;
+  height: 0.1vh;
+  box-shadow: #ffffff 0px 5px 0px 5px;
+}

@@ -28,7 +28,7 @@ a{
 }
 .light-line{
     position: fixed;
-    z-index: 998;
+    z-index: 1;
     top: 0px;
     /* overflow: hidden; */
     width: 100vw;
@@ -37,7 +37,7 @@ a{
 }
 .light-line2{
     position: fixed;
-    z-index: 998;
+    z-index: 1;
     top: 8vh;
     /* overflow: hidden; */
     width: 100vw;
@@ -99,6 +99,9 @@ a{
     color: #ffffffc3;
     transition: 0.5s;
     z-index: 999;
+}
+.a-logo h1{
+  font-size: 25px;
 }
 .a-logo:hover{
     font-size: 20px;
@@ -370,7 +373,7 @@ a{
     backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
     -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* خط فاصل خفيف */
-
+    padding-left: 5vw;
     margin-bottom: 50px;
     position: sticky;
     top: 8vh;
@@ -1030,35 +1033,37 @@ a{
         transform: translateX(0%);
     }
 }
-
-
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 8vh;
-    background-color: rgba(0, 0, 0, 0.83);
-    font-weight: 700;
-    color: #747474;
-}
 .footer h4{
     margin-left: 15px;
     margin-right: 15px;
 }
+.footero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 8vh;
+  /* background-color: rgba(0, 0, 0, 0.83); */
+  background-color: rgba(35, 251, 240, 0.093); /* لون الخلفية مع شفافية */
+  backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
+  -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
+  font-weight: 700;
+  color: #747474;
+  margin-top: 10px;
+}
+.light-line-sk-ef{
+  /* position: absolute; */
+  z-index: 0;
+  /* top: 329vh; */
+  /* overflow: hidden; */
+  width: 100vw;
+  height: 0.1vh;
+  box-shadow: #000000 0px 3px 10px 3px;
+}
+           /* Responsive Design */
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
+@media (max-width: 980px) {
     .star1{
         width: 40px;
         position: absolute;
@@ -1376,5 +1381,8 @@ a{
     justify-content: left;
     padding-left: 10vw;
 }
-
+.footero{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
 }
