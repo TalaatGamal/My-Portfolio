@@ -4,6 +4,9 @@
 .sidebar{
     display: none;
 }
+#exa{
+  display: none;
+}
 #servi li{
     border-bottom: rgba(255, 0, 0, 0.495) solid 2px; 
     padding-bottom: 3px;
