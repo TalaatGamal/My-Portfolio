@@ -16,16 +16,11 @@
     <link rel="stylesheet" href="css/custumars.css">
     <link rel="stylesheet" href="css/services.css">
     <!-- font awesome icons -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
-
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> -->
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- send message with emailjs -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
     
     <!--**** start fonts ****-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -612,7 +607,7 @@
             </div>
           </form> -->
 
-          <form id="contactForm" class="form">
+          <!-- <form id="contactForm" class="form">
             <input type="text" name="username" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea rows="4" cols="50" id="in-spi" name="message" placeholder="Your Message" required></textarea>
@@ -630,76 +625,103 @@
               ">Go to server</a>
               <button type="submit" style="cursor: pointer;">request</button>
             </div>
+          </form> -->
+          <form id="contactForm" class="form">
+            <input type="text" id="username" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
+            <div class="sipo">
+              <div class="sircle" id="dira"></div>
+              <button type="submit" style="cursor: pointer;">request</button>
+            </div>        
           </form>
           <p>لرؤية البيانات المحفوظة، انتقل إلى <a href="data.html">الصفحة الجديدة</a>.</p>
         
-      
+      <!--start database -->
+          <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+          <script>
+                // start emailjs
+            emailjs.init("3o_Ok3aG0DS4-OWJo");
+                // end emailjs
 
-<script>
+                // start supabase
+            const SUPABASE_URL = "https://lnohiidyljlwffoireap.supabase.co";  // استبدل بـ Project URL
+            const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxub2hpaWR5bGpsd2Zmb2lyZWFwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI3MTc1ODMsImV4cCI6MjA0ODI5MzU4M30.kqRqH7iWFN1Id9DyN3k7y83o0YvIRbtbZiMtPBeaQIc";  // استبدل بـ API Key
+            const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+               // end supabase
 
+            const form = document.getElementById("contactForm");
+            const savedDataList = document.getElementById("savedDataList");
+          
+            form.addEventListener("submit", async function (e) {
+              e.preventDefault();
+          
+              const data = {
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+                timestamp: new Date().toISOString()  // تخزين الوقت بصيغة ISO
+              };
+          
+              // التحقق من صحة البيانات
+              if (!data.username || !data.email || !data.message) {
+                alert("يرجى تعبئة جميع الحقول!");
+                return;
+              }
 
-document.addEventListener("DOMContentLoaded", function () {
-  // تهيئة EmailJS
-  emailjs.init("3o_Ok3aG0DS4-OWJo");  // استبدل YOUR_PUBLIC_KEY بمفتاحك العام من EmailJS
+          
+              try {
+                // حفظ البيانات في Supabase
+                const { error } = await supabase.from("messages").insert([data]);
+                document.getElementById("dira").style.display="block";
+                if (error) throw error;
+          
+          // start emailjs
+                emailjs.send("service_jmd86we", "template_c7pd0tv", data)
+                .then((response) => {
+                  // alert("تم حفظ البيانات وإرسال البريد الإلكتروني بنجاح!");
+                  // document.getElementById("dira").style.display="block";
+                  document.getElementById("dira").style.display="none";
+                });
+          // end emailjs
 
-  const form = document.getElementById("contactForm");
-  const savedDataList = document.getElementById("savedDataList");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();  // منع السلوك الافتراضي للنموذج
-
-    // جمع البيانات من النموذج
-    const formData = new FormData(form);
-    const data = {
-      username: formData.get("username"),
-      email: formData.get("email"),
-      message: formData.get("message"),
-      timestamp: new Date().toLocaleString()  // إضافة التاريخ والوقت الحالي
-    };
-
-    // التحقق من صحة البيانات
-    if (!data.username || !data.email || !data.message) {
-      alert("يرجى تعبئة جميع الحقول!");
-      return;  // لا تستمر إذا كانت هناك حقول فارغة
-    }
-
-    // إرسال البيانات عبر EmailJS
-    emailjs.send("service_jmd86we", "template_c7pd0tv", data)
-      .then((response) => {
-        alert("تم حفظ البيانات وإرسال البريد الإلكتروني بنجاح!");
+                alert("your message has been sent");
+                form.reset();
+          
+                // تحديث القائمة
+                loadMessages();
+              } 
+              catch (err) {
+                // console.error("خطأ أثناء الحفظ:", err);
+                // alert("حدث خطأ أثناء الحفظ!");
+              }
+            });
+          
+            // // وظيفة لجلب البيانات من Supabase
+            // async function loadMessages() {
+            //   try {
+            //     const { data, error } = await supabase.from("messages").select("*").order("timestamp", { ascending: false });
+            //     if (error) throw error;
+          
+            //     savedDataList.innerHTML = ""; // مسح القائمة القديمة
+            //     data.forEach(item => {
+            //       const listItem = document.createElement("li");
+            //       listItem.innerHTML = ` 
+            //         <strong>${item.username}</strong> - ${item.email}: ${item.message} <br>
+            //         <small>تم الإرسال في: ${new Date(item.timestamp).toLocaleString()}</small>
+            //       `;
+            //       savedDataList.appendChild(listItem);
+            //     });
+            //   } catch (err) {
+            //     console.error("خطأ أثناء جلب البيانات:", err);
+            //   }
+            // }
+          
+            // تحميل البيانات عند فتح الصفحة
+            loadMessages();
+          </script>
+      <!--end database -->
         
-        // جلب البيانات الحالية من localStorage
-        let savedData = localStorage.getItem("formData");
-        savedData = savedData ? JSON.parse(savedData) : [];  // إذا كانت البيانات موجودة، نقوم بتحويلها إلى كائن، وإذا كانت فارغة نستخدم مصفوفة فارغة
-
-        // إضافة البيانات الجديدة إلى المصفوفة
-        savedData.push(data);
-
-        // حفظ المصفوفة الجديدة في localStorage
-        localStorage.setItem("formData", JSON.stringify(savedData));
-
-        // إضافة البيانات الجديدة إلى div
-        const listItem = document.createElement("li");
-        listItem.innerHTML = `
-          <strong>${data.username}</strong> - ${data.email}: ${data.message} <br>
-          <small>تم الإرسال في: ${data.timestamp}</small>
-        `;
-        savedDataList.appendChild(listItem);
-      })
-      .catch((error) => {
-        alert("حدث خطأ أثناء الإرسال.");
-        console.error(error);
-      });
-
-    // إعادة تعيين النموذج
-    form.reset();
-  });
-});
-
-
-</script>
-
-
         </div>
       </div>
     </section>
@@ -718,6 +740,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script src="js/main.js"></script>
 <script src="js/sidebar.js"></script>
+<!-- <script src="js/database.js"></script> -->
 
 <!--**** end scripts ****-->
 

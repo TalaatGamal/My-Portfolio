@@ -1197,7 +1197,7 @@ a{
   color: #ffffff;
   outline: none;
 }
-.form #in-spi{
+.form #message{
   height: 100%;
   width: 100%;
   border-radius: 10px;
@@ -1211,16 +1211,17 @@ a{
   outline: none;
   padding: 20px;
 }
-.form #in-spi::placeholder{
+.form #message::placeholder{
   text-align: center; 
 }
 .sipo{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: right;
   padding-right: 30px;
   padding-left: 30px;
+  gap: 20px;
 }
 .sipo button{
   height: 35px;
@@ -1230,6 +1231,23 @@ a{
   border-bottom: #009dff solid 3px;
   border-radius: 7px;
   color: #ffffff;
+}
+.sircle{
+  width: 35px;
+  height: 40px;
+  border-top: #ffffff solid 4px;
+  border-bottom: #ff0000 solid 4px;
+  border-radius: 100px;
+  animation: rotate360 2s linear infinite;
+  display: none;
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
            /* Responsive Design */
 
