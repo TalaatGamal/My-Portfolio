@@ -412,7 +412,7 @@ a{
     /* padding-left: 10vw; */
     /* background-color: #00737b79; */
     /* box-shadow: #00737b7a 0px 0px 30px 10px; */
-
+    color: #4fd3ff;
     background-color: rgba(35, 186, 251, 0.093); /* لون الخلفية مع شفافية */
     backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
     -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
@@ -1077,17 +1077,17 @@ a{
         transform: translateX(0%);
     }
 }
-.footer h4{
+/* .footer h4{
     margin-left: 15px;
     margin-right: 15px;
-}
+} */
 .footero{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 8vh;
+  min-height: 8vh;
   /* background-color: rgba(0, 0, 0, 0.83); */
   background-color: rgba(35, 251, 240, 0.093); /* لون الخلفية مع شفافية */
   backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
@@ -1095,6 +1095,11 @@ a{
   font-weight: 700;
   color: #747474;
   margin-top: 10px;
+  padding: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  text-align: center;
+  gap: 20px;
 }
 .light-line-sk-ef{
   /* position: absolute; */
@@ -1111,13 +1116,20 @@ a{
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
-  height: 60vh;
-  padding: 30px;
+  min-height: 60vh;
+  padding: 0px;
+}
+.conta #tte{
+  padding-left: 10vw;
+  padding-right: 10vw;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  height: 50px;
 }
 .call-me .conta{
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 0px;
   background-color: rgba(0, 25, 36, 0.605); 
   backdrop-filter: blur(4px); 
   display: flex;
@@ -1129,7 +1141,7 @@ a{
 .conta .pay,.s-media,.addres,.message-me{
   /* background-color: #00000063; */
   width: 350px;
-  height: 300px;
+  height: 310px;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -1138,7 +1150,14 @@ a{
   overflow: hidden;
 }
 .conta .pay img{
-  width: 180px;
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-radius: 20px; */
+  border-bottom: #00bbff solid 5px;
+  border-radius: 10px 10px 0px 0px;
 }
 .conta .s-media{
   display: flex;
@@ -1147,6 +1166,7 @@ a{
   /* flex-direction: column; */
   flex-wrap: wrap;
   gap: 10px;
+  /* border-bottom: #0099ff solid 3px; */
 }
 #s-media{
   width: 50px;
@@ -1172,9 +1192,13 @@ a{
 }
 #message-me{
   width: 500px;
+  height: 400px;
+  padding-bottom: 5vh;
+
+  /* background-color: #000000; */
 }
 .form{
-  background-color: #0088ff00; 
+  /* background-color: #0088ff9a;  */
   width: 100%; 
   height: 100%;
   display: flex;
@@ -1182,13 +1206,15 @@ a{
   justify-content: center;
   flex-direction: column;
   padding: 30px;
+  padding-top: 10%;
+  padding-bottom: 10px;
   gap: 10px;
 }
 .form input{
   width: 100%;
-  height: 60%;
+  height: 35%;
   border-radius: 10px;
-  background-color: #000000;
+  background-color: #071721b2;
   /* border: #ffffff solid 2px; */
   border: none;
   border-bottom: #009dff solid 3px;
@@ -1201,7 +1227,7 @@ a{
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  background-color: #000000;
+  background-color: #071721b2;
   /* border: #ffffff solid 2px; */
   border: none;
   border-bottom: #009dff solid 3px;
@@ -1592,8 +1618,43 @@ a{
   padding-left: 0px;
   padding-right: 0px;
 }
+#s-media a{
+  border:none;
+}
+.sosial{
+  border-bottom: #0099ff solid 3px;
+}
 .call-me{
-  padding: 10px;
+  /* padding: 10px; */
   height: max-content;
+}
+.conta .pay {
+  width: 100%;
+  height: 200px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.conta .pay img{
+  width: 165px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 0px 40px 0px 0px;
+}
+#message-me{
+  width: 500px;
+  height: 400px;
+  /* background-color: #000000; */
+  padding-bottom: 5vh;
+}
+.conta #tte{
+  /* padding-left: 10vw;
+  padding-right: 10vw;
+  margin-bottom: 0px;
+  margin-top: 50px;
+  height: 50px; */
+  font-size: 13px;
 }
 }

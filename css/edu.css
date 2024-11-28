@@ -1,3 +1,9 @@
+.skill-exp{
+  background-image: url(https://images.pexels.com/photos/1209978/pexels-photo-1209978.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .materials{
   width: 100vw;
   min-height: 50vh;
@@ -9,9 +15,8 @@
   padding: 10px 10vw 10px 10vw;
   /* background-color: rgb(52, 0, 0); */
   z-index: 3;
-  background-color: rgba(35, 186, 251, 0.093); /* لون الخلفية مع شفافية */
-  backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
-  -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
+  background-color: rgba(0, 25, 36, 0.605); 
+  backdrop-filter: blur(4px); 
 }
 .skille{
   width: 150px;
