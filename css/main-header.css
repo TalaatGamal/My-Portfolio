@@ -1,0 +1,101 @@
+.header{
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  /* overflow: hidden; */
+  width: 100vw;
+  height: 8vh;
+  background-color: rgba(40, 190, 255, 0.093); /* لون الخلفية مع شفافية */
+  backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
+  -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* خط فاصل خفيف */
+}
+.navbar{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+.links ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  height: 100%;
+  gap: 30px;
+}
+.links ul a{
+  text-decoration: none;
+  color: #d9d9d9;
+  width: max-content;
+  height: 8vh;
+  /* background-color: aliceblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .links li{
+  transition: 0.1s;
+} */
+.links li:hover{
+  border-bottom: #00eeffa9 solid 2px; padding-bottom: 3px;
+  color: #00eeffa9;
+
+}
+.aa-logo{
+  color: #00eeffa9;
+}
+.a-logo{
+  color: #ffffffc3;
+  transition: 0.5s;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* background-color: aqua; */
+  /* width: 250px; */
+}
+.a-logo h1{
+font-size: 25px;
+}
+.imga-header{
+  background-image: url(https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
+  width: 40px;
+  /* min-width: 40px; */
+  height: 40px;
+  border: #ffffff solid 2px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.rtv{
+  color: #00AEFF;  
+  font-weight: 600; 
+  margin-left: 10px;
+  font-size: 20px;
+}
+@media (  max-width: 870px) {
+  .a-logo h1{
+    font-size: 24px;
+    }
+    .rtv{
+      color: #00AEFF;  
+      font-weight: 600; 
+      margin-left: 10px;
+      font-size: 18px;
+    }
+    .imga-header{
+      width: 35px;
+      height: 35px;
+      /* min-width: 30px; */
+    }
+    .navbar{
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+}

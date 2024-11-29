@@ -109,7 +109,7 @@ window.addEventListener('scroll', () => {
         // تحقق إذا كان القسم الحالي في منتصف الشاشة
         if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
             // headerTitle.textContent = `Talaat Gamal  ${section.id}`;
-            headerTitle.innerHTML = `Talaat Gamal <span class="rtv" style="color: #00AEFF; font-size: 25px; font-weight: 600; margin-left: 10px;">${section.id}</span> <img src="images/arrow - Copy.png" alt="" class="arrow9"><img src="images/arrow - Copy.png" alt="" class="arrow9">`;
+            headerTitle.innerHTML = `Talaat Gamal <span class="rtv">${section.id}</span> <img src="images/arrow - Copy.png" alt="" class="arrow9"><img src="images/arrow - Copy.png" alt="" class="arrow9">`;
 
         } else {
             sectionTitle?.classList.remove('active-section-title'); // إزالة الكلاس عند مغادرة القسم
