@@ -472,11 +472,18 @@ a{
     justify-content: center; 
     flex-wrap: wrap;
     transition: 0.5s;
-    background-color: #000000ad; 
+    /* background-color: #000000ad;  */
     color: #ffffffb2;
     font-size: 25px;
     font-weight: 400;
+    /* display: none; */
     /* padding-top: 20%; */
+}
+.cards .hjn{
+  background-color: #000000ad; 
+  width: 100%;
+  height: 100%;
+  /* display: none; */
 }
 .cards h4{
     background-color: #001a2fea; 
@@ -492,21 +499,20 @@ a{
 /* .vedasa{
   display: none;
 } */
-.cards h3:hover .vedasa{
+.cards:hover .vedasa{
   display: none;
 }
-.cards h3:hover .vedasa2{
+.cards:hover .vedasa2{
   display: flex;
 }
-.cards .vedasa2{
-  display: flex;
+.vedasa2{
+  display: none;
   align-items: center;
   justify-content: center; 
   gap: 20px;
-  display: none;
-  /* background-color: #00fff281; */
   width: 100%;
   height: 100%;
+  /* background-color: #000000ad;  */
 }
 .cards .vedasa2 a img{
   width: 70px;
@@ -519,8 +525,9 @@ a{
 .cards .vedasa2 a img:hover{
   box-shadow: #1680b17d 0px 0px 20px 20px;
 }
-.vedasa2:hover a{
+.cards:hover h3{
   animation: vee-hma 25s linear infinite;
+  /* display: none; */
 }
 @keyframes vee-hma {
   0% {
