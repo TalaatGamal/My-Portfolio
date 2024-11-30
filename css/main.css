@@ -460,6 +460,10 @@ a{
     flex-wrap: wrap;
     text-decoration: none;
 }
+/* .cards:hover h3 , h6{
+  display: none;
+} */
+
 .cards h3{
     width: 100%;
     height: 92.3%;
@@ -485,9 +489,56 @@ a{
     padding-left: 20px;
     color: #ffffff;
 }
-.cards h3:hover{
-    color: #cfcfcf00;
-    background-color: #00000000;
+/* .vedasa{
+  display: none;
+} */
+.cards h3:hover .vedasa{
+  display: none;
+}
+.cards h3:hover .vedasa2{
+  display: flex;
+}
+.cards .vedasa2{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+  display: none;
+  /* background-color: #00fff281; */
+  width: 100%;
+  height: 100%;
+}
+.cards .vedasa2 a img{
+  width: 70px;
+  padding: 12px;
+  background-color: #000000;
+  border-radius: 15px;
+  border: #1680b1 solid 3px;
+  box-shadow: #1680b190 0px 0px 10px 10px;
+}
+.cards .vedasa2 a img:hover{
+  box-shadow: #1680b17d 0px 0px 20px 20px;
+}
+.vedasa2:hover a{
+  animation: vee-hma 25s linear infinite;
+}
+@keyframes vee-hma {
+  0% {
+      opacity: 0;
+      transform: translateY(-100%);
+  }
+  1% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+  90% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0%);
+  }
 }
 #a1{
     background-image: url(https://scholarships.af/wp-content/uploads/2023/05/USA-Diversity-Visa-lottery-2025.jpg);
