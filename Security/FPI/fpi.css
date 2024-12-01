@@ -1,0 +1,50 @@
+
+
+#fpi{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(0, 217, 255, 0.184), rgba(0, 0, 0, 0.434) , rgba(0, 0, 0, 0.434) );
+
+}
+#fpi span{
+  position: absolute;
+  top: 25vh;
+  margin-left: auto;
+  margin-right: auto;
+  color: #bababa;
+  font-size: 30px;
+}
+#fpi form {
+  margin: 20px;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 10px; */
+  width: 400px;
+}
+
+#fpi input{
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: rgb(0, 234, 255) solid 3px;
+  background-color: #bababa00;
+  outline: none;
+  color: #ffffff;
+  /* border-radius: 10px; */
+}
+@media (max-width:870px) {
+  #fpi span{
+    position: absolute;
+    top: 30vh;
+    /* margin-left: auto;
+    margin-right: auto; */
+    color: #bababa;
+    font-size: 35px;
+  }
+}
