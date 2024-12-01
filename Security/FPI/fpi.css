@@ -32,11 +32,11 @@
   padding: 10px;
   margin-bottom: 10px;
   border: none;
-  border-bottom: rgb(0, 154, 168) solid 3px;
+  border-bottom: rgb(0, 85, 93) solid 3px;
   background-color: #bababa00; 
   outline: none;
   color: #ffffff;
-  /* border-radius: 10px; */
+  /* border-radius: 8px; */
 }
 #fpi video{
   width: 360px;
@@ -59,10 +59,14 @@
 }
 .mediar a i{
   font-size: 30px;
-  color: #ffffff;
-  background: linear-gradient(to right, rgba(0, 135, 159, 0.667), rgba(0, 0, 0, 0.434) , rgba(0, 0, 0, 0.434) );
+  color: #727272;
+  /* background: linear-gradient(to right, rgba(0, 135, 159, 0.282), rgba(0, 0, 0, 0.434) , rgba(0, 0, 0, 0.434) ); */
   padding: 10px;
   border-radius: 8px;
+  border-bottom: rgb(0, 82, 90) solid 3px;
+}
+.light-lineghb{
+  display: none;
 }
 @media (max-width:870px) {
   #fpi span{
@@ -76,4 +80,53 @@
   .mediar{
     top: 90vh;
   }
+  .light-lineghb{
+    display: block;
+    /* width: 200px;
+    border-top: rgb(255, 0, 0) solid 3px; */
+    position: absolute;
+    top: 63vh;
+    left: 0px;
+    transform: rotate(40deg);
+    height: 50%;
+    width: 50%;
+    /* background-color: #727272; */
+    /* animation: tera 3s linear infinite; */
+  }
+  .line-zar{
+    /* display: none; */
+    animation: tera 25s linear infinite;
+    width:50px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: rgb(0, 140, 255) solid 3px;
+    border-radius: 100px;
+    background-color: #00b3ff1c;
+    /* box-shadow: #ffffff 0px 0px 20px 1px; */
+    /* position: absolute;
+    top: 75vh; */
+  }
+  @keyframes tera {
+    0% {
+        opacity: 1;
+        transform: translateY(1000%);
+        box-shadow: #ffffff 0px 0px 20px 1px;
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(500%);
+        box-shadow: #00ccff 0px 0px 20px 1px;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-200%);
+        box-shadow: #00d0ff 0px 0px 20px 1px;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-300%);
+        box-shadow: #80ff00 0px 0px 20px 1px;
+    }
+}
 }
