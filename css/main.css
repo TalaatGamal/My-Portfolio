@@ -22,6 +22,7 @@ body{
     min-height: 100vh;
     color: #e5e5e5;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 a{
     text-decoration: none;
