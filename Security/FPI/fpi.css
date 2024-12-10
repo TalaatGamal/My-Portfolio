@@ -26,7 +26,7 @@
   margin-right: auto;
   color: #00d5ff;
   /* background-color: rgba(0, 138, 76, 0.166); */
-  border-bottom: #0094a4 solid 3px;
+  border-bottom: rgba(0, 217, 255, 0.184) solid 3px;
   padding: 10px;
   font-size: 20px;
   /* border-radius: 8px; */
@@ -49,7 +49,7 @@
   padding: 10px;
   margin-bottom: 10px;
   border: none;
-  border-bottom: rgb(0, 85, 93) solid 3px;
+  border-bottom: rgba(0, 187, 255, 0.455) solid 3px;
   background-color: #bababa00; 
   outline: none;
   color: #ffffff;
@@ -81,7 +81,7 @@
   /* background: linear-gradient(to right, rgba(0, 135, 159, 0.282), rgba(0, 0, 0, 0.434) , rgba(0, 0, 0, 0.434) ); */
   padding: 10px;
   /* border-radius: 8px; */
-  border-bottom: rgb(0, 82, 90) solid 3px;
+  border-bottom: rgba(0, 170, 255, 0.552) solid 3px;
 }
 .light-lineghb{
   display: none;
@@ -128,7 +128,7 @@
     height: 45px;
     /* margin-left: auto; */
     margin-right: auto;
-    border-bottom: rgb(0, 140, 255) solid 3px;
+    border-bottom:rgb(0, 128, 255) solid 3px;
     /* border-radius: 150px; */
     border-radius: 15px 15px 0px 0px;
     background-color: #00b3ff1c;
