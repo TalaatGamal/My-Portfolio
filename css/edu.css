@@ -4,7 +4,7 @@
   background-size: cover;
   background-attachment: fixed;
   /* box-shadow: rgba(0, 255, 229, 0.411) 0px 0px 40px 30px; */
-  animation: moveShadow 3s infinite; /* تطبيق الحركة */
+  animation: moveShadow 3s infinite; 
   margin-bottom: 100px;
 }
 @keyframes moveShadow {

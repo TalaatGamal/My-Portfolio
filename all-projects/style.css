@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Playwrite GB S", serif;
+    font-family: "cairo", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -61,7 +61,7 @@ a{
 }
 .header .qasxmn a{
   height: 100%;
-  width: 80px;
+  width: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,7 +69,7 @@ a{
 }
 .header .qasxmn a:hover{
   background-color: #00608d;
-  box-shadow: #00608d 0px 0px 20px 20px;
+  box-shadow: #00608d 0px -20px 20px 20px;
 }
 .header .ima{
   /* position: fixed;
@@ -134,15 +134,27 @@ a{
   width: 100%;
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: rgba(0, 0, 0, 0.523);
+  background: linear-gradient(to right, rgba(0, 217, 255, 0.288), rgba(0, 0, 0, 0.266) , rgba(0, 0, 0, 0.814) );
+  padding-top: 8vh;
   padding-left: 8vw;
   padding-right: 8vw;
   padding-bottom: 20vh;
-  /* padding-top: 5vh; */
+  animation: moveShadow 3s infinite; 
+}
+@keyframes moveShadow {
+  0% {
+    box-shadow: rgb(0, 208, 255) 0px 0px 30px 10px;
+  }
+  50% {
+    box-shadow: rgba(0, 164, 57, 0.427) 0px 0px 90px 90px;
+  }
+  100% {
+    box-shadow: rgb(0, 191, 255) 0px 0px 30px 10px;
+  }
 }
 #real-m{
   padding-left: 0vw;
@@ -586,12 +598,12 @@ a{
     margin-left: 10px;
     margin-right: 10px;
 }
-#real-m{
+/* #real-m{
   background-image: url(https://images.pexels.com/photos/8424452/pexels-photo-8424452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-}
+} */
 @media (max-width:1080px) {
     .container{
         gap: 15px;
@@ -635,10 +647,10 @@ a{
     .lista{
         max-height: 5vh;
     }
-    .rm-v9{
-      padding: 0px;
-    }
     .pro h3 a img{
       width: 50px;
+  }
+  .rm-v9{
+    background: linear-gradient(to right, rgba(0, 217, 255, 0.288), rgba(0, 0, 0, 0.266) , rgba(0, 0, 0, 0.537) );
   }
 }
