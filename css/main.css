@@ -24,6 +24,9 @@ body{
     overflow-x: hidden;
     /* overflow-y: hidden; */
 }
+.vbn-right{
+  display: none;
+}
 .main-container{
     /* background-image: url(../images/sky-stars.jpeg);
     background-position: center;
