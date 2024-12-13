@@ -1409,4 +1409,7 @@ a{
   height: 50px; */
   font-size: 13px;
 }
+body{
+  background-size: 35%;
+}
 }

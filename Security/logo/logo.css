@@ -1,0 +1,46 @@
+.m-l{
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.m-l .VBDRLM h2{
+  font-size: 140px;
+}
+.m-l .VBDRLK h2{
+  margin-right: 9vw;
+  color: #00b3ff;
+}
+.m-l .VBDRLH h2{
+  color: #00b3ff;
+  position: absolute;
+  top: 46vh;
+  right: 18vw;
+  font-family: "Playwrite HU", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 60px;
+}
+@media (max-width:1080px) {
+  .m-l{
+    width: 100vw;
+    height: 85vh;
+  }
+  .m-l .VBDRLM h2{
+    font-size: 60px;
+  }
+  .m-l .VBDRLK h2{
+    margin-right: 9vw;
+    font-size: 15px;
+  }
+  .m-l .VBDRLH h2{
+    /* display: none; */
+    font-size: 20px;
+    top: 44vh;
+    right: 5vw;
+  }
+}

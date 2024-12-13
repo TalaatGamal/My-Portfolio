@@ -5,19 +5,198 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Projects</title>
     <link rel="icon" href="../images/apps.png">
+    <!-- styles -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet"></head>
-<body>
-    <div class="container">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+
+    <!-- send message with emailjs -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+
+  </head>
+<body id="body">
+    <div class="header">
+      
+        <span>
+          <a href="../index.html" class="ima">
+            <!-- <img src="https://cdn-icons-png.flaticon.com/128/16396/16396230.png" alt=""> -->
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </a>
+          <a href="index.html">Talaat Gamal's Projects</a>
+          </span>
+
+        <ul class="qasxmn">
+              <a href="#all-pr-812">
+                <li>All</li>
+              </a>
+
+              <a href="#real-m">
+                <li>Real</li>
+              </a>
+
+              <a href="#login-9kl8u">
+                <li>Login</li>
+              </a>
+
+              <a href="https://github.com/TalaatGamal">
+                <li><img src="https://github.githubassets.com/favicons/favicon-dark.svg" alt="" style="background-color: #000000b5;  border-radius: 50px;"></li>
+              </a>
+          </ul>
+
+          <div class="menu-icon" id="menuIcon">
+            <span id="icon">☰</span>
+            <span id="exa"><i class="fa-solid fa-xmark" style="font-size: 28px;"></i></span>
+            </div>
+          
+          <div class="sidebar" id="sidebar">
+              <ul>
+                  
+                  <a href="#all-pr-812" id="homeu">
+                      <li>
+                        All Projects
+                      </li>
+                    </a>
+                  <a href="#real-m">
+                    <li>
+                      Real Projects
+                    </li>
+                    </a>
+                  <a href="#login-9kl8u">
+                      <li>
+                        Login Pages
+                      </li>
+                    </a>
+                  <a href="https://github.com/TalaatGamal" style="background-color: #00000000;">
+                      <li>
+                        All resources and projects
+                        <img src="https://github.githubassets.com/favicons/favicon-dark.svg" alt="" style="background-color: #000000b5;  border-radius: 50px; width: 35px;">
+                      </li>
+                    </a>
+                    <!-- <img src="https://cdn-icons-gif.flaticon.com/7211/7211809.gif" alt="" class="vbn-fgh"> -->
+                    <h2 style="font-size: 17px; margin-top: 15vh;" class="kmilou87u">
+                      Your opinion is very important to me. Please rate my site, I appreciate it and your feedback may help me move forward.
+                    </h2>
+                    <h2 style="font-size: 19px; text-align: right;" class="kmilou87u">
+                      رأيك مهم جداً بالنسبة لي. يرجى تقييم موقعي فأنا أقدر ذلك وقد تساعدني ملاحظاتكم في المضي قدما
+                    </h2>
+                  
+                      <div class="message-me" id="message-me">
+                        <div class="rating" id="starRating">
+                          <span data-value="1" style="color: #00d5ff;">★</span>
+                          <span data-value="2">★</span>
+                          <span data-value="3">★</span>
+                          <span data-value="4">★</span>
+                          <span data-value="5">★</span>
+                        </div>
+                        <form id="contactForm" class="form">
+                          <input type="text" id="username" placeholder="Your Name" required>
+                          <input type="email" id="email" placeholder="Your Email" required>
+                          <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
+                      
+                      
+                          <div class="sipo">
+                            <div class="sircle" id="dira"></div>
+                            <button type="submit" style="cursor: pointer;">Send me</button>
+                          </div>
+                        </form>
+                      
+                        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+                        <script>
+                          emailjs.init("3o_Ok3aG0DS4-OWJo");
+                      
+                          const SUPABASE_URL = "https://lnohiidyljlwffoireap.supabase.co";
+                          const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxub2hpaWR5bGpsd2Zmb2lyZWFwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI3MTc1ODMsImV4cCI6MjA0ODI5MzU4M30.kqRqH7iWFN1Id9DyN3k7y83o0YvIRbtbZiMtPBeaQIc";
+                          const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+                      
+                          const form = document.getElementById("contactForm");
+                          const stars = document.querySelectorAll("#starRating span");
+                          let selectedRating = 0;
+                      
+                          // إضافة الحدث عند الضغط على النجوم
+                          stars.forEach(star => {
+                            star.addEventListener("click", () => {
+                              selectedRating = star.getAttribute("data-value");
+                              updateStars(selectedRating);
+                            });
+                          });
+                      
+                          // تحديث ألوان النجوم
+                          function updateStars(rating) {
+                            stars.forEach(star => {
+                              if (star.getAttribute("data-value") <= rating) {
+                                star.classList.add("selected");
+                              } else {
+                                star.classList.remove("selected");
+                              }
+                            });
+                          }
+                      
+                          form.addEventListener("submit", async function (e) {
+                            e.preventDefault();
+                      
+                            if (!selectedRating) {
+                              alert("يرجى اختيار تقييم النجوم!");
+                              return;
+                            }
+                      
+                            const data = {
+                              username: document.getElementById("username").value,
+                              email: document.getElementById("email").value,
+                              message: document.getElementById("message").value,
+                              rating: selectedRating,
+                              timestamp: new Date().toISOString()
+                            };
+                      
+                            if (!data.username || !data.email || !data.message) {
+                              alert("يرجى تعبئة جميع الحقول!");
+                              return;
+                            }
+                      
+                            try {
+                              const { error } = await supabase.from("messages").insert([data]);
+                              document.getElementById("dira").style.display = "block";
+                              if (error) throw error;
+                      
+                              emailjs.send("service_jmd86we", "template_c7pd0tv", data).then(() => {
+                                document.getElementById("dira").style.display = "none";
+                              });
+                      
+                              alert("تم إرسال رسالتك بنجاح!");
+                              form.reset();
+                              updateStars(0);
+                            } catch (err) {
+                              console.error("خطأ أثناء الحفظ:", err);
+                              alert("حدث خطأ أثناء الحفظ!");
+                            }
+                          });
+                        </script>
+                      
+                      </div>
+                      
+                      
+                </ul>
+            </div>
+
+
+    </div>
+    <div class="container" id="all-pr-812">
+      <div class="vbxz">
         <h4 class="lista">
           All of my projects
         </h4>
+      </div>
         <div class="pro" id="v-23" href="">
           <div class="vee">
             <h3>
-              <a href="https://talaatgamal.github.io/My-Portfolio/">
+              <a href="https://talaatgamal.github.io/My-Portfolio/" target="_blank">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt="">
               </a>
               <a href="https://github.com/TalaatGamal/My-Portfolio/blob/main/index.html">
@@ -32,7 +211,24 @@
             <h6>My Portfolio<span>HTML - CSS - JS</span></h6>
           </div>
           </div>
-        <div class="pro" id="v-1" href=""><div class="vee"><h3><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt=""></a><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9qIzumN92nlaJMdCcW_5w3Dg4sCQNMgDBSdnrLLd_lKev0W0KXud9uDRpGEtQ1iDUEQ&usqp=CAU" alt=""></a></h3><h6>USA Lottery<span>Test</span></h6></div><!--***⚠️***--> <div class="vee2"><h3 style="justify-content: right;">USA Lottery</h3><h6>USA Lottery<span>Test</span></h6></div> </div>
+        <div class="pro" id="v-1" href="">
+          <div class="vee">
+            <h3>
+              <a href="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt="">
+              </a>
+              <a href="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9qIzumN92nlaJMdCcW_5w3Dg4sCQNMgDBSdnrLLd_lKev0W0KXud9uDRpGEtQ1iDUEQ&usqp=CAU" alt="">
+              </a>
+            </h3>
+            <h6>USA Lottery<span>Test</span></h6>
+            </div>
+          <!--***⚠️***--> 
+          <div class="vee2">
+            <h3 style="justify-content: right;">USA Lottery</h3>
+            <h6>USA Lottery<span>Test</span></h6>
+            </div> 
+          </div>
         <div class="pro" id="v-20" href=""><div class="vee"><h3><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt=""></a><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9qIzumN92nlaJMdCcW_5w3Dg4sCQNMgDBSdnrLLd_lKev0W0KXud9uDRpGEtQ1iDUEQ&usqp=CAU" alt=""></a></h3><h6>Your Doctor is here<span>Test</span></h6></div><!--***⚠️***--> <div class="vee2"><h3>Your Doctor is here</h3><h6>Your Doctor is here<span>Test</span></h6></div> </div>
         <!-- <div class="pro" id="v-10" href=""><div class="vee"><h3><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt=""></a><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9qIzumN92nlaJMdCcW_5w3Dg4sCQNMgDBSdnrLLd_lKev0W0KXud9uDRpGEtQ1iDUEQ&usqp=CAU" alt=""></a></h3><h6>EGY Trains<span>Test</span></h6></div>***⚠️*** <div class="vee2"><h3>EGY Trains</h3><h6>EGY Trains<span>Test</span></h6></div></div> -->
         <div class="pro" id="v-21" href=""><div class="vee"><h3><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt=""></a><a href="https://github.com/TalaatGamal/Institute-expenses/blob/main/index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9qIzumN92nlaJMdCcW_5w3Dg4sCQNMgDBSdnrLLd_lKev0W0KXud9uDRpGEtQ1iDUEQ&usqp=CAU" alt=""></a></h3><h6>Apple Site<span>Test</span></h6></div><!--***⚠️***--> <div class="vee2"><h3>Apple Site</h3><h6>Apple Site<span>Test</span></h6></div></div>
@@ -105,17 +301,23 @@
       
     </div>
     <div class="container" id="real-m">
-        <h4 class="lista">
-          Real customer projects
-        </h4>
+      
+      <div class="rm-v9">
+        <div class="vbxz">
+          <h4 class="lista">
+            Real customer projects
+          </h4>
+        </div>
         <div class="pro" id="v-19" href=""><div class="vee"><h3><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt=""></a><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9qIzumN92nlaJMdCcW_5w3Dg4sCQNMgDBSdnrLLd_lKev0W0KXud9uDRpGEtQ1iDUEQ&usqp=CAU" alt=""></a></h3><h6>Learn Today<span>Test</span></h6></div><!--***⚠️***--> <div class="vee2"><h3>Learn Today</h3><h6>Learn Today<span>Test</span></h6></div></div>
-
+      </div>
       
     </div>
-    <div class="container">
+    <div class="container" id="login-9kl8u">
+      <div class="vbxz">
         <h4 class="lista">
-            <span class="span2">Login pages</span> <span class="span1">\~_~/</span> for the world's most popular companies
+          <span class="span2">Login pages</span> <span class="span1">\~_~/</span> for the world's most popular companies
         </h4>
+      </div>
         <div class="pro" id="v-11" href=""><div class="vee"><h3><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt=""></a><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9qIzumN92nlaJMdCcW_5w3Dg4sCQNMgDBSdnrLLd_lKev0W0KXud9uDRpGEtQ1iDUEQ&usqp=CAU" alt=""></a></h3><h6>Google</h6></div><!--***⚠️***--> <div class="vee2"><h3></h3><h6>Google +++</h6></div></div>
         <!-- <div class="pro" id="v-12" href=""><div class="vee"><h3><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt=""></a><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9qIzumN92nlaJMdCcW_5w3Dg4sCQNMgDBSdnrLLd_lKev0W0KXud9uDRpGEtQ1iDUEQ&usqp=CAU" alt=""></a></h3><h6>FaceBook</h6></div>***⚠️*** <div class="vee2"><h3></h3><h6>Facebook +++</h6></div></div> -->
         <!-- <div class="pro" id="v-13" href=""><div class="vee"><h3><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt=""></a><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp9qIzumN92nlaJMdCcW_5w3Dg4sCQNMgDBSdnrLLd_lKev0W0KXud9uDRpGEtQ1iDUEQ&usqp=CAU" alt=""></a></h3><h6>Linked in</h6></div>***⚠️*** <div class="vee2"><h3></h3><h6>Linked in +++</h6></div></div> -->
@@ -131,5 +333,6 @@
         <h4>Talaat Gamal</h4>
         <h4>Created By 💙 NOV / 8 / 2024</h4>
     </div>
+    <script src="sidebar.js"></script>
 </body>
 </html>
