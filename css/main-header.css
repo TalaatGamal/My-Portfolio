@@ -18,6 +18,8 @@
   justify-content: space-between;
   padding-left: 10vw;
   padding-right: 10vw;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .links ul{
   display: flex;
@@ -97,5 +99,7 @@ font-size: 25px;
     .navbar{
       padding-left: 8vw;
       padding-right: 8vw;
+      overflow-x: hidden;
+      overflow-y: auto;
     }
 }

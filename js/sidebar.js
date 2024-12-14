@@ -13,12 +13,14 @@ menuIcon.addEventListener('click', function() {
         sidebar.style.right = '-100%'; // إخفاء الشريط الجانبي
         document.getElementById('exa').style.display="none"
         document.getElementById('icon').style.display="block"
+        document.getElementById('body').style.overflow="auto"
         isSidebarOpen = false;
     } else {
         sidebar.style.right = '0'; // إظهار الشريط الجانبي
         sidebar.style.transition = 'right 0.3s ease';
         document.getElementById('exa').style.display="block"
         document.getElementById('icon').style.display="none"
+        document.getElementById('body').style.overflow="hidden"
         isSidebarOpen = true;
     }
 });

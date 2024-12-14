@@ -79,28 +79,25 @@
     position: absolute;
     top:8vh;
     width: 100%;
-    height: 92vh;
+    height: 100vh;
     right: -1300px;
     background-color: #000000d6;
     transition: right 0.4s ease;
     z-index: 998;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-
 .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    /* margin-top: 60px; */
+    width: 100vw;
+    height: 150vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
-    flex-wrap: wrap;
     padding-top: 8vh;
-    padding-left: 10%;
-    padding-right: 10%;
-    /* gap: 0px; */
-    /* z-index: 999; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* background-color: #0072a3; */
 }
 .sidebar #password{
     width: 98.5%;
@@ -125,8 +122,6 @@
     color: #b0b0b0;
     font-weight: 600;
     font-size: large;
-    background-color: #000000d8;
-    box-shadow: #000000d8 0px 0px 40px 40px;
     padding: 5px;
     width: 100%;
     height: 100%;
@@ -185,5 +180,119 @@
 .coloro{
     display: block;
     color: #ff0000;
+}
+.kmilou87u{
+  font-family: "cairo", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.sidebar #message-me{
+  width: 425px;
+  min-height: max-content;
+  padding-bottom: 5vh;
+  /* margin-top: 5vh; */
+
+  /* background-color: #000000; */
+}
+.sidebar .form{
+  /* background-color: #0088ff9a;  */
+  width: 100%; 
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  margin-top: 10vh;
+  padding-bottom: 10px;
+  gap: 15px;
+}
+.sidebar .form input{
+  width: 100%;
+  height: 45px;
+  background-color: #071721b2;
+  /* border: #ffffff solid 2px; */
+  border: none;
+  border-bottom: #009dff solid 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  outline: none;
+  font-family: "cairo", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.sidebar .form #message{
+  height: 100%;
+  height: 170px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #071721b2;
+  /* border: #ffffff solid 2px; */
+  border: none;
+  border-bottom: #009dff solid 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  outline: none;
+  padding: 20px;
+  font-family: "cairo", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.sidebar .form #message::placeholder{
+  text-align: center; 
+}
+.sidebar .sipo{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 30px;
+  padding-left: 30px;
+  gap: 20px;
+}
+.sidebar .sipo button{
+  height: 40px;
+  width: 120px;
+  background-color: #000000b4;
+  border: none;
+  border-bottom: #009dff solid 3px;
+  border-radius: 7px;
+  color: #ffffff;
+  font-family: "cairo", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.sidebar .rating{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  cursor: pointer;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+.sidebar .rating span{
+  font-size: 50px;
+  transition: 0.5s;
+}
+.sidebar .rating span.selected {
+  color: #00d5ff;
 }
 }

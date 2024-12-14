@@ -22,19 +22,11 @@ body{
     min-height: 100vh;
     color: #e5e5e5;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
+    /* overflow-y: auto; */
 }
 .vbn-right{
   display: none;
 }
-.main-container{
-    /* background-image: url(../images/sky-stars.jpeg);
-    background-position: center;
-    background-size: 25%;
-    background-repeat: repeat;
-    background-attachment: fixed; */
-}
-
 a{
     text-decoration: none;
 }
@@ -1052,14 +1044,35 @@ a{
   border-radius: 10px;
   opacity: 80%;
 }
-#message-me{
+.call-me #message-me{
   width: 500px;
-  height: 400px;
-  padding-bottom: 5vh;
+  height: 450px;
+  padding-bottom: 10vh;
 
   /* background-color: #000000; */
 }
-.form{
+.thanks,.thanksa{
+  font-size: 13px;
+  color: #22cfff;
+  animation: moviara 3s linear infinite;
+  display: none;
+  text-align: center;
+}
+@keyframes moviara {
+  0% {
+      opacity: 0;
+      transform: translateX(0%);
+  }
+  50% {
+      opacity: 1;
+      transform: translateX(0%);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(0%);
+  }
+}
+.call-me .form{
   /* background-color: #0088ff9a;  */
   width: 100%; 
   height: 100%;
@@ -1072,7 +1085,7 @@ a{
   padding-bottom: 10px;
   gap: 10px;
 }
-.form input{
+.call-me .form input{
   width: 100%;
   height: 35%;
   border-radius: 10px;
@@ -1085,7 +1098,7 @@ a{
   color: #ffffff;
   outline: none;
 }
-.form #message{
+.call-me .form #message{
   height: 100%;
   width: 100%;
   border-radius: 10px;
@@ -1099,10 +1112,10 @@ a{
   outline: none;
   padding: 20px;
 }
-.form #message::placeholder{
+.call-me .form #message::placeholder{
   text-align: center; 
 }
-.sipo{
+.call-me .sipo{
   width: 100%;
   display: flex;
   align-items: center;
@@ -1111,7 +1124,7 @@ a{
   padding-left: 30px;
   gap: 20px;
 }
-.sipo button{
+.call-me .sipo button{
   height: 35px;
   width: 120px;
   background-color: #000000b4;
@@ -1121,10 +1134,11 @@ a{
   color: #ffffff;
 }
 .sircle{
-  width: 35px;
+  width: 40px;
   height: 40px;
+  border: rgba(255, 255, 255, 0) solid 4px;
   border-top: #ffffff solid 4px;
-  border-bottom: #ff0000 solid 4px;
+  border-bottom: #00aaff solid 4px;
   border-radius: 100px;
   animation: rotate360 2s linear infinite;
   display: none;
