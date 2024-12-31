@@ -65,7 +65,8 @@
 font-size: 25px;
 }
 .imga-header{
-  background-image: url(https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-image: url(../images/My-photo-img.jpg);
+  /* background-image: url(https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
   background-position: center;
   background-size: cover;
   width: 40px;

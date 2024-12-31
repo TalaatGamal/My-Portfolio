@@ -39,6 +39,8 @@
 .imgaq img{
   width: 250px;
   animation: moviar 2s linear infinite;
+  border: rgb(0, 0, 0) solid 6px;
+  border-radius: 25px;
 }
 @keyframes moviar {
   0% {
