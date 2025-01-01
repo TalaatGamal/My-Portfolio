@@ -1226,9 +1226,9 @@ a{
     clip-path: polygon(100% 0, 100% 100%, 0 130%);
     background-image: url(https://en.defence-ua.com/media/illustration/articles/64c6491b67d8b1ff.jpg);
 }
-    body{
-        background-size: 70%;
-    }
+    /* body{
+        background-size: 90%;
+    } */
     .links{
         display: none;
     }
@@ -1427,6 +1427,6 @@ a{
   font-size: 13px;
 }
 body{
-  background-size: 35%;
+  background-size: 55%;
 }
 }
