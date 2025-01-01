@@ -89,15 +89,33 @@
 }
 .sidebar ul {
     width: 100vw;
-    height: 150vh;
+    height: max-content;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
     padding-top: 8vh;
+    padding-bottom: 20vh;
     overflow-y: scroll;
     overflow-x: hidden;
     /* background-color: #0072a3; */
+}
+.sidebar .move{
+  animation: movex 3s linear infinite;
+}
+@keyframes movex {
+  0% {
+      opacity: 0;
+      transform: translateX(0%);
+  }
+  50% {
+      opacity: 1;
+      transform: translateX(0%);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(0%);
+  }
 }
 .sidebar #password{
     width: 98.5%;
@@ -193,7 +211,7 @@
   width: 425px;
   min-height: max-content;
   padding-bottom: 5vh;
-  /* margin-top: 5vh; */
+  margin-top: 40vh;
 
   /* background-color: #000000; */
 }
@@ -226,6 +244,9 @@
   font-weight: 500;
   font-style: normal;
 }
+.sidebar .form input::placeholder{
+  font-size: 17px;
+}
 .sidebar .form #message{
   height: 100%;
   height: 170px;
@@ -244,6 +265,7 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 20px;
 }
 .sidebar .form #message::placeholder{
   text-align: center; 
