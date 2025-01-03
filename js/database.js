@@ -1,7 +1,18 @@
+
+
+
+
+
+
+//⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐🩵🩵 Database & server 🩵🩵⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 
 
-  // تهيئة Supabase باستخدام الـ CDN بشكل صحيح
+
   const SUPABASE_URL = "https://lnohiidyljlwffoireap.supabase.co";  // استبدل بـ Project URL
   const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxub2hpaWR5bGpsd2Zmb2lyZWFwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI3MTc1ODMsImV4cCI6MjA0ODI5MzU4M30.kqRqH7iWFN1Id9DyN3k7y83o0YvIRbtbZiMtPBeaQIc";  // استبدل بـ API Key
 
@@ -18,10 +29,9 @@
       username: document.getElementById("username").value,
       email: document.getElementById("email").value,
       message: document.getElementById("message").value,
-      timestamp: new Date().toISOString()  // تخزين الوقت بصيغة ISO
+      timestamp: new Date().toISOString()
     };
 
-    // التحقق من صحة البيانات
     if (!data.username || !data.email || !data.message) {
       alert("يرجى تعبئة جميع الحقول!");
       return;

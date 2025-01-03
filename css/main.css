@@ -938,10 +938,8 @@ a{
   flex-wrap: wrap;
   width: 100%;
   min-height: 8vh;
-  /* background-color: rgba(0, 0, 0, 0.83); */
-  background-color: rgba(35, 251, 240, 0.093); /* لون الخلفية مع شفافية */
-  backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
-  -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
+  background-color: rgba(0, 0, 0, 0); 
+  /* backdrop-filter: blur(10px); */
   font-weight: 700;
   color: #747474;
   margin-top: 10px;
@@ -950,6 +948,8 @@ a{
   padding-right: 10vw;
   text-align: center;
   gap: 20px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.434) , rgba(0, 27, 42, 0.434) ,  rgba(0, 217, 255, 0.233) );
+
 }
 .light-line-sk-ef{
   /* position: absolute; */
@@ -1005,12 +1005,11 @@ a{
 }
 .conta .pay img{
   width: 250px;
-  /* background-color: #ffffff3f; */
   padding: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* border-radius: 20px; */
   border-bottom: #00bbff solid 5px;
+  /* border-top: #ff0000 solid 5px; */
   border-radius: 0px 40px 0px 0px;
 }
 .conta .s-media{
@@ -1125,7 +1124,7 @@ a{
   gap: 20px;
 }
 .call-me .sipo button{
-  height: 35px;
+  height: 40px;
   width: 120px;
   background-color: #000000b4;
   border: none;
@@ -1395,6 +1394,7 @@ a{
 .call-me{
   /* padding: 10px; */
   height: max-content;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.434) , rgba(0, 27, 42, 0.434) ,  rgba(0, 217, 255, 0.233) );
 }
 .conta .pay {
   width: 100%;
@@ -1411,6 +1411,8 @@ a{
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 0px 40px 0px 0px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.3) 100%);
+
 }
 #message-me{
   width: 500px;
