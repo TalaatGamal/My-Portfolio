@@ -1,0 +1,125 @@
+.pages{
+  position: fixed;
+  z-index: 998;
+  top: 225px;
+  left: 93%;
+  padding: 20px;
+  width: max-content;
+  height: max-content;
+  display: none;
+  align-items: center;
+  justify-content: left;
+  padding: 2px;
+  border-radius: 30% 0px 0px 30%;
+  transition: transform 0.4s ease;
+}
+/* .fixed-icon{
+  width: 30px;
+  height: 60px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: icon 6s linear infinite;
+  transition: 1s;
+}
+@keyframes icon {
+  0% {
+    transition: 1s;
+      background: linear-gradient(to top,  #007780, rgb(114, 114, 114) , rgb(136, 136, 136) );
+      transform: translateY(0%);
+  }
+  50% {
+    transition: 1s;
+      background: linear-gradient(to top, rgb(114, 114, 114),  #007780 , rgb(136, 136, 136) );
+      transform: translateY(0%);
+  }
+  100% {
+    transition: 1s;
+      background: linear-gradient(to top, rgb(114, 114, 114) , rgb(136, 136, 136),  #007780 );
+      transform: translateY(0%);
+}
+} */
+
+.fixed-icon {
+  width: 30px;
+  height: 60px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: icon 10s linear infinite;
+  background-color: #000000;
+  border: #007780 solid 1px;
+}
+
+@keyframes icon {
+  0% {
+    box-shadow: #007780 0px 0px 10px 0px inset;
+  }
+  25% {
+    box-shadow: #007780 0px -50px 10px 0px inset;
+  }
+  50% {
+    box-shadow: #007780 0px -70px 10px 0px inset;
+  }
+  75% {
+    box-shadow: #007780 0px -50px 10px 0px inset;
+  }
+  100% {
+    box-shadow: #007780 0px 0px 10px 0px inset;
+    /* background: linear-gradient(to top, #007780, rgb(114, 114, 114), rgb(136, 136, 136) 90%); */
+  }
+}
+
+
+.fixed-icon i{
+  font-size: 18px;
+}
+.pages .links{
+  list-style: none;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  animation: icon2 15s linear infinite;
+  background-color: #000000;
+}
+@keyframes icon2 {
+  0% {
+    box-shadow: #007780 0px 0px 0px 0px inset;
+  }
+  25% {
+    box-shadow: #007780 0px -250px 0px 0px inset;
+  }
+  50% {
+    box-shadow: #007780 0px -500px 0px 0px inset;
+  }
+  75% {
+    box-shadow: #007780 0px -250px 0px 0px inset;
+  }
+  100% {
+    box-shadow: #007780 0px 0px 0px 0px inset;
+  }
+}
+
+.pages .links i{
+  color: #00d0ff;
+  margin-right: 10px;
+}
+.pages .links a{
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+}
+@media (max-width:720px) {
+  .pages{
+    display: flex;
+  }
+}
