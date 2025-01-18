@@ -20,7 +20,7 @@
   position: fixed;
   color: #ad0e0e;
   font-size: 30px;
-  margin-top: 8vh;
+  margin-top: 65px;
   right: -1000px;
   transition: right 0.5s ease;
   display: none;
