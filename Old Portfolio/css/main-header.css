@@ -5,7 +5,7 @@
   /* overflow: hidden; */
   width: 100vw;
   height: 7vh;
-  background-color: rgba(54, 54, 54, 0.855); /* لون الخلفية مع شفافية */
+  background-color: rgba(18, 114, 133, 0.192); /* لون الخلفية مع شفافية */
   backdrop-filter: blur(10px); /* تأثير التمويه الزجاجي */
   -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات القديمة */
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* خط فاصل خفيف */

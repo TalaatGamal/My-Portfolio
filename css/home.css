@@ -74,6 +74,7 @@ a{
   color:  #ffffff;
   background-color: #0a828d;
   transition: 0.4s;
+  border: #0a828d solid 2px;
 }
 .media .icons:hover{
   background-color: #00737b7c;
