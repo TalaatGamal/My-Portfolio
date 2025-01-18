@@ -1,0 +1,165 @@
+.card-container {
+  perspective: 1000px;
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+  gap: 20px;
+  padding: 15vh 10vw 15vh 10vw;
+  /* background-color: #007bff; */
+}
+
+
+.card {
+  width: 380px;
+  height: 220px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: #4EA9AF 0px 0px 10px 0px;
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.front {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  overflow: hidden;
+}
+.front h2{
+  background-color: #4EA9AF;
+  width: 100%;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.back {
+  background-color: #4EA9AF;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back .left{
+  background-color: rgba(0, 0, 0, 0.611);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5px;
+  width: 30%;
+  height: 100%;
+}
+.back .left a{
+  text-decoration: none;
+  font-size: 35px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#lk-o{
+  width: 70px;
+  height: 70px;
+  background-color: #10494d;
+  font-size: 35px;
+  border-radius: 15px;
+  border-bottom: #ffffff solid 4px;
+  box-shadow: #7eff72b6 0px 0px 20px 0px inset;
+  transition: 0.5s;
+}
+#lk-o i{
+  color: #ffffff;
+  transition: 0.5s;
+}
+#lk-o:hover{
+  box-shadow: #00aaff 0px 0px 20px 0px inset;
+}
+#lk-o:hover i{
+  color:  #00aaff;
+}
+.back .right{
+  /* background-color: #E6E6E6; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  width: 70%;
+  height: 100%;
+}
+.back .right h2{
+  background-color:  rgba(0, 0, 0, 0.611);
+  width: 100%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.back .right p{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  text-align: center;
+  background-color: #10494d;
+  border-radius: 10px;
+  padding: 10px;
+}
+#front-1{
+  background-image: url(https://cdn.prod.website-files.com/61a9642430af319149dd1ce3/643eb31c6a2141794ef30793_AdobeStock_218394966.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+#front-2{
+  background-image: url(https://dailytrust.com/wp-content/uploads/2021/01/Emirates-Flight-Sale-emirates-airlines.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#front-3{
+  background-image: url(https://img.freepik.com/premium-psd/weather-background-with-clouds_23-2150374499.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#front-4{
+  background-image: url(https://d3l9a8mvoa6cl8.cloudfront.net/wp-content/uploads/sites/3/2024/08/12112723/banner-4.png);
+  background-size: cover;
+  background-position: center;
+}
+#front-5{
+  background-image: url(https://images.unsplash.com/photo-1726409724841-016b6f4f8b1b?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHlvdXR1YmUlMjBsb2dvfGVufDB8fDB8fHww);
+  background-size: cover;
+  background-position: center;
+}
+#front-6{
+  background-image: url(https://images.stockcake.com/public/0/9/b/09b32a48-f067-4734-9545-ca521a580625_large/seaside-dining-spot-stockcake.jpg);
+  background-size: cover;
+  background-position: center;
+}

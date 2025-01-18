@@ -1,0 +1,144 @@
+#contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4EA9AF;
+  overflow: hidden;
+}
+.contact-c{
+  /* background-color: rgba(0, 0, 0, 0.178); */
+  width: 80vw;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-c .left,.right{
+  width: 400px;
+  height: 500px;
+  /* background-color: #0000007d; */
+  border-radius: 20px;
+  padding: 20px;
+}
+#contact .email,.location{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  width: 100%;
+  /* background-color: #1d8289; */
+  margin-top: 10px;
+}
+#contact .left i{
+  font-size: 20px;
+}
+#contact .left h1{
+  font-weight: 600;
+}
+#contact .hr{
+  height: 300px;
+  margin-left: 0.7%;
+  margin-right: 0.7%;
+  border: black solid 2px;
+}
+#contact .media-contact{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+#contact .media-contact a i{
+  font-size: 35px;
+  color: #000;
+  transition: 0.5s;
+}
+#contact .media-contact a i:hover{
+  color: #ffffff;
+}
+#contact .right .imgbn{
+  background-image: url(https://img.freepik.com/premium-photo/computer-programmer-icon-white-background-ar-32-v-52-job-id-16481ff812194d37833d88603725b2d4_941600-89823.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  opacity: 80%;
+}
+#contact .or{
+  /* background-color: #6c07073a; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+#contact .or span a{
+  text-decoration: none;
+  color: #005b56;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 800;
+  padding: 15px;
+  border: #005b56 solid 3px;
+  border-radius: 15px;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+#contact .or span a:hover{
+  background-color: #000;
+  color: #ffffff;
+  border: #ffffff solid 3px;
+}
+#contact .air-div{
+  /* background-color: #005b564e; */
+  width: 200px;
+  height: 500px;
+  transform: rotate(50deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 0;
+}
+#contact .air-icon{
+  width: 100px;
+  height: 5px;
+  background-color: #ffffff;
+  /* border: #ffffff solid 3px; */
+  border-radius: 100px;
+  box-shadow: #fff700 0px 0px 20px 0px;
+  animation: air-icon 10s linear infinite;
+}
+@keyframes air-icon {
+  0% {
+      transform: translateY(-500px);
+  }
+  50% {
+      transform: translateY(300px);
+  }
+  100% {
+      transform: translateY(-500px);
+  }
+}
+@media (max-width:1000px) {
+  #contact{
+    padding-top: 10vh;
+  }
+  #contact .hr{
+    display: none;
+  }
+}

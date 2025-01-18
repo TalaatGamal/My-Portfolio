@@ -1,0 +1,414 @@
+
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh;
+  /* margin-top: 10vh; */
+  gap: 20px;
+  /* background-color: #00b3ff9b; */
+  /* box-shadow: #1b0000 0px 0px 30px 20px; */
+  z-index: 6;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  /* padding-top: 8vh; */
+  padding-bottom: 10vh;
+  padding-top: 15vh;
+    /* background-image: url(../images/sky-stars.jpeg); */
+    background-position: center;
+    background-size: 25%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    /* box-shadow: #000000 0px 0px 20px 20px; */
+    /* animation: v2-vb 10s linear infinite; */
+    background-color: #4ea8afba;
+}
+@keyframes v2-vb {
+  0% {
+    box-shadow: #000000 0px 0px 0px 100px;
+  }
+  50% {
+    box-shadow: #000000 0px 0px 0px 50px;
+  }
+  70% {
+    box-shadow: #4EA9AF 0px 0px 0px 100px;
+  }
+  100% {
+    box-shadow: #000000 0px 0px 0px 100px;
+}
+}
+
+.testimonial-card {
+  background-color: #011821d6;
+  border-radius: 15px;
+  width: 380px;
+  height: 30vh;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #00afdbd3 ;
+  border-bottom: 4px solid #00aad5d3 ;
+  margin-bottom: 20px;
+  /* background-image: url(../images/sky-stars.jpeg);
+  background-repeat: repeat;
+  background-size: 30%;
+  background-attachment: fixed; */
+  transition: 0.5s;
+  z-index: 0;
+  /* overflow: hidden; */
+}
+.vbn-animat{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: #009dff; */
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  /* margin-top: 10px; */
+}
+.testimonial-card:hover{
+  border-bottom: #ffffff solid 4px;
+  border-top: #ffffff solid 4px;
+}
+.testimonial-card:hover .avatar{
+  /* display: none; */
+      /* animation: v2-nm 2s linear infinite; */
+}
+@keyframes v2-nm {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+}
+  10% {
+    opacity: 0;
+    transform: translateX(50px);
+}
+50% {
+    opacity: 0;
+    transform: translateX(250px);
+
+}
+100% {
+    opacity: 0;
+    transform: translateX(500px);
+
+}
+}
+.testimonial-card:hover .comment{
+  border: #cdcdcd solid 3px;
+  background-color: #14677ac8;
+  /* color: #000; */
+}
+
+/* .quote-icon {
+  font-size: 18px;
+  color: #fff;
+  background-color: inherit;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  /* line-height: 35px; */
+  /* font-weight: bold; *//*
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: line-run3 5s linear infinite;
+} */
+.top{
+  top: -18px;
+  /* left: -18px; */
+  animation: line-run2 2s linear infinite;
+  font-size: 18px;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #558f8b;
+  border: 2px solid #00667b7c;
+}
+@keyframes line-run2 {
+  0% {
+      opacity: 0;
+      transform: translateY(0px);
+  }
+  25% {
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  50% {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+  90% {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(0px);
+  }
+}
+
+.bottom {
+  top: -18px;
+  left: 60px;
+  animation: line-run 3s linear infinite;
+  font-size: 18px;
+  color: #fff;
+  background-color: inherit;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  /* line-height: 35px; */
+  /* font-weight: bold; */
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: #00737b7c solid 4px;
+  /* background-color: #7b9979;
+  border: 2px solid #6dff66; */
+  display: none;
+} 
+.bottom::before {
+  content: "";
+  position: absolute;
+  top: 0px; /* تحريك الخط الملون ليتماشى مع الإطار العلوي */
+  left: 0.8px;
+  width: 3px; /* يغطي ربع عرض البطاقة */
+  height: 45%; /* نفس سمك الإطار */
+  background-color: #6dff66; /* اللون المطلوب للجزء الملون */
+  border-radius: 20px; /* ضبط الزوايا */
+  overflow: hidden;
+}
+.bottom::after {
+  content: "";
+  position: absolute;
+  top: 0px; /* تحريك الخط الملون ليتماشى مع الإطار العلوي */
+  right: 0.8px;
+  width: 3px; /* يغطي ربع عرض البطاقة */
+  height: 45%; /* نفس سمك الإطار */
+  background-color: #6dff66; /* اللون المطلوب للجزء الملون */
+  border-radius: 20px; /* ضبط الزوايا */
+  overflow: hidden;
+}
+@keyframes line-run {
+  0% {
+      opacity: 0;
+      transform: translateX(0%);
+  }
+  35% {
+      opacity: 1;
+      transform: translateX(70%);
+  }
+  50% {
+      opacity: 1;
+      transform: translateX(200%);
+  }
+  90% {
+      opacity: 1;
+      transform: translateX(350%);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(400%);
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+}
+.avatar{
+/* background-color: #d4d4d4; */
+width: 40%;
+height: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.avatar img{
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  border: 4px solid #fff;
+  background-color: #ddd;
+  /* margin-bottom: 10px; */
+  background-size: cover;
+  background-position: center;
+  /* background-image: url(https://images.pexels.com/photos/29179695/pexels-photo-29179695/free-photo-of-young-woman-with-headphones-sitting-indoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+}
+/* .img2{
+  background-image: url(https://media.istockphoto.com/id/1335728132/photo/a-young-business-person-with-a-cool-look.jpg?s=612x612&w=0&k=20&c=WJ5W-455z-z2TeY1dSC0Z2LBw6uJvFJzHFb_5-TBKG0=);
+} */
+ .img5a{
+  background-image: url(https://chaplinco.com/wp-content/uploads/2024/02/man-user-circle-icon.png);
+ }
+#img1{
+  background-image: url(https://images.pexels.com/photos/29179695/pexels-photo-29179695/free-photo-of-young-woman-with-headphones-sitting-indoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+#img3{
+  background-image: url(https://i.pinimg.com/736x/f8/0b/ab/f80bab0d4991ab51e549be778d91cbf0.jpg);
+}
+#img5{
+  /* background-image: url(https://i.pinimg.com/736x/0c/5d/86/0c5d866d493f2698132d9eaaf3e7f5c0.jpg); */
+  background-image: url(https://chaplinco.com/wp-content/uploads/2024/02/man-user-circle-icon.png);
+}
+
+h3 {
+  /* margin: 10px 0 5px; */
+  font-size: 23px;
+  color: #d4d4d4;
+  font-weight: bold;
+  color: #4DA8AE;
+}
+
+.designation {
+  font-size: 13px;
+  color: #888;
+  /* margin-bottom: 10px; */
+  font-style: italic;
+}
+
+.comment {
+background-color: #072329c8;
+border: #072329c8 solid 3px;
+width: 60%;
+height: 90%;
+font-size: 14px;
+color: #ffffff;
+line-height: 1.5;
+display: flex;
+align-items: center;
+justify-content: left;
+border-radius: 10px;
+padding: 10px;
+/* text-align: center; */
+transition: 0.5s;
+cursor: pointer;
+overflow: hidden;
+
+display: -webkit-box;       
+  -webkit-line-clamp: 5;      
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;    
+  max-height: calc(1.5em * 6); 
+
+/* 
+text-align: center;
+white-space: wrap;            
+text-overflow: ellipsis;     */  
+/* display: block;  */
+}
+
+.red {
+  border: 2px solid #e63946;
+}
+
+.red .quote-icon {
+  background-color: #e63946;
+}
+
+.pink {
+  border: 2px solid #d672d4;
+}
+
+.pink .quote-icon {
+  background-color: #d672d4;
+}
+.topo{
+  /* background-color: #00000058; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding-left: 10px; */
+  padding-right: 10px;
+  border-radius: 7px;
+  /* border: #000000 solid 2px; */
+  width: 100%;
+}
+.stars {
+  /* color: #f5a623; */
+  /* margin-bottom: 15px; */
+  font-size: 22px;
+  /* background-color: #0246547b; */
+  background-color: #000000;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+  /* border-radius: 5px; */
+  /* border-top: #00a5d7d5 solid 3px; */
+  border-bottom: #009dff solid 3px;
+  border-radius: 5px;
+  /* opacity: 80%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stars img{
+  width: 15px;
+}
+@media (max-width:1000px) {
+  .testimonial-container {
+      padding-left: 0vw;
+      padding-right: 0vw;
+      padding-bottom: 15vh;
+      height: max-content;
+  }
+  .testimonial-card {
+    width: 390px;
+    height: 240px;
+}
+  .avatar .img1,.img2,.img3 {
+      /* width: 100px;
+      height: 100px; */
+      margin: 10px;
+  }
+  .comment {
+      font-size: 16.5px;
+      /* color: #555;
+      line-height: 1.6; */
+  }
+  @keyframes line-run2 {
+      0% {
+          opacity: 0;
+          transform: translateY(0px);
+      }
+      50% {
+          opacity: 1;
+          transform: translateX(0px);
+      }
+      90% {
+          opacity: 1;
+          transform: translateX(0px);
+      }
+      100% {
+          opacity: 0;
+          transform: translateX(0px);
+      }
+  }
+}

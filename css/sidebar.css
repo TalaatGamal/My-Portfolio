@@ -21,7 +21,7 @@
   color: #ad0e0e;
   font-size: 30px;
   margin-top: 8vh;
-  right: -500px;
+  right: -1000px;
   transition: right 0.5s ease;
   display: none;
 }
@@ -41,7 +41,7 @@
   margin-top: 20px;
   display: none;
 }
-@media (max-width:720px) {
+@media (max-width:1000px) {
   .sidebar-menu{
     display: flex;
   }

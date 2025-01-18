@@ -44,11 +44,14 @@
 #header .hd-2 a{
   color: #ffffff;
   text-decoration: none;
+  transition: 0.5s;
 }
 #header .hd-2 a:hover{
-  color: #000;
+  color: #f0f0f0;
+  font-weight: 700;
+  font-size: 20px;
 }
-@media (max-width:720px) {
+@media (max-width:1000px) {
   #header{
     justify-content: left;
     padding: 0px 5vw 0px 5vw;
