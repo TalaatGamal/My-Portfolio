@@ -141,4 +141,16 @@
   #contact .hr{
     display: none;
   }
+  #contact .or span a{
+    text-decoration: none;
+    color: #005b56;
+    width: 100%;
+    height: 100%;
+    font-weight: 800;
+    padding: 8px;
+    border: #005b56 solid 3px;
+    border-radius: 15px;
+    margin-left: 10px;
+    transition: 0.5s;
+  }
 }
