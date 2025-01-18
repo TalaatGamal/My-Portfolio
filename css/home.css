@@ -98,7 +98,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 10px;
   width: 130px;
   background-color: #008993ad;
   border: #008993a9 solid 2px;
@@ -415,5 +415,7 @@ z-index: 10; */
 #home .photo .img-i1{
   margin-right: 0px;
 }
-
+.hire{
+  padding: 5px;
+}
 }
