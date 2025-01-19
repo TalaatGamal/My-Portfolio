@@ -134,6 +134,111 @@
       transform: translateY(-500px);
   }
 }
+
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  height: 280px;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#directMessageForm{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  /* background-color: #000; */
+}
+.popup-content h2{
+  margin-bottom: 20px;
+  /* background-color: #4b1818; */
+  text-align: left;
+  font-size: 20px;
+}
+
+textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+
+  outline: none;
+  border: none;
+  border-left: #009dff86 solid 3px;
+  /* border-radius: 10px; */
+  background-color: #eeeeee;
+
+}
+
+button {
+  background: #00a4c9f0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #004742;
+}
+#email-v{
+  outline: none;
+  border: none;
+  border-left: #009dff86 solid 3px;
+  /* border-radius: 10px; */
+  padding: 10px;
+  width: 300px;
+  background-color: #eeeeee;
+}
+
+.close{
+  background-color: #eeeeee;
+  color: #ffffff;
+  padding: 0px 8px 5px 8px;
+  border: #009dff00 solid 3px;
+  border-radius: 7px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #747474;
+  transition: 0.5s;
+}
+.close:hover{
+  background-color: #00000000;
+  color: #000000;
+  border: #009dff86 solid 3px;
+}
+
 @media (max-width:1000px) {
   #contact{
     padding-top: 10vh;
@@ -152,5 +257,19 @@
     border-radius: 15px;
     margin-left: 10px;
     transition: 0.5s;
+  }
+  .popup-content {
+    height: max-content;
+    width: max-content;
+  }
+  .close{
+    background-color: #eeeeee00;
+    top: 0px;
+    font-size: 35px;
+    color: #747474;
+  }
+  .close:hover{
+    color: #ff0000;
+    border: #009dff00 solid 3px;
   }
 }

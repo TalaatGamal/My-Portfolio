@@ -253,7 +253,7 @@ function toggleCommentWidth(paragraph, callback) {
 }
 
 function animateAvatar(element, callback) {
-  const animationDuration = 400;
+  const animationDuration = 100;
   const startTime = performance.now();
 
   function step(currentTime) {
@@ -261,7 +261,7 @@ function animateAvatar(element, callback) {
     const progress = Math.min(elapsedTime / animationDuration, 1);
 
     element.style.opacity = 1 - progress;
-    element.style.transform = `translateX(${progress * 500}px)`;
+    element.style.transform = `translateX(${progress * 100}px)`;
 
     if (progress < 1) {
       requestAnimationFrame(step);

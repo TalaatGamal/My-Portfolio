@@ -19,22 +19,30 @@
   height: 8vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   padding-left: 1vw;
   padding-right: 1vw;
   gap: 30px;
 }
 .title-v a{
-  color: #000000;
+  color: #ffffff;
+  background-color: #31696d4f;
   display:flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
+  transition: 0.5s;
+  border-left: #008993a9 solid 4px;
+  border-radius: 0px 15px 15px 0px;
+  /* box-shadow: #00757e 0px 0px 20px 1px;  */
+}
+.title-v a:hover{
+  color: #000;
+  border-left: #000000a9 solid 4px;
 }
 .s-i4{
   font-size: 20px;
   border-radius: 10px;
-  border-right: #00627bd3 solid 4px;
   padding: 10px; 
   padding-right: 20px;
   font-weight: 600;
@@ -125,13 +133,19 @@ width: 70px;
 padding: 12px;
 background-color: #000000;
 border-radius: 100px;
-border: #000000 solid 3px;
+border: #000000 solid 4px;
 border-left: #43A4AB solid 4px;
 border-right: #43A4AB solid 4px;
+transition: 0.3s;
 /* box-shadow: #1680b190 0px 0px 10px 10px; */
 }
 .cards .vedasa2 a img:hover{
-box-shadow: #1680b17d 0px 0px 20px 20px;
+/* box-shadow: #1680b133 0px 0px 20px 20px; */
+/* border-top: #ffffff solid 4px;
+border-bottom: #ffffff solid 4px; */
+border: #43a4ab solid 4px;
+border-radius: 20px;
+width: 77px;
 }
 .cards:hover h3{
 animation: vee-hma 25s linear infinite;

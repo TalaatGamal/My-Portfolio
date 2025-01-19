@@ -86,9 +86,9 @@
       <div class="projects" id="projects">
         
           <div class="title-v">
-              <a href="#" class="a-arrow"><i class="fa-solid fa-angles-right" style="color: #000000;"></i></a>
-              <a href="https://talaatgamal.github.io/All-Projects/" class="s-i4" id="title-cards" style="border: none;"><img src="images/apps (1).png" alt="" style=" width: 30px; margin-right: 10px;">All Projects</a>
-              <a href="https://github.com/TalaatGamal?tab=repositories" class="s-i4" id="title-cards" style="border: none;"><i class="fa-brands fa-github" style=" font-size: 30px; margin-right: 10px;"></i>All Resources</a>
+              <!-- <a href="#" class="a-arrow"><i class="fa-solid fa-angles-right" style="color: #000000;"></i></a> -->
+              <a href="https://talaatgamal.github.io/All-Projects/" class="s-i4" id="title-cards"><img src="images/apps (1).png" alt="" style=" width: 30px; margin-right: 10px;">All Projects</a>
+              <a href="https://github.com/TalaatGamal?tab=repositories" class="s-i4" id="title-cards"><i class="fa-brands fa-github" style=" font-size: 30px; margin-right: 10px;"></i>All Resources</a>
           </div>
 
           <div class="cards" id="a1" target="_blank">
@@ -317,8 +317,26 @@
             </a>
           </div>
           <div class="or">
-            Or !! <span><a href="">Direct Message</a></span>
+            Or !! <span><a href="" id="d-m">Direct Message</a></span>
           </div>
+
+          <div id="popup" class="popup">
+            <div class="popup-content">
+              <span id="closePopup" class="close">&times;</span>
+              <h2>Send a Direct Message</h2>
+
+              <form id="directMessageForm">
+                <input type="email" id="email-v" name="email" placeholder="Email" required />
+                <textarea id="userMessage" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                <button type="submit">Send Message</button>
+              </form>
+              <div id="formFeedback" style="margin-top: 10px; color: green;"></div>
+
+          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  </div>
+</div>
+
         </div>
         <hr class="hr">
         <div class="right">
@@ -333,9 +351,11 @@
       <h2>Talaat Gamal</h2>
       <h2>1 / 2025</h2>
       <h2>Personal Portfolio</h2>
+      <h2>Emailjs</h2>
     </div>
   </div>
   <script src="main/main.js"></script>
   <script src="js/customars.js"></script>
+  <script src="js/contact.js"></script>
 </body>
 </html>
