@@ -65,7 +65,7 @@ function animateStarsWithReset(elementId, starCount, delay, resetDelay) {
 
     const interval = setInterval(() => {
       if (currentIndex < stars.length) {
-        stars[currentIndex].style.color = "#43A4AB"; // تلوين النجمة باللون الأزرق
+        stars[currentIndex].style.color = "#2b6d72"; // تلوين النجمة باللون الأزرق
         currentIndex++;
       } else {
         clearInterval(interval); // إيقاف التلوين عند الانتهاء

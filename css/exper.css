@@ -1,3 +1,8 @@
 #skills-exp{
   background-color: #4ea8af35;
+  /* background-image: url(https://images.pexels.com/photos/8653706/pexels-photo-8653706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+  background-image: url(https://images.pexels.com/photos/7651922/pexels-photo-7651922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
