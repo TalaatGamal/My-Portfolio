@@ -162,7 +162,7 @@
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   width: 90%;
-  height: 280px;
+  min-height: 280px;
   max-width: 400px;
   text-align: center;
   position: relative;
@@ -173,6 +173,7 @@
   align-items: center;
   justify-content: start;
   flex-wrap: wrap;
+  gap: 10px;
   /* background-color: #000; */
 }
 .popup-content h2{
@@ -184,7 +185,7 @@
 
 textarea {
   width: 100%;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   padding: 10px;
   font-size: 14px;
   resize: none;
@@ -204,6 +205,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 button:hover {

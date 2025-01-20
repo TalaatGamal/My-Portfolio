@@ -24,6 +24,8 @@ body{
 section{
   width: 100vw;
   min-height: 100vh;
+  background-color: #4ea8af35;
+
   /* margin-bottom: 10px; */
 }
 #footer{

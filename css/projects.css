@@ -1,17 +1,23 @@
+#Projects-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .projects{
-  width: 100vw;
+  width: 90vw;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: 10vw;
+  /* padding-left: 10vw; */
   padding-right: 10vw;
   gap: 20px;
   padding-top: 15vh;
   padding-bottom: 15vh;
   z-index: 1;
-  background-color: #4ea8af35;
+  /* background-color: #4ea8af35; */
 
 }
 .title-v{
@@ -211,6 +217,7 @@ background-image: url(https://d1u4v6449fgzem.cloudfront.net/2020/03/The-Ecommerc
   /* margin-top: 40vh; */
   padding-top: 15vh;
   height: max-content;
+  justify-content: left;
 }
 .title-v{
   width: 100%;
@@ -250,8 +257,8 @@ background-image: url(https://d1u4v6449fgzem.cloudfront.net/2020/03/The-Ecommerc
 font-size: 30px;
 }
 .cards{
-  width: 390px;
-  height: 250px;
+  width: 350px;
+  height: 210px;
 }
 .image {
   width: 386px;
