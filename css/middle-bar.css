@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   z-index: 6;
 }
 .middle-bar .card{
@@ -111,7 +111,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   position: absolute;
   top: 100vh;
   z-index: 7;
@@ -164,13 +164,13 @@
   
 
   .middle-bar{
-    padding: 0px 2vw 0px 2vw;
+    padding: 0px 0vw 0px 0vw;
 
   }
 
 .cover-middle-bar{
-  padding: 0px 2vw 0px 2vw;
-  top: 125.6vh;
+  padding: 0px 0vw 0px 0vw;
+  top: 134.25vh;
   overflow: hidden;
   max-width: 100vw;
   /* z-index: 7; */
