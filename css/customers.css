@@ -1,18 +1,23 @@
 
-
+#customers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .testimonial-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 100vw;
+  width: 90vw;
   min-height: 100vh;
   /* margin-top: 10vh; */
   gap: 20px;
   /* background-color: #00b3ff9b; */
   /* box-shadow: #1b0000 0px 0px 30px 20px; */
   z-index: 6;
-  padding-left: 20vw;
+  padding-left: 10vw;
   padding-right: 20vw;
   /* padding-top: 8vh; */
   padding-bottom: 10vh;
