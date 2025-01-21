@@ -63,13 +63,15 @@
   color: #ffffff;
 }
 #contact .right .imgbn{
-  background-image: url(https://img.freepik.com/premium-photo/computer-programmer-icon-white-background-ar-32-v-52-job-id-16481ff812194d37833d88603725b2d4_941600-89823.jpg);
+  /* background-image: url(https://img.freepik.com/premium-photo/computer-programmer-icon-white-background-ar-32-v-52-job-id-16481ff812194d37833d88603725b2d4_941600-89823.jpg); */
+  background-image: url(https://i.gifer.com/5eKX.gif);
+  /* background-image: url(https://i.gifer.com/Ry6p.gif); */
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 300px;
   border-radius: 20px;
-  opacity: 80%;
+  /* opacity: 80%; */
 }
 #contact .or{
   /* background-color: #6c07073a; */

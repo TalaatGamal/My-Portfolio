@@ -134,6 +134,15 @@
   border-radius: 10px;
   border: #ffffff solid 3px;
 }
+.img-cert-v{
+  background-image: url(https://cs50.harvard.edu/certificates/5abe8729-a32c-47fa-88d7-7262b3cf5d24.png);
+  background-position: center;
+  background-size: cover;
+  width: 130px;
+  height: 100px;
+  border-radius: 10px;
+  border: #ffffff solid 3px;
+}
 .title-cert{
   background-color: rgba(0, 0, 0, 0.505);
   background: linear-gradient(to right,#43A4AB, #43a4ab1c 20%);

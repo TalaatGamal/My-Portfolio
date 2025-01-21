@@ -46,6 +46,7 @@
   text-decoration: none;
   transition: 0.5s;
   position: relative;
+  font-weight: 600;
 }
 
 /* animated bottom line **** start ****/
@@ -72,7 +73,7 @@
 /* animated bottom line **** end ****/
 
 #header .hd-2 a:hover{
-  color: #000000;
+  color: #113a42;
 }
 @media (max-width:1000px) {
   #header{
