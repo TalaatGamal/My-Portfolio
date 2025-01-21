@@ -367,6 +367,7 @@ display: -webkit-box;
       padding-right: 0vw;
       padding-bottom: 15vh;
       height: max-content;
+      width: 100vw;
   }
   .testimonial-card {
     width: 390px;

@@ -96,6 +96,21 @@
   border-radius: 15px;
   margin-left: 10px;
   transition: 0.5s;
+  animation: or-v 2s linear infinite;
+}
+@keyframes or-v {
+  0% {
+    /* opacity: 1; */
+  }
+  50% {
+    /* opacity: 0; */
+    background-color: #000;
+    color: #ffffff;
+    border: #ffffff solid 3px;
+  }
+  100% {
+    /* opacity: 1; */
+  }
 }
 #contact .or span a:hover{
   background-color: #000;

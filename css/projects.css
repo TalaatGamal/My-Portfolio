@@ -25,33 +25,130 @@
   height: 8vh;
   display: flex;
   align-items: center;
-  justify-content: left;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  gap: 30px;
+  justify-content: right;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  gap: 20px;
 }
 .title-v a{
   color: #ffffff;
-  background-color: #31696d4f;
+  background-color: #1736382e;
   display:flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   transition: 0.5s;
-  border-left: #008993a9 solid 4px;
-  border-radius: 0px 15px 15px 0px;
-  /* box-shadow: #00757e 0px 0px 20px 1px;  */
-}
-.title-v a:hover{
-  color: #000;
-  border-left: #000000a9 solid 4px;
-}
-.s-i4{
+  border-top: #008993a9 solid 4px;
+  border-bottom: #008993a9 solid 4px;
+  border-left: #00899300 solid 4px;
+  border-right: #00899300 solid 4px;
   font-size: 20px;
   border-radius: 10px;
   padding: 10px; 
-  padding-right: 20px;
+  width: 180px;
+  min-width: max-content;
+}
+.title-v a:hover{
+  
+}
+.s-i4{
   font-weight: 600;
+}
+.animate-div-fighter{
+  /* background-color: #55626a82; */
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 0px 10px 0px 10px;
+  overflow: hidden;
+}
+.animated-item{
+  display:flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row-reverse;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  animation: air-item 35s linear infinite;
+  overflow: hidden;
+}
+@keyframes air-item {
+  0% {
+      transform: translateX(-500px);
+  }
+  50% {
+      transform: translateX(300px);
+  }
+  100% {
+      transform: translateX(-500px);
+  }
+}
+.item{
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  background-color: #ffffff;
+}
+.item-b{
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+  /* background-color: #ffffff; */
+}
+#item-1{
+  background-image: url(../Images/plane.png);
+  transform: rotate(180deg);
+  background-color: #00000000;
+}
+#item-2{
+  background-color: #00000000;
+  background-image: url(https://cdn-icons-png.freepik.com/256/732/732212.png?ga=GA1.1.1977550044.1720105698&semt=ais_hybrid);
+}
+#item-3{
+  background-color: #00000000;
+  background-image: url(https://cdn-icons-png.freepik.com/256/732/732190.png?ga=GA1.1.1977550044.1720105698&semt=ais_hybrid);
+}
+#item-4{
+  background-image: url(https://cdn-icons-png.freepik.com/256/5968/5968292.png?ga=GA1.1.1977550044.1720105698&semt=ais_hybrid);
+}
+#item-5{
+  background-image: url(https://cdn-icons-png.freepik.com/256/5968/5968381.png?ga=GA1.1.1977550044.1720105698&semt=ais_hybrid);
+}
+#item-6{
+  background-image: url(https://cdn-icons-png.freepik.com/256/5968/5968672.png?ga=GA1.1.1977550044.1720105698&semt=ais_hybrid);
+}
+#item-7{
+  background-image: url(https://adware-technologies.s3.amazonaws.com/uploads/technology/thumbnail/31/tailwind.png);
+}
+#item-8{
+  background-image: url(https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png);
+}
+#item-9{
+  background-image: url(https://www.pngfind.com/pngs/m/452-4521456_scss-logo-hd-png-download.png);
+}
+#item-10{
+  background-image: url(https://i0.wp.com/techprimelab.com/wp-content/uploads/2020/06/SCSS-or-CSS.jpg?fit=1024%2C576&ssl=1);
+}
+#item-11{
+  background-image: url(https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png);
+}
+#item-12{
+  background-image: url(https://code.visualstudio.com/assets/branding/app-icon.png);
+}
+#item-13{
+  background-image: url(https://1000logos.net/wp-content/uploads/2023/02/ChatGPT-Logo.jpg);
+}
+#item-14{
+  background-image: url(https://cdn-1.webcatalog.io/catalog/deepseek/deepseek-social-preview.png?v=1735234232905);
+}
+#item-15{
+  background-image: url(https://img.uxcel.com/tags/figma-1698087967030-2x.jpg);
 }
 .a-arrow{
   animation: movera 3s linear infinite;
@@ -212,12 +309,13 @@ background-image: url(https://d1u4v6449fgzem.cloudfront.net/2020/03/The-Ecommerc
 @media (max-width:1000px) {
   
 .projects{
+  width: 100vw;
   padding-left: 0vw;
   padding-right: 0vw;
   /* margin-top: 40vh; */
   padding-top: 15vh;
   height: max-content;
-  justify-content: left;
+  justify-content: center;
 }
 .title-v{
   width: 100%;
@@ -226,39 +324,19 @@ background-image: url(https://d1u4v6449fgzem.cloudfront.net/2020/03/The-Ecommerc
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* background-color: #cfcfcf; */
-  /* margin-bottom: 5vh; */
-  /* padding-left: 5vw; */
-  padding-right: 10vw;
+  padding-right: 5vw;
+  padding-left: 5vw;
   margin-bottom: 5vh;
   /* gap: 20px; */
   /* display: none; */
-}
-.title-v a{
-  /* padding-left: 20px; */ 
-
-  color: #000000;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.s-i4{
-  font-size: 15px;
-  /* width: 100%; */
-  padding-left: 0vw;
-  padding-right: 0vw;
-  border-right: #00c3b000;
-  border-bottom: #00c3b0 solid 4px;
-  border-radius: 5px;
 }
 .title-v a i{
 /* background-color: #ff0000; */
 font-size: 30px;
 }
 .cards{
-  width: 350px;
-  height: 210px;
+  width: 390px;
+  height: 240px;
 }
 .image {
   width: 386px;
@@ -293,5 +371,17 @@ font-size: 30px;
       opacity: 0;
       transform: translateX(600%);
   }
+}
+.animate-div-fighter{
+  border-radius: 10px;
+}
+.animated-item{
+  width: max-content;
+}
+.item{
+  min-width: 40px;
+}
+.title-v a{
+  width: 150px;
 }
 }

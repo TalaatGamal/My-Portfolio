@@ -50,6 +50,7 @@
 @media (max-width:1000px) {
   .left-map{
     /* background-color: #43A4AB; */
+    display: none;
   }
   .left-map .map-icon img{
     width: 25px;
