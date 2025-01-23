@@ -1,9 +1,23 @@
+
+
+
+#contact-home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #66a485;
+}
 #contact{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4EA9AF;
+  background-color: #4ea8af7e;
   overflow: hidden;
+  background: linear-gradient(to right, rgba(0, 204, 255, 0.482), rgba(136, 136, 136, 0));
+  width: 100%;
+  min-height: 100vh;
 }
 .contact-c{
   /* background-color: rgba(0, 0, 0, 0.178); */

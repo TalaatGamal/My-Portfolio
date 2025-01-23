@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/v2-projects.css">
   <link rel="stylesheet" href="css/left-map.css">
   <link rel="stylesheet" href="css/middle-bar.css">
+  <link rel="stylesheet" href="css/services.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,8 +40,56 @@
         <li><a href="#Projects-div">Projects</a></li>
         <li><a href="#skills-exp">Skills-Experience</a></li>
         <li><a href="#customers">Customers</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" id="toggle-more">More !!</a></li>
       </ul>
+      <div class="air-window hidden">
+        <div class="air-w1">
+          <div class="air-w1-left">
+
+            <!-- <div id="popup-v" class="popup-v">
+              <div class="popup-content-v">
+                <h2>Send a Direct Message</h2>
+  
+                <form id="directMessageForm-v">
+                  <input type="email" id="email-v-v" name="email" placeholder="Email" required />
+                  <textarea id="userMessage-v" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                  <button type="submit">Send Message</button>
+                </form>
+                <div id="formFeedback-v" style="margin-top: 10px; color: green;"></div>
+  
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+              </div>
+            </div> -->
+            <div class="air-w1-right" id="air-w1-right">
+              <a href="#contact">
+                <h2 style="border-bottom: #00ff88 solid 7px;">Puy Service</h2>
+              </a>
+              <a href="#air-services">
+                <h2>Direct message</h2>
+              </a>
+            </div>
+
+          </div>
+          <div class="or-v">
+            <h2>Or</h2>
+          </div>
+          <div class="air-w1-right" id="air-w1-right">
+            <a href="#air-services">
+              <h2 style="border-bottom: #00ff88 solid 7px;">Services</h2>
+            </a>
+            <a href="#contact">
+              <h2>Contact Me</h2>
+            </a>
+          </div>
+        </div>
+        <div class="air-w2">
+          <hr class="hr-air-w2">
+        </div>
+        <div class="air-w3">
+          <hr class="hr-air-w3">
+        </div>
+      </div>
+      
     </div>
     <div class="sidebar">
       <div class="sidebar-menu"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
@@ -57,9 +106,11 @@
       <ul class="links">
         <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
         <li><a href="#projects"><i class="fa-regular fa-folder-open"></i>Projects</a></li>
-        <li><a href="#skills-exp"><i class="fa-solid fa-chart-line"></i>Skills-Experience</a></li>
+        <li><a href="#skills-exp"><i class="fa-solid fa-chart-line"></i>Skills-Exp</a></li>
         <li><a href="#customers"><i class="fa-solid fa-user-check"></i>Customers</a></li>
+        <li><a href="#air-services"><i class="fa-solid fa-person-circle-check"></i>Services</a></li>
         <li><a href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
+        <li><a href="#"><i class="fa-solid fa-infinity"></i>More</a></li>
       </ul>
     </div>
 
@@ -522,68 +573,211 @@
                 </div>
                 <div class="quote-icon bottom">🌟</div>
             </div>
+            <div class="testimonial-card orange">
+                <div class="top">💙</div>
+                
+                <div class="profile">
+                    <div class="topo">
+                        <h3>Devid Jhon</h3>
+                        <div class="stars">
+                          <span data-value="1" style="color: #00d5ff;">★</span>
+                            <span data-value="2" style="color: #00d5ff;">★</span>
+                            <span data-value="3" style="color: #00d5ff;">★</span>
+                            <span data-value="4" style="color: #00d5ff;">★</span>
+                            <span data-value="5" style="color: #d1d1d1;">★</span>
+                          </div>
+                    </div>
+                    <div class="vbn-animat">
+                      <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam nonummy nibh euismod tincidunt</p>
+                    <div class="avatar">
+                      <img class="img5a" id="img5">
+                  </div>
+                    </div>
+                </div>
+                <div class="quote-icon bottom">🌟</div>
+            </div>
         
 
     </section>
     </section>
-    <section id="contact">
-      <div class="air-div" id="air-div-1">
-        <div class="air-icon"></div>
-      </div>
-      <div class="contact-c">
-        <div class="left">
-          <h1>Contact With Me</h1>
-          <div class="location">
-            <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
-            <h2>Banha , Qalyubiya , Egypt</h2>
+    <div id="air-services">
+
+    
+        <div class="services">
+          <div class="title-services">
+            <div class="icon-service" id="is-5">
+                  
+            </div>
+            <h2>My services</h2>
           </div>
-          <div class="email">
-            <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
-            <h2>talaatgamal.dev@gmail.com</h2>
+          <div class="content-services">
+            <div class="essentials" id="services-card">
+              <div class="title-services-card">
+                <div class="icon-service" id="is-1">
+                  
+                </div>
+                <h2>Create a web app</h2>
+              </div>
+              <ol class="list">
+                <li>
+                  <!-- <div class="item-b" id="item-2" title="HTML"></div> -->
+                  <h2>Portfolio</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-3" title="CSS"></div> -->
+                  <h2>Personal</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-4" title="JavaScript"></div> -->
+                  <h2>Company</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-5" title="TypeScript"></div> -->
+                  <h2>E-Commerce</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-5" title="TypeScript"></div> -->
+                  <h2>Other</h2>
+                </li>
+              </ol>
+            </div>
+            <div class="essentials" id="services-card">
+              <div class="title-services-card">
+                <div class="icon-service" id="is-2">
+                  
+                </div>
+                <h2>Update Or Edit</h2>
+              </div>
+              <ol class="list">
+                <li>
+                  <!-- <div class="item-b" id="item-2" title="HTML"></div> -->
+                  <h2>Add a section</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-3" title="CSS"></div> -->
+                  <h2>Add a feature</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-4" title="JavaScript"></div> -->
+                  <h2>Add something</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-5" title="TypeScript"></div> -->
+                  <h2>Changing the way something works</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-5" title="TypeScript"></div> -->
+                  <h2>Other</h2>
+                </li>
+              </ol>
+            </div>
+            <div class="essentials" id="services-card">
+              <div class="title-services-card">
+                <div class="icon-service" id="is-3">
+                  
+                </div>
+                <h2>Problem Solving</h2>
+              </div>
+              <ol class="list">
+                <li>
+                  <!-- <div class="item-b" id="item-2" title="HTML"></div> -->
+                  <h2>All HTML , CSS</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-3" title="CSS"></div> -->
+                  <h2>Most JavaScript</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-4" title="JavaScript"></div> -->
+                  <h2>CSS frameworks and Reactjs</h2>
+                </li>
+                <li>
+                  <!-- <div class="item-b" id="item-5" title="TypeScript"></div> -->
+                  <h2>Other</h2>
+                </li>
+              </ol>
+            </div>
+            <div class="essentials" id="services-card">
+              <div class="title-services-card">
+                <div class="icon-service" id="is-4">
+                  
+                </div>
+                <h2>Help for you</h2>
+              </div>
+              <ol class="list">
+                <li>
+                  <!-- <div class="item-b" id="item-2" title="HTML"></div> -->
+                  <h2>anything in front-end web development</h2>
+                </li>
+                <div class="icon-service" id="is-6">
+                  
+                </div>
+              </ol>
+            </div>
           </div>
-          <div class="media-contact">
-            <a href="">
-              <i class="fa-brands fa-whatsapp"></i>            
-            </a>
-            <a href="">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </div>
-          <div class="or">
-            Or !! <span><a href="" id="d-m">Direct Message</a></span>
-          </div>
-
-          <div id="popup" class="popup">
-            <div class="popup-content">
-              <span id="closePopup" class="close">&times;</span>
-              <h2>Send a Direct Message</h2>
-
-              <form id="directMessageForm">
-                <input type="email" id="email-v" name="email" placeholder="Email" required />
-                <textarea id="userMessage" name="message" rows="4" placeholder="Type your message here..." required></textarea>
-                <button type="submit">Send Message</button>
-              </form>
-              <div id="formFeedback" style="margin-top: 10px; color: green;"></div>
-
-          <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-  </div>
-</div>
-
         </div>
-        <hr class="hr">
-        <div class="right">
-          <div class="imgbn"></div>
+      
+
+    </div>
+    <section id="contact-home">
+      <div class="contact" id="contact">
+        <div class="air-div" id="air-div-1">
+          <div class="air-icon"></div>
         </div>
-      </div>
-      <div class="air-div" id="air-div-2">
-        <div class="air-icon"></div>
+        <div class="contact-c">
+          <div class="left">
+            <h1>Contact With Me</h1>
+            <div class="location">
+              <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+              <h2>Banha , Qalyubiya , Egypt</h2>
+            </div>
+            <div class="email">
+              <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+              <h2>talaatgamal.dev@gmail.com</h2>
+            </div>
+            <div class="media-contact">
+              <a href="">
+                <i class="fa-brands fa-whatsapp"></i>            
+              </a>
+              <a href="">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="or">
+              Or !! <span><a href="" id="d-m">Direct Message</a></span>
+            </div>
+  
+            <div id="popup" class="popup">
+              <div class="popup-content">
+                <span id="closePopup" class="close">&times;</span>
+                <h2>Send a Direct Message</h2>
+  
+                <form id="directMessageForm">
+                  <input type="email" id="email-v" name="email" placeholder="Email" required />
+                  <textarea id="userMessage" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                  <button type="submit">Send Message</button>
+                </form>
+                <div id="formFeedback" style="margin-top: 10px; color: green;"></div>
+  
+            <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+              </div>
+            </div>
+  
+          </div>
+          <hr class="hr">
+          <div class="right">
+            <div class="imgbn"></div>
+          </div>
+        </div>
+        <div class="air-div" id="air-div-2">
+          <div class="air-icon"></div>
+        </div>
       </div>
     </section>
 
@@ -599,5 +793,6 @@
   <script src="js/contact.js"></script>
   <script src="js/left-map.js"></script>
   <script src="js/middle-bar.js"></script>
+  <script src="js/header.js"></script>
 </body>
 </html>

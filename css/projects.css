@@ -70,7 +70,7 @@
   justify-content: left;
   flex-direction: row-reverse;
   gap: 10px;
-  width: 100%;
+  width: max-content;
   height: 100%;
   animation: air-item 25s linear infinite;
   overflow: hidden;
@@ -98,6 +98,7 @@
   }
 }
 .item{
+  min-width: 40px;
   width: 40px;
   height: 40px;
   border-radius: 5px;

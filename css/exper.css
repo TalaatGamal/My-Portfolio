@@ -261,3 +261,35 @@
   height: 300px;
   padding: 20px;
 }
+@media (max-width:1000px) {
+  .skills-exp-c{
+    padding: 0px 5vw 0px 5vw;
+  }
+  .content-skills{
+    gap: 10px;
+  }
+  .skills-div .skills{
+    width: 100%;
+    padding: 5vh 0px 5vh 0px;
+  }
+  #skill-card{
+    margin-bottom: 30px;
+    width: 350px;
+  }
+  .skills-div .skills .title-skills{
+    margin-bottom: 80px;
+  }
+  .exper-div{
+    padding: 0px;
+    min-height: 150vh;
+  }
+  .title-exper h2{
+    font-size: 35px;
+  }
+  .exper-content{
+    background: linear-gradient(to bottom,#43a4abbc, #43a4ab1c 10%);
+  }
+  .hr-line{
+  display: none;
+  }
+}
