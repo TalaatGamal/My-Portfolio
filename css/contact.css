@@ -7,7 +7,7 @@
   justify-content: center;
   width: 100vw;
   min-height: 100vh;
-  background-color: #66a485;
+  background-color: #486975;
 }
 #contact{
   display: flex;
@@ -69,23 +69,24 @@
   margin-top: 30px;
 }
 #contact .media-contact a i{
-  font-size: 35px;
-  color: #000;
+  font-size: 30px;
   transition: 0.5s;
 }
 #contact .media-contact a i:hover{
-  color: #ffffff;
+  /* color: #ffffff; */
+  background-color: #000000;
 }
 #contact .right .imgbn{
   /* background-image: url(https://img.freepik.com/premium-photo/computer-programmer-icon-white-background-ar-32-v-52-job-id-16481ff812194d37833d88603725b2d4_941600-89823.jpg); */
-  background-image: url(https://i.gifer.com/5eKX.gif);
+  /* background-image: url(https://i.gifer.com/5eKX.gif); */
   /* background-image: url(https://i.gifer.com/Ry6p.gif); */
+  background-image: url(https://camo.githubusercontent.com/130ffc354b6ee3c8c9e506276e598bf4e19ea7950df203dacf6aeee4fc543a50/68747470733a2f2f616e616c7974696373696e6469616d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31322f646576656c6f7065722d6472696262626c652e676966);
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 300px;
   border-radius: 20px;
-  /* opacity: 80%; */
+  opacity: 80%;
 }
 #contact .or{
   /* background-color: #6c07073a; */
@@ -271,7 +272,40 @@ button:hover {
   color: #000000;
   border: #009dff86 solid 3px;
 }
-
+#wap,#fb,#ldn,#gh{
+  background-color: #ffffff;
+  padding: 0px; 
+  border-radius: 100px; 
+  width: 40px;
+  height: 40px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+#fb{
+  color: #0080ff;
+}
+#fb:hover{
+  color: #ffffff;
+}
+#wap{
+  color: #00b44b;
+}
+#wap:hover{
+  color: #ffffff;
+}
+#ldn{
+  color: #0067c7;
+}
+#ldn:hover{
+  color: #ffffff;
+}
+#gh{
+  color: #000;
+}
+#gh:hover{
+  color: #ffffff;
+}
 @media (max-width:1000px) {
   #contact{
     padding-top: 10vh;

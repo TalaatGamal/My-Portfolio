@@ -29,7 +29,10 @@
     background-attachment: fixed;
     /* box-shadow: #000000 0px 0px 20px 20px; */
     /* animation: v2-vb 10s linear infinite; */
-    background-color: #4ea8afba;
+    /* background-color: #4ea8afba; */
+    /* background-color: #00A4AF; */
+    background-color: #6FB6BB;
+
 }
 @keyframes v2-vb {
   0% {

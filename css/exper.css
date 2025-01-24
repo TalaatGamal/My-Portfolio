@@ -169,14 +169,16 @@
 }
 .exper-div{
   width: 100%;
-  height: 150vh;
+  min-height: 100vh;
   padding: 20px;
 }
 .exper-content{
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom,#43A4AB, #43a4ab1c 20%);
+  background: linear-gradient(to bottom,#43a4abb6, #43a4ab1c 10%);
   border-radius: 20px;
+  overflow: hidden;
+
 }
 .title-exper{
   width: 100%;
@@ -206,60 +208,131 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 80px;
   /* background-color: #0c474b; */
   /* margin-top: 100px; */
+  width: 100%;
+  min-height: 50vh;
+  padding: 30px;
+  padding-bottom: 100px;
 }
-#work-card{
-  background-color: #00000033;
-  width: 400px;
-  min-height: 500px;
+.work-info{
+  /* background-color: #2b0606; */
+  width: 75%;
+  height: 175px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* overflow: hidden; */
 }
-.hr-line{
-  height: 300px;
-  width: 10px;
-  border: #15717800 solid 1px;
+.work-img{
+  /* background-image: url(https://freepnglogo.com/images/all_img/1706198346fiverr-logo-transparent.png); */
+  background-image: url(https://freelogopng.com/images/all_img/1656739257fiverr-logo-transparent.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  width: 180px;
+  min-width: 180px;
+  height: 100%;
+  border-radius: 20px;
   background-color: #ffffff;
-  border-radius: 3px;
 }
-.title-work{
-  background-color: #1571787c;
+.work-map{
+  width: 50px;
+  min-width: 50px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
-  width: 100%;
-  height: 70px;
-  border: rgba(255, 0, 0, 0)  solid 2px;
-  border-bottom: #ffffff solid 4px;
-  border-radius: 20px;
+  flex-direction: column;
+  padding-top: 65px;
+  /* background-color: #00ffa6; */
 }
-#on-site-work{
-  width: 100%;
-  height: 320px;
-  /* background-color: #43A4AB; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-size: 20px;
+.work-map .circle{
+  background-color: #00ffa6;
+  width: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  height: 30px;
+  border-radius: 10px;
 }
-.info-card{
-  background-color: #1571787a;
-  margin-top: 30px;
+.work-map .line{
+  height: 100%;
+  width: 10px;
+  background-color: #ffffff;
+  border: none;
+}
+.work-card{
+  background-color: #ffffff00;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.date{
+  /* background-color: #982222; */
+  width: 100%;
+  height: 50px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #ffffff;
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
 }
-#freelance-work{
-  /* background-color: #157278; */
-  width: 100%;
-  height: 300px;
-  padding: 20px;
+.date h2{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-weight: 600;
+}
+.date span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #000000; */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.line-date{
+  width: 50px;
+  height: 5px;
+  background-color:  #15868e;
+  border: none;
+  border-radius: 5px;
+}
+.work-location{
+  background-color: #00676c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.description{
+  /* background-color: #272727; */
+  font-size: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #ffffff;
+  /* text-align: center; */
+}
+#w-i2{
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/3f7d19103644029.Y3JvcCw5MDksNzExLDI0LDA.jpg);
+  background-size: cover;
+}
+#w-i3{
+  background-image: url(https://ictbusiness.org/wp-content/uploads/2018/06/%D9%84%D9%88%D8%AC%D9%88-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%83%D8%AA.jpg);
+  /* background-size: cover; */
 }
 @media (max-width:1000px) {
   .skills-exp-c{
@@ -267,6 +340,11 @@
   }
   .content-skills{
     gap: 10px;
+    padding: 0px;
+  }
+  .line-cert{
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .skills-div .skills{
     width: 100%;
@@ -289,7 +367,15 @@
   .exper-content{
     background: linear-gradient(to bottom,#43a4abbc, #43a4ab1c 10%);
   }
-  .hr-line{
-  display: none;
+  #skill-card .list li{
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    justify-content: left;
+    /* background-color: #00676c; */
+  }
+  .item-b{
+    width: 30px;
+    height: 30px;
   }
 }
