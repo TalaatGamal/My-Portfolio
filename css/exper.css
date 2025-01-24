@@ -208,6 +208,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 80px;
   /* background-color: #0c474b; */
   /* margin-top: 100px; */
@@ -218,29 +219,47 @@
 }
 .work-info{
   /* background-color: #2b0606; */
-  width: 75%;
+  /* max-width: 75%; */
   height: 175px;
   border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  padding-left: 40px;
-  padding-right: 40px;
+  /* padding-left: 40px;
+  padding-right: 40px; */
   /* overflow: hidden; */
+}
+.cover-map-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  height: 250px;
 }
 .work-img{
   /* background-image: url(https://freepnglogo.com/images/all_img/1706198346fiverr-logo-transparent.png); */
-  background-image: url(https://freelogopng.com/images/all_img/1656739257fiverr-logo-transparent.png);
+  /* background-image: url(https://freelogopng.com/images/all_img/1656739257fiverr-logo-transparent.png); */
+  background-image: url(https://i0.wp.com/2bonline.net/wp-content/uploads/2022/06/freelancer-logo-open-graph-1.webp?fit=1020%2C536&ssl=1);
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
   /* background-attachment: fixed; */
   width: 180px;
   min-width: 180px;
-  height: 100%;
+  height: 175px;
   border-radius: 20px;
   background-color: #ffffff;
+}
+.back-img{
+  width: 50px;
+  height: 40px;
+  background-image: url(https://i0.wp.com/2bonline.net/wp-content/uploads/2022/06/freelancer-logo-open-graph-1.webp?fit=1020%2C536&ssl=1);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 10px;
 }
 .work-map{
   width: 50px;
@@ -254,7 +273,7 @@
   /* background-color: #00ffa6; */
 }
 .work-map .circle{
-  background-color: #00ffa6;
+  background-color: #00d9ff;
   width: 30px;
   min-width: 30px;
   min-height: 30px;
@@ -311,10 +330,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-left: 10px;
   padding-right: 10px;
-  height: 50px;
+  height: 60px;
   color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.work-location h2{
+  /* background-color: #452c2c; */
+  width: 100%;
+  text-align: left;
+}
+.work-location h3{
+  /* background-color: #000000; */
+  width: 100%;
+  text-align: right;
+}
+.work-location h3 span{
+  background-color: #000000;
   border-radius: 10px;
 }
 .description{
@@ -333,6 +368,9 @@
 #w-i3{
   background-image: url(https://ictbusiness.org/wp-content/uploads/2018/06/%D9%84%D9%88%D8%AC%D9%88-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D9%83%D8%AA.jpg);
   /* background-size: cover; */
+}
+#span-year{
+  font-size: 20px;
 }
 @media (max-width:1000px) {
   .skills-exp-c{
@@ -377,5 +415,51 @@
   .item-b{
     width: 30px;
     height: 30px;
+  }
+
+
+
+
+
+  .work-map{
+    width: 30px;
+  }
+  .work{
+    gap: 50px;
+    padding: 0px;
+  }
+  .work-info{
+    height: max-content;
+    padding-right: 10px;
+  }
+  .cover-map-card{
+    width: 400px;
+  }
+  .skills-exp-c{
+    padding: 0px;
+  }
+  .work-card{
+    background-color: #ffffff00;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .date h2{
+    font-size: 17px;
+  }
+  .date span{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .line-date{
+    width: 30px;
+  }
+  .work-location{
+    font-size: 13px;
+  }
+  .work-img{
+    display: none;
   }
 }

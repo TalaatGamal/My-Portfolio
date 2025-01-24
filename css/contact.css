@@ -275,7 +275,7 @@ button:hover {
 #wap,#fb,#ldn,#gh{
   background-color: #ffffff;
   padding: 0px; 
-  border-radius: 100px; 
+  border-radius: 10px; 
   width: 40px;
   height: 40px;
   display: flex; 
