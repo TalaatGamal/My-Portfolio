@@ -15,7 +15,7 @@
 .sidebar-content{
   width: 100vw;
   height: 100vh;
-  background-color: black;
+  /* background-color: rgb(0, 0, 0); */
   z-index: 999;
   position: fixed;
   color: #ad0e0e;
@@ -24,16 +24,22 @@
   right: -1000px;
   transition: right 0.5s ease;
   display: none;
+  flex-wrap: wrap;
 }
 
 .sidebar-content.active {
-  right: 0px;
+  right: 50vw;
 }
 .s-c-v{
-  width: 100%;
-  height: 92vh;
+  width: 50%;
+  height: 100vh;
   overflow-x: hidden;
   overflow-y: scroll;
+  background-color: #09506f71;
+  background-image: url(https://images.pexels.com/photos/30286786/pexels-photo-30286786/free-photo-of-colorful-kite-in-bali-s-clear-summer-sky.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .vera{
   background-color: #09516f;
@@ -46,6 +52,56 @@
     display: flex;
   }
   .sidebar-content{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .list-side{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    list-style: none;
+    /* gap: 20px; */
+    padding-top: 50px;
+    animation: side 15s linear infinite;
+
+  }
+  @keyframes side {
+    0% {
+      box-shadow: #007780b7 0px 0px 0px 0px inset;
+    }
+    25% {
+      box-shadow: #007780b9 0px -250px 0px 0px inset;
+    }
+    50% {
+      box-shadow: #007780c2 0px -500px 0px 0px inset;
+    }
+    75% {
+      box-shadow: #007780bc 0px -250px 0px 0px inset;
+    }
+    100% {
+      box-shadow: #007780b5 0px 0px 0px 0px inset;
+    }
+  }
+  .list-side li{
+    /* width: 100%; */
+    /* border-bottom: #ffffff solid 2px; */
+  }
+  .list-side a{
+    color: #ffffff;
+    text-decoration: none;
+    /* border-bottom: #ffffff solid 4px; */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding-left: 10px;
+    /* margin-bottom: 20px; */
+    transition: 0.5s;
+  }
+  .list-side a:hover{
+    background-color: #000000;
   }
 }
