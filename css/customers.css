@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #6FB6BB;
 }
 .testimonial-container {
   display: flex;
