@@ -54,7 +54,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 50%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 5px;
@@ -63,11 +62,24 @@
   border-left: #00000000 solid 4px;
   border-right: #00000000 solid 4px;
   width: 80%;
-  border-radius: 20px 20px 20px 20px;
+  border-radius: 10px;
 }
 .rata a{
   text-decoration: none;
   color: #ffffff;
+}
+.vata{
+  /* background-color: #000000; */
+  margin-top: 50%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.vata h3{
+  color: #000000;
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 @media (max-width:1000px) {
   .sidebar-menu{
