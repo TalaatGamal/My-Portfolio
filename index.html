@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/middle-bar.css">
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/air-window.css">
+  <link rel="stylesheet" href="css/air-circle.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,7 +64,7 @@
             </div> -->
             <div class="air-w1-right" id="air-w1-right">
               <a href="#contact">
-                <h2>Puy Service</h2>
+                <h2>Buy a service</h2>
               </a>
               <a href="#air-services">
                 <h2>Direct message</h2>
@@ -106,6 +107,11 @@
         <li><a href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
         <li><a href="#" style="background-color: #000000;"><i class="fa-solid fa-infinity"></i>More</a></li>
       </ul>
+      <div class="rata">
+        <a href="">
+          rating me
+        </a>
+      </div>
       </div>
       </div>
     </div>
@@ -122,6 +128,9 @@
         <li><a href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
         <li><a href="#"><i class="fa-solid fa-infinity"></i>More</a></li>
       </ul>
+    </div>
+    <div class="air-circle" id="air-circle">
+      <a href="#home"></a>
     </div>
 
     <section id="home">
@@ -261,9 +270,9 @@
           </div>
           <!-- space -->
           <div class="cards" id="a3" target="_blank">
-            <span class="hjn"  style="background-color: rgba(0, 0, 0, 0.638);">
+            <span class="hjn" id="timer-back">
               <h3>
-                <!-- <span class="vedasa2">
+                <!-- <span class="vedasa2" id="canceld">
                   
                     <a href="">
                       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv88o6ldKl7Pv6EWUOg5BZb3UQBy5bTY5nnQ&s" alt="">
@@ -273,7 +282,7 @@
                     </a>
                 
                 </span> -->
-                <span class="vedasa">Coming soon</span>
+                <span class="vedasa" id="vedasa1">Coming soon <br><span class="timer" id="timer"></span></span>
               </h3>
               <h4>Sea Restaurant</h4>
             </span>
@@ -675,10 +684,13 @@
     
         <div class="services">
           <div class="title-services">
-            <div class="icon-service" id="is-5">
-                  
+            <div class="bnm">
+              <div class="icon-service" id="is-5"></div>
+              <h2>My services</h2>
             </div>
-            <h2>My services</h2>
+            <div class="services-button">
+              <h2>Buy a service</h2>
+            </div>
           </div>
           <div class="content-services">
             <div class="essentials" id="services-card">
@@ -864,5 +876,7 @@
   <script src="js/left-map.js"></script>
   <script src="js/middle-bar.js"></script>
   <script src="js/header.js"></script>
+  <script src="js/air-circle.js"></script>
+  <!-- <script src="js/projects.js"></script> -->
 </body>
 </html>

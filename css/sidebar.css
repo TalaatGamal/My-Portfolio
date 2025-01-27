@@ -21,22 +21,22 @@
   color: #ad0e0e;
   font-size: 30px;
   margin-top: 65px;
-  right: -1000px;
-  transition: right 0.5s ease;
+  left: -300px;
+  transition: left 0.5s ease;
   display: none;
   flex-wrap: wrap;
 }
 
 .sidebar-content.active {
-  right: 50vw;
+  left:0%;
 }
 .s-c-v{
-  width: 50%;
+  width: 250px;
   height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background-color: #09506f71;
-  background-image: url(https://images.pexels.com/photos/30286786/pexels-photo-30286786/free-photo-of-colorful-kite-in-bali-s-clear-summer-sky.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+  overflow: hidden;
+  background-color: #005f6631;
+  backdrop-filter: blur(10px);
+  /* background-image: url(https://images.pexels.com/photos/30286786/pexels-photo-30286786/free-photo-of-colorful-kite-in-bali-s-clear-summer-sky.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -47,6 +47,28 @@
   margin-top: 20px;
   display: none;
 }
+.rata{
+  /* background-color: #000000; */
+  background: linear-gradient(to top, #25848B, rgba(0, 0, 0, 0.734));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  border-bottom: #000000 solid 4px;
+  border-top: #000000 solid 4px;
+  border-left: #00000000 solid 4px;
+  border-right: #00000000 solid 4px;
+  width: 80%;
+  border-radius: 20px 20px 20px 20px;
+}
+.rata a{
+  text-decoration: none;
+  color: #ffffff;
+}
 @media (max-width:1000px) {
   .sidebar-menu{
     display: flex;
@@ -54,7 +76,7 @@
   .sidebar-content{
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: left;
   }
   .list-side{
     display: flex;
