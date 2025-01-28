@@ -232,9 +232,7 @@ height: 100%;
   padding-left: 20px;
   color: #ffffff;
 }
-.timer{
-  font-size: 20px;
-}
+
 .vedasa{
   text-align: center;
 }
@@ -244,8 +242,14 @@ display: none;
 .cards:hover .vedasa2{
 display: flex;
 }
+.timer{
+  font-size: 20px;
+}
 #timer-back{
   background-color: #0000009e;
+}
+#canceld{
+  display: none;
 }
 .vedasa2{
   display: none;

@@ -25,9 +25,20 @@ const timer = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(timer);
-        // document.getElementById("canceld").style.display = ""
-        document.getElementById("vedasa1").style.display = "none"
-        // document.getElementById("canceld").style.display = "none"
+        // var element = document.getElementById('canceld');
+
+        // element.id = 'new-id';
+
+
+        var card = document.getElementById('a3');
+
+        var elementToChange = card.querySelector('#canceld');
+
+        if (elementToChange) {
+            elementToChange.id = 'opend';
+        }
+
+
 
 
         document.getElementById("timer-back").style.background = " #00000000"
@@ -36,4 +47,10 @@ const timer = setInterval(function() {
         // alert("انتهى الوقت!");
     }
 }, 1000);
+
+
+
+
+
+
 
