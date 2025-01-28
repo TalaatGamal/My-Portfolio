@@ -417,8 +417,9 @@ z-index: 10; */
 }
 #home .photo .img-i1{
   margin-right: 0px;
-  background-image: url(../Images/My-photo-img.jpg);
+  background-image: url(../Images/My-photo-img-removebg-preview.png);
   background-position: 20%;
+  background-color: #ffffff2e;
 
 }
 .hire{
