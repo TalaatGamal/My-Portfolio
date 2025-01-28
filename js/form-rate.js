@@ -1,34 +1,67 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               
-// sidabar 
+// // sidabar 
               
+
+// // enter
+// const ratebutton = document.getElementById("rating-me");
+// const sidebar = document.querySelector('.s-v-a');
+// // exit
+// const back = document.getElementById("backbutton");
+// const formback = document.querySelector('.s-v-a');
+
+// if (ratebutton) { 
+//   ratebutton.addEventListener('click', () => {
+//     sidebar.classList.toggle('active');
+//     document.querySelector('.sidebar-content').style.marginLeft = "42vw";
+//   });
+// }
+// else{
+//   ratebutton.addEventListener('click', () => {
+//     formback.classList.toggle('vada');
+//     document.querySelector('.sidebar-content').style.marginLeft = "0vw";
+//   });
+// };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 const ratebutton = document.getElementById("rating-me");
 const sidebara = document.querySelector('.s-v-a');
-
+const backbutton = document.getElementById("backbutton");
+// enter
 if (ratebutton) { 
   ratebutton.addEventListener('click', () => {
     sidebara.classList.toggle('active');
-    document.querySelector('.sidebar-content').style.marginLeft = "42vw";
+
   });
 }
+// back
+if (backbutton) {
+  backbutton.addEventListener('click', () => {
+    sidebara.classList.remove('active');
+
+  });
+}
+
+
+
+
+
+
+
 
 
 

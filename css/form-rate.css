@@ -84,26 +84,24 @@
 }
 .sipo{
   width: 100%;
+  /* background-color: #005f667e; */
   display: flex;
   align-items: center;
   justify-content: right;
-  padding-right: 30px;
-  padding-left: 30px;
   gap: 20px;
+  padding-right: 4vw;
 }
 .sipo button{
-  height: 45px;
-  width: 150px;
-  background-color: #005f667e;
+  height: 50px;
+  width: 100px;
   border: none;
-  border-bottom:   #005f66ae solid 6px;
-  border-radius: 7px;
+  background-color: #005f667e;
+  border-right: #00d9ff solid 4px;
+  border-radius: 10px;
+  /* border-radius: 7px; */
   color: #ffffff;
-  font-family: "cairo", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 20px;
+  font-size: 25px;
+  padding: 0px;
 }
 .rating{
   display: flex;
@@ -165,7 +163,7 @@
 }
 .back h2{
   font-size: 25px;
-  padding: 10px;
+  padding: 3px;
   background-color: #be00003e;
   border-right: #ff0000 solid 4px;
   border-radius: 10px;
@@ -173,6 +171,7 @@
   /* border-radius: 10px 100px 0px 100px; */
   width: 100px;
   text-align: center;
+  cursor: pointer;
 }
 
 
