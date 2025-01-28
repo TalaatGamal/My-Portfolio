@@ -20,6 +20,9 @@
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/air-window.css">
   <link rel="stylesheet" href="css/air-circle.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/servo.css">
+  <link rel="stylesheet" href="css/form-rate.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,7 +79,7 @@
             <h2>Or</h2>
           </div>
           <div class="air-w1-right" id="air-w1-right">
-            <a href="#air-services">
+            <a href="#servo">
               <h2>Services</h2>
             </a>
             <a href="#contact">
@@ -96,6 +99,51 @@
     <div class="sidebar">
       <div class="sidebar-menu"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
       <div class="sidebar-content">
+        <div class="s-v-a">
+          
+          <div class="form-div">
+            <div class="title-form-div">
+              <h2>I'm happy to work with you. <br> Thank you !!  ❤️</h2>
+            </div>
+            <div class="message-me" id="message-me">
+      
+            <form id="contactForm" class="form">
+              <div class="rate-info">
+                  <div class="rating-input">
+                      <input type="number" id="ratingInput" min="1" max="5" placeholder="1--- Stars 1-5" required>
+                      <div class="stars-preview" id="starsPreview">
+                          <span>★</span>
+                          <span>★</span>
+                          <span>★</span>
+                          <span>★</span>
+                          <span>★</span>
+                      </div>
+                  </div>
+              </div>
+              <input type="text" id="serviceName" placeholder="2--- Service Name" required> <!-- تم إضافة حقل اسم الخدمة -->
+              <input type="text" id="username" placeholder="3--- Your Name" required>
+              <input type="email" id="email" placeholder="4--- Your Email" required>
+              <textarea id="message" rows="4" cols="50" name="message" placeholder="5--- Your Message" required></textarea>
+          
+              <div class="sipo">
+                  <div class="thanks">
+                      <h2>Sent. Thank you!🩵🥰</h2>
+                  </div>
+                  <div class="sircle" id="dira"></div>
+                  <button type="submit" style="cursor: pointer;">Send to me</button>
+              </div>
+          </form>
+          <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+      
+          </div>
+          </div>
+          <div class="back">
+            <h2 id="backbutton">
+              Back
+            </h2>
+          </div>
+
+        </div>
       <div class="s-c-v">
       <ul class="list-side">
         <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
@@ -111,7 +159,7 @@
         <h3> Talaat Gamal </h3>
       </div>
       <div class="rata">
-        <a href="https://talaatgamal.github.io/rate-page/">
+        <a href="#" id="rating-me">
           rating me
         </a>
       </div>
@@ -352,7 +400,7 @@
           </div>
       </div>
     </section>
-    <section id="skills-exp">    
+    <section id="skills-exp">
       <div class="skills-exp-c">
         <div class="skills-div">
           <div class="skills">
@@ -682,7 +730,10 @@
 
     </section>
     </section>
-    <div id="air-services">
+    <section id="servo">
+
+    </section>
+    <div id="air-services" style="display: none;">
 
     
         <div class="services">
@@ -867,6 +918,53 @@
     </section>
 
     <div id="footer">
+      <div class="info-footer">
+        <div class="serv">
+          <h2 class="title-if-foo">
+            My Services
+          </h2>
+          <div class="content">
+            <h2>1 - Create a web app</h2>
+            <h2>2 - Up date or edit</h2>
+            <h2>3 - Problem Solving</h2>
+            <h2>4 - Help for you</h2>
+          </div>
+        </div>
+        <div class="worka">
+          <h2 class="title-if-foo">
+            My reel work
+          </h2>
+          <div class="content">
+            <h2>1 - Ui / Ux Designer ( Portfolio )</h2>
+            <h2>2 - Learn Biology with AG ( web app )</h2>
+            <h2>3 - ..................................</h2>
+            <h2>4 - ..................................</h2>
+          </div>
+        </div>
+        <div class="cust">
+          <h2 class="title-if-foo">
+            My customers
+          </h2>
+          <div class="content">
+            <h2>1 - ********** ........   
+              <span style="color: #00d5ff;">★</span>
+              <span style="color: #00d5ff;">★</span>
+              <span style="color: #00d5ff;">★</span>
+              <span style="color: #00d5ff;">★</span>
+              <span style="color: #d1d1d1;">★</span>
+            </h2>
+            <h2>2 - ********** ........
+              <span style="color: #00d5ff;">★</span>
+              <span style="color: #00d5ff;">★</span>
+              <span style="color: #00d5ff;">★</span>
+              <span style="color: #00d5ff;">★</span>
+              <span style="color: #d1d1d1;">★</span>
+            </h2>
+            <h2>3 - ..................................</h2>
+            <h2>4 - ..................................</h2>
+          </div>
+        </div>
+      </div>
       <h2>Talaat Gamal</h2>
       <h2>1 / 2025</h2>
       <h2>Personal Portfolio</h2>
@@ -880,6 +978,7 @@
   <script src="js/middle-bar.js"></script>
   <script src="js/header.js"></script>
   <script src="js/air-circle.js"></script>
+  <script src="js/form-rate.js"></script>
   <!-- <script src="js/projects.js"></script> -->
 </body>
 </html>

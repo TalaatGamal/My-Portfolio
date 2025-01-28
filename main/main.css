@@ -10,11 +10,14 @@
 }
 html{
   scroll-behavior: smooth;
+  scrollbar-width: none;
+
 }
 body{
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  /* scrollbar-width: none; */
 }
 #main{
   background-color:  rgba(197, 197, 197, 0.434);
@@ -27,18 +30,6 @@ section{
   background-color: #4ea8af35;
 
   /* margin-bottom: 10px; */
-}
-#footer{
-  width: 100vw;
-  height: 8vh;
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 10px;
-  color: #ffffff;
 }
 @media (max-width:1000px) {
 
