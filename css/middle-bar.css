@@ -10,7 +10,7 @@
 .cmb{
   width: 100vw;
   min-height: 300px;
-  padding: 0px 10vw 0vh 10vw;
+  padding: 0px 20vw 0vh 20vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width:1000px) {
+@media (max-width:1200px) {
   .cmb{
     padding: 40px 1vw 40px 1vw;
   }

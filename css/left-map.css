@@ -11,6 +11,7 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-right: 0vw;
+  display: none;
 }
 .left-map .map-hr{
   width: 5px;

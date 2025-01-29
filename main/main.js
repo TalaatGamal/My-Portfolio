@@ -42,110 +42,89 @@ menuIcon.addEventListener('click', () => {
   sidebar.classList.toggle('active');
 });
 
-// space
-// space
-// space
-// space
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+//  مهم جداا تم الغاء تفعيله 
+
+
+
+
+
 
 // document.getElementById("mora").addEventListener("click", function (e) {
 //   e.preventDefault();
 //   const airWindow = document.querySelector(".air-w-bar");
 
 //   if (airWindow.classList.contains("visiblea")) {
+//     // إخفاء العنصر مع الأنيميشن
 //     airWindow.classList.remove("visiblea");
-//       document.querySelector(".air-w-bar").style.display="none"
-
 //     setTimeout(() => {
-//       airWindow.style.visibility = "hidden";
-//     }, 300);
+//       airWindow.style.display = "none";
+//     }, 300); // الانتظار حتى تنتهي الأنيميشن
 //   } else {
-//     airWindow.style.visibility = "visiblea"; 
-//     airWindow.classList.add("visiblea");
-//     document.querySelector(".air-w-bar").style.display="flex"
-//     document.getElementById("back-x").addEventListener("click", function (e) {
-//       document.querySelector(".air-w-bar").style.display="none"
-
-//     });
-//     e.preventDefault();
+//     // إظهار العنصر مع الأنيميشن
+//     airWindow.style.display = "flex";
+//     setTimeout(() => {
+//       airWindow.classList.add("visiblea");
+//     }, 10); // تأخير بسيط لتفعيل الأنيميشن
 //   }
 // });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// document.getElementById("mora").addEventListener("click", function (e) {
-//   e.preventDefault();
-//   const airWindow = document.querySelector(".air-w-bar");
-
-//   if (airWindow.classList.contains("visiblea")) {
-//     airWindow.classList.remove("visiblea");
-//     document.querySelector(".air-w-bar").style.display = "none";
-
-//     setTimeout(() => {
-//       airWindow.style.visibility = "hidden";
-//     }, 300);
-//   } else {
-//     airWindow.style.visibility = "visible"; // Corrected typo
-//     airWindow.classList.add("visiblea");
-//     document.querySelector(".air-w-bar").style.display = "flex";
-//   }
-// });
-
-// // Add the event listener for #back-x outside the #mora click handler
+// // إغلاق العنصر عند النقر على #back-x
 // document.getElementById("back-x").addEventListener("click", function (e) {
 //   e.preventDefault();
 //   const airWindow = document.querySelector(".air-w-bar");
 //   airWindow.classList.remove("visiblea");
-//   airWindow.style.display = "none";
 //   setTimeout(() => {
-//     airWindow.style.visibility = "hidden";
-//   }, 300);
+//     airWindow.style.display = "none";
+//   }, 300); // الانتظار حتى تنتهي الأنيميشن
 // });
-
-
-
-
-
-
-document.getElementById("mora").addEventListener("click", function (e) {
-  e.preventDefault();
-  const airWindow = document.querySelector(".air-w-bar");
-
-  if (airWindow.classList.contains("visiblea")) {
-    // إخفاء العنصر مع الأنيميشن
-    airWindow.classList.remove("visiblea");
-    setTimeout(() => {
-      airWindow.style.display = "none";
-    }, 300); // الانتظار حتى تنتهي الأنيميشن
-  } else {
-    // إظهار العنصر مع الأنيميشن
-    airWindow.style.display = "flex";
-    setTimeout(() => {
-      airWindow.classList.add("visiblea");
-    }, 10); // تأخير بسيط لتفعيل الأنيميشن
-  }
-});
-
-// إغلاق العنصر عند النقر على #back-x
-document.getElementById("back-x").addEventListener("click", function (e) {
-  e.preventDefault();
-  const airWindow = document.querySelector(".air-w-bar");
-  airWindow.classList.remove("visiblea");
-  setTimeout(() => {
-    airWindow.style.display = "none";
-  }, 300); // الانتظار حتى تنتهي الأنيميشن
-});
 
 
 

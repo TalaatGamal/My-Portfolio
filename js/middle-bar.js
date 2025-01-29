@@ -17,10 +17,10 @@ function liveCountWithResetAndDelay(elementId, start, end, delay, resetDelay) {
 }
 
 // عد حي داخل div1 من 1 إلى 5 مع تأخير 2 ثانية
-liveCountWithResetAndDelay("m-n1", 1, 5, 300, 5000); // 500 مللي ثانية لكل رقم، 2 ثانية تأخير عند الإعادة
+liveCountWithResetAndDelay("m-n1", 0, 1, 300, 5000); // 500 مللي ثانية لكل رقم، 2 ثانية تأخير عند الإعادة
 
 // عد حي داخل div2 من 1 إلى 15 مع تأخير 2 ثانية
-liveCountWithResetAndDelay("m-n2", 1, 15, 100, 5000); // 300 مللي ثانية لكل رقم، 2 ثانية تأخير عند الإعادة
+liveCountWithResetAndDelay("m-n2", 0, 15, 100, 5000); // 300 مللي ثانية لكل رقم، 2 ثانية تأخير عند الإعادة
 
 
 
