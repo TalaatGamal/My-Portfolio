@@ -4,35 +4,58 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #6FB6BB;
+}
+.cust-title {
+  width: 100%;
+  height: 230px;
+}
+.cust-title h2{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  animation: color 35s linear infinite;
+}
+@keyframes color {
+  0% {
+    box-shadow: #007780b7 0px 0px 0px 0px inset;
+  }
+  25% {
+    box-shadow: #007780b9 250px 0px 0px 0px inset;
+  }
+  50% {
+    box-shadow: #007780c2 500px 0px 0px 0px inset;
+  }
+  75% {
+    box-shadow: #007780bc 1200px 0px 0px 0px inset;
+  }
+  100% {
+    box-shadow: #007780b5 0px 0px 0px 0px inset;
+  }
 }
 .testimonial-container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 100vw;
   min-height: 100vh;
-  /* margin-top: 10vh; */
   gap: 20px;
-  /* background-color: #00b3ff9b; */
-  /* box-shadow: #1b0000 0px 0px 30px 20px; */
   z-index: 6;
   padding-left: 10vw;
-  padding-right: 20vw;
-  /* padding-top: 8vh; */
+  padding-right: 10vw;
   padding-bottom: 10vh;
   padding-top: 15vh;
-    /* background-image: url(../images/sky-stars.jpeg); */
-    background-position: center;
-    background-size: 25%;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    /* box-shadow: #000000 0px 0px 20px 20px; */
-    /* animation: v2-vb 10s linear infinite; */
-    /* background-color: #4ea8afba; */
-    /* background-color: #00A4AF; */
-    background-color: #6FB6BB;
+  background-color: #6FB6BB;
+
 
 }
 @keyframes v2-vb {
@@ -61,32 +84,21 @@
   border-top: 4px solid #00afdbd3 ;
   border-bottom: 4px solid #00aad5d3 ;
   margin-bottom: 20px;
-  /* background-image: url(../images/sky-stars.jpeg);
-  background-repeat: repeat;
-  background-size: 30%;
-  background-attachment: fixed; */
   transition: 0.5s;
   z-index: 0;
-  /* overflow: hidden; */
 }
 .vbn-animat{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* background-color: #ff0000; */
   width: 100%;
   height: 160px;
   overflow: hidden;
-  /* margin-top: 10px; */
 }
 .testimonial-card:hover{
   border-bottom: #ffffff solid 4px;
   border-top: #ffffff solid 4px;
-}
-.testimonial-card:hover .avatar{
-  /* display: none; */
-      /* animation: v2-nm 2s linear infinite; */
 }
 @keyframes v2-nm {
   0% {
@@ -111,26 +123,7 @@
 .testimonial-card:hover .comment{
   border: #cdcdcd solid 3px;
   background-color: #14677ac8;
-  /* color: #000; */
 }
-
-/* .quote-icon {
-  font-size: 18px;
-  color: #fff;
-  background-color: inherit;
-  border-radius: 10px;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  /* line-height: 35px; */
-  /* font-weight: bold; *//*
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: line-run3 5s linear infinite;
-} */
 .top{
   top: -18px;
   /* left: -18px; */
@@ -351,12 +344,12 @@ display: -webkit-box;
 }
 .stars {
   font-size: 22px;
-  background-color: #000000;
+  /* background-color: #000000; */
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 0px;
   padding-bottom: 0px;
-  border-bottom: #009dff solid 3px;
+  /* border-bottom: #009dff solid 3px; */
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -418,5 +411,12 @@ display: -webkit-box;
     align-items: center;
     justify-content: center;
     height: 30px;
+  }
+  .cust-title{
+    max-width: 400px;
+  }
+  .cust-title h2{
+    padding-left: 1vw;
+    padding-right: 1vw;
   }
 }

@@ -152,9 +152,9 @@
         <li><a href="#skills-exp"><i class="fa-solid fa-chart-line"></i>Skills</a></li>
         <li><a href="#exp"><i class="fa-solid fa-vial"></i>Experience</a></li>
         <li><a href="#customers"><i class="fa-solid fa-user-check"></i>Customers</a></li>
-        <li><a href="#air-services"><i class="fa-solid fa-person-circle-check"></i>Services</a></li>
+        <li><a href="#servo"><i class="fa-solid fa-person-circle-check"></i>Services</a></li>
         <li><a href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
-        <li><a href="#" style="background-color: #000000;"><i class="fa-solid fa-infinity"></i>More</a></li>
+        <li><a href="#" style="background-color: #000000;" id="mora"><i class="fa-solid fa-infinity"></i>More</a></li>
       </ul>
       <div class="vata">
         <h3> Talaat Gamal </h3>
@@ -164,6 +164,28 @@
           rating me
         </a>
       </div>
+      </div>
+      <div class="air-w-bar" id="air-w-bar">
+        <div class="xc">
+          <h2 id="back-x">X</h2>
+        </div>
+        <div class="top-w-bar">
+          <hr class="twb">
+          <hr class="twb2">
+        </div>
+        <div class="content-w-bar">
+          <div class="title-more">
+            <h2>More Options</h2>
+          </div>
+          <div class="vnm">
+            <i class="fa-solid fa-comment"></i>
+            <h2>Direct Message</h2>
+          </div>
+          <div class="vnm">
+            <i class="fa-solid fa-user-check"></i>
+            <h2>Reel Work</h2>
+          </div>
+        </div>
       </div>
       </div>
     </div>
@@ -619,20 +641,29 @@
                 </div>
               </div>
             </div>
+            <div class="line-animate">
+                
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section id="customers">
-      <div class="left-map" style="background-color: #6FB6BB;">
+      <!-- <div class="left-map" style="background-color: #6FB6BB;">
         <hr class="map-hr" style="background-color: #C6D9DA;">
         <div class="map-icon">
           <img src="https://chaplinco.com/wp-content/uploads/2024/02/man-user-circle-icon.png" alt="" style="background-color:#6FB6BB;">
           <h2 style="background-color: #6FB6BB; color:  #C6D9DA;">Customers</h2>
         </div>
         <hr class="map-hr" style="height: 80vh; background-color: #C6D9DA;">
-    </div>
+    </div> -->
       <section class="testimonial-container" id="Customers">
+        
+        <div class="cust-title">
+          <h2>
+            Customer feedback is a very important thing for any developer and helps in many things including Ui/Ux optimisation, psychologically positive impact which <br> helps us move forward, attracting other customers, etc.
+          </h2>
+        </div>
         
             <div class="testimonial-card orange">
                 <div class="top">💙</div>
@@ -704,7 +735,7 @@
                 </div>
                 <div class="quote-icon bottom">🌟</div>
             </div>
-            <div class="testimonial-card orange">
+            <!-- <div class="testimonial-card orange">
                 <div class="top">💙</div>
                 
                 <div class="profile">
@@ -726,13 +757,66 @@
                     </div>
                 </div>
                 <div class="quote-icon bottom">🌟</div>
-            </div>
+            </div> -->
         
 
     </section>
     </section>
     <section id="servo">
-
+      <div class="services-div">
+        <div class="servo-title">
+          <h2>
+            My Services
+          </h2>
+        </div>
+        <div class="cards-div">
+          <div class="card">
+            <div class="back3-d"></div>
+            <div class="back2-d"></div>
+            <div class="back1-d">
+              <div class="icon-d">
+                <i class="fa-solid fa-calendar-plus"></i>
+                <h2>Create Or Build</h2>
+              </div>
+              <div class="air-b-click">
+                <h2>Go</h2>
+                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right" id="arrow-r2"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="back3-d" style="background-color: #00819b;"></div>
+            <div class="back2-d"></div>
+            <div class="back1-d" style="background-color: #00966e;">
+              <div class="icon-d">
+                <i class="fa-solid fa-upload"></i>
+                <h2>UpDate Or edit</h2>
+              </div>
+              <div class="air-b-click">
+                <h2>Go</h2>
+                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right" id="arrow-r2"></i>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="back3-d"></div>
+            <div class="back2-d"></div>
+            <div class="back1-d" style="background-color: #972727;">
+              <div class="icon-d">
+                <i class="fa-solid fa-hand-holding-medical"></i>
+                <h2>Help for you</h2>
+              </div>
+              <div class="air-b-click">
+                <h2>Go</h2>
+                <i class="fa-solid fa-arrow-right"></i>
+                <i class="fa-solid fa-arrow-right" id="arrow-r2"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <div id="air-services" style="display: none;">
 
@@ -919,53 +1003,6 @@
     </section>
 
     <div id="footer">
-      <div class="info-footer">
-        <div class="serv">
-          <h2 class="title-if-foo">
-            My Services
-          </h2>
-          <div class="content">
-            <h2>1 - Create a web app</h2>
-            <h2>2 - Up date or edit</h2>
-            <h2>3 - Problem Solving</h2>
-            <h2>4 - Help for you</h2>
-          </div>
-        </div>
-        <div class="worka">
-          <h2 class="title-if-foo">
-            My reel work
-          </h2>
-          <div class="content">
-            <h2>1 - Ui / Ux Designer ( Portfolio )</h2>
-            <h2>2 - Learn Biology with AG ( web app )</h2>
-            <h2>3 - ..................................</h2>
-            <h2>4 - ..................................</h2>
-          </div>
-        </div>
-        <div class="cust">
-          <h2 class="title-if-foo">
-            My customers
-          </h2>
-          <div class="content">
-            <h2>1 - ********** ........   
-              <span style="color: #00d5ff;">★</span>
-              <span style="color: #00d5ff;">★</span>
-              <span style="color: #00d5ff;">★</span>
-              <span style="color: #00d5ff;">★</span>
-              <span style="color: #d1d1d1;">★</span>
-            </h2>
-            <h2>2 - ********** ........
-              <span style="color: #00d5ff;">★</span>
-              <span style="color: #00d5ff;">★</span>
-              <span style="color: #00d5ff;">★</span>
-              <span style="color: #00d5ff;">★</span>
-              <span style="color: #d1d1d1;">★</span>
-            </h2>
-            <h2>3 - ..................................</h2>
-            <h2>4 - ..................................</h2>
-          </div>
-        </div>
-      </div>
       <h2>Talaat Gamal</h2>
       <h2>1 / 2025</h2>
       <h2>Personal Portfolio</h2>

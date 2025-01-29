@@ -53,7 +53,7 @@
 .content-skills{
   /* background-color: black; */
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: start;
   flex-wrap: wrap;
   gap: 30px;
@@ -61,14 +61,14 @@
   color: #ffffff;
 }
 #skill-card{
-  background-color: rgba(0, 0, 0, 0.349);
-  width: 250px;
+  /* background-color: rgba(0, 0, 0, 0.349); */
+  max-width: 180px;
   min-height: 200px;
-  border-radius: 10px;
-  padding: 20px 30px 20px 30px;
-  border-left: #157278 solid 4px;
+  /* border-radius: 10px; */
+  /* padding: 20px 30px 20px 30px; */
+  /* border-left: #157278 solid 4px; */
   /* border-right: #157278 solid 4px; */
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.67), rgba(136, 136, 136, 0));
+      /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.67), rgba(136, 136, 136, 0)); */
 }
 #skill-card .list{
   display: flex;
@@ -84,8 +84,13 @@
   justify-content: center;
 }
 .title-skill-card{
-  border-bottom: #157278 solid 3px;
+  border-left: #0078ce solid 6px;
   margin-bottom: 20px;
+  background-color: #00302d82;
+  padding: 8px;
+  /* border-radius: 8px; */
+  width: max-content;
+  min-width: 180px;
 }
 .skills-div .certificates{
   /* background-color: rgba(0, 82, 82, 0.544); */
@@ -177,7 +182,10 @@
   background: linear-gradient(to bottom,#43a4abb6, #43a4ab1c 10%);
   border-radius: 20px;
   overflow: hidden;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .title-exper{
   width: 100%;
@@ -207,27 +215,41 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 80px;
   /* background-color: #0c474b; */
   /* margin-top: 100px; */
-  width: 100%;
+  width: 65%;
   min-height: 50vh;
-  padding: 30px;
+  /* padding: 30px; */
   padding-bottom: 100px;
+  border-radius: 20px;
+
 }
 .work-info{
-  /* background-color: #2b0606; */
-  /* max-width: 75%; */
   height: 175px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* padding-left: 40px;
-  padding-right: 40px; */
-  /* overflow: hidden; */
+}
+@keyframes color2 {
+  0% {
+    box-shadow: #000000b7 0px 0px 0px 0px inset;
+  }
+  25% {
+    box-shadow: #000000b9 0px -300px 0px 0px inset;
+  }
+  50% {
+    box-shadow: #000000c2 0px -1000px 0px 0px inset;
+  }
+  75% {
+    box-shadow: #000000bc 0px -300px 0px 0px inset;
+  }
+  100% {
+    box-shadow: #000000b5 0px 0px 0px 0px inset;
+  }
 }
 .cover-map-card{
   display: flex;

@@ -13,9 +13,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4ea8af7e;
+  background-color: #C6D9DA;
   overflow: hidden;
-  background: linear-gradient(to right, rgba(0, 204, 255, 0.482), rgba(136, 136, 136, 0));
+  /* background: linear-gradient(to right, rgba(0, 204, 255, 0.482), rgba(136, 136, 136, 0)); */
   width: 100%;
   min-height: 100vh;
 }
@@ -40,7 +40,7 @@
   align-items: center;
   justify-content: left;
   gap: 10px;
-  color: #ffffff;
+  color: #008bb6;
   font-size: 15px;
   width: 100%;
   /* background-color: #1d8289; */
@@ -65,12 +65,13 @@
   align-items: center;
   justify-content: left;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   margin-top: 30px;
 }
 #contact .media-contact a i{
-  font-size: 30px;
+  font-size: 25px;
   transition: 0.5s;
+  border-radius: 15px;
 }
 #contact .media-contact a i:hover{
   /* color: #ffffff; */
