@@ -45,8 +45,14 @@
   gap: 40px;
 }
 .serv-card{
-  border-radius: 30px;
+  border-radius: 10px;
   overflow: hidden;
+  border-bottom: #000000 solid 20px;
+  box-shadow: #00000079 20px 20px 20px 3px;
+  transition: 0.5s;
+}
+.serv-card:hover{
+  transform: translateY(-10px)
 }
 .serv-card .text{
   background-color: #002e389e;
@@ -55,8 +61,23 @@
   justify-content: center;
   flex-direction: column;
   padding: 20px;
-  width: 350px;
-  height: 300px;
+  width: 400px;
+  height: 280px;
+}
+.serv-card .text h2 a{
+  color: #00d5ff;
+  padding: 0px; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  background-color: #00000039; 
+  border-top: #00d5ff solid 3px;
+  border-bottom: #00d5ff solid 3px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.serv-card .text h2 a:hover{
+  background-color: #00667b;
+  color: #ffffff;
 }
 .serv-card img{
   width: 90px;
@@ -88,7 +109,7 @@
 }
 @media (max-width:1200px) {
 #servo{
-  padding: 10vh 5vw 10vh 5vw;
+  padding: 10vh 0vw 0vh 0vw;
 }
 #bottom-card{
   position: relative; 
@@ -97,5 +118,10 @@
 #bottom-card2{
   position: relative; 
   top: 0px;
+}
+.servo-title h2{
+  padding: 5px;
+  width: 100%;
+  padding-left: 10px;
 }
 }

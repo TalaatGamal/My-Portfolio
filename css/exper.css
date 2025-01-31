@@ -71,14 +71,15 @@
   gap: 5px;
 }
 .course-card{
-  background-color: #000000;
+  background-color: #011b2695;
+  border-left: #000000 solid 10px;
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
 }
 .course-card h2{
@@ -360,7 +361,7 @@
   margin-bottom: 50px;
   border-radius: 15px;
   border-left: #000000 solid 4px;
-  background: linear-gradient(to right,#3DA5A7, #3da5a782, #ffffff00);
+  background: linear-gradient(to right,#3DA5A7, #1d676882,#1d676836);
   display: flex;
   align-items: center;
   justify-content: center;
