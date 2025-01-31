@@ -323,6 +323,7 @@ animation: vee-hma 25s linear infinite;
   /* background-image: url(https://bswh-p-001-delivery.sitecorecontenthub.cloud/api/public/content/fde2488779644d4c92ba565cea1fb2dd?v=6c4c0874); */
   background-position: center;
   background-size: cover;
+  transform: translateY(50px);
 }
 #a2{
   /* background-image: url(https://nationalinterest.org/sites/default/files/styles/desktop__1260_/public/main_images/F-22%20Raptor%20from%20U.S.%20Air%20Force.jpg?itok=i82wdNDw); */
@@ -334,12 +335,16 @@ animation: vee-hma 25s linear infinite;
     background-image: url(https://www.hurawalhi.com/wp-content/uploads/2019/04/5.8-3-1030x579.jpg);
   background-position: center;
   background-size: cover;
+  transform: translateY(50px);
+
 }
 #a4{
   /* background-image: url(https://images04.nicepage.com/feature/612016/ecommerce-websites.jpg); */
   background-image: url(https://images.yourstory.com/cs/206/d6cc5c20076211ed91383927582c5cb0/NIKITAImageTaggingnoframesEditorialTeamMaster32-1676349739464.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75);
   background-position: bottom;
   background-size: cover;
+  transform: translateY(50px);
+
 }
 #a5{
   background-image: url(https://dailytrust.com/wp-content/uploads/2021/01/Emirates-Flight-Sale-emirates-airlines.jpg);
@@ -351,6 +356,8 @@ animation: vee-hma 25s linear infinite;
   background-image: url(https://i0.wp.com/www.ibelieveinsci.com/wp-content/uploads/7lightning.png?fit=1024%2C576&ssl=1);
   background-position: center;
   background-size: cover;
+  transform: translateY(50px);
+
 }
 @media (max-width:1000px) {
   
@@ -430,4 +437,26 @@ font-size: 30px;
 .title-v a{
   width: 150px;
 }
+}
+@media (max-width:1400px) {
+  #a5{
+    transform: translateY(50px);
+  }
+  @media (max-width:800px) {
+    #a1{
+      transform: translateY(0px);
+    }
+    #a3{
+      transform: translateY(0px);
+    }
+    #a4{
+      transform: translateY(0px);
+    }
+    #a5{
+      transform: translateY(0px);
+    }
+    #a6{
+      transform: translateY(0px);
+    }
+  }
 }
