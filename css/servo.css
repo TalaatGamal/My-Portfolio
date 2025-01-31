@@ -44,109 +44,58 @@
   flex-wrap: wrap;
   gap: 40px;
 }
-.services-div .cards-div .card{
-  padding: 20px;
-  /* background-color: #ff0000; */
-  width: max-content;
-  height: 300px;
-}
-.services-div .cards-div .back3-d{
-  background-color: #009c7a;
-  width: 300px;
-  height: 250px;
-  position: relative;
-  top: 10px;
-  left: 0px;
-  z-index: 0;
-  border-radius: 10px;
-}
-.services-div .cards-div .back2-d{
-  background-color: #000000;
-  width: 300px;
-  height: 250px;
-  position: relative;
-  top: -220px;
-  left: -20px;
-  z-index: 0;
-  border-radius: 10px;
-
-}
-.services-div .cards-div .back1-d{
-  background-color: #007d8e;
-  width: 300px;
-  height: 250px;
-  position: relative;
-  top: -450px;
-  left: -40px;
-  z-index: 0;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.serv-card{
+  border-radius: 30px;
   overflow: hidden;
 }
-.icon-d{
+.serv-card .text{
+  background-color: #002e389e;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
+  width: 350px;
+  height: 300px;
 }
-.icon-d i{
-  font-size: 50px;
+.serv-card img{
+  width: 90px;
+  height: 90px;
 }
-.air-b-click{
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  background-color: #000000;
-  width: 150px;
-  height: 50px;
-  border-radius: 10px 0px 0px 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+#bottom-card{
+  position: relative; 
+  top: 170px;
+  background-image: url(https://images.pexels.com/photos/739407/pexels-photo-739407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
 }
-#arrow-r2{
-  color: #00ffbf;
-  animation: arrow-r2 2s linear infinite;
-  font-size: 20px;
+#bottom-card2{
+  position: relative; 
+  top: 170px;
+  background-image: url(https://images.pexels.com/photos/18096282/pexels-photo-18096282/free-photo-of-website-displayed-on-a-laptop-standing-on-a-wooden-table.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+  background-position: center;
+  background-size: cover;
 }
-@keyframes arrow-r2 {
-  0% {
-      opacity: 0;
-      transform: translateX(-20px);
-  }
-  50% {
-      opacity: 1;
-      transform: translateX(10px);
-  }
-  100% {
-      opacity: 0;
-      transform: translateX(20px);
-  }
+#update{
+  background-image: url(https://images.pexels.com/photos/6893346/pexels-photo-6893346.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+  background-position: center;
+  background-size: cover;
+}
+#help{
+  background-image: url(https://images.pexels.com/photos/4275892/pexels-photo-4275892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
 }
 @media (max-width:1200px) {
-  .services-div .cards-div{
-    /* background-color: #000000; */
-    /* color: #ffffff;
-    width: 100%;
-    min-height: 400px;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px; */
-    padding-left: 15vw;
-  }
-  
 #servo{
-  /* width: 100vw;
-  min-height: 100vh;
-  background-color: #C6D9DA; */
-  /* border-bottom: #00c7d5 double 40px; */
   padding: 10vh 5vw 10vh 5vw;
+}
+#bottom-card{
+  position: relative; 
+  top: 0px;
+}
+#bottom-card2{
+  position: relative; 
+  top: 0px;
 }
 }

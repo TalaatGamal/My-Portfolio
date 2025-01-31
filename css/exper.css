@@ -355,7 +355,7 @@
 .spider-info-card{
   /* background-color: #000000; */
   width: 400px;
-  height: 200px;
+  min-height: 200px;
   margin-top: 50px;
   margin-bottom: 50px;
   border-radius: 15px;
@@ -688,12 +688,25 @@
   }
   .info-skills-v{
     border: none;
+    min-height: 100vh;
   }
   .spider-skills{
     width: 100%;
   }
   .top-spider .ts-4{
     width: 150px;
+  }
+  .info-skills-v .course{
+    height: max-content;
+  }
+  .info-skills-v .certificate{
+    height: max-content;
+  }
+  .course-card h2{
+    height: 35px;
+  }
+  .cer-content{
+    min-height: 200px;
   }
 }
 @media (max-width:500px) {
@@ -702,5 +715,8 @@
   }
   .top-spider .imk-2{
     display: block;
+  }
+  .spider-div{
+    margin-left: 50px;
   }
 }
