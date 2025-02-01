@@ -194,9 +194,9 @@
 .cards{
   width: 380px;
   height: 30vh;
-  border-top: #00627bd3  solid 6px;
-  border-bottom: #00627bd6  solid 6px;
-  border-radius: 10px;
+  /* border-top: #00627bd3  solid 6px; */
+  /* border-left: #00c3ff  solid 10px; */
+  border-radius: 20px;
   background-color: #0084ff10;
   cursor: pointer;
   overflow: hidden;
@@ -206,10 +206,12 @@
   flex-wrap: wrap;
   text-decoration: none;
   transition: 0.5s;
+  box-shadow: #00000079 20px 20px 20px 3px;
+
 }
 .cards h3{
   width: 100%;
-  height: 92%;
+  height: 88%;
   display: flex;
   align-items: center;
   justify-content: center; 
@@ -225,9 +227,10 @@ width: 100%;
 height: 100%;
 }
 .cards h4{
-  background-color: #001a2fea; 
+  background-color: #000000a9; 
+  border-top: #00bfff solid 3px;
   width: 100%;
-  height: 8%;
+  height: 12%;
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -318,8 +321,13 @@ animation: vee-hma 25s linear infinite;
     transform: translateY(0%);
 }
 }
+.cards video{
+  width: 108%;
+  height: 100%;
+}
 #a1{
-  background-image: url(https://cdn.prod.website-files.com/61a9642430af319149dd1ce3/643eb31c6a2141794ef30793_AdobeStock_218394966.jpeg);
+  background-image: url(https://api.reliasoftware.com/uploads/ux_ui_design_together_7865cb455b.webp);
+  /* background-image: url(https://cdn.prod.website-files.com/61a9642430af319149dd1ce3/643eb31c6a2141794ef30793_AdobeStock_218394966.jpeg); */
   /* background-image: url(https://bswh-p-001-delivery.sitecorecontenthub.cloud/api/public/content/fde2488779644d4c92ba565cea1fb2dd?v=6c4c0874); */
   background-position: center;
   background-size: cover;
@@ -327,12 +335,15 @@ animation: vee-hma 25s linear infinite;
 }
 #a2{
   /* background-image: url(https://nationalinterest.org/sites/default/files/styles/desktop__1260_/public/main_images/F-22%20Raptor%20from%20U.S.%20Air%20Force.jpg?itok=i82wdNDw); */
-  background-image: url(https://i0.wp.com/innovation-village.com/wp-content/uploads/2023/11/elon_musk.jpeg?w=945&ssl=1);
+  /* background-image: url(https://i0.wp.com/innovation-village.com/wp-content/uploads/2023/11/elon_musk.jpeg?w=945&ssl=1); */
+  background-image: url(https://alwofod.sa/wp-content/uploads/2021/08/%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%B7-%D8%A7%D9%84%D8%AC%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9.jpg);
+
   background-position: center;
   background-size: cover;
 }
 #a3{
-    background-image: url(https://www.hurawalhi.com/wp-content/uploads/2019/04/5.8-3-1030x579.jpg);
+  background-image: url(https://i.natgeofe.com/n/87a36612-27e8-4e6b-b188-82c37a8dd95a/NationalGeographic_2772395_16x9.jpg);
+  /* background-image: url(https://www.hurawalhi.com/wp-content/uploads/2019/04/5.8-3-1030x579.jpg); */
   background-position: center;
   background-size: cover;
   transform: translateY(50px);
@@ -340,20 +351,32 @@ animation: vee-hma 25s linear infinite;
 }
 #a4{
   /* background-image: url(https://images04.nicepage.com/feature/612016/ecommerce-websites.jpg); */
-  background-image: url(https://images.yourstory.com/cs/206/d6cc5c20076211ed91383927582c5cb0/NIKITAImageTaggingnoframesEditorialTeamMaster32-1676349739464.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75);
+  /* background-image: url(https://images.yourstory.com/cs/206/d6cc5c20076211ed91383927582c5cb0/NIKITAImageTaggingnoframesEditorialTeamMaster32-1676349739464.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75); */
   background-position: bottom;
   background-size: cover;
   transform: translateY(50px);
-
+}
+#a4 .hjn{
+  transform: translateY(-30vh); 
+  background-color: #00000075;
+}
+#a4 h4 img{
+  width: 20px;
+  margin-left: 10px;
 }
 #a5{
-  background-image: url(https://dailytrust.com/wp-content/uploads/2021/01/Emirates-Flight-Sale-emirates-airlines.jpg);
+  background-image: url(https://www.mediaoffice.ae/-/media/2021/jan/26-01/02/he-khalifa-al-zaffin-and-mohamed-alabbar.jpg?h=1344&w=2016&hash=91EFE5B93ED5D13ECF1813C0EA1F4AA6);
+  /* background-image: url(https://i0.wp.com/innovation-village.com/wp-content/uploads/2023/11/elon_musk.jpeg?w=945&ssl=1); */
+  /* background-image: url(https://d3lcr32v2pp4l1.cloudfront.net/Pictures/2000xAny/9/7/2/72972_a380_sia_airbush.gousse_225301.jpg); */
+  /* background-image: url(https://alwofod.sa/wp-content/uploads/2021/08/%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%B7-%D8%A7%D9%84%D8%AC%D9%88%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9.jpg); */
+  /* background-image: url(https://dailytrust.com/wp-content/uploads/2021/01/Emirates-Flight-Sale-emirates-airlines.jpg); */
   background-position: center;
   background-size: cover;
 }
 #a6{
   /* background-image: url(https://gate.ahram.org.eg/Media/News/2021/10/12/2021-637696538275094163-509.jpg); */
-  background-image: url(https://i0.wp.com/www.ibelieveinsci.com/wp-content/uploads/7lightning.png?fit=1024%2C576&ssl=1);
+  /* background-image: url(https://i0.wp.com/www.ibelieveinsci.com/wp-content/uploads/7lightning.png?fit=1024%2C576&ssl=1); */
+  background-image: url(https://marsalqatar.qa/uploads/images/2023/01/b1VKU.jpg);
   background-position: center;
   background-size: cover;
   transform: translateY(50px);
@@ -457,6 +480,9 @@ font-size: 30px;
     }
     #a6{
       transform: translateY(0px);
+    }
+    #a4 .hjn{
+      transform: translateY(-240px); 
     }
   }
 }
