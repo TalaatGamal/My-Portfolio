@@ -1,0 +1,20 @@
+
+
+.air-rate{
+  background-color: #316a6f;
+  width: 150px;
+  height: 30px;
+  position: fixed;
+  z-index: 1000000000;
+  top: 45%;
+  right: -60px;
+  transform: rotate(90deg);
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.air-rate h2{
+  color: #ffffff;
+  font-size: 17px;
+}

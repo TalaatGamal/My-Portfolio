@@ -2,18 +2,19 @@
 
 
 .air-circle{
-  background-color: rgb(220, 220, 220);
+  /* background-color: rgb(220, 220, 220); */
   width: 40px;
   height: 40px;
-  border-radius: 10px;
+  border-radius: 100px;
+  padding: 10px;
   position: fixed;
   top: 90vh;
-  right: 5vw;
+  right: 40px;
   z-index: 1000;
   background-image: url(https://cdn.iconscout.com/icon/free/png-256/free-top-arrow-icon-download-in-svg-png-gif-file-formats--up-upward-direction-and-arrows-vol-3-flat-pack-sign-symbols-icons-1112324.png);
   background-position: center;
   background-size: 80%;
-  border: black solid 3px;
+  border: #006990 solid 3px;
 }
 
 
