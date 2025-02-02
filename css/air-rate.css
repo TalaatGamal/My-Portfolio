@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .air-rate h2{
   color: #ffffff;

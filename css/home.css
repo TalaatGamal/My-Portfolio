@@ -46,17 +46,20 @@ a{
   margin-right: 90px;
 }
 #home .photo .img-i1{
-  border-radius: 40px;
-  width: 350px;
-  height: 350px;
+  border-radius: 400px;
+  width: 370px;
+  height: 370px;
   margin-right: 90px;
   /* background-image: url(../images/My-photo-img.jpg); */
-  background-image: url(https://img.freepik.com/premium-photo/computer-programmer-icon-white-background-ar-32-v-52-job-id-16481ff812194d37833d88603725b2d4_941600-89823.jpg);
-
+  /* background-image: url(https://img.freepik.com/premium-photo/computer-programmer-icon-white-background-ar-32-v-52-job-id-16481ff812194d37833d88603725b2d4_941600-89823.jpg); */
+  background-image: url(../Images/1000023989.jpg);
   background-position: center;
   background-size: cover;
-  border-top: #008993a9 solid 8px;
-  border-bottom: #008993a9 solid 8px;
+  background-repeat: no-repeat;
+  /* border-top: #008993 solid 8px;
+  border-bottom: #008993 solid 8px; */
+  border:  #008993  double 10px;
+  transform: rotate(2deg);
 
 }
 .media{
@@ -418,7 +421,7 @@ z-index: 10; */
 #home .photo .img-i1{
   margin-right: 0px;
   background-color: #ffffff2e;
-  background-image: url(../Images/1000023989.jpg);
+  /* background-image: url(../Images/1000023989.jpg); */
 }
 .hire{
   padding: 5px;

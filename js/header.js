@@ -169,18 +169,16 @@ window.addEventListener('scroll', function () {
   const currentScroll = window.pageYOffset;
   let opacity = Math.min(currentScroll / 200, 0.4);
 
-  // تغيير خلفية الهيدر بناءً على التمرير
   header.style.backgroundColor = `rgba(0, 95, 102, ${opacity})`;
 
-  // تفعيل الكود عند التمرير
   if (currentScroll > 0) {
     links.forEach(link => {
-      link.style.color = "#ffffff";  // تغيير لون الروابط للأبيض
+      link.style.color = "#ffffff";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#ffffff"
     });
   } else {
     links.forEach(link => {
-      link.style.color = "";  // إعادة لون الروابط للحالة الأصلية
+      link.style.color = "";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#4e6068"
     });
   }
