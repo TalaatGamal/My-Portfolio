@@ -55,8 +55,9 @@
   height: 100%;
 }
 #header .hd-1 a{
-  color: #ffffff;
+  color: #4e6068;
   text-decoration: none;
+  transition: 0.3s;
 }
 #header .hd-2 a{
   color: #1A747A;

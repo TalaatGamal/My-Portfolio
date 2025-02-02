@@ -176,10 +176,12 @@ window.addEventListener('scroll', function () {
   if (currentScroll > 0) {
     links.forEach(link => {
       link.style.color = "#ffffff";  // تغيير لون الروابط للأبيض
+      document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#ffffff"
     });
   } else {
     links.forEach(link => {
       link.style.color = "";  // إعادة لون الروابط للحالة الأصلية
+      document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#4e6068"
     });
   }
 
