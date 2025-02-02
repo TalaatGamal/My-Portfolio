@@ -421,6 +421,9 @@ z-index: 10; */
 #home .photo .img-i1{
   margin-right: 0px;
   background-color: #ffffff2e;
+  border-radius: 60px;
+  transform: rotate(0deg);
+  border: #008993 solid 7px;
   /* background-image: url(../Images/1000023989.jpg); */
 }
 .hire{
