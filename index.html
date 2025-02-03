@@ -105,7 +105,7 @@
           
           <div class="form-div">
             <div class="title-form-div">
-              <h2>I'm happy to work with you. <br> Thank you !!  ❤️</h2>
+              <h2 style="font-size: 20px;">Your feedback helps me move forward, don't hesitate to do so !! ❤️</h2>
             </div>
             <div class="message-me" id="message-me">
       
@@ -122,10 +122,11 @@
                       </div>
                   </div>
               </div>
-              <input type="text" id="serviceName" placeholder="2--- Service Name" required> <!-- تم إضافة حقل اسم الخدمة -->
-              <input type="text" id="username" placeholder="3--- Your Name" required>
-              <input type="email" id="email" placeholder="4--- Your Email" required>
-              <textarea id="message" rows="4" cols="50" name="message" placeholder="5--- Your Message" required></textarea>
+              <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
+    
+              <input type="text" id="serviceName" placeholder="3--- What’s Your Job Title?" required> <!-- تم إضافة حقل اسم الخدمة -->
+              <input type="text" id="username" placeholder="4--- Your Name" required>
+              <input type="email" id="email" placeholder="5--- Your Email" required>
           
               <div class="sipo">
                   <div class="thanks">
@@ -167,17 +168,17 @@
       </div>
       </div>
       <div class="air-w-bar" id="air-w-bar">
-        <!-- <div class="xc">
+        <div class="xc">
           <h2 id="back-x">X</h2>
-        </div> -->
-        <!-- <div class="top-w-bar">
+        </div>
+        <div class="top-w-bar">
           <hr class="twb">
           <hr class="twb2">
-        </div> -->
+        </div>
         <div class="content-w-bar">
           <!-- <div class="title-more">
             <h2>More Options</h2>
-          </div> -->
+          </div>
           <div class="vnm">
             <i class="fa-solid fa-comment"></i>
             <h2>Direct Message</h2>
@@ -185,7 +186,7 @@
           <div class="vnm">
             <i class="fa-solid fa-user-check"></i>
             <h2>Reel Work</h2>
-          </div>
+          </div> -->
         </div>
       </div>
       </div>
@@ -207,9 +208,53 @@
     <div class="air-circle" id="air-circle">
       <a href="#home"></a>
     </div>
-    <div class="air-rate">
+    <div class="air-rate" id="air-rate">
       <h2>Send feedback</h2>
     </div>
+    <div id="popup2" class="popup2">
+
+      <div class="form-div">
+        <div class="title-form-div">
+          <h2 style="font-size: 20px;">Your feedback helps me move forward, don't hesitate to do so !! ❤️</h2>
+        </div>
+        <div class="message-me" id="message-me">
+  
+        <form id="contactForm" class="form">
+          <div class="rate-info">
+              <div class="rating-input">
+                  <input type="number" id="ratingInput" min="1" max="5" placeholder="1--- Stars 1-5" required>
+                  <div class="stars-preview" id="starsPreview">
+                      <span>★</span>
+                      <span>★</span>
+                      <span>★</span>
+                      <span>★</span>
+                      <span>★</span>
+                  </div>
+              </div>
+          </div>
+          <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
+
+          <input type="text" id="serviceName" placeholder="3--- What’s Your Job Title?" required> <!-- تم إضافة حقل اسم الخدمة -->
+          <input type="text" id="username" placeholder="4--- Your Name" required>
+          <input type="email" id="email" placeholder="5--- Your Email" required>
+      
+          <div class="sipo">
+              <div class="thanks">
+                  <h2>Sent. Thank you!🩵🥰</h2>
+              </div>
+              <div class="sircle" id="dira"></div>
+              <button type="submit" style="cursor: pointer;">Send</button>
+          </div>
+      </form>
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  
+      </div>
+      </div>
+
+      <!-- <div class="pc2-popup"></div> -->
+      <span id="closePopup2" class="close2"><span>&times;</span> Back</span>
+    </div>
+
 
     <section id="home">
         <div class="info">

@@ -97,34 +97,34 @@ menuIcon.addEventListener('click', () => {
 
 
 
-// document.getElementById("mora").addEventListener("click", function (e) {
-//   e.preventDefault();
-//   const airWindow = document.querySelector(".air-w-bar");
+document.getElementById("mora").addEventListener("click", function (e) {
+  e.preventDefault();
+  const airWindow = document.querySelector(".air-w-bar");
 
-//   if (airWindow.classList.contains("visiblea")) {
-//     // إخفاء العنصر مع الأنيميشن
-//     airWindow.classList.remove("visiblea");
-//     setTimeout(() => {
-//       airWindow.style.display = "none";
-//     }, 300); // الانتظار حتى تنتهي الأنيميشن
-//   } else {
-//     // إظهار العنصر مع الأنيميشن
-//     airWindow.style.display = "flex";
-//     setTimeout(() => {
-//       airWindow.classList.add("visiblea");
-//     }, 10); // تأخير بسيط لتفعيل الأنيميشن
-//   }
-// });
+  if (airWindow.classList.contains("visiblea")) {
+    // إخفاء العنصر مع الأنيميشن
+    airWindow.classList.remove("visiblea");
+    setTimeout(() => {
+      airWindow.style.display = "none";
+    }, 300); // الانتظار حتى تنتهي الأنيميشن
+  } else {
+    // إظهار العنصر مع الأنيميشن
+    airWindow.style.display = "flex";
+    setTimeout(() => {
+      airWindow.classList.add("visiblea");
+    }, 10); // تأخير بسيط لتفعيل الأنيميشن
+  }
+});
 
-// // إغلاق العنصر عند النقر على #back-x
-// document.getElementById("back-x").addEventListener("click", function (e) {
-//   e.preventDefault();
-//   const airWindow = document.querySelector(".air-w-bar");
-//   airWindow.classList.remove("visiblea");
-//   setTimeout(() => {
-//     airWindow.style.display = "none";
-//   }, 300); // الانتظار حتى تنتهي الأنيميشن
-// });
+// إغلاق العنصر عند النقر على #back-x
+document.getElementById("back-x").addEventListener("click", function (e) {
+  e.preventDefault();
+  const airWindow = document.querySelector(".air-w-bar");
+  airWindow.classList.remove("visiblea");
+  setTimeout(() => {
+    airWindow.style.display = "none";
+  }, 300); // الانتظار حتى تنتهي الأنيميشن
+});
 
 
 
