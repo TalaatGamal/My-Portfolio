@@ -54,7 +54,7 @@
 }
 .form input::placeholder{
   font-size: 17px;
-  color: #838383;
+  color: #313131;
 }
 .form #message{
   height: 100%;
@@ -80,7 +80,7 @@
 }
 .form #message::placeholder{
   /* text-align: center;  */
-  color: #838383;
+  color: #313131;
 }
 .sipo{
   width: 100%;
