@@ -99,6 +99,7 @@ a{
   /* border:  #008993  double 10px; */
   border: #ffffff7a solid 6px;
   transform: rotate(2deg);
+  box-shadow: #40A3AA 0px 0px 20px 5px;
   /* position: absolute;
   z-index: 1; */
 }
@@ -111,7 +112,7 @@ a{
   z-index: -1;
   margin-right: 90px;
 
-  animation: circle-vbn 5s linear infinite;
+  animation: circle-vbn 10s linear infinite;
   /* transform: rotate(180deg); */
 }
 @keyframes circle-vbn {
@@ -123,13 +124,19 @@ a{
   20% {
       opacity: 1;
       /* transform: translateX(-200%); */
-      transform: rotate(180deg);
+      transform: rotate(200deg);
+
+  }
+  60% {
+      opacity: 1;
+      /* transform: translateX(-200%); */
+      transform: rotate(400deg);
 
   }
   90% {
       opacity: 1;
       /* transform: translateX(100%); */
-      transform: rotate(360deg);
+      transform: rotate(600deg);
   }
   100% {
       opacity: 0;
@@ -500,14 +507,14 @@ z-index: 10; */
   background-color: #ffffff2e;
   border-radius: 60px;
   transform: rotate(0deg);
-  border: #008993 solid 7px;
+  /* border: #008993 solid 7px; */
   /* background-image: url(../Images/1000023989.jpg); */
 }
 .img-i1-cover{
   margin-right: 0px;
   z-index: -1;
-  width: 380px;
-  height: 380px;
+  width: 390px;
+  height: 390px;
 }
 .hire{
   padding: 5px;
