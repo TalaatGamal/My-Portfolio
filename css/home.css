@@ -83,7 +83,7 @@ a{
   /* background-color: #000000; */
 }
 #home .photo .img-i1{
-  border-radius: 400px;
+  border-radius: 450px;
   width: 370px;
   height: 370px;
   margin-right: 90px;
@@ -97,7 +97,7 @@ a{
   /* border-top: #008993 solid 8px;
   border-bottom: #008993 solid 8px; */
   /* border:  #008993  double 10px; */
-  border: #ffffff7a solid 6px;
+  border: #569987 solid 6px;
   transform: rotate(2deg);
   box-shadow: #40A3AA 0px 0px 20px 5px;
   /* position: absolute;
@@ -507,6 +507,7 @@ z-index: 10; */
   background-color: #ffffff2e;
   border-radius: 60px;
   transform: rotate(0deg);
+  width: 400px;
   /* border: #008993 solid 7px; */
   /* background-image: url(../Images/1000023989.jpg); */
 }
