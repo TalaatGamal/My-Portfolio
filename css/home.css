@@ -105,6 +105,7 @@ a{
   box-shadow: #40A3AA 0px 0px 20px 5px;
   /* position: absolute;
   z-index: 1; */
+  overflow: hidden;
 }
 .img-i1-cover{
   border:  #008993  double 10px;

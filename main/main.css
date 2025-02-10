@@ -18,6 +18,8 @@ body{
   min-height: 100vh;
   overflow-x: hidden;
   /* scrollbar-width: none; */
+  /* background-color: #4ea8af35; */
+
 }
 #main{
   background-color:  rgba(197, 197, 197, 0.434);

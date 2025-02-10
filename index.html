@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/servo.css">
   <link rel="stylesheet" href="css/form-rate.css">
   <link rel="stylesheet" href="css/air-rate.css">
+  <link rel="stylesheet" href="css/rate.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,8 +72,8 @@
               <a href="#contact">
                 <h2>Buy a service</h2>
               </a>
-              <a href="#air-services">
-                <h2>Direct message</h2>
+              <a href="#rating-me-r">
+                <h2>Rating me</h2>
               </a>
             </div>
 
@@ -84,7 +85,7 @@
             <a href="#servo">
               <h2>Services</h2>
             </a>
-            <a href="#contact">
+            <a href="#contact-home">
               <h2>Contact Me</h2>
             </a>
           </div>
@@ -346,8 +347,8 @@
                 </div>
               </div>
               <!-- <a href="#" class="a-arrow"><i class="fa-solid fa-angles-right" style="color: #000000;"></i></a> -->
-              <a href="https://talaatgamal.github.io/All-Projects/" class="s-i4" id="title-cards"><i class="fa-solid fa-layer-group" style=" font-size: 30px; margin-right: 10px;"></i>All Projects</a>
-              <a href="https://github.com/TalaatGamal?tab=repositories" class="s-i4" id="title-cards" style="background-color: #000000;"><i class="fa-brands fa-github" style=" font-size: 30px; margin-right: 10px;"></i>GitHub</a>
+              <a href="https://talaatgamal.github.io/All-Projects/" class="s-i4" id="title-cards" target="_blank"><i class="fa-solid fa-layer-group" style=" font-size: 30px; margin-right: 10px;"></i>All Projects</a>
+              <a href="https://github.com/TalaatGamal?tab=repositories" class="s-i4" id="title-cards" target="_blank" style="background-color: #000000;"><i class="fa-brands fa-github" style=" font-size: 30px; margin-right: 10px;"></i>GitHub</a>
           </div>
 
           <div class="cards" id="a1" target="_blank">
@@ -825,6 +826,87 @@
         </div>
       </div>
     </section>
+    <section id="rating-me-r">
+      <div class="main-r" id="main-r">
+        <div class="logo-screen2">
+          <h2>Tal<span>aa</span>t Gamal <br><span style="width: 100%;" id="se2"> +|> Software Engineer</span></h2>
+        </div>
+        <div class="form-div">
+          <div class="form-v">
+
+            <div class="cover-v">
+              <div class="title-form-div">
+                <h2>Did you buy a service ? <h4>Rate me now !! ❤️</h4></h2>
+              </div>
+              <div class="mark">
+                <h2 id="no">No</h2>
+                <h2 id="yes"><span>Yes</span></h2>
+              </div>
+            </div>
+  
+            <div class="content-v">
+              <div class="title-form-div">
+                <h2>I'm happy to work with you. Thank you !! ❤️</h2>
+              </div>
+              <div class="message-me" id="message-me">
+        
+              <form id="contactForm" class="form">
+                <div class="f-d-m">
+                  <div class="f-d-m-right" id="f-d-m-right">
+                    <input type="text" id="username" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="job" placeholder="Job Title" required>
+                  </div>
+                  <div class="f-d-m-left" id="f-d-m-left">
+                    <input type="text" id="serviceName" placeholder="Service Name ?" required> <!-- تم إضافة حقل اسم الخدمة -->
+                    <div class="rate-info">
+                        <div class="rating-input">
+                            <input type="number" id="ratingInput" min="1" max="5" placeholder="Stars 1-5" required>
+                            <div class="stars-preview" id="starsPreview">
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                                <span>★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
+      
+                  </div>
+                </div>
+                <div class="sipo2" id="sipo2">
+                  <h4 style="cursor: pointer;" id="next">" Next "</h4>
+                </div>
+                <div class="sipo3" id="sipo3">
+                  <div class="backo" id="backo">
+                    <h4><i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i> Back</h4>
+                  </div>
+                  <div class="right-sipo">
+                    <div class="thanks">
+                      <h2>Sent. Thank you!🩵🥰</h2>
+                  </div>
+                  <div class="sircle" id="dira"></div>
+                  <button type="submit" style="cursor: pointer;" id="send">" Send "</button>
+                  </div>
+                </div>
+            </form>
+            <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+        
+          
+              </div>
+            </div>
+        
+            <div class="mnjk"></div>
+            <div class="mnjk2"></div>
+          </div>
+        </div>
+        <div class="logo-screen">
+          <h2>Tal<span>aa</span>t Gamal <br><span style="font-size: 25px;" id="se"> +|> Software Engineer</span></h2>
+          <div class="mnjk3"></div>
+        </div>
+      </div>
+    </section>
     <div id="air-services" style="display: none;">
 
     
@@ -1025,5 +1107,6 @@
   <script src="js/air-circle.js"></script>
   <script src="js/form-rate.js"></script>
   <script src="js/air-rate.js"></script>
+  <!-- <script src="js/rate.js"></script> -->
 </body>
 </html>

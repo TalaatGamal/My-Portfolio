@@ -43,45 +43,45 @@ liveCountWithResetAndDelay("m-n2", 0, 15, 100, 5000); // 300 مللي ثانية
 
 
 
-// دالة لتلوين النجوم مع إعادة التكرار
-function animateStarsWithReset(elementId, starCount, delay, resetDelay) {
-  const container = document.getElementById(elementId);
+// // دالة لتلوين النجوم مع إعادة التكرار
+// function animateStarsWithReset(elementId, starCount, delay, resetDelay) {
+//   const container = document.getElementById(elementId);
 
-  // إنشاء النجوم وإضافتها إلى العنصر
-  function createStars() {
-    container.innerHTML = ""; // تفريغ النجوم القديمة
-    for (let i = 0; i < starCount; i++) {
-      const star = document.createElement("span");
-      star.innerHTML = "★"; // رمز النجمة
-      star.style.color = "#ddd"; // اللون شبه الأبيض
-      star.style.fontSize = "2rem"; // حجم ثابت لجميع النجوم
-      container.appendChild(star);
-    }
-  }
+//   // إنشاء النجوم وإضافتها إلى العنصر
+//   function createStars() {
+//     container.innerHTML = ""; // تفريغ النجوم القديمة
+//     for (let i = 0; i < starCount; i++) {
+//       const star = document.createElement("span");
+//       star.innerHTML = "★"; // رمز النجمة
+//       star.style.color = "#ddd"; // اللون شبه الأبيض
+//       star.style.fontSize = "2rem"; // حجم ثابت لجميع النجوم
+//       container.appendChild(star);
+//     }
+//   }
 
-  function animateStars() {
-    const stars = container.querySelectorAll("span");
-    let currentIndex = 0;
+//   function animateStars() {
+//     const stars = container.querySelectorAll("span");
+//     let currentIndex = 0;
 
-    const interval = setInterval(() => {
-      if (currentIndex < stars.length) {
-        stars[currentIndex].style.color = "#2b6d72"; // تلوين النجمة باللون الأزرق
-        currentIndex++;
-      } else {
-        clearInterval(interval); // إيقاف التلوين عند الانتهاء
-      }
-    }, delay);
-  }
+//     const interval = setInterval(() => {
+//       if (currentIndex < stars.length) {
+//         stars[currentIndex].style.color = "#2b6d72"; // تلوين النجمة باللون الأزرق
+//         currentIndex++;
+//       } else {
+//         clearInterval(interval); // إيقاف التلوين عند الانتهاء
+//       }
+//     }, delay);
+//   }
 
-  // تشغيل الدورة بشكل متكرر
-  function startAnimationCycle() {
-    createStars(); // إنشاء النجوم
-    animateStars(); // تلوين النجوم واحدة تلو الأخرى
-    setTimeout(startAnimationCycle, resetDelay); // إعادة الدورة بعد انتهاء التأخير
-  }
+//   // تشغيل الدورة بشكل متكرر
+//   function startAnimationCycle() {
+//     createStars(); // إنشاء النجوم
+//     animateStars(); // تلوين النجوم واحدة تلو الأخرى
+//     setTimeout(startAnimationCycle, resetDelay); // إعادة الدورة بعد انتهاء التأخير
+//   }
 
-  startAnimationCycle();
-}
+//   startAnimationCycle();
+// }
 
-// استدعاء الدالة لتلوين 5 نجوم مع إعادة الدورة كل 5 ثوانٍ
-animateStarsWithReset("m-n6", 5, 500, 5000);
+// // استدعاء الدالة لتلوين 5 نجوم مع إعادة الدورة كل 5 ثوانٍ
+// animateStarsWithReset("m-n6", 5, 500, 5000);
