@@ -9,9 +9,14 @@
   min-height: 100vh;
   /* background-color: #486975; */
   background-color: #00414dd6;
-
+  background-image: url(https://images.unsplash.com/photo-1608933248284-7f926d879533?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  /* background-repeat: repeat; */
+  background-attachment: fixed;
 }
 #contact{
+  background-color: #1d2f36c6;
   display: flex;
   align-items: center;
   justify-content: center;
