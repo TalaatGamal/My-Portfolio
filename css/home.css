@@ -88,7 +88,8 @@ a{
   height: 370px;
   margin-right: 90px;
   background-color: #C7D9DB;
-  background-image: url(../Images/image\ \(1\).png);
+  /* cloudinary.com for online img service */
+  background-image: url(https://res.cloudinary.com/dz9gelxip/image/upload/v1739992541/image_1_iwgzu8.png);
   background-position: center;
   background-size: 90%;
   background-repeat: no-repeat;
