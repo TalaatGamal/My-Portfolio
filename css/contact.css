@@ -26,8 +26,8 @@
   overflow: hidden;
   /* background: linear-gradient(to right, rgba(0, 204, 255, 0.482), rgba(136, 136, 136, 0)); */
   width: 100%;
-  min-height: 90vh;
-  border-radius: 50px;
+  min-height: 100vh;
+  /* border-radius: 50px; */
 }
 .contact-c{
   /* background-color: rgba(0, 0, 0, 0.178); */

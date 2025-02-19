@@ -88,23 +88,12 @@ a{
   height: 370px;
   margin-right: 90px;
   background-color: #C7D9DB;
-
-  /* background-image: url(../images/My-photo-img.jpg); */
-  /* background-image: url(https://img.freepik.com/premium-photo/computer-programmer-icon-white-background-ar-32-v-52-job-id-16481ff812194d37833d88603725b2d4_941600-89823.jpg); */
-  /* background-image: url(../Images/1000023989.jpg); */
-  /* background-image: url(https://lh3.googleusercontent.com/a/ACg8ocIgO0ebRF1MFqF3A3xRKEy-x0R2HncYaJTUuMhHnaRCltQaK7E=s360-c-no); */
-  background-image: url(https://res.cloudinary.com/dz9gelxip/image/upload/v1738769510/1000023989-removebg-preview_ohdhoh.png);
+  background-image: url(../Images/image\ \(1\).png);
   background-position: center;
-  background-size: cover;
+  background-size: 90%;
   background-repeat: no-repeat;
-  /* border-top: #008993 solid 8px;
-  border-bottom: #008993 solid 8px; */
-  /* border:  #008993  double 10px; */
   border: #21575b solid 6px;
-  transform: rotate(2deg);
   box-shadow: #40A3AA 0px 0px 20px 5px;
-  /* position: absolute;
-  z-index: 1; */
   overflow: hidden;
 }
 .img-i1-cover{
