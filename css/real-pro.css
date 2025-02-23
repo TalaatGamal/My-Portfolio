@@ -1,0 +1,99 @@
+
+
+
+
+
+#real-pro{
+  /* background-color: black; */
+  color: #ffffff;
+}
+.town-cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 100px; */
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: #ffffff; */
+  background: linear-gradient(to top ,rgba(0, 148, 164, 0) ,#77A8AC , #77A8AC , rgba(0, 148, 164, 0));
+  padding: 0px 10vw 0px 10vw;
+}
+.town-cards .tc{
+  background-color: rgb(0, 154, 154);
+  width: 300px;
+  height: 400px;
+  transform: rotate(10deg);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.town-cards .tc img{
+  width: 130%;
+  height: 130%;
+  transform: rotate(-10deg);
+  transition: 0.5s;
+}
+.town-cards .tc:hover img{
+  width: 140%;
+  height: 140%;
+}
+.tc-in{
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-10deg);
+  background-color: #00000075;
+  width: 130%;
+  height: 130%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#cv-check-js{
+  /* background-color: rgb(4, 89, 89); */
+  background-color: rgba(4, 89, 89, 0.671);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.tx{
+  width: 40%;
+  min-height: 100vh;
+  /* background-color: rgb(0, 148, 164); */
+  /* box-shadow: rgb(0, 148, 164) 30px 0px 30px 0px; */
+  /* background: linear-gradient(to top ,rgba(0, 148, 164, 0) ,#77A8AC , #77A8AC , rgba(0, 148, 164, 0)); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* color: rgb(0, 148, 164); */
+  color: #C6D9DA;
+  border-radius: 0px 20px 20px 0px;
+}
+.tb{
+  width: 60%;
+  min-height: 100vh;
+  /* background-color: rgb(0, 148, 164); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* padding-right: 10vw; */
+}
+.tx h1{
+  font-family: "Courgette", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  text-decoration: underline;
+}
