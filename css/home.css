@@ -501,11 +501,13 @@ z-index: 10; */
   margin-right: 0px;
   /* background-color: #C7D9DB; */
   border-radius: 80px;
+  background-size: 110%;
   /* width: 370px;
   height: 370px; */
   transform: rotate(0deg);
   /* border: #008993 solid 7px; */
   /* background-image: url(../Images/1000023989.jpg); */
+  background-image: url(https://res-console.cloudinary.com/dz9gelxip/thumbnails/v1/image/upload/v1738769510/MTAwMDAyMzk4OS1yZW1vdmViZy1wcmV2aWV3X29oZGhvaA==/drilldown);
 }
 .img-i1-cover{
   margin-right: 0px;

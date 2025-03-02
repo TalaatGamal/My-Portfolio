@@ -97,3 +97,17 @@ a{
   font-size: 50px;
   text-decoration: underline;
 }
+@media (max-width:1080px) {
+  .tx{
+    width: 100%;
+    min-height: 40vh;
+    color: #364748;
+  }
+  .tb{
+    width: 100%;
+    min-height: 50vh;
+  }
+  #tc-2{
+    display: none;
+  }
+}
