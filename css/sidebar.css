@@ -89,15 +89,6 @@
   font-weight: 600;
   font-style: normal;
 }
-.s-v-a{
-  width: 100vw;
-  height: 100%;
-  /* background-color: #09516f; */
-  background-color: #000000a0;
-  backdrop-filter: blur(30px);
-  transition: 0.5s;
-  display: block;
-}
 .air-w-bar{
   /* background-color: #4db1d970; */
   width: 100%;

@@ -24,7 +24,6 @@
   <link rel="stylesheet" href="css/servo.css">
   <link rel="stylesheet" href="css/form-rate.css">
   <link rel="stylesheet" href="css/air-rate.css">
-  <link rel="stylesheet" href="css/rate.css">
   <link rel="stylesheet" href="css/real-pro.css">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,50 +103,193 @@
       <div class="sidebar-menu"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
       <div class="sidebar-content">
         <div class="s-v-a">
-          
-          <div class="form-div">
+      
+      <!-- o -->
+      <div class="form-div">
+        <div class="form-v">
+  
+          <div class="form-v-cont2" id="form-v-cont2">
+          <!-- HTML -->
+            <h2 id="remove-nm">
+              <hr style="width: 100%; border: #00acb800 solid 30px;">
+              <span style="font-size: 35px;" class="nooryes">thank you ❤️</span>
+              <!-- <br>  -->
+              <span style="font-size: 17px;">Do you want to show your review on my site?</span>
+              <!-- <hr style="width: 100%; border: #00acb800 solid 10px;"> -->
+              <div class="vbnmjk">
+                <span class="vbnm" id="no-btn">No</span>
+                <span>Or</span>
+                <span class="vbnm" id="yes-btn">Yes</span> 
+              </div>
+            </h2>
+            <div class="wera">
+              <div id="dira2"></div>
+              <div class="lok" id="lok">loading...</div>
+              <div id="done-message" style="display: none; font-size: 50px;">
+                Done 🤸‍♀️🫡 
+                <hr style="width: 100%;margin: 10px;">
+                <div class="link-sd" style="font-size: 20px;">
+                  My WebSite link : <br>
+                  <span style="font-size: 17px; color: #37afff;">
+                    talaatgamal.github.io/My-Portfolio/#customers
+                  </span>
+                </div>
+                <div class="infokm" style="font-size: 19px;">Will be added in 24 hours</div>
+              </div>
+              <div id="done-message2" style="display: none; font-size: 50px;">
+                Done 🤸‍♀️🫡 
+                <hr style="width: 100%;margin: 10px;">
+              </div>
+            </div>
+  
+            <!-- EmailJS Library -->
+            <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  
+            <script>
+              // تهيئة EmailJS
+              (function() {
+                  emailjs.init("3o_Ok3aG0DS4-OWJo"); // استبدل بمفتاحك العام من EmailJS
+              })();
+  
+              // تعريف العناصر
+              const yesBtn = document.getElementById("yes-btn");
+              const noBtn = document.getElementById("no-btn");
+              const loader = document.getElementById("dira2");
+              const lok = document.getElementById("lok");
+              const doneMessage = document.getElementById("done-message");
+              const doneMessage2 = document.getElementById("done-message2");
+  
+              // عند الضغط على "Yes"
+              yesBtn.addEventListener("click", function() {
+                  loader.style.display = "block";  // إظهار اللوودر
+                  lok.style.display = "block";  // إظهار اللوودر
+                  doneMessage.style.display = "none"; // إخفاء "Done" إن وجدت
+                  document.getElementById("remove-nm").style.display="none";
+  
+                  // إرسال الإيميل باستخدام EmailJS
+                  emailjs.send("rate-service", "template_nav13vb", {
+                      to_email: "talaatgamal.dev@gmail.com",  // استبدل بالإيميل الذي تريد استلام الرسالة عليه
+                      message: "A user has submitted a review on your site!"
+                  })
+                  .then(function(response) {
+                      console.log("Email sent successfully!", response);
+                      loader.style.display = "none";  // إخفاء اللوودر
+                      lok.style.display = "none";  // إخفاء اللوودر
+                      doneMessage.style.display = "block";  // إظهار "Done"
+                  }, function(error) {
+                      console.log("Error sending email:", error);
+                      loader.style.display = "none";  // إخفاء اللوودر
+                      lok.style.display = "none";  // إخفاء اللوودر
+                      alert("Failed to send email. Please try again.");
+                  });
+              });
+  
+              // عند الضغط على "No"
+              noBtn.addEventListener("click", function() {
+                  loader.style.display = "none";  // تأكد أن اللوودر مخفي
+                  lok.style.display = "none";  // إخفاء اللوودر
+                  doneMessage2.style.display = "block";  // إظهار "Done" فورًا بدون إرسال أي شيء
+                  document.getElementById("remove-nm").style.display="none";
+  
+              });
+            </script>
+  
+            <h2><span class="back-rate-m" id="back-rate-m">Back</span></h2>
+          </div>
+          <div class="form-v-cont1">
+  
             <div class="title-form-div">
-              <h2 style="font-size: 20px;">Your feedback helps me move forward, don't hesitate to do so !! ❤️</h2>
+              <h2>
+                <span>
+                  Rating me
+                <!-- <i class="fa-solid fa-heart-pulse"></i>  -->
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </span>
+            </h2>
             </div>
             <div class="message-me" id="message-me">
       
             <form id="contactForm" class="form">
-              <div class="rate-info">
-                  <div class="rating-input">
-                      <input type="number" id="ratingInput" min="1" max="5" placeholder="1--- Stars 1-5" required>
-                      <div class="stars-preview" id="starsPreview">
-                          <span>★</span>
-                          <span>★</span>
-                          <span>★</span>
-                          <span>★</span>
-                          <span>★</span>
+      
+              <div class="con-slide">
+      
+                <div class="con-1" id="con-1">
+      
+                  <div class="div-input" id="div-input">
+                    <input type="text" id="username" placeholder="Full-Name" required>
+                    <div class="img3"><div class="markbn" id="markbn">?</div></div>
+                    <div class="img"><div class="img-in"></div></div>
+                  </div>
+                  <div class="div-input" id="div-input">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <div class="img3"><div class="markbn" id="markbn">?</div></div>
+                    <div class="img"><div class="img-in"></div></div>
+                  </div>
+                  <div class="div-input" id="div-input">
+                    <input type="text" id="job" placeholder="Job-Title" required>
+                    <div class="img3"><div class="markbn" id="markbn">?</div></div>
+                    <div class="img"><div class="img-in"></div></div>
+                  </div>
+        
+                </div>
+                <div class="con-2" id="con-2">
+        
+                  <div class="div-input" id="div-input4">
+                    <input type="text" id="serviceName" placeholder="Your Country" required>
+                    <div class="img3"><div class="markbn" id="markbn">?</div></div>
+                    <div class="img"><div class="img-in"></div></div>
+                  </div>
+                  <div class="div-input" id="div-input5">
+                    <div class="rate-info">
+                      <div class="rating-input">
+                          <input type="number" id="ratingInput" min="1" max="5" placeholder="Stars 1-5" required>
+                          <div class="stars-preview" id="starsPreview">
+                              <span style="color: #00ACB8;">★</span>
+                              <span>★</span>
+                              <span>★</span>
+                              <span>★</span>
+                              <span>★</span>
+                          </div>
                       </div>
+                    </div>
                   </div>
+                  <div class="div-input" id="div-input6">
+                    <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
+                  </div>  
+        
+                </div>
+      
               </div>
-              <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
-    
-              <input type="text" id="serviceName" placeholder="3--- What’s Your Job Title?" required> <!-- تم إضافة حقل اسم الخدمة -->
-              <input type="text" id="username" placeholder="4--- Your Name" required>
-              <input type="email" id="email" placeholder="5--- Your Email" required>
-          
-              <div class="sipo">
+              <div class="sipo2" id="sipo2">
+                <h4 style="cursor: pointer;" id="next">" Next "</h4>
+              </div>
+              <div class="sipo" id="sipo">
+                <div class="backo" id="backo">
+                  <h4><i class="fa-solid fa-hand-point-left"></i> Back</h4>
+                </div>
+                <div class="right-sipo">
                   <div class="thanks">
-                      <h2>Sent. Thank you!🩵🥰</h2>
-                  </div>
-                  <div class="sircle" id="dira"></div>
-                  <button type="submit" style="cursor: pointer;">Send</button>
+                    <h2>Sent. Thank you!🩵🥰</h2>
+                </div>
+                <div class="sircle" id="dira"></div>
+                <button type="submit" style="cursor: pointer;" id="send">" Send "</button>
+                </div>
               </div>
+          
           </form>
           <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
       
           </div>
+  
           </div>
-          <div class="back">
-            <h2 id="backbutton">
-              Back
-            </h2>
-          </div>
-
+  
+        </div>
+      </div>
+      <div class="backaro">
+        <h2 id="backaro">Exit <i class="fa-solid fa-right-from-bracket"></i></h2>
+      </div>
+      <!-- o -->
+      
         </div>
       <div class="s-c-v">
       <ul class="list-side">
@@ -863,90 +1005,6 @@
               <h2>Help for you <a href="">Go</a></h2>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="rating-me-r">
-      <div class="main-r" id="main-r">
-        <div class="logo-screen2">
-          <h2>Tal<span>aa</span>t Gamal <br><span style="width: 100%;" id="se2"> +|> Software Engineer</span></h2>
-        </div>
-        <div class="form-div">
-          <div class="form-v">
-
-            <div class="cover-v">
-              <div class="title-form-div">
-                <h2>Did you buy a service ? <h4>Rate me now !! ❤️</h4></h2>
-              </div>
-              <div class="mark">
-                <h2 id="no">No</h2>
-                <h2 id="yes"><span>Yes</span></h2>
-              </div>
-              <div class="info-mark">
-                <h4>Your evaluation of my service is one of the reasons that improves my performance and work, and you can offer me something that I am not familiar with, so do not hesitate to let me know what you think.</hق>
-              </div>
-            </div>
-  
-            <div class="content-v">
-              <div class="title-form-div">
-                <h2>I'm happy to work with you. Thank you !! ❤️</h2>
-              </div>
-              <div class="message-me" id="message-me">
-        
-              <form id="contactForm" class="form">
-                <div class="f-d-m">
-                  <div class="f-d-m-right" id="f-d-m-right">
-                    <input type="text" id="username" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <input type="text" id="job" placeholder="Job Title" required>
-                  </div>
-                  <div class="f-d-m-left" id="f-d-m-left">
-                    <input type="text" id="serviceName" placeholder="Service Name ?" required> <!-- تم إضافة حقل اسم الخدمة -->
-                    <div class="rate-info">
-                        <div class="rating-input">
-                            <input type="number" id="ratingInput" min="1" max="5" placeholder="Stars 1-5" required>
-                            <div class="stars-preview" id="starsPreview">
-                                <span>★</span>
-                                <span>★</span>
-                                <span>★</span>
-                                <span>★</span>
-                                <span>★</span>
-                            </div>
-                        </div>
-                    </div>
-                    <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
-      
-                  </div>
-                </div>
-                <div class="sipo2" id="sipo2">
-                  <h4 style="cursor: pointer;" id="next">" Next "</h4>
-                </div>
-                <div class="sipo3" id="sipo3">
-                  <div class="backo" id="backo">
-                    <h4><i class="fa-solid fa-chevron-left"></i><i class="fa-solid fa-chevron-left"></i> Back</h4>
-                  </div>
-                  <div class="right-sipo">
-                    <div class="thanks">
-                      <h2>Sent. Thank you!🩵🥰</h2>
-                  </div>
-                  <div class="sircle" id="dira"></div>
-                  <button type="submit" style="cursor: pointer;" id="send">" Send "</button>
-                  </div>
-                </div>
-            </form>
-            <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
-        
-          
-              </div>
-            </div>
-        
-            <div class="mnjk"></div>
-            <div class="mnjk2"></div>
-          </div>
-        </div>
-        <div class="logo-screen">
-          <h2>Tal<span style="border: #00ccdb00 solid 7px; border-bottom: #00cddb solid 7px; border-radius: 100px;">aa</span>t Gamal <br><span style="font-size: 25px;" id="se"> +|> Software Engineer</span></h2>
-          <div class="mnjk3"></div>
         </div>
       </div>
     </section>
