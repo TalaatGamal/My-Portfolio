@@ -18,15 +18,14 @@ const backbutton = document.getElementById("backaro");
 if (ratebutton) { 
   ratebutton.addEventListener('click', () => {
     sidebara.classList.toggle('active');
-    document.querySelector("body").style.overflow="hidden"
-
+    document.querySelector("body").style.overflow="hidden";
   });
 }
 // back
 if (backbutton) {
   backbutton.addEventListener('click', () => {
     sidebara.classList.remove('active');
-
+    document.querySelector("body").style.overflow="auto";
   });
 }
 

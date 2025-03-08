@@ -66,6 +66,7 @@
 }
 #vx-v{
   animation: vx-v 5s linear infinite;
+  font-size: 25px;
 }
 @keyframes vx-v {
   0% {
@@ -85,8 +86,25 @@
 @media (max-width:1200px) {
   .cmb{
     padding: 40px 1vw 40px 1vw;
+    /* padding: 40px 0vw 40px 0vw;
+    min-height: 200px;
+    justify-content: space-evenly; */
   }
   .middle-bar .card{
+    /* margin-bottom: 40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px; */
     margin-bottom: 20px;
   }
+  /* .middle-bar .card .title-card{
+    font-size: 11px;
+  }
+  .middle-bar .card .matrix-num{
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  #vx-v{
+    font-size: 20px;
+  } */
 }
