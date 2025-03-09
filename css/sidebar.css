@@ -11,6 +11,7 @@
   justify-content: center;
   z-index: 1001;
   cursor: pointer;
+  color: #4E6068;
 }
 .sidebar-content{
   width: 160vw;

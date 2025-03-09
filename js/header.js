@@ -175,11 +175,13 @@ window.addEventListener('scroll', function () {
     links.forEach(link => {
       link.style.color = "#ffffff";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#ffffff"
+      document.getElementById("sidebar-menu").style.color="#ffffff";
     });
   } else {
     links.forEach(link => {
       link.style.color = "";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#4e6068"
+      document.getElementById("sidebar-menu").style.color="#4E6068";
     });
   }
 
