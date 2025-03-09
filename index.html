@@ -148,7 +148,7 @@
             <!-- EmailJS Library -->
             <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   
-            <script>
+            <!-- <script>
               // تهيئة EmailJS
               (function() {
                   emailjs.init("3o_Ok3aG0DS4-OWJo"); // استبدل بمفتاحك العام من EmailJS
@@ -195,8 +195,7 @@
                   document.getElementById("remove-nm").style.display="none";
   
               });
-            </script>
-  
+            </script> -->
             <h2><span class="back-rate-m" id="back-rate-m">Back</span></h2>
           </div>
           <div class="form-v-cont1">
@@ -357,46 +356,138 @@
     </div>
     <div id="popup2" class="popup2">
 
+      <div class="backaro">
+        <h2 id="closePopup2">Exit <i class="fa-solid fa-right-from-bracket"></i></h2>
+      </div>
       <div class="form-div">
-        <div class="title-form-div">
-          <h2 style="font-size: 20px;">Your feedback helps me move forward, don't hesitate to do so !! ❤️</h2>
-        </div>
-        <div class="message-me" id="message-me">
+        <div class="form-v">
   
-        <form id="contactForm" class="form">
-          <div class="rate-info">
-              <div class="rating-input">
-                  <input type="number" id="ratingInput" min="1" max="5" placeholder="1--- Stars 1-5" required>
-                  <div class="stars-preview" id="starsPreview">
-                      <span>★</span>
-                      <span>★</span>
-                      <span>★</span>
-                      <span>★</span>
-                      <span>★</span>
-                  </div>
+          <div class="form-v-cont2" id="form-v-cont2">
+          <!-- HTML -->
+            <h2 id="remove-nm">
+              <hr style="width: 100%; border: #00acb800 solid 30px;">
+              <span style="font-size: 35px;" class="nooryes">thank you ❤️</span>
+              <!-- <br>  -->
+              <span style="font-size: 17px;">Do you want to show your review on my site?</span>
+              <!-- <hr style="width: 100%; border: #00acb800 solid 10px;"> -->
+              <div class="vbnmjk">
+                <span class="vbnm" id="no-btn">No</span>
+                <span>Or</span>
+                <span class="vbnm" id="yes-btn">Yes</span> 
               </div>
+            </h2>
+            <div class="wera">
+              <div id="dira2"></div>
+              <div class="lok" id="lok">loading...</div>
+              <div id="done-message" style="display: none; font-size: 50px;">
+                Done 🤸‍♀️🫡 
+                <hr style="width: 100%;margin: 10px;">
+                <div class="link-sd" style="font-size: 20px;">
+                  My WebSite link : <br>
+                  <span style="font-size: 17px; color: #37afff;">
+                    talaatgamal.github.io/My-Portfolio/#customers
+                  </span>
+                </div>
+                <div class="infokm" style="font-size: 19px;">Will be added in 24 hours</div>
+              </div>
+              <div id="done-message2" style="display: none; font-size: 50px;">
+                Done 🤸‍♀️🫡 
+                <hr style="width: 100%;margin: 10px;">
+              </div>
+            </div>
+  
+    
+            <h2><span class="back-rate-m" id="back-rate-m">Back</span></h2>
           </div>
-          <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
-
-          <input type="text" id="serviceName" placeholder="3--- What’s Your Job Title?" required> <!-- تم إضافة حقل اسم الخدمة -->
-          <input type="text" id="username" placeholder="4--- Your Name" required>
-          <input type="email" id="email" placeholder="5--- Your Email" required>
+          <div class="form-v-cont1">
+  
+            <div class="title-form-div">
+              <h2>
+                <span>
+                  Rating me
+                <!-- <i class="fa-solid fa-heart-pulse"></i>  -->
+                <i class="fa-solid fa-hand-holding-heart"></i>
+              </span>
+            </h2>
+            </div>
+            <div class="message-me" id="message-me">
       
-          <div class="sipo">
-              <div class="thanks">
-                  <h2>Sent. Thank you!🩵🥰</h2>
+            <form id="contactForm" class="form">
+      
+              <div class="con-slide">
+      
+                <div class="con-1" id="con-1">
+      
+                  <div class="div-input" id="div-input">
+                    <input type="text" id="username" placeholder="Full-Name" required>
+                    <div class="img3"><div class="markbn" id="markbn">?</div></div>
+                    <div class="img"><div class="img-in"></div></div>
+                  </div>
+                  <div class="div-input" id="div-input">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <div class="img3"><div class="markbn" id="markbn">?</div></div>
+                    <div class="img"><div class="img-in"></div></div>
+                  </div>
+                  <div class="div-input" id="div-input">
+                    <input type="text" id="job" placeholder="Job-Title" required>
+                    <div class="img3"><div class="markbn" id="markbn">?</div></div>
+                    <div class="img"><div class="img-in"></div></div>
+                  </div>
+        
+                </div>
+                <div class="con-2" id="con-2">
+        
+                  <div class="div-input" id="div-input4">
+                    <input type="text" id="serviceName" placeholder="Your Country" required>
+                    <div class="img3"><div class="markbn" id="markbn">?</div></div>
+                    <div class="img"><div class="img-in"></div></div>
+                  </div>
+                  <div class="div-input" id="div-input5">
+                    <div class="rate-info">
+                      <div class="rating-input">
+                          <input type="number" id="ratingInput" min="1" max="5" placeholder="Stars 1-5" required>
+                          <div class="stars-preview" id="starsPreview">
+                              <span style="color: #00ACB8;">★</span>
+                              <span>★</span>
+                              <span>★</span>
+                              <span>★</span>
+                              <span>★</span>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="div-input" id="div-input6">
+                    <textarea id="message" rows="4" cols="50" name="message" placeholder="Your Message" required></textarea>
+                  </div>  
+        
+                </div>
+      
               </div>
-              <div class="sircle" id="dira"></div>
-              <button type="submit" style="cursor: pointer;">Send</button>
+              <div class="sipo2" id="sipo2">
+                <h4 style="cursor: pointer;" id="next">" Next "</h4>
+              </div>
+              <div class="sipo" id="sipo">
+                <div class="backo" id="backo">
+                  <h4><i class="fa-solid fa-hand-point-left"></i> Back</h4>
+                </div>
+                <div class="right-sipo">
+                  <div class="thanks">
+                    <h2>Sent. Thank you!🩵🥰</h2>
+                </div>
+                <div class="sircle" id="dira"></div>
+                <button type="submit" style="cursor: pointer;" id="send">" Send "</button>
+                </div>
+              </div>
+          
+          </form>
+          <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+      
           </div>
-      </form>
-      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
   
+          </div>
+  
+        </div>
       </div>
-      </div>
-
-      <!-- <div class="pc2-popup"></div> -->
-      <span id="closePopup2" class="close2"><span>&times;</span> Back</span>
     </div>
 
 

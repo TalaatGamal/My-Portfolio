@@ -634,8 +634,7 @@
 
 
 
-
-.backaro{
+.sidebar .backaro{
   /* background-color: #b8000022; */
   width: 100%;
   /* height: 150px; */
@@ -643,7 +642,7 @@
   align-items: end;
   justify-content: right;
 }
-.backaro h2{
+.sidebar .backaro h2{
   font-size: 25px;
   color: #ffffff;
   padding: 10px 20px 10px 20px;
@@ -657,6 +656,6 @@
   height: 50px;
   cursor: pointer;
 }
-.backaro i{
+.sidebar .backaro i{
   font-size: 20px;
 }
