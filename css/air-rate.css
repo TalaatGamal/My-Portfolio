@@ -705,3 +705,8 @@
 .popup2 .backaro i{
   font-size: 20px;
 }
+@media (max-width:1080px) {
+  .air-rate{
+    display: none;
+  }
+}

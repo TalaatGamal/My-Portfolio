@@ -9,7 +9,8 @@
   min-height: 100vh;
   /* background-color: #486975; */
   background-color: #00414dd6;
-  background-image: url(https://images.unsplash.com/photo-1608933248284-7f926d879533?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(https://images.pexels.com/photos/31010728/pexels-photo-31010728/free-photo-of-tranquil-coastal-scene-with-rocky-shoreline.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  /* background-image: url(https://images.unsplash.com/photo-1608933248284-7f926d879533?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
   background-position: center;
   background-size: cover;
   /* background-repeat: repeat; */
@@ -28,6 +29,7 @@
   width: 100%;
   min-height: 100vh;
   /* border-radius: 50px; */
+  padding-top: 10vh;
 }
 .contact-c{
   /* background-color: rgba(0, 0, 0, 0.178); */
@@ -109,6 +111,7 @@
   font-size: 20px;
   font-weight: 500;
   margin-top: 40px;
+  color: #ffffff;
 }
 #contact .or span a{
   text-decoration: none;
@@ -313,7 +316,7 @@ button:hover {
   color: #ffffff;
 }
 #gh{
-  color: #000;
+  color: #000000;
 }
 #gh:hover{
   color: #ffffff;

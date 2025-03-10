@@ -85,6 +85,7 @@ a{
 #home .photo .img-i1{
   border-radius: 450px;
   width: 370px;
+  min-width: 370px;
   height: 370px;
   margin-right: 90px;
   background-color: #C7D9DB;

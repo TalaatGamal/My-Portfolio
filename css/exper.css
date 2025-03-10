@@ -394,7 +394,8 @@
 .exper-div{
   width: 100%;
   min-height: 100vh;
-  background-image: url(https://images.pexels.com/photos/4159867/pexels-photo-4159867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-image: url(https://images.pexels.com/photos/31010728/pexels-photo-31010728/free-photo-of-tranquil-coastal-scene-with-rocky-shoreline.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  /* background-image: url(https://images.pexels.com/photos/4159867/pexels-photo-4159867.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
