@@ -1341,7 +1341,8 @@
   /* background: linear-gradient(to bottom , rgba(0, 0, 0, 0.699) , rgba(0, 0, 0, 0)); */
 }
 .ela .topv{
-  background-color: #006f4a;
+  /* background-color: #006f4a; */
+  background-color: #00472f;
   min-height: 220px;
   border-radius: 20px;
   padding-bottom: 10px;
@@ -1438,7 +1439,7 @@
     background-color: #00000000;
   }
   .info-cardm{
-    background-color: #006f4a;
+    background-color: #00472f;
     border-radius: 20px;
     margin-top: 20px;
     padding: 0px 5px 5px 10px;
