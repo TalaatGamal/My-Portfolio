@@ -65,12 +65,6 @@
   font-weight: 600;
   color: #ffffff;
 }
-#contact .hr{
-  height: 300px;
-  margin-left: 0.7%;
-  margin-right: 0.7%;
-  border: rgb(255, 255, 255) solid 2px;
-}
 #contact .media-contact{
   width: 100%;
   height: max-content;
@@ -94,13 +88,67 @@
   /* background-image: url(https://img.freepik.com/premium-photo/computer-programmer-icon-white-background-ar-32-v-52-job-id-16481ff812194d37833d88603725b2d4_941600-89823.jpg); */
   /* background-image: url(https://i.gifer.com/5eKX.gif); */
   /* background-image: url(https://i.gifer.com/Ry6p.gif); */
-  background-image: url(https://camo.githubusercontent.com/130ffc354b6ee3c8c9e506276e598bf4e19ea7950df203dacf6aeee4fc543a50/68747470733a2f2f616e616c7974696373696e6469616d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31322f646576656c6f7065722d6472696262626c652e676966);
+  /* background-image: url(https://camo.githubusercontent.com/130ffc354b6ee3c8c9e506276e598bf4e19ea7950df203dacf6aeee4fc543a50/68747470733a2f2f616e616c7974696373696e6469616d61672e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f31322f646576656c6f7065722d6472696262626c652e676966); */
+  /* background-image: url(../Images/matrix2.png); */
   background-position: center;
-  background-size: cover;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-color: #D6DFDE;
   width: 100%;
   height: 300px;
   border-radius: 20px;
-  opacity: 80%;
+  /* opacity: 80%; */
+  border: #ffffff00 solid 10px;
+  border-bottom: #009b58 solid 10px;
+  border-top: #009b58 solid 10px;
+  overflow: hidden;
+}
+#contact .right .imgbn video{
+  width: 140%;
+  position: relative;
+  left: -80px;
+  /* height: 10%; */
+}
+.vhr{
+  background-color: #a6cdc9;
+  /* background-color:#004c56; */
+
+  width: 80px;
+  height: max-content;
+  position: absolute;
+  margin-left: 130px;
+  margin-top: 9.8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.vhr .hr{
+  border: none;
+  background-color:#009b58;
+  width: 10px;
+  height: 60px;
+}
+.hrw{
+  /* max-width: 80px; */
+  /* height: 20px; */
+  /* background-color: #ff0000; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  /* overflow: hidden; */
+  position: relative;
+  left: -40px;
+  background-color:#009b58;
+  border-radius: 5px;
+}
+.hrw .hr2{
+  border: rgba(245, 222, 179, 0) solid 1px;
+  background-color:#009b58;
+  min-width: 50px;
+  height: 15px;
+  border-radius: 20px;
 }
 #contact .or{
   /* background-color: #6c07073a; */
@@ -149,40 +197,6 @@
   color: #ffffff;
   border: #ffffff solid 3px;
 }
-#contact .air-div{
-  /* background-color: #005b564e; */
-  width: 200px;
-  height: 500px;
-  transform: rotate(50deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px;
-  overflow: hidden;
-  z-index: 0;
-}
-#contact .air-icon{
-  width: 100px;
-  height: 5px;
-  background-color: #ffffff;
-  /* border: #ffffff solid 3px; */
-  border-radius: 100px;
-  box-shadow: #fff700 0px 0px 20px 0px;
-  animation: air-icon 10s linear infinite;
-}
-@keyframes air-icon {
-  0% {
-      transform: translateY(-500px);
-  }
-  50% {
-      transform: translateY(300px);
-  }
-  100% {
-      transform: translateY(-500px);
-  }
-}
-
-
 .popup {
   display: none;
   position: fixed;
@@ -325,33 +339,21 @@ button:hover {
   #contact{
     padding-top: 10vh;
   }
-  #contact .hr{
-    display: none;
+  .contact-c{
+    width: 100vw;
   }
-  #contact .or span a{
-    text-decoration: none;
-    color: #005b56;
-    width: 100%;
-    height: 100%;
-    font-weight: 800;
-    padding: 8px;
-    border: #005b56 solid 3px;
-    border-radius: 15px;
-    margin-left: 10px;
-    transition: 0.5s;
+  .contact-c .right{
+    padding: 0px;
   }
-  .popup-content {
+  .vhr{
+    background-color: #a6cdc9;  
+    width: 80px;
+    margin-left: 150px;
+    margin-top: 0px;
+    margin-bottom: 1000px;
+  }
+  #contact .right .imgbn{
     height: max-content;
-    width: max-content;
-  }
-  .close{
-    background-color: #eeeeee00;
-    top: 0px;
-    font-size: 35px;
-    color: #747474;
-  }
-  .close:hover{
-    color: #ff0000;
-    border: #009dff00 solid 3px;
   }
 }
+

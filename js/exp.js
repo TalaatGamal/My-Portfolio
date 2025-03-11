@@ -61,3 +61,4 @@ updatePadding();
 
 // تحديث عند تغيير حجم الشاشة
 window.addEventListener('resize', updatePadding);
+
