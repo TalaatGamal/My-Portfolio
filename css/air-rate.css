@@ -39,7 +39,7 @@
   /* border-radius: 20px; */
   /* backdrop-filter: blur(10px); */
   padding-top: 5vh;
-  background: linear-gradient(to top, #002d30d4 , #002d30d3 , #002d30d3 , #c7d9dbd3);
+  background: linear-gradient(to top, #002d30ac , #002d30b2 , #002d30ac , #c7d9dbd3);
   backdrop-filter: blur(10px);
 }
 .popup2.show{
