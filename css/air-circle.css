@@ -5,16 +5,17 @@
   /* background-color: rgb(220, 220, 220); */
   width: 40px;
   height: 40px;
-  border-radius: 100px;
+  /* border-radius: 100px; */
   padding: 10px;
   position: fixed;
   top: 90vh;
-  right: 40px;
+  right: 30px;
   z-index: 1000;
-  background-image: url(https://cdn.iconscout.com/icon/free/png-256/free-top-arrow-icon-download-in-svg-png-gif-file-formats--up-upward-direction-and-arrows-vol-3-flat-pack-sign-symbols-icons-1112324.png);
+  background-image: url(https://cdn-icons-png.freepik.com/256/8625/8625341.png?uid=R160725661&ga=GA1.1.1977550044.1720105698&semt=ais_hybrid);
   background-position: center;
-  background-size: 80%;
-  border: #006990 solid 3px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  /* border: #006990 solid 3px; */
 }
 
 
