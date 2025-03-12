@@ -1062,9 +1062,10 @@
   min-height: 500px;
   border-radius: 30px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 20px;
+  padding-top: 7vh;
   /* overflow: hidden; */
 }
 .exp-line-ani{
@@ -1083,17 +1084,20 @@
 }
 .exp-line-vid{
   width: 400px;
-  height: 400px;
+  height: 306px;
   background-color: #D6DFDE;
   border-radius: 30px;
   box-shadow: #00000066 10px 10px 10px 0px;
   overflow: hidden;
+  /* background-color: #000000; */
+  margin-top: 7px;
 }
 .exp-video-l{
   width: 400px;
-  height: 490px;
+  height: 440px;
   position: relative;
-  top: -50px;
+  top: -80px;
+  transform: rotate(20deg);
 }
 .ela-in{
   min-width: max-content;
@@ -1148,11 +1152,11 @@
 .ela .img-vq .img-com2{
   width: 180px;
   height: 180px;
-  background-color: #ffffff;
+  background-color: #dddddd;
   border-radius: 20px;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRk-XP8PvRXku-lEuGzJLrSQfJWqfmwQLG4Q&s);
   background-position: center;
-  background-size: 80%;
+  background-image: url(https://yt3.googleusercontent.com/2Hr86NTFcknkNTn0h2UlG7r2LdoaxcAbaob6dWvFNUdmvUCwlcFsDSykn5bxyKQwFgHnma1hKtY=s900-c-k-c0x00ffffff-no-rj);
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   align-items: end;
@@ -1161,8 +1165,8 @@
 .ela .img-vq .img-com2 h2{
   /* background-color: #000000ac; */
   /* color: #acedff; */
-  color: #1b3f33;
-  border-bottom: #005a3c solid 10px;
+  color: #ffffff;
+  border-bottom: #ffffff solid 10px;
   /* border-radius: 5px; */
   width: 100px;
   height: 30px;
@@ -1272,10 +1276,11 @@
 }
 .date-time{
   width: 98%;
-  height: 50px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: #002b30cd;
   /* margin-top: 20px; */
   padding: 0px 20px 0px 20px;
@@ -1396,21 +1401,7 @@
   color: #ffffff;
   /* background-color: #005e56; */
 }
-@media (max-width:1080px) {
-  .exp-line{
-    background-color: #6FB6BB;
-    width: 100%;
-    border-radius: 0px;
-    flex-wrap: wrap;
-    padding: 10vh 0px 50px 0px;
-    /* min-height: 500px; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; */
-    /* overflow: hidden; */
-  }
-}
+
 @media (max-width:720px){
   .exp-line-ani{
     width: 400px;
@@ -1452,4 +1443,13 @@
     margin-top: 20px;
     padding: 0px 5px 5px 10px;
   }
+}
+@media (max-width:1290px) {
+  .exp-line{
+    background-color: #6FB6BB;
+    width: 100%;
+    border-radius: 0px;
+    flex-wrap: wrap;
+    padding: 10vh 0px 50px 0px;
+}
 }

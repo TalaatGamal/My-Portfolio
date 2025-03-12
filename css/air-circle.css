@@ -42,7 +42,3 @@
   width: 100%;
   height: 100%;
 }
-.air-circle:hover{
-  background-color: rgb(0, 0, 0);
-  border: white solid 3px;
-}
