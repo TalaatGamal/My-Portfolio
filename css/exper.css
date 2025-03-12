@@ -1437,7 +1437,9 @@
   color: #ffffff;
   /* background-color: #005e56; */
 }
-
+.ela .img-vq .img-com-v{
+  display: none;
+}
 @media (max-width:720px){
   .exp-line-ani{
     width: 400px;
@@ -1454,16 +1456,45 @@
   }
   .ela .img-vq{
     width: 100%;
-    height: 210px;
+    height: 180px;
     margin-top: 20px;
     padding-top: 0px;
+    gap: 10px;
     /* height: 100%; */
     /* background-color: #000000; */
   }
   .ela .img-vq .img-com{
-    width: 100%;
+    width: 50%;
     height: 100%;
-    background-size: 40%;
+    background-size: 80%;
+    border: #00a2b4 solid 2px;
+  }
+  #img-h{
+    width: 50%;
+    height: 100%;
+    /* background-size: 90%; */
+    display: flex;
+    border: #ffffff solid 2px;
+    border-radius: 20px;
+  }
+  .img-com-v{
+    background-image: url(../Images/image\ \(1\).png);
+    background-color: #0099aa;
+    /* background-image: url(https://images.pexels.com/photos/31045891/pexels-photo-31045891/free-photo-of-elegant-portrait-of-a-woman-with-wet-look.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load); */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+  }
+  .img-com-v2{
+    /* background-image: url(../Images/image\ \(1\).png); */
+    background-color: #00a2b4;
+    background-image: url(https://images.pexels.com/photos/5520284/pexels-photo-5520284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    /* background-image: url(https://images.pexels.com/photos/31045891/pexels-photo-31045891/free-photo-of-elegant-portrait-of-a-woman-with-wet-look.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load); */
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
   }
   .ela .img-vq .img-com2{
     width: 100%;
@@ -1474,10 +1505,12 @@
     background-color: #00000000;
   }
   .info-cardm{
-    background-color: #00472f;
+    /* background-color: #00472f; */
     border-radius: 20px;
     margin-top: 20px;
     padding: 0px 5px 5px 10px;
+    background-color: #246366;
+
   }
 }
 @media (max-width:1290px) {
