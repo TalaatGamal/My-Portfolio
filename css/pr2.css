@@ -13,6 +13,7 @@
   flex-direction: column;
   width: 100vw;
   min-height: 100vh;
+  /* padding-top: 10vh; */
 }
 .prs-title {
   width: 80%;
@@ -21,11 +22,12 @@
   margin-right: auto;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #31767a;
+  /* background-color: #31767a; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  display: none;
 }
 .prs-title .h2v{
   height: 100%;
@@ -43,9 +45,13 @@
   gap: 10px;
   /* background-color: #000000; */
   height: 50px;
+  min-width: 350px;
   border: #00aeff00 solid 20px;
-  border-left: #ffb300 solid 20px;
+  border-left: #007188 solid 20px;
   padding-left: 10px;
+  background-color: #77A8AC;
+  padding: 10px;
+  border-radius: 15px;
 }
 .prs-title h3{
   display: flex;
@@ -53,7 +59,14 @@
   justify-content: space-between;
   gap: 30px;
   color: #ffffff;
-  padding-right: 20px;
+  /* padding-right: 20px; */
+  background-color: #77A8AC;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  height: 50px;
+  border: #00aeff00 solid 20px;
+  border-right: #007188 solid 20px;
 }
 .prs-title h2 img{
   width: 40px;
@@ -70,9 +83,52 @@
   border-radius: 20px;
   padding: 1px;
 }
-
+.prs-t2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100px;
+}
+.prs-t2 h2{
+  min-width: max-content;
+  /* background-color: #77a8aca3; */
+  padding: 5px 15px 5px 15px;
+  /* border-radius: 15px; */
+  border: #ffffff00 solid 5px;
+  border-bottom: #267981 solid 5px;
+  color: #267981;
+  font-size: 45px;
+}
+.prs-t2 h2 span{
+  animation: th2 5s infinite linear;
+}
+@keyframes th2 {
+  0%{
+    opacity: 1;
+  }
+  35%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  65%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.prs-t2 hr{
+  width: 150px;
+  border: #77A8AC solid 3px;
+}
+.prs-t2 img{
+  width: 50px;
+}
 .container {
-  height: 70vh;
+  height: 71vh;
   /* background-color: #00000037; */
   /* background-color: #9BAAAB; */
   /* background-color: #6FB6BB; */
@@ -84,15 +140,117 @@
   padding: 20px;
   scrollbar-width: none; /* إخفاء شريط التمرير */
   /* border: 2px solid #ccc; توضيح مكان الحاوية */
-  padding-left: 21%;
-  padding-right: 21%;
+  padding-left: 28%;
+  padding-right: 28%;
   border-radius: 30px;
   max-width: 80%;
   z-index: 1;
   /* border-left: #C7D9DB solid 80px;
   border-right: #C7D9DB solid 80px; */
+  /* border: #77a8ac00 double 10px;
+  border-bottom: #77A8AC double 10px; */
 }
-
+.background{
+  /* background-color: #000000; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: qwer 15s infinite linear;
+}
+@keyframes qwer {
+  0%{
+    transform: translateX(700px);
+  }
+  25%{
+    transform: translateX(700px);
+  }
+  30%{
+    transform: translateX(350px);
+  }
+  49%{
+    transform: translateX(350px);
+  }
+  55%{
+    transform: translateX(0px);
+  }
+  69%{
+    transform: translateX(0px);
+  }
+  79%{
+    transform: translateX(-350px);
+  }
+  89%{
+    transform: translateX(-350px);
+  }
+  100%{
+    transform: translateX(-700px);
+  }
+}
+.background div{
+  min-width: 350px;
+  max-width: 350px;
+  height: 100%;
+}
+.background .img1v{
+  background-image: url(https://images.pexels.com/photos/31002445/pexels-photo-31002445/free-photo-of-elegant-grey-heron-by-hiroshima-water-s-edge.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+  background-position: center;
+  background-size: cover;
+}
+.background .img2v{
+  background-image: url(https://images.pexels.com/photos/30151296/pexels-photo-30151296/free-photo-of-romantic-couple-relaxing-on-sandy-beach.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+  background-position: center;
+  background-size: cover;
+}
+.background .img3v{
+  background-image: url(https://images.pexels.com/photos/31008030/pexels-photo-31008030/free-photo-of-vibrant-night-skyline-of-osaka-japan.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+  background-position: center;
+  background-size: cover;
+}
+.air-arrow{
+  /* display: none; */
+  position: absolute;
+  left: 10vw;
+  z-index: 0;
+  width: 0.1%;
+  height: 71vh;
+  /* background-color: #0000006b; */
+}
+.air-arrow-icon{
+  min-width: 255px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-left: 60vw;
+  margin-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 80%;
+  /* box-shadow: red 0px 0px 10px 0px inset; */
+  transition: 0.5s;
+  /* color: #ff0000; */
+  color: #007188;
+  font-weight: 900;
+  font-size: 40px;
+  padding: 8px;
+}
+@media (max-width:850px) {
+  .air-arrow-icon{
+    margin-left: 30vw;
+    margin-top: 40vh;
+  }
+}
+.air-arrow-icon video{
+  height: 100%;
+  border-radius: 20px;
+}
+/* #num-o{
+  background-color: #ffffff;
+  border-radius: 10px 0px 0px 10px;
+} */
 .container::-webkit-scrollbar {
   display: none; /* إخفاء شريط التمرير */
 }
@@ -120,7 +278,7 @@
   justify-content: start;
   align-items: center;
   flex-direction: column;
-  background-color: #000000d4;
+  /* background-color: #000000d4; */
 }
 .cardd .topd{
   background-image: url(https://images.pexels.com/photos/39896/space-station-moon-landing-apollo-15-james-irwin-39896.jpeg?auto=compress&cs=tinysrgb&w=600);
@@ -155,7 +313,7 @@
   background-color: #000000;
 }
 .cardd .bottomd .title{
-  background-color: #7b1717;
+  /* background-color: #7b1717; */
   background-color: #007188;
   width: 100%;
   height: 30px;
