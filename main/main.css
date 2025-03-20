@@ -23,9 +23,131 @@ body{
 }
 #main{
   background-color:  rgba(197, 197, 197, 0.434);
-  /* background: linear-gradient(to top,  #3ba17a, rgba(0, 0, 0, 0.434) , rgba(197, 197, 197, 0.434) ); */
+  /* background: linear-gradient(to top,  #3ba17a, rgba(197, 197, 197, 0.434) ); */
 
 }
+
+
+#header{
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+  width: 100vw;
+  height: 65px;
+  /* background-color: #005f6666; */
+  background-color: #00000000;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10vw 0px 10vw;
+}
+#header .hd-1{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+}
+#header .hd-1 h2{
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+}
+.aa-header-color{
+  color: #000000;
+  border: #00000000 solid 3px;
+  border-bottom: #000000 solid 3px;
+  border-radius: 20px;
+}
+#header .hd-1 .aa-header-color2{
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #00656c;
+  font-weight: 700;
+}
+#header .hd-2{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  list-style: none;
+  gap: 30px;
+  font-size: 17px;
+}
+#header .hd-2 li{
+  min-width: max-content;
+}
+.hd-1 ,.hd-2{
+  width: 50%;
+  height: 100%;
+}
+#header .hd-1 a{
+  color: #4e6068;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#header .hd-2 a{
+  color: #1A747A;
+  text-decoration: none;
+  transition: 0.5s;
+  position: relative;
+  font-weight: 650;
+}
+
+/* animated bottom line **** start ****/
+
+#header .hd-2 a::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  bottom: 0px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+#header .hd-2 a:hover::after{
+  width: 100%;
+}
+#header .hd-2 a:not(:hover)::after{
+  width: 0;
+  left: auto;
+  right: 0;
+}
+
+/* animated bottom line **** end ****/
+
+#header .hd-2 a:hover{
+  color: #008ac0;
+}
+
+@media (max-width:1080px) {
+  #header{
+    justify-content: left;
+    padding: 0px 5vw 0px 5vw;
+  }
+  #header .hd-1{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #ffffff;
+    /* background-color: #00ffc8; */
+    width: max-content;
+  }
+  #header .hd-1 span{
+    font-weight: 600;
+  }
+  #header .hd-2{
+    display: none;
+  }
+}
+
+
+
+
 section{
   width: 100vw;
   min-height: 100vh;
@@ -36,4 +158,32 @@ section{
 a{
   text-decoration: none;
   color: #ffffff;
+}
+
+
+
+
+
+#footer{
+  width: 100vw;
+  background-color: black;
+  background-image: url(https://images.pexels.com/photos/30836161/pexels-photo-30836161/free-photo-of-modern-mechanical-keyboard-on-felt-desk-mat.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.in-footer{
+  width: 100%;
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 10px;
+  /* background-color: #ffffff; */
+  background-color: #1d2f36c6;
+
 }

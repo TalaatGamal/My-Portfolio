@@ -7,7 +7,6 @@
   <link rel="icon" href="https://img.freepik.com/premium-photo/computer-programmer-icon-white-background-ar-32-v-52-job-id-16481ff812194d37833d88603725b2d4_941600-89823.jpg">
   <link rel="stylesheet" href="main/main.css">
   <!-- Pages Style -->
-  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/sidebar.css">
   <link rel="stylesheet" href="css/fixed-icon.css">
   <link rel="stylesheet" href="css/home.css">
@@ -21,7 +20,6 @@
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/air-window.css">
   <link rel="stylesheet" href="css/air-circle.css">
-  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/servo.css">
   <link rel="stylesheet" href="css/form-rate.css">
   <link rel="stylesheet" href="css/air-rate.css">
@@ -68,22 +66,22 @@
             <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
               </div>
             </div> -->
-            <div class="air-w1-right" id="air-w1-right">
+            <!-- <div class="air-w1-right" id="air-w1-right">
               <a href="#real-pro">
                 <h2>Real-Projects</h2>
               </a>
               <a href="#rating-me-r">
                 <h2>Rating me</h2>
               </a>
-            </div>
+            </div> -->
 
           </div>
-          <div class="or-v">
+          <!-- <div class="or-v">
             <h2>Or</h2>
-          </div>
+          </div> -->
           <div class="air-w1-right" id="air-w1-right">
-            <a href="#servo">
-              <h2>Services</h2>
+            <a href="" id="SW_Button">
+              <h2 id="serb">My Services</h2>
             </a>
             <a href="#contact-home">
               <h2>Contact Me</h2>
@@ -297,7 +295,7 @@
         <li><a href="#skills-exp"><i class="fa-solid fa-chart-line"></i>Skills</a></li>
         <li><a href="#exp"><i class="fa-solid fa-vial"></i>Experience</a></li>
         <li><a href="#customers"><i class="fa-solid fa-user-check"></i>Customers</a></li>
-        <li><a href="#servo"><i class="fa-solid fa-person-circle-check"></i>Services</a></li>
+        <li><a href="#servo" id="SW_Button2"><i class="fa-solid fa-person-circle-check"></i>Services</a></li>
         <li><a href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
         <li><a href="#" style="background-color: #000000;" id="mora"><i class="fa-solid fa-infinity"></i>More</a></li>
       </ul>
@@ -343,7 +341,7 @@
         <li><a href="#projects"><i class="fa-regular fa-folder-open"></i>Projects</a></li>
         <li><a href="#skills-exp"><i class="fa-solid fa-chart-line"></i>Skills-Exp</a></li>
         <li><a href="#customers"><i class="fa-solid fa-user-check"></i>Customers</a></li>
-        <li><a href="#air-services"><i class="fa-solid fa-person-circle-check"></i>Services</a></li>
+        <li><a href="#servo"><i class="fa-solid fa-person-circle-check"></i>Services</a></li>
         <li><a href="#contact"><i class="fa-solid fa-address-card"></i>Contact</a></li>
         <li><a href="#"><i class="fa-solid fa-infinity"></i>More</a></li>
       </ul>
@@ -742,13 +740,15 @@
             <div class="background">
               <div class="img1v" id="img1v"></div>
               <div class="img2v" id="img2v"></div>
-              <div class="img3v" id="img3v"></div>
+              <div class="img3v" id="img3v">
+                <video src="https://www.gstatic.com/culturalinstitute/searchar/assets/international_space_station/desktop_dark.mp4" autoplay muted loop></video>
+              </div>
             </div>
         </div>
     
       
           <div class="bottomd">
-            <div class="title" style="  background-color: #7b1717;">
+            <div class="title">
               <h2>( ISS ) International Space Station</h2>
             </div>
             <div class="info">
@@ -947,8 +947,8 @@
             <img src="https://cdn-icons-png.freepik.com/256/732/732190.png?uid=R160725661&ga=GA1.1.1977550044.1720105698&semt=ais_hybrid" alt="" class="si">
             <img src="https://cdn-icons-png.freepik.com/256/5968/5968292.png?uid=R160725661&ga=GA1.1.1977550044.1720105698&semt=ais_hybrid" alt="" class="si">
             <img src="https://cdn-icons-png.freepik.com/256/5968/5968381.png?uid=R160725661&ga=GA1.1.1977550044.1720105698&semt=ais_hybrid" alt="" class="si">
-            <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="" class="si">
             <img src="https://cdn-icons-png.freepik.com/256/17711/17711611.png?uid=R160725661&ga=GA1.1.1977550044.1720105698&semt=ais_hybrid" alt="" class="si">
+            <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="" class="si">
             <img src="https://cdn-icons-png.freepik.com/256/5968/5968358.png?uid=R160725661&ga=GA1.1.1977550044.1720105698&semt=ais_hybrid" alt="" class="si">
             <img src="https://cdn-icons-png.flaticon.com/128/15466/15466163.png" alt="" class="si">
           </div>
@@ -962,14 +962,26 @@
               <div class="cc-card">
                 <h2>Front-end development</h2>
                 <h2 class="locationv">Elzero Web School</h2>
-                <h4>HTML_CSS_JavaScript_TypeScript_SaaS_Git_GitHub</h4>
+                <h4>HTML
+                  <span class="fr-slash">/</span>
+                  CSS
+                  <span class="fr-slash">/</span>
+                  JS
+                  <span class="fr-slash">/</span>
+                  TS
+                  <span class="fr-slash">/</span>
+                  SaaS
+                  <span class="fr-slash">/</span>
+                  Git
+                  <span class="fr-slash">/</span>
+                  GitHub</h4>
               </div>
             </div>
             <div class="certificates-cards">
-              <div class="cc-title">
-                <hr>
+              <div class="cc-title" style="color: #292929;">
+                <hr style="  border: #222222 solid 2px;">
                 <h2>My Certificates</h2>
-                <hr>
+                <hr style="  border: #242424 solid 2px;">
               </div>
               <div class="c2-card">
                 <div class="lokb">
@@ -983,6 +995,11 @@
         </div>
         <div class="experience" id="exp">
           <div class="exp-line">
+            <div class="exp-line-title">
+              <hr>
+              <h2>My Experience</h2>
+              <hr>
+            </div>
             <div class="exp-line-ani">
               <h2 class="date-time-m">
                 <span>
@@ -1017,7 +1034,7 @@
                   <div class="topv">
                     <div class="img-vq">
                       <div class="img-com2" id="img-h">
-                        <h2>Onsite</h2>
+                        <h2>Cairo*Onsite</h2>
                       </div>
                       <div class="img-com-v2" id="img-h"></div>
 
@@ -1166,106 +1183,59 @@
     </div> -->
       <section class="testimonial-container" id="Customers">
         
-        <div class="cust-title">
-          <h2>
-            Customer feedback is a very important thing for any developer and helps in many things including Ui/Ux optimisation, psychologically positive impact which <br> helps us move forward, attracting other customers, etc.
-          </h2>
+        <div class="mcs-title">
+          <hr>
+          <h2>My Customers</h2>
+          <hr>
         </div>
-        
-            <div class="testimonial-card orange">
-                <div class="top">💙</div>
-                
-                <div class="profile">
-                    <div class="topo">
-                        <h3>Devid Jhon</h3>
-                        <div class="stars">
-                          <span data-value="1" style="color: #00d5ff;">★</span>
-                            <span data-value="2" style="color: #00d5ff;">★</span>
-                            <span data-value="3" style="color: #00d5ff;">★</span>
-                            <span data-value="4" style="color: #00d5ff;">★</span>
-                            <span data-value="5" style="color: #d1d1d1;">★</span>
-                          </div>
-                    </div>
-                    <div class="vbn-animat">
-                      <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam nonummy nibh euismodti ncidunt. Talaat Gamal Front-end developer & software engineer</p>
-                      <div class="avatar">
-                        <img class="img5a" id="img1">
-                    </div>
-                    </div>
+
+        <div class="vt2">
+          <div class="testimonial-card orange">
+            <div class="top">💙</div>
+            
+            <div class="profile">
+                <div class="topo">
+                    <h3>Devid Jhon</h3>
+                    <div class="stars">
+                      <span data-value="1" style="color: #00d5ff;">★</span>
+                        <span data-value="2" style="color: #00d5ff;">★</span>
+                        <span data-value="3" style="color: #00d5ff;">★</span>
+                        <span data-value="4" style="color: #00d5ff;">★</span>
+                        <span data-value="5" style="color: #d1d1d1;">★</span>
+                      </div>
                 </div>
-                <div class="quote-icon bottom">🌟</div>
-          
+                <div class="vbn-animat">
+                  <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam nonummy nibh euismodti ncidunt. Talaat Gamal Front-end developer & software engineer</p>
+                  <div class="avatar">
+                    <img class="img5a" id="img1">
+                </div>
+                </div>
+            </div>
+      
+          </div>
+          <div class="testimonial-card orange">
+              <div class="top">💙</div>
+              
+              <div class="profile">
+                  <div class="topo">
+                      <h3>Steve Nasak</h3>
+                      <div class="stars">
+                        <span data-value="1" style="color: #00d5ff;">★</span>
+                          <span data-value="2" style="color: #00d5ff;">★</span>
+                          <span data-value="3" style="color: #00d5ff;">★</span>
+                          <span data-value="4" style="color: #00d5ff;">★</span>
+                          <span data-value="5" style="color: #d1d1d1;">★</span>
+                        </div>
+                  </div>
+                  <div class="vbn-animat">
+                    <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam nonummy nibh euismod tincidunt</p>
+                    <div class="avatar">
+                      <img class="img5a" id="img3">
+                  </div>
+                  </div>
               </div>
-            <div class="testimonial-card orange">
-                <div class="top">💙</div>
-                
-                <div class="profile">
-                    <div class="topo">
-                        <h3>Steve Nasak</h3>
-                        <div class="stars">
-                          <span data-value="1" style="color: #00d5ff;">★</span>
-                            <span data-value="2" style="color: #00d5ff;">★</span>
-                            <span data-value="3" style="color: #00d5ff;">★</span>
-                            <span data-value="4" style="color: #00d5ff;">★</span>
-                            <span data-value="5" style="color: #d1d1d1;">★</span>
-                          </div>
-                    </div>
-                    <div class="vbn-animat">
-                      <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam nonummy nibh euismod tincidunt</p>
-                      <div class="avatar">
-                        <img class="img5a" id="img3">
-                    </div>
-                    </div>
-                </div>
-                <div class="quote-icon bottom">🌟</div>
-            </div>
-            <div class="testimonial-card orange">
-                <div class="top">💙</div>
-                
-                <div class="profile">
-                    <div class="topo">
-                        <h3>Devid Jhon</h3>
-                        <div class="stars">
-                          <span data-value="1" style="color: #00d5ff;">★</span>
-                            <span data-value="2" style="color: #00d5ff;">★</span>
-                            <span data-value="3" style="color: #00d5ff;">★</span>
-                            <span data-value="4" style="color: #00d5ff;">★</span>
-                            <span data-value="5" style="color: #d1d1d1;">★</span>
-                          </div>
-                    </div>
-                    <div class="vbn-animat">
-                      <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam nonummy nibh euismod tincidunt</p>
-                    <div class="avatar">
-                      <img class="img5a" id="img5">
-                  </div>
-                    </div>
-                </div>
-                <div class="quote-icon bottom">🌟</div>
-            </div>
-            <!-- <div class="testimonial-card orange">
-                <div class="top">💙</div>
-                
-                <div class="profile">
-                    <div class="topo">
-                        <h3>Devid Jhon</h3>
-                        <div class="stars">
-                          <span data-value="1" style="color: #00d5ff;">★</span>
-                            <span data-value="2" style="color: #00d5ff;">★</span>
-                            <span data-value="3" style="color: #00d5ff;">★</span>
-                            <span data-value="4" style="color: #00d5ff;">★</span>
-                            <span data-value="5" style="color: #d1d1d1;">★</span>
-                          </div>
-                    </div>
-                    <div class="vbn-animat">
-                      <p class="comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut diam nonummy nibh euismod tincidunt</p>
-                    <div class="avatar">
-                      <img class="img5a" id="img5">
-                  </div>
-                    </div>
-                </div>
-                <div class="quote-icon bottom">🌟</div>
-            </div> -->
-        
+          </div>
+        </div>
 
     </section>
     </section>
@@ -1273,46 +1243,29 @@
       <div class="services-div">
         <div class="servo-title">
           <h2>
-            <img src="https://cdn-icons-png.flaticon.com/128/8898/8898827.png" alt=""> My Services
+            <img src="https://cdn-icons-png.flaticon.com/128/8898/8898827.png" alt=""> My Services / <span>CEO & FOUNDER</span>
           </h2>
         </div>
         <div class="cards-div">
-          <div class="serv-card" id="bottom-card">
-            <div class="text">
-              <img src="https://cdn-icons-png.freepik.com/256/8297/8297314.png?ga=GA1.1.1977550044.1720105698&semt=ais_hybrid" alt="">
-              <h2>Create a webapp</h2>
-            </div>
-            <div class="link-card">
-              <a href="">Go</a>
-            </div>
-          </div>
+
           <div class="serv-card" id="update">
             <div class="text">
-              <img src="https://cdn-icons-png.freepik.com/256/15124/15124856.png?ga=GA1.1.1977550044.1720105698&semt=ais_hybrid" alt="">
-              <h2>Update Or edit</h2>
+              <div class="imgvid">
+                <video src="https://cdn-icons-mp4.freepik.com/128/16104/16104386.mp4?uid=R160725661&ga=GA1.1.1977550044.1720105698" autoplay muted loop></video>
+                <!-- <video src="https://cdn-icons-mp4.flaticon.com/512/12829/12829517.mp4" autoplay muted loop></video> -->
+              </div>
+              <!-- <img src="https://cdn-icons-png.freepik.com/256/15124/15124856.png?ga=GA1.1.1977550044.1720105698&semt=ais_hybrid" alt=""> -->
+              <h2> CVADORA_CV Builder </h2>
             </div>
-            <div class="link-card">
+            <!-- <div class="link-card">
               <a href="">Go</a>
-            </div>
+            </div> -->
           </div>
-          <div class="serv-card" id="bottom-card2">
-            <div class="text">
-              <img src="https://cdn-icons-png.freepik.com/256/13990/13990750.png?ga=GA1.1.1977550044.1720105698&semt=ais_hybrid" alt="">
-              <h2>Problem Solving </h2>
-            </div>
-            <div class="link-card">
-              <a href="">Go</a>
-            </div>
+          <div class="serv-card-info">
+            <h2>Create your professional CV for free and without limits, using multiple templates optimized for ATS systems to maximize your job opportunities effortlessly!</h2>
+              <a href="https://talaatgamal.github.io/cvadora/" class="sci"><i class="fa-solid fa-eye"></i> Visit Now</a>
           </div>
-          <div class="serv-card" id="help">
-            <div class="text">
-              <img src="https://cdn-icons-png.freepik.com/256/17352/17352574.png?ga=GA1.1.1977550044.1720105698" alt="">
-              <h2>Help for you</h2>
-            </div>
-            <div class="link-card">
-              <a href="">Go</a>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -1541,6 +1494,7 @@
   <script src="js/air-rate.js"></script>
   <script src="js/exp.js"></script>
   <script src="js/projects.js"></script>
+  <script src="js/servo.js"></script>
   <!-- <script src="js/rate.js"></script> -->
 </body>
 </html>

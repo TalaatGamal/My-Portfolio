@@ -96,7 +96,7 @@
   padding: 5px 15px 5px 15px;
   /* border-radius: 15px; */
   border: #ffffff00 solid 5px;
-  border-bottom: #267981 solid 5px;
+  /* border-bottom: #267981 solid 5px; */
   color: #267981;
   font-size: 45px;
 }
@@ -175,13 +175,13 @@
   55%{
     transform: translateX(0px);
   }
-  69%{
+  65%{
     transform: translateX(0px);
   }
-  79%{
+  65%{
     transform: translateX(-350px);
   }
-  89%{
+  95%{
     transform: translateX(-350px);
   }
   100%{
@@ -194,19 +194,30 @@
   height: 100%;
 }
 .background .img1v{
-  background-image: url(https://images.pexels.com/photos/31002445/pexels-photo-31002445/free-photo-of-elegant-grey-heron-by-hiroshima-water-s-edge.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+  background-image: url(https://images.pexels.com/photos/7662476/pexels-photo-7662476.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
   background-position: center;
   background-size: cover;
 }
 .background .img2v{
-  background-image: url(https://images.pexels.com/photos/30151296/pexels-photo-30151296/free-photo-of-romantic-couple-relaxing-on-sandy-beach.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+  background-image: url(https://images.pexels.com/photos/7661502/pexels-photo-7661502.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
   background-position: center;
   background-size: cover;
 }
-.background .img3v{
+/* .background .img3v{
   background-image: url(https://images.pexels.com/photos/31008030/pexels-photo-31008030/free-photo-of-vibrant-night-skyline-of-osaka-japan.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
   background-position: center;
   background-size: cover;
+} */
+.background .img3v{
+  background-color: #212326;
+}
+.background .img3v video{
+  /* min-width: 450px;
+  max-width: 450px; */
+  width: 100%;
+  height: 100%;
+  /* position: relative;
+  left: -50px; */
 }
 .air-arrow{
   /* display: none; */
@@ -390,9 +401,9 @@
   padding-left: 0px;
 }
 .actived .bottomd .gok .codea{
-    background-color: #a60000a5;
+    background-color: #00ff6e0b;
     border: #ff000000 solid 3px;
-    border-bottom: #ff0000 solid 3px;
+    border-bottom: #00ff6e solid 3px;
 }
 .actived .bottomd .gok .view{
     background-color: #0088a664;
@@ -420,5 +431,34 @@
     padding-right: 20px;
     background-color: #000000;
     width: 100%;
+  }
+
+
+
+
+
+
+  .prs-t2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    height: 100px;
+  }
+  .prs-t2 h2{
+    min-width: max-content;
+    /* background-color: #77a8aca3; */
+    padding: 5px;
+    /* border-radius: 15px; */
+    border: #ffffff00 solid 5px;
+    /* border-bottom: #267981 solid 5px; */
+    color: #267981;
+    font-size: 40px;
+  }
+  .prs-t2 hr{
+    width: 40px;
+  }
+  .prs-t2 img{
+    width: 40px;
   }
 }

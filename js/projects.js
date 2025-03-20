@@ -196,11 +196,11 @@ function checkAnimation() {
     lastX = x;
 
     if (x === 3) {
-      mainBackground.style.backgroundImage = `url(https://images.pexels.com/photos/31002445/pexels-photo-31002445/free-photo-of-elegant-grey-heron-by-hiroshima-water-s-edge.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load&timestamp)`;
+      mainBackground.style.backgroundImage = `url(https://images.pexels.com/photos/7662476/pexels-photo-7662476.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load)`;
       back1.style.backgroundImage = "url()";
     }
     if (x === 4) {
-      mainBackground.style.backgroundImage = `url(https://images.pexels.com/photos/30151296/pexels-photo-30151296/free-photo-of-romantic-couple-relaxing-on-sandy-beach.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load)`;
+      mainBackground.style.backgroundImage = `url(https://images.pexels.com/photos/7661502/pexels-photo-7661502.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load)`;
       back2.style.backgroundImage = "url()";
     }
     if (x === 5) {
