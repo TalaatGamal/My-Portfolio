@@ -242,9 +242,9 @@ function toggleCommentWidth(paragraph, callback) {
     });
   } else {
     paragraph.style.width = "100%";
-    document.querySelectorAll(".vbn-animat").forEach(element => {
-      element.style.paddingTop = "10px";
-    });
+    // document.querySelectorAll(".vbn-animat").forEach(element => {
+    //   element.style.paddingTop = "10px";
+    // });
       }
 
   if (callback) {

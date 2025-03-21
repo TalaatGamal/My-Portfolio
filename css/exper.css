@@ -1071,7 +1071,7 @@
   border-radius: 20px;
   background: linear-gradient(20deg , #6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB , #C6D9DA , #C6D9DA, #C6D9DA, #C6D9DA, #C6D9DA);
   /* box-shadow: #00000077 0px 0px 40px 0px; */
-  display: none;
+  /* display: none; */
 }
 .fr-slash{
   color: #00bdaa;
