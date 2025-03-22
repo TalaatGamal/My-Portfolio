@@ -68,6 +68,7 @@ body{
   justify-content: center;
   color: #00656c;
   font-weight: 700;
+  transition: 0.5s;
 }
 #header .hd-2{
   display: flex;
@@ -95,6 +96,9 @@ body{
   transition: 0.5s;
   position: relative;
   font-weight: 650;
+}
+#toggle-more{
+  transition: 0.5s;
 }
 
 /* animated bottom line **** start ****/

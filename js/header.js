@@ -176,12 +176,38 @@ window.addEventListener('scroll', function () {
       link.style.color = "#ffffff";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#ffffff"
       document.getElementById("sidebar-menu").style.color="#ffffff";
+      document.getElementById("aa-header-color2").style.cssText=`
+        
+          color:rgb(220, 220, 220);
+          background-color: #1E767C;
+          padding: 8px;
+          border-radius: 10px;
+      `;
+      document.getElementById("toggle-more").style.cssText=`
+        
+          color:rgb(220, 220, 220);
+          background-color: #1E767C;
+          padding: 8px;
+          border-radius: 10px;
+      `;
     });
   } else {
     links.forEach(link => {
       link.style.color = "";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#4e6068"
       document.getElementById("sidebar-menu").style.color="#4E6068";
+
+      document.getElementById("aa-header-color2").style.cssText=`
+        
+      color: #4E6068;
+      background-color:rgba(0, 0, 0, 0);
+      `;
+      document.getElementById("toggle-more").style.cssText=`
+        
+      color: #2D7F85;
+      background-color:rgba(0, 0, 0, 0);
+      `;
+
     });
   }
 
