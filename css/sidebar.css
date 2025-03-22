@@ -13,6 +13,9 @@
   cursor: pointer;
   color: #4E6068;
 }
+#x-icon{
+  display: none;
+}
 .sidebar-content{
   width: 160vw;
   height: 100vh;

@@ -1066,7 +1066,7 @@
 
 
 .skill-div-mom{
-  width: 80%;
+  width: 100%;
   height: 100vh;
   border-radius: 20px;
   background: linear-gradient(20deg , #6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB , #C6D9DA , #C6D9DA, #C6D9DA, #C6D9DA, #C6D9DA);
@@ -1153,8 +1153,8 @@
 .cc-card{
   width: 100%;
   height: 110px;
-  background-color: #0000008a;
-  border-top: #007188 solid 10px;
+  background: linear-gradient(to right , black , rgba(0, 0, 0, 0));
+  border-left: #007188 solid 10px;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -1192,8 +1192,8 @@
   /* border: #ff000000 solid 16px;
   border-bottom: #00a6ff solid 16px; */
 }
-.lokb{
-  /* background-color: #000000; */
+.lokb h2{
+  font-size: 20px;
 }
 .c2-card h2{
   display: flex;

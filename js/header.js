@@ -180,14 +180,14 @@ window.addEventListener('scroll', function () {
         
           color:rgb(220, 220, 220);
           background-color: #1E767C;
-          padding: 8px;
-          border-radius: 10px;
+          padding: 1px 5px 1px 5px;
+          border-radius: 5px;
       `;
       document.getElementById("toggle-more").style.cssText=`
         
           color:rgb(220, 220, 220);
           background-color: #1E767C;
-          padding: 8px;
+          padding: 5px 12px 5px 12px;
           border-radius: 10px;
       `;
     });

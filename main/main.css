@@ -171,7 +171,8 @@ a{
 #footer{
   width: 100vw;
   background-color: black;
-  background-image: url(https://images.pexels.com/photos/30836161/pexels-photo-30836161/free-photo-of-modern-mechanical-keyboard-on-felt-desk-mat.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
+  background-image: url(https://images.pexels.com/photos/4059652/pexels-photo-4059652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  /* background-image: url(https://images.pexels.com/photos/30836161/pexels-photo-30836161/free-photo-of-modern-mechanical-keyboard-on-felt-desk-mat.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); */
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

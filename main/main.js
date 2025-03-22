@@ -35,12 +35,29 @@
               
 
 
-const menuIcon = document.querySelector('.sidebar-menu i');
+
+
+const menuIcon = document.querySelector('.sidebar-menu');
 const sidebar = document.querySelector('.sidebar-content');
+const xIcon = document.getElementById("x-icon");
+const menuIconElement = document.getElementById("menu-icon");
 
 menuIcon.addEventListener('click', () => {
   sidebar.classList.toggle('active');
+
+  if (sidebar.classList.contains('active')) {
+    xIcon.style.display = "block";
+    menuIconElement.style.display = "none";
+  } else {
+    xIcon.style.display = "none";
+    menuIconElement.style.display = "block";
+  }
 });
+
+
+
+
+
 
 
 
