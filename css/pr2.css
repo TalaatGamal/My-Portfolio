@@ -462,4 +462,12 @@
   .prs-t2 img{
     width: 40px;
   }
+
+
+  .air-arrow-icon{
+    min-width: 150px;
+    height: 120px;
+    margin-left: 0px;
+    margin-top: 65vh;
+  }
 }
