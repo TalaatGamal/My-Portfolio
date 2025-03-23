@@ -170,11 +170,16 @@ window.addEventListener('scroll', function () {
   let opacity = Math.min(currentScroll / 200, 0.4);
 
   header.style.backgroundColor = `rgba(0, 95, 102, ${opacity})`;
+  document.getElementById("air-sec-info").style.backgroundColor = `rgba(0, 95, 102, ${opacity})`;
+  document.getElementById("air-sec-info").style.opacity="1";
 
   if (currentScroll > 0) {
     links.forEach(link => {
       link.style.color = "#ffffff";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#ffffff"
+      document.getElementById("air-sec-info").style.color="#ffffff";
+      document.getElementById("air-sec-info").style.borderBottomColor="#ffffff";
+
       document.getElementById("sidebar-menu").style.color="#ffffff";
       document.getElementById("aa-header-color2").style.cssText=`
         
@@ -195,6 +200,9 @@ window.addEventListener('scroll', function () {
     links.forEach(link => {
       link.style.color = "";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#4e6068"
+      document.getElementById("air-sec-info").style.color="#4e6068";
+      document.getElementById("air-sec-info").style.borderBottomColor="#4e6068";
+
       document.getElementById("sidebar-menu").style.color="#4E6068";
 
       document.getElementById("aa-header-color2").style.cssText=`
@@ -212,4 +220,49 @@ window.addEventListener('scroll', function () {
   }
 
   lastScroll = currentScroll;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const asiText = document.getElementById("asi-text");
+  const sections = document.querySelectorAll(".section , .pro , .skill-div-mom , .experience");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          asiText.textContent = entry.target.dataset.text;
+        }
+      });
+    },
+    { threshold: 0.7 }
+  );
+
+  sections.forEach((section) => observer.observe(section));
 });
