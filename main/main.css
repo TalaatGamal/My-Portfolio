@@ -213,7 +213,7 @@ a{
   height: 40px;
   border-radius: 0px 0px 0px 20px;
   position: fixed;
-  z-index: 999;
+  z-index: 100;
   top: 64px;
   right: 0px;
   display: flex;
