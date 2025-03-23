@@ -3,7 +3,8 @@
 
 .air-circle{
   position: fixed;
-  top: 89vh;
+  /* top: 89vh; */
+  bottom: 30px;
   right: 30px;
   z-index: 1000;
 
