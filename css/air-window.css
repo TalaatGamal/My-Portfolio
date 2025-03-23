@@ -110,7 +110,7 @@
   display: flex;
   align-items: start;
   justify-content: center;
-  /* background-color: #174c4e; */
+  background-color: #174c4e6a;
   /* backdrop-filter: blur(10px); */
   border-radius: 20px;
   margin-top: 40px;
@@ -124,9 +124,9 @@
   width: 100%;
   height: 100%;
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 20px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
