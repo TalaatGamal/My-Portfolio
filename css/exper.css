@@ -1068,7 +1068,7 @@
 .skill-div-mom{
   width: 100%;
   min-height: 100vh;
-  border-radius: 20px;
+  border-radius: 20px 20px 0px 0px;
   background: linear-gradient(20deg , #6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB , #C6D9DA , #C6D9DA, #C6D9DA, #C6D9DA, #C6D9DA);
   /* box-shadow: #00000077 0px 0px 40px 0px; */
   /* display: none; */
@@ -1342,9 +1342,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(200deg , #6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB , #C6D9DA , #C6D9DA, #C6D9DA, #C6D9DA, #C6D9DA);
+
 }
 .exp-line{
-  background-color: #6FB6BB;
+  /* background-color: #6FB6BB; */
+  /* background-color: #C7D9DB; */
+  backdrop-filter: blur(200px);
   width: 80%;
   min-height: 600px;
   border-radius: 30px;

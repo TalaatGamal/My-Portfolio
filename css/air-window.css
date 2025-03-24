@@ -110,15 +110,13 @@
   display: flex;
   align-items: start;
   justify-content: center;
-  background-color: #174c4e6a;
-  /* backdrop-filter: blur(10px); */
   border-radius: 20px;
   margin-top: 40px;
   margin-right: 10px;
-  /* background-image: url(https://images.pexels.com/photos/1535907/pexels-photo-1535907.jpeg?auto=compress&cs=tinysrgb&w=400); */
-  background-position: center;
-  background-size: cover;
   overflow: hidden;
+  background: linear-gradient(150deg , #6fb6bb7b,#6fb6bb7c,#6fb6bb7a,#6fb6bb7c,#6FB6BB , #c6d9da7e , #c6d9da7c, #C6D9DA, #c6d9da7c, #c6d9da7c);
+  box-shadow: #0000004f 10px 10px 10px 0px;
+  border: #237379 solid 4px;
 }
 .air-w1-right{
   width: 100%;
