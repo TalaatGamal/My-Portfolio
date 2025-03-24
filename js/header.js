@@ -178,7 +178,7 @@ window.addEventListener('scroll', function () {
       link.style.color = "#ffffff";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#ffffff"
       document.getElementById("air-sec-info").style.color="#ffffff";
-      document.getElementById("air-sec-info").style.borderBottomColor="#ffffff";
+      // document.getElementById("air-sec-info").style.borderBottomColor="#ffffff";
 
       document.getElementById("sidebar-menu").style.color="#ffffff";
       document.getElementById("aa-header-color2").style.cssText=`
@@ -201,7 +201,7 @@ window.addEventListener('scroll', function () {
       link.style.color = "";
       document.getElementById('header').querySelector(".hd-1").querySelector("a").style.color="#4e6068"
       document.getElementById("air-sec-info").style.color="#4e6068";
-      document.getElementById("air-sec-info").style.borderBottomColor="#4e6068";
+      // document.getElementById("air-sec-info").style.borderBottomColor="#4e6068";
 
       document.getElementById("sidebar-menu").style.color="#4E6068";
 

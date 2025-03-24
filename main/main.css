@@ -223,7 +223,7 @@ a{
   justify-content: center;
   color: #4E6068;
   border: #40404000 solid 5px;
-  border-bottom: #4E6068 solid 5px;
+  /* border-bottom: #4E6068 solid 5px; */
   opacity: 0;
   transition: 1s;
 }
