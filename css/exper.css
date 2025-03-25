@@ -1215,8 +1215,8 @@
   .sdm-title{
     /* background-color: #000000; */
     gap: 15px;
-    margin-top: 100px;
-    margin-bottom: 80px;
+    margin-top: 150px;
+    /* margin-bottom: 80px; */
     font-size: 25px;
   }
   .sdm-title hr{
@@ -1225,6 +1225,7 @@
   }
   .info-sdm{
     width: 98%;
+    margin-top: 0px;
   }
   
   #cc-title-mob{
@@ -1240,21 +1241,25 @@
   .skills-images img{
     width: 60px;
     height: 60px;
-    background-color: #ffffffc5;
+    background-color: #ffffffa4;
     border-radius: 10px;
     padding: 5px;
   }
   .skills-images{
     /* padding: 0px 10px 0px 10px; */
-    background-color: #10556639;
-    border: #00000000 double 10px;
+    /* background-color: #10556639; */
+    /* border: #00000000 double 10px;
     border-left: #000000 double 10px;
-    border-right: #000000 double 10px;
+    border-right: #000000 double 10px; */
     width: 97%;
     height: max-content;
     padding: 20px;
-    gap: 10px;
+    gap: 15px;
     border-radius: 20px;
+  }
+  .skill-div-mom{
+    flex-direction: column;
+    gap: 50px;
   }
 }
 
