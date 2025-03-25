@@ -230,3 +230,82 @@ a{
   /* border-radius: 50px 50px 0px 0px; */
 }
 }
+
+
+
+
+
+
+
+
+
+#mInto{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 99999999999999999999;
+  top: 0px;
+  left: 0px;
+  background-color: #268e94;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 50px;
+  transition: 1s;
+  color: #ffffff;
+  padding-top: 30vh;
+}
+
+#mInto .logo{
+  width: 400px;
+  /* background-color: #000000; */
+  text-align: center;
+}
+#mInto .logo h2{
+  font-family: "Playwrite IN", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: 600; */
+  font-style: normal;
+}
+.aa-logon{
+  color: #000000;
+  border: #ff000000 solid 4px;
+  border-bottom: #000000 solid 3.5px;
+  border-radius: 30px;
+  font-weight: 600;
+
+}
+.fee{
+  font-size: 20px;
+}
+.load{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.load-a{
+  /* background-color: #000000; */
+  width: 150px;
+  border-bottom: #ffffff dashed 10px;
+  /* height: 10px; */
+}
+.load-c{
+  /* background-color: #ff0000; */
+  width: 60px;
+  height: 60px;
+  border: #00000000 solid 6px;
+  border-left: #ffffff solid 6px;
+  border-right: #ffffff solid 6px;
+  border-radius: 100px;
+  animation: c-ani 1s infinite linear;
+}
+@keyframes c-ani {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
