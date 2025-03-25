@@ -246,7 +246,7 @@ a{
   z-index: 99999999999999999999;
   top: 0px;
   left: 0px;
-  background-color: #268e94;
+  background-color: #003a40eb;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -268,7 +268,7 @@ a{
   /* font-weight: 600; */
   font-style: normal;
 }
-.aa-logon{
+#mInto .aa-logon{
   color: #000000;
   border: #ff000000 solid 4px;
   border-bottom: #000000 solid 3.5px;
@@ -276,22 +276,22 @@ a{
   font-weight: 600;
 
 }
-.fee{
+#mInto .fee{
   font-size: 20px;
 }
-.load{
+#mInto .load{
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
 }
-.load-a{
+#mInto .load-a{
   /* background-color: #000000; */
   width: 150px;
   border-bottom: #ffffff dashed 10px;
   /* height: 10px; */
 }
-.load-c{
+#mInto .load-c{
   /* background-color: #ff0000; */
   width: 60px;
   height: 60px;

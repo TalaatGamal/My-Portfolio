@@ -14,13 +14,41 @@
 
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+
+//   let mo = document.getElementById("mInto")
+
+
+//   setTimeout(() => {
+//         mo.style.opacity="0";
+//   }, 1000);
+//   setTimeout(() => {
+//         mo.style.display = "none";
+//   }, 2000);
+
+
+// });
+
+
 document.addEventListener("DOMContentLoaded", function () {
+  let mo = document.getElementById("mInto");
+  let body = document.getElementById("body");
 
-
+  // إخفاء العنصر بالتدريج
   setTimeout(() => {
-        document.getElementById("mInto").style.opacity="0";
+    mo.style.opacity = "0";
   }, 1000);
+
+  // تغيير display بعد اختفاء العنصر
   setTimeout(() => {
-      document.getElementById("mInto").style.display = "none";
-  }, 2000);
+    mo.style.display = "none";
+    body.style.overflow = "auto"; // إعادة التمرير بعد الإخفاء
+    console.log("auto");
+  }, 1700);
+
+  // تعطيل التمرير طالما العنصر ظاهر
+  if (window.getComputedStyle(mo).display === "flex") {
+    body.style.overflow = "hidden";
+    console.log("hidden");
+  }
 });
