@@ -87,7 +87,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* flex-wrap: wrap; */
   gap: 20px;
+  /* width: 100vw; */
   height: 100px;
 }
 .prs-t2 h2{
@@ -440,11 +442,15 @@
 
 
   .prs-t2{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
     gap: 5px;
-    height: 100px;
+    width: 100vw;
+    margin-top: 100px;
+    /* height: 100px; */
   }
   .prs-t2 h2{
     min-width: max-content;
@@ -457,17 +463,86 @@
     font-size: 40px;
   }
   .prs-t2 hr{
-    width: 40px;
+    width: 80px;
   }
   .prs-t2 img{
-    width: 40px;
+    width: 50px;
+  }
+  .prs-t2-a h2 spana{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 10px;
+    /* background-color: #000000; */
+  }
+  .prs-t2-a h2 spana hr{
+    width: 10px;
+    height: 50px;
+    background-color: #77A8AC;
+    border-radius: 3px;
+    /* position: relative;
+    top: 20px; */
+  }
+  .r-hr{
+    animation: r-hr 5s infinite linear;
+  }
+  @keyframes r-hr {
+    0%{
+      transform: translateX(0px);
+    }
+    50%{
+      transform: translateX(140px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+  .l-hr{
+    animation: l-hr 5s infinite linear;
+  }
+  @keyframes l-hr {
+    0%{
+      transform: translateX(0px);
+    }
+    50%{
+      transform: translateX(-140px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
+  .prs-t2-a,.prs-t2-b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    padding: 0px 10px 0px 10px;
+    width: 100%;
+    /* background-color: #000000; */
   }
 
-
   .air-arrow-icon{
-    min-width: 150px;
+    min-width: 80vw;
     height: 120px;
     margin-left: 0px;
     margin-top: 65vh;
+    /* background-color: #000000; */
+  }
+
+  .air-arrow-icon{
+  
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 80%;
+    transition: 0.5s;
+    color: #007188;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 8px;
   }
 }
