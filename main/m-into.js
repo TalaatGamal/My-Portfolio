@@ -14,22 +14,6 @@
 
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-
-//   let mo = document.getElementById("mInto")
-
-
-//   setTimeout(() => {
-//         mo.style.opacity="0";
-//   }, 1000);
-//   setTimeout(() => {
-//         mo.style.display = "none";
-//   }, 2000);
-
-
-// });
-
-
 document.addEventListener("DOMContentLoaded", function () {
   let mo = document.getElementById("mInto");
   let body = document.getElementById("body");
