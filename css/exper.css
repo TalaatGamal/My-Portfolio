@@ -1407,19 +1407,23 @@
 .exp-line-vid{
   width: 400px;
   height: 306px;
-  background-color: #D6DFDE;
+  /* background-color: #D6DFDE; */
   border-radius: 30px;
   box-shadow: #00000066 10px 10px 10px 0px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /* background-color: #000000; */
-  margin-top: 7px;
+  /* margin-top: 7px; */
+  border: #246366 solid 6px;
 }
 .exp-video-l{
-  width: 400px;
-  height: 440px;
+  width: 550px;
+  /* height: 440px; */
   position: relative;
-  top: -80px;
-  transform: rotate(20deg);
+  /* top: -80px; */
+  /* transform: rotate(20deg); */
 }
 .ela-in{
   min-width: max-content;
@@ -1578,7 +1582,6 @@
   align-items: center;
   justify-content: center; */
   border-radius: 50px;
-  position: absolute;
   animation: bnm 5s infinite linear;
 }
 @keyframes bnm {
@@ -1589,11 +1592,21 @@
     transform: rotate(360deg);
   }
 }
+.mkov{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  position: relative;
+  left: -35px;
+  /* background-color: #000000; */
+}
 .num .span2{
   min-width: max-content;
 }
 .num hr{
-  width: 100%;
+  width: 350px;
   border: #00a2ff solid 2px;
 }
 .date-time-m{
@@ -1706,7 +1719,7 @@
 .ela .topv{
   /* background-color: #006f4a; */
   /* background-color: #00472f; */
-  background-color: #246366;
+  background-color: #166a6d;
   min-height: 220px;
   border-radius: 20px;
   padding-bottom: 10px;
