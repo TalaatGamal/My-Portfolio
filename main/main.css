@@ -125,7 +125,7 @@ body{
 /* animated bottom line **** end ****/
 
 #header .hd-2 a:hover{
-  color: #008ac0;
+  color: #ffffff;
 }
 
 @media (max-width:1080px) {
@@ -309,3 +309,19 @@ a{
     transform: rotate(360deg);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
