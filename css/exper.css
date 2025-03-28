@@ -1818,7 +1818,8 @@
   }
   .img-com-v{
     /* background-image: url(../Images/image\ \(1\).png); */
-    background-image: url(https://images.pexels.com/photos/3778216/pexels-photo-3778216.jpeg);
+    /* background-image: url(https://images.pexels.com/photos/3778216/pexels-photo-3778216.jpeg); */
+    background-image: url(https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
     /* background-color: #0099aa; */
     background-color: #E3E7ED;
     background-position: center;
