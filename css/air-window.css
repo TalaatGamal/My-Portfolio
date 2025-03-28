@@ -114,9 +114,10 @@
   margin-top: 40px;
   margin-right: 10px;
   overflow: hidden;
-  background: linear-gradient(150deg , #6fb6bb7b,#6fb6bb7c,#6fb6bb7a,#6fb6bb7c,#6FB6BB , #c6d9da7e , #c6d9da7c, #C6D9DA, #c6d9da7c, #c6d9da7c);
+  /* background: linear-gradient(150deg , #6fb6bb7b,#6fb6bb7c,#6fb6bb7a); */
   box-shadow: #0000004f 10px 10px 10px 0px;
   border: #237379 solid 4px;
+  background-color: #6fb6bb7a;
 }
 .air-w1-right{
   width: 100%;
@@ -151,6 +152,7 @@
   border: #ffffff00 solid 7px;
   border-left: #ffffff solid 10px;
   /* border-right: #ffffff solid 10px; */
+  box-shadow: #00000082 10px 10px 10px 0px;
 }
 #air-w1-right a h2:hover{
   background-color: #000000;

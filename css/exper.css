@@ -1186,7 +1186,7 @@
   /* background-color: #003e42a2; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   /* flex-direction: column; */
   gap: 5px;
   color: #ffffff;
@@ -1206,9 +1206,9 @@
   height: 30px;
 }
 .c2-card img{
-  width: 350px;
-  border-radius: 20px;
-  border: #36636a dashed 6px;
+  width: 120px;
+  border-radius: 10px;
+  border: #36636a solid 2px;
 }
 @media (max-width:1080px) {
 
@@ -1241,8 +1241,8 @@
     padding-left: 10px;
   }
   .skills-images img{
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background-color: #ffffffa4;
     border-radius: 10px;
     padding: 5px;
@@ -1465,16 +1465,20 @@
 .ela .img-vq .img-com{
   width: 180px;
   height: 180px;
-  background-color: #dddddd;
+  /* background-color: #dddddd; */
+  background-color: #ffffff;
   border-radius: 20px;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b4/FL_LOGO-REDUCTION.png);
+  /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b4/FL_LOGO-REDUCTION.png); */
+  /* background-image: url(https://cdn.sanity.io/images/kts928pd/production/aabf26db653d548f71cc832c010242db4251adbd-392x379.png); */
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgr1ByPYhC777r3aLW-q6qtRPvqPzPtu17cSqxaoWmedE9JCc6LwKUjmEziXs-8V4vhAE&usqp=CAU);
   background-position: center;
-  background-size: 80%;
+  background-size: 100%;
   background-repeat: no-repeat;
   display: flex;
   align-items: end;
   justify-content: center;
 }
+
 .ela .img-vq .img-com2{
   width: 180px;
   height: 180px;
@@ -1607,7 +1611,8 @@
 }
 .num hr{
   width: 350px;
-  border: #00a2ff solid 2px;
+  border: #00bfff solid 2.3px;
+  border-radius: 1px;
 }
 .date-time-m{
   width: 98%;
@@ -1661,7 +1666,7 @@
   /* background: linear-gradient(to bottom , rgba(0, 0, 0, 0.718) , rgba(0, 0, 0, 0)); */
 
   border-radius: 15px;
-  color: #00bc7d;
+  color: #009dbc;
   /* color: #ffffff; */
 }
 .date-time span{
@@ -1676,13 +1681,13 @@
   border: rgb(255, 255, 255) solid 2px;
   width: 40px;
 }
-.date-time img{
+/* .date-time img{
   width: 40px;
   margin-right: 5px;
   background-color: #ffffff;
   padding: 1px;
   border-radius: 7px;
-}
+} */
 .work-job{
   width: 98%;
   height: 60px;
@@ -1801,7 +1806,6 @@
   .ela .img-vq .img-com{
     width: 50%;
     height: 100%;
-    background-size: 80%;
     border: #00a2b4 solid 2px;
   }
   #img-h{
@@ -1814,12 +1818,12 @@
   }
   .img-com-v{
     /* background-image: url(../Images/image\ \(1\).png); */
+    background-image: url(https://images.pexels.com/photos/3778216/pexels-photo-3778216.jpeg);
     /* background-color: #0099aa; */
-    background-image: url(https://images.pexels.com/photos/30723618/pexels-photo-30723618/free-photo-of-woman-in-traditional-vietnamese-dress-with-conical-hat.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load);
     background-color: #E3E7ED;
-    background-position: left;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 115%;
+    background-size: cover;
 
   }
   .img-com-v2{
@@ -1863,6 +1867,7 @@
   padding-top: 0px;
   gap: 5px;
   margin-bottom: 30px;
+  margin-top: 100px;
 }
 .exp-line-title h2{
   font-size: 34px;
