@@ -1350,7 +1350,9 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(200deg , #6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB,#6FB6BB , #C6D9DA , #C6D9DA, #C6D9DA, #C6D9DA, #C6D9DA);
-
+  /* box-shadow: #256066 0px 0px 20px 0px; */
+  box-shadow: #C6D9DA 0px 40px 10px 0px;
+  z-index: 100;
 }
 .exp-line{
   /* background-color: #6FB6BB; */
@@ -1378,7 +1380,7 @@
   gap: 20px;
   padding-top: 80px;
   /* background-color: #000000; */
-  color: #eaeaea;
+  color: #000000;
 }
 .exp-line-title h2{
   width: max-content;
@@ -1388,7 +1390,7 @@
 }
 .exp-line-title hr{
   width: 100px;
-  border: #ffffff solid 2px;
+  border:  #000000 solid 2px;
 }
 .exp-line-ani{
   width: 600px;
@@ -1470,9 +1472,12 @@
   border-radius: 20px;
   /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b4/FL_LOGO-REDUCTION.png); */
   /* background-image: url(https://cdn.sanity.io/images/kts928pd/production/aabf26db653d548f71cc832c010242db4251adbd-392x379.png); */
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgr1ByPYhC777r3aLW-q6qtRPvqPzPtu17cSqxaoWmedE9JCc6LwKUjmEziXs-8V4vhAE&usqp=CAU);
+  /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgr1ByPYhC777r3aLW-q6qtRPvqPzPtu17cSqxaoWmedE9JCc6LwKUjmEziXs-8V4vhAE&usqp=CAU); */
+  /* background-image: url(../Images/SmallSquareLogoJpg.jpg); */
+  /* background-image: url(https://images.pexels.com/photos/16687989/pexels-photo-16687989/free-photo-of-washington-monument.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+  background-image: url(https://images.unsplash.com/photo-1742827871480-4962b0653e1d?q=80&w=1484&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   align-items: end;
@@ -1508,17 +1513,19 @@
   animation: cvb 2s infinite linear;
 }
 .ela .img-vq .img-com h2{
-  /* background-color: #000000ac; */
+  background-color: #246366;
+  border-radius: 5px 5px 0px 0px;
   /* color: #acedff; */
-  color: #1b3f33;
-  border-bottom: #246366 solid 10px;
+  color: #ffffff;
+  /* text-shadow: #000000 0px 0px 6px; */
+  /* border-bottom: #246366 solid 10px; */
   /* border-radius: 5px; */
-  width: 100px;
-  height: 30px;
+  width: 130px;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   animation: cvb 2s infinite linear;
 }
@@ -1819,8 +1826,9 @@
   .img-com-v{
     /* background-image: url(../Images/image\ \(1\).png); */
     /* background-image: url(https://images.pexels.com/photos/3778216/pexels-photo-3778216.jpeg); */
-    background-image: url(https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    /* background-image: url(https://images.pexels.com/photos/3831187/pexels-photo-3831187.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
     /* background-color: #0099aa; */
+    background-image: url(https://plus.unsplash.com/premium_photo-1664298280363-51c8881ce9ba?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-color: #E3E7ED;
     background-position: center;
     background-repeat: no-repeat;
@@ -1830,7 +1838,7 @@
   .img-com-v2{
     /* background-image: url(../Images/image\ \(1\).png); */
     background-color: #00a2b4;
-    background-image: url(https://images.pexels.com/photos/5520284/pexels-photo-5520284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    /* background-image: url(https://images.pexels.com/photos/5520284/pexels-photo-5520284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
     /* background-image: url(https://images.pexels.com/photos/31045891/pexels-photo-31045891/free-photo-of-elegant-portrait-of-a-woman-with-wet-look.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load); */
     background-position: left;
     background-repeat: no-repeat;
@@ -1868,7 +1876,7 @@
   padding-top: 0px;
   gap: 5px;
   margin-bottom: 30px;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 .exp-line-title h2{
   font-size: 34px;

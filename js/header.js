@@ -75,10 +75,12 @@ window.addEventListener('scroll', function () {
       document.getElementById("sidebar-menu").style.color="#ffffff";
       document.getElementById("aa-header-color2").style.cssText=`
         
-          color:rgb(220, 220, 220);
-          background-color: #1E767C;
-          padding: 1px 5px 1px 5px;
-          border-radius: 5px;
+          color:rgb(255, 255, 255);
+          // background-color: #1E767C;
+          // padding: 1px 5px 1px 5px;
+          // border-radius: 5px;
+            font-weight: 500;
+
       `;
       document.getElementById("toggle-more").style.cssText=`
         
