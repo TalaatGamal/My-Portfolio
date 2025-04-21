@@ -71,7 +71,9 @@ window.addEventListener('scroll', function () {
       // document.getElementById("air-sec-info").style.color="#ffffff";
       // document.getElementById("air-sec-info").style.borderBottomColor="#ffffff";
 
-      
+      document.getElementById("header").style.top="10px";
+      // document.getElementById("sidebar-menu").style.top="20px";
+      // document.getElementById("sidebar-menu").style.right="20px";
       document.getElementById("sidebar-menu").style.color="#ffffff";
       document.getElementById("aa-header-color2").style.cssText=`
         
@@ -98,6 +100,9 @@ window.addEventListener('scroll', function () {
       // document.getElementById("air-sec-info").style.borderBottomColor="#4e6068";
 
       document.getElementById("sidebar-menu").style.color="#4E6068";
+      document.getElementById("header").style.top="0px"
+      // document.getElementById("sidebar-menu").style.top="10px";
+      // document.getElementById("sidebar-menu").style.right="7px";
 
       document.getElementById("aa-header-color2").style.cssText=`
         

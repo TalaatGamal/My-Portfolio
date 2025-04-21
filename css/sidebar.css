@@ -12,6 +12,7 @@
   z-index: 1001;
   cursor: pointer;
   color: #4E6068;
+  transition: 1s;
 }
 #x-icon{
   display: none;
