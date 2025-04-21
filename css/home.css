@@ -204,6 +204,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
   padding: 10px;
   width: 150px;
   border-bottom: #000000a9 solid 3px;

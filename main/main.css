@@ -167,7 +167,7 @@ body{
   color: #ffffff;
 }
 
-@media (max-width:1080px) {
+@media (max-width:1220px) {
   #header{
     justify-content: left;
     padding: 0px 5vw 0px 5vw;

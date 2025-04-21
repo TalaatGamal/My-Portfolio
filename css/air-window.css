@@ -12,7 +12,7 @@
   position: fixed;
   z-index: 1000;
   top: 65px;
-  right: 8vw;
+  right: 0vw;
   border-radius: 0px 0px 20px 20px;
   transform: translateY(-20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
