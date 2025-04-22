@@ -58,7 +58,7 @@ let lastScroll = 0;
 
 window.addEventListener('scroll', function () {
   const currentScroll = window.pageYOffset;
-  let opacity = Math.min(currentScroll / 200, 0.4);
+  let opacity = Math.min(currentScroll / 200, 0.5);
 
   header.style.backgroundColor = `rgba(0, 95, 102, ${opacity})`;
   // document.getElementById("air-sec-info").style.backgroundColor = `rgba(0, 95, 102, ${opacity})`;
@@ -72,6 +72,13 @@ window.addEventListener('scroll', function () {
       // document.getElementById("air-sec-info").style.borderBottomColor="#ffffff";
 
       document.getElementById("header").style.top="10px";
+      if (window.innerWidth <= 1220) {
+        document.getElementById("header").style.top = "0px";
+        document.getElementById("header").style.width = "100vw";
+        document.getElementById("header").style.left = "0vw";
+        document.getElementById("header").style.borderRadius = "0px";
+      }
+      
       // document.getElementById("sidebar-menu").style.top="20px";
       // document.getElementById("sidebar-menu").style.right="20px";
       document.getElementById("sidebar-menu").style.color="#ffffff";

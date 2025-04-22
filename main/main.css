@@ -72,6 +72,7 @@ body{
   height: 65px;
   /* background-color: #005f6666; */
   background-color: #00000000;
+  /* background-color: rgba(0, 95, 102); */
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
@@ -366,3 +367,73 @@ a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.middle-info{
+  background-color: #C6D9DA;
+  width: 100vw;
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middle-info .mi{
+  width: 80vw;
+  min-height: 25vh;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.middle-info .mi .img{
+  width: 300px;
+  height: 80px;
+  background-color: #ffffff;
+  /* background-color: #639CA0; */
+  border: #639CA0 solid 6px;
+  border-radius: 100px 20px 100px 20px;
+}
+#img-1{
+  background-image: url(https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F5d14su1hfqzbeqa2qhbr.png);
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+#img-2{
+  background-image: url(https://getlogo.net/wp-content/uploads/2020/11/supabase-logo-vector.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+#img-3{
+  background-image: url(https://pngimg.com/d/chatgpt_PNG13.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+#img-4{
+  background-image: url(https://miro.medium.com/v2/resize:fit:1400/1*sDXkyuukA4fRHuiu4UFctw.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}

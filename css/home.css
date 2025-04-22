@@ -21,9 +21,16 @@ a{
   position: absolute;
   /* top: 90vh; */
   bottom: 0px;
+  animation: arrow-mp 4s linear infinite;
 }
-.arrow-mp span h5{
-  animation: arrow-mp 2s linear infinite;
+.arrow-mp span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #000000; */
+  transform: rotate(90deg);
+}
+.arrow-mp i{
   /* opacity: 50%; */
   color:  #008993;
   font-family: "Playwrite IN", serif;
@@ -36,21 +43,25 @@ a{
     opacity: 0;
       /* transform: translateY(40%); */
       /* transform: rotate(0deg); */
+      transform: translateY(-50px);
   }
   50% {
     opacity: 1;
       /* transform: translateY(40%); */
       /* transform: rotate(360deg); */
+      transform: translateY(0px);
   }
   90% {
     opacity: 1;
       /* transform: translateY(40%); */
       /* transform: rotate(360deg); */
+      transform: translateY(50px);
   }
   100% {
     opacity: 0;
       /* transform: translateY(40%); */
       /* transform: rotate(0deg); */
+      transform: translateY(50px);
   }
 }
 #home .info{

@@ -155,7 +155,7 @@ document.getElementById("back-x").addEventListener("click", function (e) {
 
 
   // Array of words to display
-const words = ["front-end developer", "Software Engineer"];
+const words = ["front-end Engineer", "Software Engineer"];
 let currentWordIndex = 0;
 let typingSpeed = 30;  // Speed of typing
 let erasingSpeed = 30; // Speed of erasing
