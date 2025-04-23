@@ -9,7 +9,7 @@
   min-height: 50vh;
   /* min-height: max-content; */
   /* background-color: #486975; */
-  background-color: #00484dd6;
+  background-color: #00545bd6;
   /* background-image: url(https://images.pexels.com/photos/4059652/pexels-photo-4059652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
   /* background-image: url(https://images.pexels.com/photos/30836161/pexels-photo-30836161/free-photo-of-modern-mechanical-keyboard-on-felt-desk-mat.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); */
   /* background-image: url(https://images.pexels.com/photos/31010728/pexels-photo-31010728/free-photo-of-tranquil-coastal-scene-with-rocky-shoreline.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
@@ -556,12 +556,12 @@ flex-wrap: wrap;
 }
 
 .n-con{
-/* background-color: #000; */
-width: 100vw;
-min-height: 50vh;
-display: flex;
-align-items: center;
-justify-content: center;
+  /* background-color: #000; */
+  width: 100vw;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width:1080px) {
   .n-con{
@@ -587,10 +587,10 @@ justify-content: center;
   width: 250px;
   height: 250px;
   border-radius: 20%;
-  animation: circle-v2 10s infinite linear;
+  animation: circle-v2 50s infinite linear;
 }
 .c-nv{
-  animation: circle-v 10s infinite linear;
+  animation: circle-v 30s infinite linear;
   background-color: #000000;
   width: 250px;
   height: 250px;
@@ -669,7 +669,7 @@ justify-content: center;
 
 }
 .new-contact .logo{
-  width: 325px;
+  width: 330px;
   height: 200px;
   /* background-color: #0000007d;
   backdrop-filter: blur(10px); */
@@ -679,6 +679,17 @@ justify-content: center;
   align-items: start;
   justify-content: center;
   flex-direction: column;
+}
+.new-contact .logo a{
+  /* background-color: #0000004d; */
+  padding-bottom: 10px;
+  border: #00000000 solid 5px;
+  border-bottom: #00000000 solid 5px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.new-contact .logo a:hover{
+  border-bottom: #000 solid 5px;
 }
 .new-contact .logo h2{
   font-family: "Playwrite IN", cursive;
@@ -713,6 +724,19 @@ justify-content: center;
   height: 10px;
   border: none;
   border-radius: 20px;
+  animation: gak 15s infinite linear;
+}
+@keyframes gak {
+  0%{
+    width: 40px;
+  }
+  50%{
+    width: 100px;
+    opacity: 50%;
+  }
+  100%{
+    width: 40px;
+  }
 }
 .navi{
   width: 300px;
@@ -755,8 +779,8 @@ justify-content: center;
   align-items: start;
   justify-content: start;
   flex-direction: column;
-  gap: 10px;
-  padding: 10px;
+  /* gap: 10px; */
+  /* padding: 10px; */
   margin-top: 20px;
   border-radius: 20px 20px 100px 100px;
   /* color: #000; */
@@ -772,6 +796,14 @@ justify-content: center;
   /* color: #000; */
   font-size: 18px;
   /* background-color: #000; */
+  min-width: 260px;
+  height: 35px;
+  padding-left: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.navi a:hover{
+  background-color: #000;
 }
 .m-j{
   display: flex;
@@ -793,4 +825,29 @@ justify-content: center;
   font-size: 18px;
   width: 100%;
   background-color: #004d50b7;
+  transition: 0.5s;
+}
+.navi h4 a{
+  width: 100%;
+  height: 100%;
+  /* background-color: #000; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navi h4:hover{
+  background-color: #000;
+}
+.navi h4:hover a{
+  color: #ffffff;
+  font-weight: 500;
+}
+.navi .site-b{
+  /* background-color: #ffffff47; */
+  background-color: #ffffff52;
+  box-shadow: rgba(0, 0, 0, 0.495) 10px 10px 10px 0px;
+}
+.navi .site-b a{
+  color: #043337;
+  font-weight: 700;
 }
