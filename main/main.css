@@ -218,6 +218,8 @@ a{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  /* position: absolute;
+  z-index: 1; */
 }
 .in-footer{
   width: 100%;

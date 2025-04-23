@@ -6,10 +6,11 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  min-height: max-content;
+  min-height: 50vh;
+  /* min-height: max-content; */
   /* background-color: #486975; */
-  background-color: #00414dd6;
-  background-image: url(https://images.pexels.com/photos/4059652/pexels-photo-4059652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-color: #00484dd6;
+  /* background-image: url(https://images.pexels.com/photos/4059652/pexels-photo-4059652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
   /* background-image: url(https://images.pexels.com/photos/30836161/pexels-photo-30836161/free-photo-of-modern-mechanical-keyboard-on-felt-desk-mat.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); */
   /* background-image: url(https://images.pexels.com/photos/31010728/pexels-photo-31010728/free-photo-of-tranquil-coastal-scene-with-rocky-shoreline.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
   /* background-image: url(https://images.unsplash.com/photo-1608933248284-7f926d879533?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
@@ -19,7 +20,7 @@
   background-attachment: fixed;
 }
 #contact{
-  background-color: #1d2f36c6;
+  /* background-color: #1d2f36c6; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -546,10 +547,112 @@ button:hover {
 
 
 /* new section */
+.navi-group-1{
+  /* background-color: #000; */
+  display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
 
-
-
-
+.n-con{
+/* background-color: #000; */
+width: 100vw;
+min-height: 50vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+@media (max-width:1080px) {
+  .n-con{
+    min-height: 150vh;
+  }
+}
+.anim-screen{
+  width: 100vw;
+  min-height: 50vh;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+  /* background-color: #00000036; */
+}
+.anim-screen .circle{
+  background-color: #00000086;
+  /* border: #00000000 solid 10px;
+  border-left: #000 solid 10px;
+  border-right: #000 solid 10px; */
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  animation: circle-v2 10s infinite linear;
+}
+.c-nv{
+  animation: circle-v 10s infinite linear;
+  background-color: #000000;
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+}
+@keyframes circle-v {
+  0%{
+    transform: rotate(0deg);
+    /* transform: translateX(-100px); */
+    /* opacity: 0; */
+  }
+  100%{
+    transform: rotate(360deg);
+    /* opacity: 1; */
+    /* transform: translateX(100px); */
+  }
+}
+@keyframes circle-v2 {
+  0%{
+    /* transform: rotate(0deg); */
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  40%{
+    opacity: 1;
+  }
+  50%{
+    /* transform: rotate(360deg); */
+    transform: translateX(200%);
+    opacity: 0;
+  }
+  100%{
+    /* transform: rotate(0deg); */
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+}
+@media (max-width:1080px) {
+  @keyframes circle-v2 {
+    0%{
+      /* transform: rotate(0deg); */
+      transform: translateX(0%);
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+    40%{
+      opacity: 1;
+    }
+    50%{
+      /* transform: rotate(360deg); */
+      transform: translateX(0%);
+      transform: translateY(200%);
+      opacity: 0;
+    }
+    100%{
+      /* transform: rotate(0deg); */
+      transform: translateX(0%);
+      transform: translateY(-200%);
+      opacity: 1;
+    }
+  }
+}
 .new-contact{
   /* background-color: #000; */
   width: 100vw;
@@ -560,6 +663,10 @@ button:hover {
   justify-content: center;
   flex-wrap: wrap;
   /* gap: 20px; */
+  position: absolute;
+  z-index: 1;
+  /* background-color: #00484dd6; */
+
 }
 .new-contact .logo{
   width: 325px;
@@ -582,14 +689,14 @@ button:hover {
 }
 .new-contact .logo h2 span{
   border: #00000000 solid 4px;
-  border-bottom: #00e5ff solid 4px;
+  border-bottom: #00a1c6 solid 4px;
   border-radius: 100px;
 }
 .new-contact .logo h3{
   margin-left: 115px;
   font-size: 20px;
   font-weight: 500;
-  color: #00e5ff;
+  color: #00bfea;
 }
 
 
@@ -600,10 +707,17 @@ button:hover {
 
 
 
-
+.hr-a{
+  background-color: #00a1c6;
+  width: 100px;
+  height: 10px;
+  border: none;
+  border-radius: 20px;
+}
 .navi{
   width: 300px;
   min-height: 250px;
+  margin-bottom: 20px;
   /* background-color: #0000007d;
   backdrop-filter: blur(10px); */
   padding: 10px;
@@ -625,8 +739,12 @@ button:hover {
   border-right: #00000000 solid 8px;
   border-bottom: #007781 solid 8px;
   width: 100%;
-  padding: 5px 5px 5px 10px;
+  height: 50px;
+  padding-left:10px;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .navi ul{
   /* background-color: #00000085; */
@@ -648,11 +766,12 @@ button:hover {
 }
 .navi a{
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: start;
   gap: 10px;
   /* color: #000; */
   font-size: 18px;
+  /* background-color: #000; */
 }
 .m-j{
   display: flex;
