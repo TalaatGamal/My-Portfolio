@@ -125,8 +125,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   /* flex-direction: column; */
-  gap: 20px;
+  /* gap: 20px; */
+  column-gap: 20px;
   border-radius: 20px;
   backdrop-filter: blur(10px);
   /* background-color: #00000074; */
@@ -157,6 +159,11 @@
 #air-w1-right a h2:hover{
   background-color: #000000;
   border-radius: 10px;
+}
+#air-w1-right #settings h2{
+  background-color: #ffffff52;
+  border-left: #074a4f double 10px;
+  color: #074a4f;
 }
 /* #air-w1-right #serb{
   background-color: #02777fc2;
