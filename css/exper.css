@@ -1292,14 +1292,14 @@
   flex-direction: column;
 }
 .control{
-  background-color:  #303B3C;
-  box-shadow: #25838c 5px 5px 15px 0px;
+  background-color:  #1a2223;
+  /* box-shadow: #ffffff 5px 5px 15px 0px; */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   width: 650px;
-  height: 70px;
+  height: 60px;
   border-radius: 100px;
   position: relative;
   bottom: 30px;

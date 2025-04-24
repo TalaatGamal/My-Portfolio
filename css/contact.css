@@ -9,7 +9,7 @@
   min-height: 50vh;
   /* min-height: max-content; */
   /* background-color: #486975; */
-  background-color: #00545bd6;
+  /* background-color: #00545bd6; */
   /* background-image: url(https://images.pexels.com/photos/4059652/pexels-photo-4059652.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
   /* background-image: url(https://images.pexels.com/photos/30836161/pexels-photo-30836161/free-photo-of-modern-mechanical-keyboard-on-felt-desk-mat.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); */
   /* background-image: url(https://images.pexels.com/photos/31010728/pexels-photo-31010728/free-photo-of-tranquil-coastal-scene-with-rocky-shoreline.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
@@ -558,16 +558,17 @@ flex-wrap: wrap;
 .n-con{
   /* background-color: #000; */
   width: 100vw;
-  min-height: 50vh;
+  min-height: 50;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
-@media (max-width:1080px) {
+/* @media (max-width:1080px) {
   .n-con{
     min-height: 150vh;
   }
-}
+} */
 .anim-screen{
   width: 100vw;
   min-height: 50vh;
@@ -576,8 +577,9 @@ flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   /* background-color: #00000036; */
+  /* display: none; */
 }
 .anim-screen .circle{
   background-color: #00000086;
@@ -654,18 +656,19 @@ flex-wrap: wrap;
   }
 }
 .new-contact{
-  /* background-color: #000; */
+  background-color: #00000089;
   width: 100vw;
   min-height: 50vh;
-  margin-top: 5vh;
+  margin-top: 3vh;
+  padding-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   /* gap: 20px; */
-  position: absolute;
-  z-index: 1;
-  /* background-color: #00484dd6; */
+  /* position: absolute;
+  z-index: 1; */
+  background-color: #00484dd0;
 
 }
 .new-contact .logo{
