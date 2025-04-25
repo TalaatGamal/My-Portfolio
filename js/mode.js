@@ -23,6 +23,9 @@ mode.addEventListener("click", function() {
           border:  rgba(255, 255, 255, 0.66)  double 10px;
             // background-color: #000;
     `;
-    document.getElementById("body").style.backgroundColor="rgb(1, 30, 35)"
+    document.getElementById("body").style.backgroundColor="rgb(0, 0, 0)"
+    document.getElementById("body").style.cssText=`
+      background: linear-gradient(120deg ,  rgb(0, 0, 0) , rgb(0, 0, 0) , rgb(3, 71, 80));
+    `;
     
 });

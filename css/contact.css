@@ -665,7 +665,7 @@ flex-wrap: wrap;
 }
 .new-contact{
   /* background-color: #00000089; */
-  width: 100vw;
+  width: 95vw;
   min-height: 50vh;
   margin-top: 3vh;
   padding-top: 5vh;
@@ -677,7 +677,8 @@ flex-wrap: wrap;
   /* position: absolute;
   z-index: 1; */
   background-color: #00484dd0;
-
+  border-radius: 60px 60px 0px 0px;
+  box-shadow: #ffffffad 0px 0px 19px 0px;
 }
 .new-contact .logo{
   width: 330px;
