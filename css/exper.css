@@ -1076,6 +1076,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  display: none;
 }
 .fr-slash{
   color: #00bdaa;
@@ -1966,4 +1967,55 @@
 .exp-line-title hr{
   width: 80px;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* new exp */
+.exp-line-ani{
+  /* background-color: #000000; */
+  width: 400px;
+}
+.date-time-m{
+  width: 400px;
+}
+.exp-card{
+  background-color: #095a5a;
+  width: 400px;
+  height: 240px;
+  border-radius: 20px;
 }
