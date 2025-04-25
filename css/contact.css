@@ -664,7 +664,7 @@ flex-wrap: wrap;
   }
 }
 .new-contact{
-  background-color: #00000089;
+  /* background-color: #00000089; */
   width: 100vw;
   min-height: 50vh;
   margin-top: 3vh;

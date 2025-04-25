@@ -322,14 +322,15 @@
           </div>
         <div class="s-c-v">
         <ul class="list-side">
-          <li><a href="#home" id="site-mode"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+          <li><a href="#home"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
           <li><a href="#Projects-div"><i class="fa-solid fa-bars-staggered"></i>Projects</a></li>
           <li><a href="#skills-exp"><i class="fa-solid fa-person-skiing"></i>Skills</a></li>
           <li><a href="#exp"><i class="fa-solid fa-briefcase"></i>Experience</a></li>
           <!-- <li><a href="#customers"><i class="fa-solid fa-user-check"></i>Customers</a></li> -->
           <li><a href="#servo" id="SW_Button2"><i class="fi fi-sr-bars-progress"></i>My Apps</a></li>
           <li><a href="#contact"><i class="fi fi-sr-headset"></i>Contact</a></li>
-          <li><a href="#" style="background-color: #000000;" id="mora"><i class="fa-solid fa-infinity"></i>More</a></li>
+          <!-- <li><a href="#" id="site-mode"><i class="fa-solid fa-moon"></i>Mode</a></li> -->
+          <li><a href="#" style="background-color: #000000;" id="mora"><i class="fa-solid fa-wrench"></i>Settings</a></li>
         </ul>
         <div class="vata">
           <h3> Talaat Gamal </h3>
@@ -540,12 +541,12 @@
               </div>
               <div class="btns">
                   <a href="mailto:talaatgamal.dev@gmail.com" class="hire">Hire me</a>
-                  <a href="https://drive.google.com/file/d/1cVtBZP3XA7ZY-tsSaT5cd-uPmmSd2vT1/view?usp=sharing" class="cv"><i class="fa-solid fa-download"></i> Download CV</a>
+                  <a href="https://drive.google.com/file/d/1cVtBZP3XA7ZY-tsSaT5cd-uPmmSd2vT1/view?usp=sharing" class="cv" id="cv"><i class="fa-solid fa-download"></i> Download CV</a>
               </div>
           </div>
           <div class="photo">
               <div class="img-i1"></div>
-              <div class="img-i1-cover"></div>
+              <div class="img-i1-cover" id="img-i1-cover"></div>
           </div>
           <div class="arrow-mp">
             <span>
@@ -586,7 +587,7 @@
           </div>
         </div>
       </div> -->
-      <section id="Projects-div" class="pro" data-text="My Projects">
+      <section id="Projects-div" class="pro" data-text="My Projects" style="display: none;">
         <div class="projects" id="projects" type="module" style="display: none;">
             <div class="title-v">
                 <div class="animate-div-fighter">
@@ -904,7 +905,7 @@
           <div class="img" id="img-4"></div>
         </div>
       </div>
-      <section id="skills-exp">
+      <section id="skills-exp" style="display: none;">
         <div class="skills-exp-c">
           <!-- <div class="skills-div">
             <div class="skills">
@@ -1628,7 +1629,7 @@
                   <h4><a href=""><i class="fa-solid fa-bolt"></i> Direct Message</a></h4>
                   <h4><a href=""><i class="fa-solid fa-download"></i> Download cv</a></h4>
                   <h4 class="site-b"><a href=""><i class="fa-solid fa-globe"></i> language</a></h4>
-                  <h4 class="site-b" id="site-mode"><a href="#home"><i class="fa-solid fa-moon"></i> Mode</a></h4>
+                  <h4 class="site-b" id="site-mode"><a href="#"><i class="fa-solid fa-moon"></i> Mode</a></h4>
                 </div>
     
                 </div>
@@ -1651,6 +1652,7 @@
   </div>
   <!-- onload -->
   <script src="main/m-into.js"></script>
+  <script src="js/mode.js"></script>
 
   <script src="main/main.js"></script>
   <script src="js/customars.js"></script>
@@ -1663,7 +1665,6 @@
   <script src="js/exp.js"></script>
   <script src="js/projects.js"></script>
   <script src="js/servo.js"></script>
-  <script src="js/mode.js"></script>
   <!-- <script src="js/rate.js"></script> -->
 </body>
 </html>
