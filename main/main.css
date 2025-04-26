@@ -40,6 +40,7 @@ body{
   position: fixed;
   top: 0px;
   z-index: 0;
+  /* background: repeating-linear-gradient(120deg ,  rgb(0, 0, 0), rgb(2, 49, 55),rgb(0, 0, 0) 60%); */
 }
 @keyframes bh {
   0%{
@@ -199,7 +200,7 @@ body{
 section{
   width: 100vw;
   min-height: 100vh;
-  background-color: #4ea8af35;
+  background-color: #01393d35;
 
   /* margin-bottom: 10px; */
 }

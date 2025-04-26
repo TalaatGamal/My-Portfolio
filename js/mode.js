@@ -12,7 +12,6 @@ let home_img_cover = document.getElementById("img-i1-cover");
 mode.addEventListener("click", function() {
   
   home.style.cssText = `
-        // background-color: rgb(11, 52, 51);
         color: rgb(216, 216, 216);
     `;
   home_cv.style.cssText = `
@@ -23,9 +22,16 @@ mode.addEventListener("click", function() {
           border:  rgba(255, 255, 255, 0.66)  double 10px;
             // background-color: #000;
     `;
-    document.getElementById("body").style.backgroundColor="rgb(0, 0, 0)"
-    document.getElementById("body").style.cssText=`
-      background: linear-gradient(120deg ,  rgb(0, 0, 0) , rgb(0, 0, 0) , rgb(3, 71, 80));
-    `;
+    document.getElementById("body").style.backgroundColor="rgb(0, 27, 20)"
+  //   document.getElementById("body").style.cssText=`
+  //         // background: linear-gradient(120deg ,  rgb(0, 0, 0),rgb(0, 21, 11) 60%);
+
+    
+  // //     background-image: url(https://images.pexels.com/photos/10299274/pexels-photo-10299274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  // // background-position: center;
+  // // background-size: cover;
+  // // background-repeat: repeat;
+  // // background-attachment: fixed;
+  //   `;
     
 });
