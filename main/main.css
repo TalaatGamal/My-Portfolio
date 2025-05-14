@@ -19,10 +19,17 @@ body{
   overflow-x: hidden;
   /* scrollbar-width: none; */
   /* background-color: #4ea8af35; */
-  background-color:  rgba(197, 197, 197, 0.434);
+  /* background-color:  rgba(197, 197, 197, 0.434); */
+  background-color: #C6D9DA;
   transition: 0.5s;
 
 }
+/*
+:root{
+  --main-color:red;
+}
+  background-color: var(--main-color);
+*/
 
 .circle-hg{
   background-color: #77a8ac5c;
@@ -36,7 +43,6 @@ body{
   border: #00000000 solid 40px;
   border-bottom: #ff00002f solid 40px;
   box-shadow: #ff00004e 0px 20px 10px 0px;
-
   position: fixed;
   top: 0px;
   z-index: 0;
@@ -68,10 +74,10 @@ body{
 #header{
   position: fixed;
   top: 0px;
+  left: 7.5vw;
   z-index: 2;
-  left: 10vw;
   z-index: 1000;
-  width: 80vw;
+  width: 85vw;
   height: 65px;
   /* background-color: #005f6666; */
   background-color: #00000000;
@@ -82,7 +88,7 @@ body{
   justify-content: center;
   /* padding: 0px 10vw 0px 10vw; */
   padding: 0px 2vw 0px 2vw;
-  border-radius: 200px;
+  border-radius: 50px;
   transition: 1s;
 }
 #header .hd-1{
@@ -200,7 +206,7 @@ body{
 section{
   width: 100vw;
   min-height: 100vh;
-  background-color: #01393d35;
+  /* background-color: #01393d35; */
 
   /* margin-bottom: 10px; */
 }
@@ -339,14 +345,13 @@ a{
   /* height: 10px; */
 }
 #mInto .load-c{
-  /* background-color: #ff0000; */
+  background-image: url(../Images/ChatGPT-Talaat-logo.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
   width: 60px;
   height: 60px;
-  border: #00000000 solid 6px;
-  border-left: #ffffff solid 6px;
-  border-right: #ffffff solid 6px;
-  border-radius: 100px;
-  animation: c-ani 1s infinite linear;
+  border-radius: 100%;
 }
 @keyframes c-ani {
   0%{
@@ -355,6 +360,20 @@ a{
   100%{
     transform: rotate(360deg);
   }
+}
+.load-k{
+    /* background-color: #ff0000; */
+    width: 60px;
+    height: 60px;
+    border: #00000000 solid 6px;
+    border-left: #0099a4 solid 6px;
+    border-right: #0098bb solid 6px;
+    border-radius: 100px;
+    animation: c-ani 1s infinite linear;
+}
+.load-div{
+  width: 60px;
+  height: 60px;
 }
 
 

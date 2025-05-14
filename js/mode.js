@@ -22,7 +22,7 @@ mode.addEventListener("click", function() {
           border:  rgba(255, 255, 255, 0.66)  double 10px;
             // background-color: #000;
     `;
-    document.getElementById("body").style.backgroundColor="rgb(0, 27, 20)"
+    document.getElementById("body").style.backgroundColor="rgb(22, 35, 39)"
   //   document.getElementById("body").style.cssText=`
   //         // background: linear-gradient(120deg ,  rgb(0, 0, 0),rgb(0, 21, 11) 60%);
 

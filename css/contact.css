@@ -679,6 +679,7 @@ flex-wrap: wrap;
   background-color: #00484dd0;
   border-radius: 60px 60px 0px 0px;
   box-shadow: #ffffffad 0px 0px 19px 0px;
+  margin-top: 10vh;
 }
 .new-contact .logo{
   width: 330px;
