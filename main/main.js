@@ -16,7 +16,7 @@
 
 
 
-window.onload=location.href="#skills-exp"
+// window.onload=location.href="#new-experience"
 
 
               

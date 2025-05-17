@@ -23,6 +23,14 @@ mode.addEventListener("click", function() {
             // background-color: #000;
     `;
     document.getElementById("body").style.backgroundColor="rgb(22, 35, 39)"
+    document.getElementById("skill-div-mom").style.cssText=`
+        background: linear-gradient(20deg ,rgb(29, 94, 99),rgb(29, 94, 99),rgb(29, 94, 99),rgb(29, 94, 99),rgb(29, 94, 99), rgb(22, 35, 39), rgb(22, 35, 39), rgb(22, 35, 39), rgb(22, 35, 39), rgb(22, 35, 39));
+    `;
+    document.getElementById("sdm-main-h2").style.color="rgb(218, 218, 218)"
+    document.getElementById("ml-content").querySelectorAll("h2").forEach(function(h2) {
+    h2.style.color = "rgb(218, 218, 218)";
+    });
+
   //   document.getElementById("body").style.cssText=`
   //         // background: linear-gradient(120deg ,  rgb(0, 0, 0),rgb(0, 21, 11) 60%);
 
