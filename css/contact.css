@@ -686,20 +686,40 @@ flex-wrap: wrap;
   height: 200px;
   /* background-color: #0000007d;
   backdrop-filter: blur(10px); */
-  padding: 20px;
+  padding: 20px 20px 20px 0px;
   border-radius: 25px;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
+  /* opacity: 50%; */
+}
+.v{
+  background-image: url(https://cdn-icons-gif.flaticon.com/10971/10971749.gif);
+      /* background-image: url(https://cdn-icons-gif.flaticon.com/10971/10971770.gif); */
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+    width: 300px;
+  height: 250px;
+  opacity: 10%;
+  border-radius: 25px;
+  box-shadow: #fff 0px 0px 10px 10px;
+  display: none;
 }
 .new-contact .logo a{
-  /* background-color: #0000004d; */
+  /* background-color: #000000ec; */
   padding-bottom: 10px;
   border: #00000000 solid 5px;
   border-bottom: #00000000 solid 5px;
   border-radius: 20px;
   transition: 0.5s;
+  padding-left: 20px;
+  /* position: absolute;
+    display: flex;
+  align-items:start;
+  justify-content: center;
+  flex-direction: column; */
 }
 .new-contact .logo h2{
   font-family: "Playwrite IN", cursive;

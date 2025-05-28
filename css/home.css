@@ -95,23 +95,56 @@ a{
   position: relative;
   /* background-color: #000000; */
 }
+.img-i0{
+  background-image: url(https://cdn-icons-gif.flaticon.com/10971/10971749.gif);
+  background-position: 0% 35%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  width: 390px;
+  min-width: 390px;
+  height: 390px;
+  position: absolute;
+  z-index: -2;
+  left: 145px;
+  opacity: 100%;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+.img-i02{
+  /* background-image: url(https://cdn-icons-gif.flaticon.com/10971/10971749.gif);
+  background-position: center;
+  background-size: cover; */
+  width: 390px;
+  min-width: 390px;
+  height: 390px;
+  position: absolute;
+  z-index: -1;
+  left: 145px;
+  opacity: 100%;
+  border-radius: 100%;
+    background-color: #c7d9dba7;
+
+}
 #home .photo .img-i1{
   border-radius: 450px;
-  width: 370px;
-  min-width: 370px;
-  height: 370px;
+  width: 390px;
+  min-width: 390px;
+  height: 390px;
   margin-right: 90px;
-  background-color: #C7D9DB;
+  /* background-color: #C7D9DB; */
   /* cloudinary.com for online img service */
+  /* background-image: url(../Images/my-anime-Photoroom\ \(1\).png); */
+  background-image: url(../Images/my-anime-Photoroom.png);
   /* background-image: url(https://res.cloudinary.com/dz9gelxip/image/upload/v1739992541/image_1_iwgzu8.png); */
-  background-image: url(https://i.ytimg.com/vi/6aa1r2azjHM/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AHOBYACkgeKAgwIABABGGUgWShAMA8=&rs=AOn4CLCiwBpruuNvMIfuT3IWE9U6thjnhA);
+  /* background-image: url(https://i.ytimg.com/vi/6aa1r2azjHM/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AHOBYACkgeKAgwIABABGGUgWShAMA8=&rs=AOn4CLCiwBpruuNvMIfuT3IWE9U6thjnhA); */
   /* background-image: url(https://i.pinimg.com/736x/bb/1a/07/bb1a07a11b0303adf23813c9170e27c7.jpg); */
-  background-position: center;
-  background-size: 180%;
+  background-position: 135% 5%;
+  background-size: 110%;
   background-repeat: no-repeat;
   border: #21575b solid 6px;
   box-shadow: #40A3AA 0px 0px 20px 5px;
   overflow: hidden;
+  transform: rotate(2deg);
 }
 .img-i1-cover{
   border:  #008993  double 10px;
@@ -119,7 +152,7 @@ a{
   height: 370px;
   border-radius: 100px;
   position: absolute;
-  z-index: -1;
+  z-index: -3;
   margin-right: 90px;
 
   animation: circle-vbn 10s linear infinite;
@@ -517,10 +550,13 @@ z-index: 10; */
 #home .photo .img-i1{
   margin-right: 0px;
   /* background-color: #C7D9DB; */
-  border-radius: 80px;
+  /* background-color: #579aa2; */
+  /* background-color: #002e34; */
+  border-radius: 130px;
   /* background-size: 110%; */
-  /* width: 370px;
-  height: 370px; */
+  background-position: 100% 5%;
+  /* width: 390px;
+  height: 390px; */
   transform: rotate(0deg);
   /* border: #008993 solid 7px; */
   /* background-image: url(../Images/1000023989.jpg); */
