@@ -136,6 +136,7 @@
   /* background-color: #ffffff; */
   padding: 5px;
   border-radius: 10px;
+  /* display: none; */
 }
 .container {
   height: 71vh;
@@ -260,6 +261,7 @@
   font-weight: 900;
   font-size: 40px;
   padding: 8px;
+  /* display: none; */
 }
 @media (max-width:850px) {
   .air-arrow-icon{

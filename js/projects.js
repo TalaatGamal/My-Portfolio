@@ -71,11 +71,11 @@ window.onload = function () {
         updateActiveCard();
     },100);
     setTimeout(() => {
-      document.getElementById("aai").style.cssText=`
-          height: 0px;
-          box-shadow:rgba(255, 0, 0, 0) 0px 0px 100px 50px;
-          padding: 0px;
-      `;
+      // document.getElementById("aai").style.cssText=`
+      //     height: 0px;
+      //     box-shadow:rgba(255, 0, 0, 0) 0px 0px 100px 50px;
+      //     padding: 0px;
+      // `;
       setTimeout(() => {
         document.getElementById("aira").style.display="none";
       }, 500);
@@ -88,7 +88,7 @@ window.onload = function () {
 
     const countdown = setInterval(() => {
         count--;
-        numDiv.textContent = count;
+        // numDiv.textContent = count;
 
     }, 1000);
 };

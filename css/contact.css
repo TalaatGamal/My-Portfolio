@@ -679,7 +679,7 @@ flex-wrap: wrap;
   background-color: #00484dd0;
   border-radius: 60px 60px 0px 0px;
   box-shadow: #ffffffad 0px 0px 19px 0px;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 .new-contact .logo{
   width: 330px;
@@ -727,17 +727,19 @@ flex-wrap: wrap;
   font-weight: 500;
   font-style: normal;
   color: #ffffff;
+  text-shadow: #9aeeff 0px 0px 10px;
 }
 .new-contact .logo h2 span{
   border: #00000000 solid 4px;
-  border-bottom: #00a1c6 solid 4px;
+  border-bottom: #1f1f1f solid 4px;
   border-radius: 100px;
 }
 .new-contact .logo h3{
   margin-left: 115px;
   font-size: 19px;
-  font-weight: 650;
-  color: #009dc1;
+  font-weight: 600;
+  color: #00d5ff;
+  text-shadow: #000000 0px 0px 10px;
 }
 
 
@@ -755,6 +757,7 @@ flex-wrap: wrap;
   border: none;
   border-radius: 20px;
   animation: gak 15s infinite linear;
+  /* box-shadow: #ffffff90 0px 0px 10px 3px; */
 }
 @keyframes gak {
   0%{
@@ -771,7 +774,7 @@ flex-wrap: wrap;
 .navi{
   width: 300px;
   min-height: 250px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   /* background-color: #0000007d;
   backdrop-filter: blur(10px); */
   padding: 10px;
@@ -783,7 +786,7 @@ flex-wrap: wrap;
 }
 @media (max-width:1080px) {
   .navi{
-    width: 350px;
+    width: 390px;
   }
 }
 .navi h2{

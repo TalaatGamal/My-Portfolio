@@ -88,7 +88,8 @@
   text-align: center;
 }
 .vata h3{
-  color: #0097a2;
+  color: #2e4243;
+  text-shadow: #ffffff 0px 0px 10px;
   font-family: "Playwrite IN", serif;
   font-optical-sizing: auto;
   font-weight: 600;
