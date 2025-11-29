@@ -59,6 +59,7 @@ header{
     /* background-color: #d7f3f1a3; */
     /* background-color: #000000; */
     backdrop-filter: blur(20px);
+    
     color: var(--day_color_2);
     position: fixed;
     z-index: 9;
@@ -281,10 +282,12 @@ section{
 .taps .photo .pin{
     /* background-image: url(https://assets.safcsp.cloud/a8043c3e-a7f5-402b-9917-58444c147689/avatar/70dab895-551d-4215-b620-7d209a787bc4.png); */
     background-image: url(../images/me-edited-bnn.png);
-    background-position: 43% 90%;
+    /* background-position: 43% 90%; */
+    background-position: 46% 90%;
     background-size: 175%;
     background-repeat: no-repeat;
-    border-radius: 250px 30px 250px 250px;
+    /* border-radius: 250px 30px 250px 250px; */
+    border-radius: 40px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -295,7 +298,8 @@ section{
     position: absolute;
     width: 320px;
     height: 320px;
-    border-radius: 250px 50px 250px 250px;
+    /* border-radius: 250px 50px 250px 250px; */
+    border-radius: 50px;
     padding: 5px;
     border: rgb(29, 132, 131) solid 5px;
     animation: air-b 15s infinite linear;
@@ -324,6 +328,7 @@ section{
     width: 100%;
     height: 100%;
     padding: 5px;
+    display: none;
 }
 .icono{
     width: 60px;
