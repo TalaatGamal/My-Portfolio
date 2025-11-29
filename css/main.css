@@ -286,8 +286,7 @@ section{
     background-position: 46% 90%;
     background-size: 175%;
     background-repeat: no-repeat;
-    /* border-radius: 250px 30px 250px 250px; */
-    border-radius: 40px;
+    border-radius: 250px 30px 250px 250px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -298,8 +297,7 @@ section{
     position: absolute;
     width: 320px;
     height: 320px;
-    /* border-radius: 250px 50px 250px 250px; */
-    border-radius: 50px;
+    border-radius: 250px 50px 250px 250px;
     padding: 5px;
     border: rgb(29, 132, 131) solid 5px;
     animation: air-b 15s infinite linear;
@@ -328,7 +326,7 @@ section{
     width: 100%;
     height: 100%;
     padding: 5px;
-    display: none;
+    /* display: none; */
 }
 .icono{
     width: 60px;
