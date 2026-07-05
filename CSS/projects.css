@@ -1,0 +1,330 @@
+
+.projects{
+    padding-top: 15vh;
+    background-color: var(--fourd-color);
+}
+.projects .box{
+    width: 85vw;
+    min-height: 80vh;
+    /* background-color: var(--fourd-color); */
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+.projects .box .title{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background: linear-gradient(to left , rgba(255, 0, 0, 0) , rgba(255, 0, 0, 0), var(--secondary-color)); */
+    padding: 0px 20px 0px 20px;
+    border-radius: 30px;
+    /* color: #ffffff; */
+}
+.projects .box .title .top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects .box .title h2{
+    font-size: 40px;
+    min-width: max-content;
+    margin: 0px 30px 0px 30px;
+}
+.projects .desc{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projects .box .title h4{
+    font-size: 18px;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.light-line{
+    width: 100%;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.light-line2{
+    width: 100%;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.component{
+    width: 0%;
+    height: 3px;
+    background-color: rgb(0, 129, 155);
+    animation: com 5s infinite linear;
+}
+@keyframes com {
+    0%{
+        width: 0%;
+    }
+    15%{
+        width: 100%;
+    }
+    50%{
+        width: 100%;
+    }
+    80%{
+        width: 0%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+.projects .title .btn{
+    /* background-color: var(--secondary-color); */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 45px;
+    padding: 0px 5px 0px 10px;
+    /* border-radius: 100px; */
+    text-decoration: none;
+    /* color: #ffffff; */
+    color: var(--secondary-color);
+    transition: 0.5s;
+    margin-left: 10px;
+    border: rgba(255, 0, 0, 0) solid 2px;
+    border-bottom: var(--secondary-color) solid 2px;
+}
+.projects .title .arrow{
+    width: 35px;
+    height: 35px;
+    /* background-color: #ffffff; */
+    background-color:var(--secondary-color);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.projects .title .btn:hover{
+    background-color: #ffffff;
+    color: var(--main-color);
+    border: var(--secondary-color) solid 2px;
+    border-radius: 100px;
+}
+.projects .title .btn:hover .arrow{
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+.projects .cards{
+    width: 85vw;
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+    /* overflow-y: hidden;
+    overflow-x: auto;
+    scrollbar-width: none; */
+    background-color: #00657e1a;
+    border-radius: 30px;
+}
+.projects .card{
+    width: 380px;
+    min-width: 380px;
+    height: 450px;
+    background-color: var(--fourd-color);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    /* border: #000000 solid 2px; */
+    box-shadow: #00000036 7px 7px 7px 0px;
+}
+.projects .card .img{
+    width: 95%;
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    border: rgba(0, 65, 77, 0.451) solid 2px;
+}
+#img-1{
+    background-image: url(https://images.pexels.com/photos/33798792/pexels-photo-33798792.jpeg);
+}
+#img-2{
+    background-image: url(https://images.pexels.com/photos/6701759/pexels-photo-6701759.jpeg);
+}
+#img-3{
+    /* background-image: url(https://www.shutterstock.com/image-photo/cairo-egypt-october-22-2024-600nw-2537198485.jpg); */
+    background-image: url(https://wasmenia.com/_next/image?url=https%3A%2F%2Fstrapi.wasmenia.com%2Fuploads%2FMetro_6f9584c579.svg&w=828&q=75);
+    background-size: 90%;
+}
+#img-4{
+    /* background-image: url(https://www.voguefashioninstitute.com/wp-content/uploads/2022/12/Graduate-Diploma-in-Graphic-Web-Designing-1-Year-Vogue-Institute-of-Art-and-Design.jpg); */
+    background-image: url(https://images.pexels.com/photos/7014342/pexels-photo-7014342.jpeg);
+}
+#img-5{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ61J5Vopm11dF_EDUiZJWnm_SimqAHYqn2yWGKy85WmKVwaRy2OgHMCYU&s=10);
+}
+#img-6{
+    background-image: url(https://cdn.dribbble.com/userupload/9108675/file/original-c00e1d5c7a74b23ad945aacf2ff08aac.png?resize=1600x1200);
+    background-size: 90%;
+}
+.projects .boxy{
+    width: 95%;
+    /* height: 200px; */
+    /* background-color: #00000079; */
+    border-radius: 20px;
+}
+.projects .boxy p{
+    font-size: 15px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.projects .boxy h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+}
+.projects .boxy i{
+    font-size: 25px;
+    color: #00768e;
+}
+.projects .lang{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 13%;
+}
+.projects .lang .btnn{
+    /* background-color: rgba(0, 87, 92, 0.834); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 120px;
+    height: 40px;
+    /* border-radius: 15px; */
+    color: #000000;
+    font-size: 20px;
+    border-bottom: #000 solid 2px;
+}
+.projects .lang .btnn i{
+    transform: rotate(0deg);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+
+}
+
+
+
+
+
+
+
+
+/* test */
+.langsss{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    /* border: #006f7e56 solid 2px; */
+    background-color:  #006f7e2c;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    /* width: 20px; */
+    width: 220px;
+    min-height: 50px;
+}
+.langsss span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #006f7e solid 2px;
+    padding: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    position: relative;
+    background-color: #ffffff;
+}
+.langsss i{
+    overflow: hidden;
+}
+.langsss .css{
+    left: -8px;
+}
+.langsss .tailwind{
+    left: -16px;
+}
+.langsss .js{
+    left: -24px;
+}
+.langsss .react{
+    left: -8px;
+}
+.langsss .nodejs{
+    left: -16px;
+}
+/* test */
+
+
+
+
+
+
+
+
+
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+
+
+
+
+
+
+
+/* 
+@media (max-width:1100px) {
+    
+} */
+
+@media (max-width:700px) {
+   
+    .projects .box{
+        width: 100vw;
+        padding: 0px;
+    }
+    .projects .box .title{
+        width: 100%;
+    }
+    .projects .cards{
+        width: 100vw;
+    }
+
+}
