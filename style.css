@@ -177,7 +177,10 @@ section{
     align-items: center;
     justify-content: center;
 }
-
+i{
+    overflow: hidden;
+    background-color: #00455c00;
+}
 
 
 footer{
@@ -251,7 +254,7 @@ footer h2{
         position: fixed;
         z-index: 9;
         bottom: 30px;
-        background-color: #00555cdd;
+        background-color: #00455cdd;
         backdrop-filter: blur(5px);
         border-radius: 25px;
         padding: 3px ;
