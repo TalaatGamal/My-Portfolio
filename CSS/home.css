@@ -7,7 +7,7 @@
     flex-direction: column;
     text-align: center;
     padding-top: 0px;
-    background: linear-gradient( var(--secondary-color) -35%, #f7fcfa00 , #f7fcfa00 );
+    background: linear-gradient( var(--secondary-color) -15%, #f7fcfa00 , #f7fcfa00 );
 }
 .home-content{
     display: flex;

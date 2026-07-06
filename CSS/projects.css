@@ -216,18 +216,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    width: 120px;
+    gap: 8px;
+    width: 100px;
     height: 40px;
-    /* border-radius: 15px; */
-    color: #000000;
-    font-size: 20px;
-    border-bottom: #000 solid 2px;
+    border-radius: 16px;
+    font-weight: 600;
+    color: #006f7e;
+    font-size: 22px;
+    /* border: #00000000 solid 2px;
+    border-left: #0000007c solid 2px;
+    border-right: #00000080 solid 2px;
+    overflow: hidden;
+    margin-right: 10px; */
+    overflow: hidden;
+    transition: 0.3s;
+    border: #006f7e23 solid 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.projects .lang .btnn:hover{
+    /* background-color: #00698974; */
+    /* color: #ffffff; */
+    border: #006f7e solid 3px;
 }
 .projects .lang .btnn i{
     transform: rotate(0deg);
-    color: rgb(0, 0, 0);
-    font-size: 20px;
+    color: #006f7e;
+    font-size: 18px;
 
 }
 
