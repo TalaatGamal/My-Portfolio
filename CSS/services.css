@@ -191,8 +191,22 @@
 
 @media (max-width:700px) {
    
+
     .services .title{
-        width: 100vw;
+        width: 380px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .services .title .text{
+        min-width: 360px;
+        max-width: 360px;
+        text-align: center;
+    }
+    .services .title .text p{
+        display: none;
+    }
+    .services .title .img{
+        min-width: 200px;
     }
     .services .cards{
         width: 100vw;

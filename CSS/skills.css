@@ -197,7 +197,19 @@
 /* 
 @media (max-width:1100px) {
     
-}
-@media (max-width:700px) {
-    
 } */
+@media (max-width:700px) {
+    .skills .box{
+    width: 100vw;
+}
+.skills .box .title h2{
+    font-size: 35px;
+    margin: 0px 0px 0px 0px;
+}
+.skills .box .title{
+    width: 100%;
+}
+.skills .box .title .top{
+    flex-direction: column;
+}
+}

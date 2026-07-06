@@ -330,7 +330,33 @@
 } */
 
 @media (max-width:700px) {
-   
+   .projects .box .title .top{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .projects .box .title h4{
+        font-size: 17px;
+        /* line-height: 30px;
+        overflow: hidden;
+        text-align: center; */
+    }
+    @keyframes com {
+        0%{
+            width: 0%;
+        }
+        15%{
+            width: 50%;
+        }
+        50%{
+            width: 50%;
+        }
+        80%{
+            width: 0%;
+        }
+        100%{
+            width: 0%;
+        }
+    }
     .projects .box{
         width: 100vw;
         padding: 0px;
