@@ -205,7 +205,9 @@
 
 @media (max-width:700px) {
     
-    
+    #home{
+        background: linear-gradient( 160deg , var(--secondary-color) -5%, #f7fcfa00 , #f7fcfa00 );
+    }
     .home-content{
         display: flex;
         align-items: center;
