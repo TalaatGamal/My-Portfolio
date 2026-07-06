@@ -15,41 +15,6 @@
     gap: 30px;
     padding: 20px;
 }
-.skills .box .title{
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* background: linear-gradient(to left , rgba(255, 0, 0, 0) , rgba(255, 0, 0, 0), var(--secondary-color)); */
-    padding: 0px 20px 0px 20px;
-    border-radius: 30px;
-    /* color: #ffffff; */
-}
-.skills .box .title .top{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.skills .box .title h2{
-    font-size: 40px;
-    min-width: max-content;
-    margin: 0px 30px 0px 30px;
-}
-.skills .desc{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.skills .box .title h4{
-    font-size: 18px;
-    line-height: 30px;
-    overflow: hidden;
-    text-align: center;
-}
 .skills-container{
     /* background-color: rgba(0, 100, 111, 0.225); */
      /* background-color: #00657e1a; */
@@ -147,29 +112,61 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     /* background-color: var(--fourd-color); */
-    background-color: rgba(0, 120, 124, 0.285);
+    /* background-color: rgba(0, 120, 124, 0.285); */
+    background-color: #00657e1a;
     border-radius: 30px;
-    /* padding: 20px; */
+    padding: 30px;
 }
 .certs .cert{
-    width: 300px;
-    height: 200px;
-    background-color: rgba(0, 130, 135, 0.258);
-    border-radius: 20px;
+    /* width: 300px;
+    height: 200px; */
+    background-color: var(--fourd-color);
+    border-radius: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    box-shadow: #00000036 7px 7px 7px 0px;
+}
+.cert .img{
+    width: 380px;
+    height: 250px;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    border: rgba(0, 65, 77, 0.451) solid 3px;
+    background-repeat: no-repeat;
+}
+#cert-1{
+    background-image: url(../images/fullstack-almentor.jpg);
+}
+#cert-2{
+    background-image: url(../images/CS50x.jpg);
+    background-size: 90%;
+    background-color: #ffffff;
+}
+.cert h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: 650;
+}
+.cert span{
+    font-size: 17px;
+    margin-left: 50px;
+    color: #007d8b;
 }
 .certs .tech-in h2 i{
     background-color: var(--secondary-color);
     color: var(--fourd-color);
 }
-.certs .tech-in{
-    margin-top: 20px;
-}
-
 
 
 
@@ -200,16 +197,17 @@
 } */
 @media (max-width:700px) {
     .skills .box{
-    width: 100vw;
-}
-.skills .box .title h2{
-    font-size: 35px;
-    margin: 0px 0px 0px 0px;
-}
-.skills .box .title{
-    width: 100%;
-}
-.skills .box .title .top{
-    flex-direction: column;
-}
+        width: 100vw;
+    }
+    .skills-container{
+        width: 100vw;
+        padding: 40px 0px 0px 0px;
+    }
+    .certs{
+        padding: 10px;
+    }
+    .tech-in{
+        justify-content: center;
+        margin-top: 20px;
+    }
 }
