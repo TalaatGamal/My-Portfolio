@@ -68,8 +68,9 @@
 .skills-container .circle{
     width: 100px;
     height: 100px;
-    background-color: #3a7584;
+    /* background-color: #3a7584c2; */
     /* border: #ff0000 solid 3px; */
+    background-color: #0b5b6fb3;
     border-radius: 20px;
     display: flex;
     align-items: center;
