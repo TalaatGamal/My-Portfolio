@@ -71,3 +71,58 @@ window.addEventListener("scroll", () => {
         bars.style.color = "white";
     }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// video
+// video
+// video
+// video
+// video
+// video
+// video
+// video
+// video
+// video
+// video
+// video
+
+
+
+
+let vid_cover = document.getElementById("vid-cover")
+let home = document.getElementById("home")
+
+
+
+window.addEventListener("DOMContentLoaded" , function() {
+    setTimeout(() => {
+        vid_cover.style.transition="3s"
+        vid_cover.style.opacity="1"
+    }, 500);
+    setTimeout(() => {
+        home.style.cssText=`
+             background: linear-gradient( rgba(0, 62, 74, 0.27) , #f7fcfac5 ,  #f7fcfa , #f7fcfa)
+        `
+    }, 4000);
+})

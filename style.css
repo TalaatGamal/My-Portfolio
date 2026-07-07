@@ -27,7 +27,7 @@ body{
     width: 100vw;
     min-height: 100vh;
     color: var(--main-color);
-    background-color: #91cfba25;
+    background-color: #91cfba;
     font-size: 20px;
 }
 header{
@@ -183,6 +183,81 @@ i{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vid-cover{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+}
+.vid{
+    height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;    
+}
+.vid video{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
     width: 100vw;
     min-height: 40px;
@@ -244,7 +319,15 @@ footer h2{
         font-size: 22px;
     }
 }
+@media (max-width:880px) {
+    .vid{
+        min-width: 200vw;
+    }
+}
 @media (max-width:700px) {
+    .vid{
+        min-width: 300vw;
+    }
     .mobile-nav{
         display: flex;
          align-items: center;

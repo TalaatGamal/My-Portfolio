@@ -1,11 +1,15 @@
 
 
-
+.contact{
+    /* background-color: var(--fourd-color); */
+    padding: 0px;
+}
 .contact .box{
-    width: 85vw;
-    min-height: 80vh;
-    background-color: var(--fourd-color);
-    border-radius: 30px;
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to bottom , rgba(0, 58, 74, 0) , #f7fcfac5 ,  #f7fcfa , #f7fcfa);
+    backdrop-filter: blur(3px);
+    /* border-radius: 30px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,22 +61,11 @@
     width: 400px;
     height: 500px;
     border-radius: 20px;
-    background-image: url(https://media.istockphoto.com/id/1919265355/photo/portrait-of-young-businessman-in-startup-office.jpg?s=2048x2048&w=is&k=20&c=2oUbRPmSVYYhg6daO9VbXcgQiON8cfJPQdHFyPZg-5Q=);
-    background-position: top;
-    background-size: cover;
-    /* width: 400px;
-    height: 500px;
-    border-radius: 20px;
-    background-image: url(https://i.ibb.co/9HQgz8HX/61f9790c-8ae9-4a15-940c-d4948ce00fb5.png);
-    background-position: 70% 50%;
-    background-size: cover;
-    opacity: 85%; */
-}
-.contact .box .mom-img .img .cover{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: end;
+    /* background-image: url(https://i.pinimg.com/1200x/a9/fb/fe/a9fbfec81940413f28fde608c3321101.jpg); */
+    /* background-image: url(https://media.istockphoto.com/id/1919265355/photo/portrait-of-young-businessman-in-startup-office.jpg?s=2048x2048&w=is&k=20&c=2oUbRPmSVYYhg6daO9VbXcgQiON8cfJPQdHFyPZg-5Q=); */
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 form{
