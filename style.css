@@ -27,7 +27,7 @@ body{
     width: 100vw;
     min-height: 100vh;
     color: var(--main-color);
-    background-color: #91cfba;
+    background-color: #000000;
     font-size: 20px;
 }
 header{
@@ -206,7 +206,7 @@ i{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     z-index: -1;
     top: 0px;
     left: 0px;

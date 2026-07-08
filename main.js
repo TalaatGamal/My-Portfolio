@@ -120,9 +120,9 @@ window.addEventListener("DOMContentLoaded" , function() {
         vid_cover.style.transition="3s"
         vid_cover.style.opacity="1"
     }, 500);
-    setTimeout(() => {
-        home.style.cssText=`
-             background: linear-gradient( rgba(0, 62, 74, 0.27) , #f7fcfac5 ,  #f7fcfa , #f7fcfa)
-        `
-    }, 4000);
+    // setTimeout(() => {
+    //     home.style.cssText=`
+    //          background: linear-gradient( rgba(0, 62, 74, 0.27) , #f7fcfac5 ,  #f7fcfa , #f7fcfa)
+    //     `
+    // }, 4000);
 })
