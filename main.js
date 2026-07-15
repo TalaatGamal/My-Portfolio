@@ -60,23 +60,23 @@ window.addEventListener("DOMContentLoaded" , function () {
 
 
 
-// scroll
-// scroll
-// scroll
-// scroll
-// scroll
-// scroll
-// scroll
-// scroll
-// scroll
-// scroll
+// header
+// header
+// header
+// header
+// header
+// header
+// header
+// header
+// header
 
 
 
 
-// name in header ***********
+
 const name = document.getElementById("name");
 const bars = document.getElementById("head-bars");
+const sidbar = document.getElementById("sidbar");
 
 
 
@@ -90,10 +90,13 @@ window.addEventListener("scroll", () => {
     }
 });
 
-
-
-
-
+bars.addEventListener("click", function () {
+    if (sidbar.style.top === "0vh") {
+        sidbar.style.top = "-60vh";
+    } else {
+        sidbar.style.top = "0vh";
+    }
+});
 
 
 

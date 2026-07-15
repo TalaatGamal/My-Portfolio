@@ -193,6 +193,9 @@ nav a i{
 .head-bars{
     display: none;
 }
+.sidbar{
+    display: none;
+}
 .mobile-nav{
     display: none;
 }
@@ -311,6 +314,24 @@ footer h2{
         color: #ffffff;
         font-size: 22px;
     }
+    .sidbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 60vh;
+        position: fixed;
+        top: -60vh;
+        right: 0vw;
+        z-index: 8;
+        background-color: #002c3a50;
+        backdrop-filter: blur(5px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        scrollbar-width: none;
+        transition: 0.8s;
+        border-radius: 0px 0px 40px 40px;
+    }
 }
 @media (max-width:880px) {
     .vid{
@@ -323,7 +344,7 @@ footer h2{
     }
     .mobile-nav{
         display: flex;
-         align-items: center;
+        align-items: center;
         justify-content: center;
         width: 380px;
         height: 70px;
