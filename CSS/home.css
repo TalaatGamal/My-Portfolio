@@ -1,15 +1,17 @@
 #home{
     width: 100vw;
-    min-height: 100vh;
+    height: 130vh;
+    min-height: 130vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
     text-align: center;
-    padding-top: 0px;
-    /* background: linear-gradient( var(--secondary-color) -15%, #f7fcfa00 , #f7fcfa00 ); */
-    background: linear-gradient( rgba(0, 58, 74, 0) , #f7fcfaa6 ,  #f7fcfa , #f7fcfa);
-    /* background: linear-gradient( rgba(0, 58, 74, 0.645) , #f7fcfac5 ,  #f7fcfa , #f7fcfa); */
+    background: linear-gradient( var(--secondary-color) -15%, #f7fcfa00 , #f7fcfa00 );
+    background: linear-gradient( rgba(0, 94, 120, 0.921) -20% ,  #f7fcfa , #f7fcfa);
+    padding-top: 40vh;
+    transition: 0.8s;
 }
 .home-content{
     display: flex;
@@ -17,7 +19,8 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 250px;
-    transition: 0.5s;
+    transition: 1.8s;
+    opacity: 0;
 }
 .home h2{
     font-size: 40px;
@@ -33,6 +36,7 @@
 .home .words{
     transition: 0.5s;
     text-align: center;
+    /* text-shadow: rgb(0, 213, 255) 0px 0px 5px; */
 }
 .home p{
     font-size: 15px;
@@ -106,6 +110,7 @@
     border-radius: 100px;
     font-size: 25px;
     border: var(--secondary-color) solid 2px;
+    transition: 0.3s;
 }
 .social i{
     overflow: hidden;

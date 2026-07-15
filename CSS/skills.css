@@ -1,6 +1,5 @@
 
 .skills{
-    padding-top: 15vh;
     background-color: var(--fourd-color);
 }
 .skills .box{
@@ -66,35 +65,52 @@
     justify-content: center;
 }
 .skills-container .circle{
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     /* background-color: #3a7584c2; */
     /* border: #ff0000 solid 3px; */
-    background-color: #0b5b6fb3;
-    border-radius: 20px;
+    background-color: #0b5b6f;
+    border: #007d8b55 solid 2px;
+    border-radius: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 5px;
 }
 .skills-container .circle h3{
     font-size: 14px;
     line-height: 20px;
-    color: var(--fourd-color);
+    /* color: var(--fourd-color); */
+    font-weight: 700;
+    color: var(--secondary-color);
     overflow: hidden;
     margin-top: 3px;
 }
 .skills-container .circle i{
     font-size: 50px;
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: var(--secondary-color);
+    /* background-color: #ffffffba;
+    border-radius: 10px;
+    width: 70px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 .c-2{
     width: 100px;
     height: 100px;
     border-radius: 40%;
     position: absolute;
-    z-index: 1;
+    margin-left: 30px;
+    margin-top: 30px;
+    z-index: 0;
+    background-color: #00000063;
+    display: none;
 }
+
 #tailwind img{
     width: 50px;
     background-color: #ffffff;
@@ -107,6 +123,119 @@
     border-radius: 10px;
     padding: 2px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* test */
+.skills .langsss{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: #006f7e56 solid 2px; */
+    /* background-color:  #006f7e00; */
+    /* background-color: #00000000; */
+    /* border-radius: 200px; */
+    /* width: 400px; */
+    min-width: max-content;
+    padding: 10px 0px 10px 10px;
+    min-height: 140px;
+    overflow: hidden;
+}
+.skills .langsss span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #006f7e solid 2px;
+    padding: 3px;
+    min-width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    position: relative;
+    background-color: #ffffff;
+    /* animation: lang 10s infinite linear; */
+}
+@keyframes lang {
+    0%{
+        transform: translatey(30px);
+    }
+    50%{
+        transform: translatey(-30px);
+    }
+    100%{
+        transform: translatey(30px);
+    }
+}
+.skills .langsss i{
+    overflow: hidden;
+    font-size: 45px;
+    color: #00a2b7;
+}
+.skills .langsss .css{
+    left: -20px;
+    /* animation: lang 12s infinite linear; */
+}
+.skills .langsss .tailwind{
+    left: -40px;
+    /* animation: lang 14s infinite linear; */
+
+}
+.skills .langsss .js{
+    left: -60px;
+    /* animation: lang 16s infinite linear; */
+}
+.skills .langsss .react{
+    left: -80px;
+    /* animation: lang 18s infinite linear; */
+}
+.skills .langsss .react i{
+    font-size: 50px;
+}
+.skills .langsss .nodejs{
+    left: -100px;
+    /* animation: lang 20s infinite linear; */
+}
+/* test */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .certs{
     width: 100%;
     display: flex;

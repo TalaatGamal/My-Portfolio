@@ -2,18 +2,20 @@
 
 .contact{
     /* background-color: var(--fourd-color); */
-    padding: 0px;
+    padding-top: 10vh;
+    background-color: #00657e1a;
 }
 .contact .box{
-    width: 100vw;
-    min-height: 100vh;
-    background: linear-gradient(to bottom , rgba(0, 58, 74, 0) , #f7fcfac5 ,  #f7fcfa , #f7fcfa);
-    backdrop-filter: blur(3px);
-    /* border-radius: 30px; */
+    width: 85vw;
+    min-height: 0vh;
+    border-radius: 30px;
+    padding: 30px 40px 30px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    /* background-color: #f7fcfa; */
+    background: linear-gradient(to bottom , rgb(255, 255, 255) , rgba(255, 0, 0, 0));
 }
 .contact .box .mom-text{
     display: flex;
@@ -55,17 +57,19 @@
     width: 50%;
     min-height: 65vh;
     min-width: 400px;
-    /* background-color: #3c3c3c; */
+    background-color: #007284;
+    border-radius: 40px;
 }
 .contact .box .mom-img .img{
-    width: 400px;
-    height: 500px;
-    border-radius: 20px;
-    /* background-image: url(https://i.pinimg.com/1200x/a9/fb/fe/a9fbfec81940413f28fde608c3321101.jpg); */
-    /* background-image: url(https://media.istockphoto.com/id/1919265355/photo/portrait-of-young-businessman-in-startup-office.jpg?s=2048x2048&w=is&k=20&c=2oUbRPmSVYYhg6daO9VbXcgQiON8cfJPQdHFyPZg-5Q=); */
+    width: 98%;
+    height: 495px;
+    /* background-image: url(https://i.pinimg.com/736x/1d/a2/d8/1da2d8cbe28076ff2a86a439ae644910.jpg); */
+    background-image: url(https://i.pinimg.com/736x/02/cd/70/02cd701b30940f6cfbf7b4b0287d0e48.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 30px;
+    background-color: #ffffff;
 }
 
 form{
@@ -84,6 +88,7 @@ form input{
     font-size: 18px;
     background-color: #3c3c3c00;
     color: var(--secondary-color);
+    text-shadow: #00788b 0px 0px 10px;
     border: rgba(0, 0, 0, 0) solid 2px;
     border-bottom: rgba(0, 0, 0, 0.425) solid 2px;
     outline: none;
