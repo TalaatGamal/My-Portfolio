@@ -331,6 +331,7 @@ footer h2{
         scrollbar-width: none;
         transition: 0.8s;
         border-radius: 0px 0px 40px 40px;
+        opacity: 0;
     }
 }
 @media (max-width:880px) {

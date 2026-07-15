@@ -93,8 +93,10 @@ window.addEventListener("scroll", () => {
 bars.addEventListener("click", function () {
     if (sidbar.style.top === "0vh") {
         sidbar.style.top = "-60vh";
+        sidbar.style.opacity="0"
     } else {
         sidbar.style.top = "0vh";
+        sidbar.style.opacity="1"
     }
 });
 
