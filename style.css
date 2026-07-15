@@ -11,7 +11,8 @@
 }
 :root{
     --main-color: #3c3c3c;
-    --secondary-color: rgba(0, 74, 94, 0.951);
+    /* --secondary-color: rgb(0, 108, 132); */
+    --secondary-color: rgb(0, 128, 148);
     --third-color: rgb(0, 126, 122);
     --fourd-color: #f7fcfa;
 }
@@ -50,6 +51,7 @@ header h2{
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    color: #000;
 }
 .mom-logo{
     display: flex;
@@ -58,6 +60,15 @@ header h2{
     min-width: 220px;
     /* background-color: #00bfff; */
     margin-right: auto;
+}
+.mom-logo h2 span{
+    border-radius: 0px 0px 50px 50px;
+    border: #00bfff00 solid 3px;
+    border-bottom: var(--secondary-color) solid 3px;
+    color: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 .mom-logo a{
     text-decoration: none;
@@ -140,8 +151,10 @@ header .btn:hover .arrow i{
 }
 nav{
     background-color: var(--fourd-color);
+    box-shadow: var(--secondary-color) 0px 0px 8px -3px;
     padding: 0px 20px 0px 20px;
     border-radius: 20px;
+    height: 50px;
     min-width: max-content;
 }
 nav ul{
@@ -181,13 +194,13 @@ nav li a::after {
 
 nav li a:hover::after {
     width: 100%;
-    color: var(--third-color);
+    color: var(--secondary-color);
 }
 nav a:hover{
-    color: var(--third-color);
+    color: var(--secondary-color);
 }
 nav a i{
-    color: var(--third-color);
+    color: var(--secondary-color);
     font-size: 17px;
 }
 .head-bars{
@@ -211,75 +224,6 @@ i{
     overflow: hidden;
     background-color: #00455c00;
 }
-
-.intro{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0vh;
-    right: 0vw;
-    z-index: 10;
-    background-color: #ffffffb2;
-    backdrop-filter: blur(5px);
-    overflow: hidden;
-    scrollbar-width: none;
-    transition: 0.5s;
-    border-radius: 0px 0px 40px 40px;
-    opacity: 1;
-}
-.intro h2{
-    /* font-size: 44px; ***********************/
-    font-size: 60px;
-    color: #003445df;
-}
-.intro h2 span{
-    border-radius: 0px 0px 50px 50px;
-    border: #00bfff00 solid 5px;
-    border-bottom: #0095c6 solid 5px;
-    color: #0095c6;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-}
-.intro .line{
-    /* width: 250px; *************************/
-    width: 350px;
-    height: 3px;
-    border-radius: 100px;
-    background-color: #006182c8;
-    box-shadow: #00bfff 0px 0px 10px 3px;
-    position: absolute;
-    animation: intro-line 2s infinite linear;
-}
-@keyframes intro-line {
-    0%{
-        transform: translateY(-60px);
-        opacity: 0;
-    }
-    20%{
-        opacity: 1;
-    }
-    50%{
-        transform: translateY(90px);
-        opacity: 0;
-    }
-    80%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(-60px);
-    }
-}
-
-
-
-
-
 
 
 
@@ -394,57 +338,6 @@ footer h2{
         border-radius: 0px 0px 40px 40px;
         opacity: 0;
     }
-
-
-
-
-.intro h2{
-    font-size: 44px;
-    animation: h2a 120s infinite linear;
-}
-@keyframes h2a {
-    0%{
-        font-size: 0px;
-    }
-    0.5%{
-        font-size: 44px;
-    }
-    50%{
-        font-size: 44px;
-    }
-    100%{
-        font-size: 44px;
-    }
-}
-.intro .line{
-    width: 250px;
-}
-    @keyframes intro-line {
-    0%{
-        transform: translateY(-40px);
-        opacity: 0;
-    }
-    20%{
-        opacity: 1;
-    }
-    50%{
-        transform: translateY(40px);
-        opacity: 0;
-    }
-    80%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: translateY(-40px);
-    }
-}
-
-
-
-
-
-
 
 
 }

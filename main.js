@@ -44,8 +44,7 @@ const header = document.getElementById("header");
 
 
 window.addEventListener("DOMContentLoaded" , function () {
-    home.style.paddingTop="0px"
-    home_content.style.opacity="1"
+  
     setTimeout(() => {
         home.style.height="auto"
     }, 5000);
@@ -53,10 +52,13 @@ window.addEventListener("DOMContentLoaded" , function () {
     header.style.top="10px"
     header.style.opacity="1"
 
+    home.style.paddingTop="0px"
+    home_content.style.opacity="1"
+
     if (document.body.style.width <= "700px") {
     header.style.width="90vw"
     // header.style.backgroundColor="red"
-}
+    }
 
 })
 
@@ -79,19 +81,10 @@ window.addEventListener("DOMContentLoaded" , function () {
 
 
 
-const name = document.getElementById("name");
+
 const bars = document.getElementById("head-bars");
 const sidbar = document.getElementById("sidbar");
 
-
-
-window.addEventListener("scroll", () => {
-    if (window.scrollY > 200) {
-        name.style.color = "black";
-    } else {
-        name.style.color = "white";
-    }
-});
 
 bars.addEventListener("click", function () {
     if (sidbar.style.top === "0vh") {

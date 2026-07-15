@@ -8,19 +8,31 @@
     justify-content: start;
     flex-direction: column;
     text-align: center;
+    background-color: #f7fcfa;
+    backdrop-filter: blur(20px);
+
     /* background: linear-gradient( var(--secondary-color) -15%, #f7fcfa00 , #f7fcfa00 ); */
-    background: linear-gradient( rgba(0, 94, 120, 0.921) -20% ,  #f7fcfa , #f7fcfa);
-    padding-top: 40vh;
-    transition: 0.8s;
+    /* background: linear-gradient( rgba(0, 94, 120, 0.921) -20% ,  #f7fcfa , #f7fcfa); */
+    padding-top: 70vh;
+    transition: 1.5s;
 }
 .home-content{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 250px;
+    margin-top: 100px;
     transition: 1.8s;
     opacity: 0;
+    min-height: 550px;
+}
+.light{
+    width: 1px;
+    height: 1px;
+    box-shadow: var(--secondary-color) 0px 0px 200px 60px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    z-index: -1;
 }
 .home h2{
     font-size: 40px;
@@ -106,7 +118,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: var(--third-color);
+    color: var(--secondary-color);
     border-radius: 100px;
     font-size: 25px;
     border: var(--secondary-color) solid 2px;
@@ -140,15 +152,15 @@
     animation: circle 1s linear infinite;
     width: 45px;
     height: 45px;
-    border: var(--third-color) solid 2px;
+    border: var(--secondary-color) solid 2px;
 }
 #whatsapp{
     background-color: var(--secondary-color);
     color: #ffffff;
  }
 #whatsapp .air{
-    animation: circle 3s linear infinite;
-    border: var(--third-color) solid 2px;
+    animation: circle 5s linear infinite;
+    border: var(--secondary-color) solid 2px;
     width: 45px;
     height: 45px;
 }
@@ -220,11 +232,11 @@
 
 @media (max-width:700px) {
     
-    #home{
+    /* #home{
         background: linear-gradient( 160deg , rgba(0, 94, 120, 0.921) -20% ,  #f7fcfa , #f7fcfa);
-    }
+    } */
     .home-content{
-        margin-top: 30vh;
+        margin-top: 20vh;
         padding: 20px;
     }
     .home h2{
