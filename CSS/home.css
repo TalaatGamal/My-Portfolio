@@ -8,7 +8,7 @@
     justify-content: start;
     flex-direction: column;
     text-align: center;
-    background: linear-gradient( var(--secondary-color) -15%, #f7fcfa00 , #f7fcfa00 );
+    /* background: linear-gradient( var(--secondary-color) -15%, #f7fcfa00 , #f7fcfa00 ); */
     background: linear-gradient( rgba(0, 94, 120, 0.921) -20% ,  #f7fcfa , #f7fcfa);
     padding-top: 40vh;
     transition: 0.8s;
@@ -221,15 +221,10 @@
 @media (max-width:700px) {
     
     #home{
-        /* background: linear-gradient( 160deg , var(--secondary-color) -5%, #f7fcfa00 , #f7fcfa00 ); */
-         background: linear-gradient(160deg ,  rgba(0, 58, 74, 0.744) , #f7fcfac5 ,  #f7fcfa , #f7fcfa);
+        background: linear-gradient( 160deg , rgba(0, 94, 120, 0.921) -20% ,  #f7fcfa , #f7fcfa);
     }
     .home-content{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 40vh;
+        margin-top: 25vh;
         padding: 20px;
     }
     .home h2{
