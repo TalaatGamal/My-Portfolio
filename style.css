@@ -12,7 +12,7 @@
 :root{
     --main-color: #3c3c3c;
     /* --secondary-color: rgb(0, 108, 132); */
-    --secondary-color: rgb(0, 128, 148);
+    --secondary-color: rgb(30, 101, 118);
     --third-color: rgb(0, 126, 122);
     --fourd-color: #f7fcfa;
 }
@@ -73,6 +73,8 @@ header h2{
 .mom-logo a{
     text-decoration: none;
     color: rgb(255, 255, 255);
+    /* background-color: #000; */
+    width: 160px;
 }
 .logo{
     width: 50px;
@@ -102,7 +104,7 @@ header .btn{
     gap: 10px;
     height: 45px;
     padding: 0px 5px 0px 10px;
-    border-radius: 100px;
+    border-radius: 30px;
     text-decoration: none;
     color: #ffffff;
     transition: 0.5s;
@@ -114,7 +116,7 @@ header .arrow{
     min-width: 35px;
     height: 35px;
     background-color: #ffffff;
-    border-radius: 100%;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,7 +216,7 @@ nav a i{
 }
 section{
     width: 100vw;
-    min-height: 100vh;
+    min-height: 60vh;
     padding: 7vh 0px 7vh 0px;
     display: flex;
     align-items: center;
@@ -365,7 +367,7 @@ footer h2{
         background-color: #00455cdd;
         backdrop-filter: blur(5px);
         border-radius: 25px;
-        padding: 3px ;
+        padding: 2px ;
     }
     .mobile-nav ul{
         display: flex;
@@ -375,7 +377,7 @@ footer h2{
         height: 100%;
         padding: 0px 15px 0px 15px ;
         border: #ffffffa9 solid 2px;
-        border-radius: 22px;
+        border-radius: 23px;
     }
     .mobile-nav a{
         text-decoration: none;

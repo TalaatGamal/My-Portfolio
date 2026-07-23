@@ -1,7 +1,6 @@
 #home{
     width: 100vw;
-    height: 130vh;
-    min-height: 130vh;
+    min-height: 80vh;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -21,41 +20,87 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 160px;
     transition: 1.8s;
     opacity: 0;
-    min-height: 550px;
+    min-height: 450px;
 }
 .light{
     width: 1px;
     height: 1px;
-    box-shadow: var(--secondary-color) 0px 0px 200px 60px;
+    box-shadow: var(--secondary-color) 0px 0px 200px 80px;
     background-color: var(--secondary-color);
     position: absolute;
     z-index: -1;
 }
 .home h2{
-    font-size: 40px;
+    font-size: 30px;
     line-height: 40px;
     overflow: hidden;
 }
 .home h2 span{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: var(--secondary-color);
     animation: scroll 3s infinite linear;
 }
+.home hr{
+    width: 30px;
+    height: 60px;
+    border-radius: 10px;
+    border: var(--secondary-color) solid 2px;
+    cursor: pointer;
+}
 .home .words{
     transition: 0.5s;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* color: #00663a; */
     /* text-shadow: rgb(0, 213, 255) 0px 0px 5px; */
 }
+.home .words i{
+    color: var(--secondary-color);
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home .words span{
+    /* display: flex; */
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    /* box-shadow: var(--secondary-color) 0px 0px 40px 20px; */
+    position: absolute;
+    z-index: -1;
+    animation: rocket 4s infinite linear;
+    margin-top: 10px;
+}
+@keyframes rocket {
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    50%{
+        opacity: 70%;
+        /* transform: translateX(500px); */
+    }
+    100%{
+        transform: translateX(300px);
+        opacity: 0;
+    }
+}
 .home p{
-    font-size: 15px;
+    font-size: 17px;
+    text-transform: lowercase;
+    color: #000000a9;
 }
 .home .me{
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 40px;
     margin-top: 10px;
 }
 .home .btn{
@@ -70,6 +115,7 @@
     text-decoration: none;
     color: #ffffff;
     transition: 0.5s;
+    border: var(--secondary-color) solid 2px;
 }
 .home .arrow{
     width: 35px;
@@ -98,7 +144,6 @@
 .home .btn:hover{
     background-color: #ffffff;
     color: var(--main-color);
-    border: var(--secondary-color) solid 2px;
 }
 .home .btn:hover .arrow{
     background-color: var(--secondary-color);
@@ -110,8 +155,12 @@
     justify-content: center;
     gap: 10px;
     margin-top: 30px;
+    overflow: hidden;
+    /* background-color: #f7fcfa; */
+    width: 400px;
+    height: 80px;
 }
-.social{
+.social {
     width: 45px;
     height: 45px;
     display: flex;
@@ -123,6 +172,7 @@
     font-size: 25px;
     border: var(--secondary-color) solid 2px;
     transition: 0.3s;
+    overflow: visible;
 }
 .social i{
     overflow: hidden;
@@ -130,10 +180,11 @@
 .air{
     width: 38px;
     height: 38px;
-    border-radius: 12px;
+    border-radius: 10px;
     position: absolute;
-    border: rgba(0, 119, 132, 0) solid 2px;
-    animation: circle 5s linear infinite;
+    z-index: 9;
+    background-color: #ff000000;
+    border: rgba(17, 0, 255, 0) solid 2px;
     transition: 0.3s;
 }
 @keyframes circle {
@@ -159,14 +210,58 @@
     color: #ffffff;
  }
 #whatsapp .air{
-    animation: circle 5s linear infinite;
+    animation: circle 2s linear infinite;
     border: var(--secondary-color) solid 2px;
     width: 45px;
     height: 45px;
 }
+/* move animation ***************************** */
+#whatsapp{
+    animation: wa 5s infinite linear;
+}
+@keyframes wa {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+#github{
+    animation: gh 5s infinite linear;
+}
+@keyframes gh {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+#linkedin{
+    animation: in 5s infinite linear;
+}
+@keyframes in {
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+/* end move animation ***************************** */
+
 .scroll{
     width: 100vw;
-    margin-top: 130px;
 }
 .scroll img{
     width: 50px;
@@ -188,7 +283,9 @@
 
 
 
-
+.home .formal{
+    display: none;
+}
 
 
 
@@ -235,6 +332,36 @@
     /* #home{
         background: linear-gradient( 160deg , rgba(0, 94, 120, 0.921) -20% ,  #f7fcfa , #f7fcfa);
     } */
+     /* .home .hi{
+        display: block;
+     } */
+      .home .scroll{
+        display: none;
+      }
+      .home .formal{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        background-image: url(../images/formal.png);
+        background-position: top;
+        background-size: cover;
+        background-color: var(--secondary-color);
+      }
+      .home .formal .lighto{
+         width: 100%;   
+         height: 1px;
+         background-color: var(--fourd-color);
+         box-shadow: var(--fourd-color) 0px 0px 50px 50px;
+      }
+      .home .formal .lighto2{
+         width: 100%;   
+         height: 1px;
+         background-color: var(--fourd-color);
+         box-shadow: var(--fourd-color) 0px 0px 20px 20px;
+      }
     .home-content{
         margin-top: 20vh;
         padding: 20px;
@@ -254,6 +381,9 @@
         font-weight: 600;
         overflow: hidden;
         height: 100px;
+    }
+    .home .words i{
+        padding: 10px;
     }
     .home .me{
         margin-bottom: 10px;
