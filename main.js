@@ -142,17 +142,34 @@ window.addEventListener("DOMContentLoaded" , function () {
 
 const bars = document.getElementById("head-bars");
 const sidbar = document.getElementById("sidbar");
+const sidbar_backscreen = document.getElementById("sidbar-backscreen");
 
 
 bars.addEventListener("click", function () {
     if (sidbar.style.top === "0vh") {
         sidbar.style.top = "-60vh";
         sidbar.style.opacity="0"
+        // *********1**********
+
+        sidbar_backscreen.style.opacity="0"
+        setTimeout(() => {
+            sidbar_backscreen.style.display="none"
+        }, 400);
+
+        // *********2**********
         bars.style.backgroundColor=" #f7fcfa00"
         bars.style.color="#f7fcfa"
     } else {
         sidbar.style.top = "0vh";
         sidbar.style.opacity="1"
+        // *********1**********
+
+        sidbar_backscreen.style.display="flex"
+        setTimeout(() => {
+            sidbar_backscreen.style.opacity="1"
+        }, 100);
+
+        // *********2**********
         bars.style.backgroundColor="#f7fcfa"
         bars.style.borderRadius="10px"
         bars.style.color="rgba(0, 74, 94, 0.951)"

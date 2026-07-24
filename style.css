@@ -323,24 +323,105 @@ footer h2{
     .sidbar{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        flex-direction: column;
         width: 100vw;
         height: 60vh;
         position: fixed;
         top: -60vh;
         right: 0vw;
         z-index: 8;
-        background-color: #4d98ae39;
+        background-color: #5591a3;
         /* background-color: #bbbbbb96; */
         backdrop-filter: blur(5px);
         overflow-x: hidden;
         overflow-y: auto;
         scrollbar-width: none;
-        transition: 0.5s;
+        transition: 0.4s;
         border-radius: 0px 0px 40px 40px;
         opacity: 0;
+        padding-bottom: 10px;
     }
+    .sidbar .rate{
+        width: 95%;
+        height: 89%;
+    }
+    .sidbar .contactme{
+        width: 95%;
+        height: 11%;
+        background-color: var(--fourd-color);
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 25px;
+        color: var(--secondary-color);
+        padding: 0px 5px 0px 10px;
+    }
+    .sidbar .contactme hr{
+        border: none;
+        background-color: var(--secondary-color);
+        width: 50px;
+        height: 3px;
+    }
+    .sidbar .contactme span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .sidbar .contactme .or{
+        gap: 30px;
+        width: 160px;
+        justify-content: right;
+    }
+    .sidbar .contactme .me{
+        background-color: var(--secondary-color);
+        color: var(--fourd-color);
+        padding: 0px 20px 0px 20px;
+        border-radius: 100px;
 
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: var(--secondary-color) solid 2px;
+        transition: 0.5s;
+    }
+    .sidbar .contactme a:hover{
+        background-color: var(--fourd-color);
+        color: var(--secondary-color);
+    }
+    .sidbar .contactme a i{
+        animation: mob 1s infinite linear;
+    }
+    @keyframes mob {
+        0%{
+            transform: rotate(15deg);
+        }
+        50%{
+            transform: rotate(-15deg);
+        }
+        100%{
+            transform: rotate(15deg);
+        }
+    }
+    .sidbar-backscreen{
+        background-color: #0019203e;
+        backdrop-filter: blur(5px);
+        width: 100vw;
+        height: 100dvh;
+        position: fixed;
+        z-index: 7;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        display: none;
+        transition: 0.4s;
+    }
 
 }
 
@@ -359,8 +440,8 @@ footer h2{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 390px;
-        height: 70px;
+        width: 380px;
+        height: 65px;
         position: fixed;
         z-index: 9;
         bottom: 30px;
@@ -390,7 +471,7 @@ footer h2{
         flex-direction: column;
         width: 60px;
         transition: 0.3s;
-        padding-top: 5px;
+        padding-top: 8px;
         height: 58px;
     }
     .mobile-nav a:hover{
@@ -399,7 +480,7 @@ footer h2{
         border-radius: 10px;
     }
     .mobile-nav i{
-        font-size: 23px;
+        font-size: 21px;
     }
     .mobile-nav .pro{
         transform: rotate(120deg);

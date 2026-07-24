@@ -210,6 +210,9 @@
     .about .title{
         width: 100%;
     }
+    .about .title h2{
+        font-size: 40px;
+    }
     .about .title .light-line2{
         display: none;
     }
@@ -237,10 +240,10 @@
         box-shadow: var(--fourd-color) 0px 0px 20px 30px;
         display: flex;
     }
-    /* .about .text h2 span{
-        border-bottom: rgb(0, 255, 132) solid 4px;
-        color: rgb(0, 255, 132);
-    } */
+    .about .text h2 span{
+        border-bottom: rgb(0, 225, 255) solid 4px;
+        color: rgb(0, 225, 255);
+    }
     .about .text a{
         color: #ffffff;
     }
