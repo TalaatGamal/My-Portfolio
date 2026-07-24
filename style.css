@@ -205,7 +205,7 @@ nav a i{
     color: var(--secondary-color);
     font-size: 17px;
 }
-.head-bars{
+.mode{
     display: none;
 }
 .sidbar{
@@ -441,14 +441,34 @@ footer h2{
 
 
 
-@media (max-width:880px) {
-    .vid{
-        min-width: 200vw;
-    }
-}
 @media (max-width:700px) {
-    .vid{
-        min-width: 300vw;
+    .mode{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100px;
+        height: 45px;
+    }
+    .mode hr{
+        border: none;
+        width: 2px;
+        height: 20px;
+        background-color: var(--secondary-color);
+    }
+    .mode i{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 9px;
+        color: var(--secondary-color);
+        transition: 0.5s;
+    }
+    .mode i:hover{
+        background-color: var(--secondary-color);
+        color: var(--fourd-color);
     }
     .mobile-nav{
         display: flex;
