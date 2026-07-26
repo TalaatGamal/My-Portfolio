@@ -323,119 +323,59 @@ footer h2{
     .sidbar{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 10px;
+        justify-content: center;
         width: 100vw;
         height: 68vh;
         position: fixed;
-        top: -60vh;
+        bottom: -60vh;
         right: 0vw;
         z-index: 8;
-        background-color: #5591a3;
-        /* background-color: #bbbbbb96; */
-        backdrop-filter: blur(5px);
-        overflow-x: hidden;
-        overflow-y: auto;
+        background-color: #ffffffd2;
         scrollbar-width: none;
-        transition: 0.4s;
-        border-radius: 0px 0px 40px 40px;
+        transition: 0.3s;
+        border-radius: 40px 40px 0px 0px;
         opacity: 0;
-        padding-bottom: 10px;
+        overflow: hidden;
+        border-top: black solid 4px;
     }
     .sidbar .rate{
         width: 100%;
         height: 100%;
-        /* background-color: var(--fourd-color); */
-        background: linear-gradient(to bottom , var(--fourd-color) , var(--fourd-color) , var(--fourd-color) , rgba(255, 0, 0, 0));
-        padding: 100px 20px 20px 20px;
-    }
-    .sidbar .rate h2{
-        font-size: 60px;
-        line-height: 65px;
-        /* display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px; */
-    }
-    .sidbar .rate h2 span{
-        font-size: 50px;
-    }
-    .sidbar .contactme{
-        width: 95%;
-        min-height: 55px;
-        background-color: var(--fourd-color);
-        border-radius: 100px;
+        padding: 270px 20px 20px 20px;
+        border-radius: 40px;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-size: 25px;
-        color: var(--secondary-color);
-        padding: 0px 2.5px 0px 10px;
-    }
-    .sidbar .contactme hr{
-        border: none;
-        background-color: var(--secondary-color);
-        width: 50px;
-        height: 3px;
-    }
-    .sidbar .contactme span{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
         gap: 10px;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-    .sidbar .contactme .or{
-        gap: 30px;
-        width: 165px;
-        justify-content: right;
-    }
-    .sidbar .contactme .me{
-        background-color: var(--secondary-color);
+        background-image: url(https://i.pinimg.com/originals/67/d0/91/67d091d49882379c4b622ab858b86e48.gif);
+        background-position: top;
+        background-size: 65%;
+        background-repeat: no-repeat;
+      }
+      .sidbar .rate h2{
+        min-width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         color: var(--fourd-color);
-        padding: 0px 20px 0px 20px;
-        border-radius: 100px;
-
-        text-decoration: none;
+        background-color: var(--secondary-color);
+      }
+      .sidbar .rate h2 i{
+        width: 50px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
-        border: var(--secondary-color) solid 2px;
-        transition: 0.5s;
-    }
-    .sidbar .contactme a:hover{
-        background-color: var(--fourd-color);
         color: var(--secondary-color);
-    }
-    .sidbar .contactme a i{
-        animation: mob 1s infinite linear;
-    }
-    @keyframes mob {
-        0%{
-            transform: rotate(15deg);
-        }
-        50%{
-            transform: rotate(-15deg);
-        }
-        100%{
-            transform: rotate(15deg);
-        }
-    }
-    .sidbar-backscreen{
-        background-color: #001920a5;
-        width: 100vw;
-        height: 100dvh;
-        position: fixed;
-        z-index: 7;
-        top: 0px;
-        left: 0px;
-        opacity: 0;
-        display: none;
-        transition: 0.4s;
-    }
+        background-color: var(--fourd-color);
+        border-radius: 10px;
+        margin-left: 10px;
+        font-size: 25px;
+      }
 
 }
 
