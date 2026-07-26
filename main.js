@@ -145,27 +145,28 @@ const sidbar = document.getElementById("sidbar");
 
 
 bars.addEventListener("click", function () {
-    if (sidbar.style.bottom === "0vh") {
+    if (sidbar.style.display === "flex") {
         sidbar.style.bottom = "-10vh";
         sidbar.style.opacity="0"
         setTimeout(() => {
             sidbar.style.display="none"
-        }, 500);
-
-
-
-        // *********1**********
+        }, 300);
+        // *********BTN**********
+        // *********BTN**********
+        // *********BTN**********
         bars.style.backgroundColor=" #f7fcfa00"
         bars.style.color="#f7fcfa"
+
+
     } else {
         sidbar.style.display="flex"
         setTimeout(() => {
             sidbar.style.bottom = "0vh";
             sidbar.style.opacity="1"
         }, 10);
-        
-
-        // *********1**********
+        // *********BTN**********
+        // *********BTN**********
+        // *********BTN**********
         bars.style.backgroundColor="#f7fcfa"
         bars.style.borderRadius="10px"
         bars.style.color="rgba(0, 74, 94, 0.951)"
