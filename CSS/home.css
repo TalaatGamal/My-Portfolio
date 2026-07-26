@@ -8,10 +8,6 @@
     flex-direction: column;
     text-align: center;
     background-color: #f7fcfa;
-    backdrop-filter: blur(20px);
-
-    /* background: linear-gradient( var(--secondary-color) -15%, #f7fcfa00 , #f7fcfa00 ); */
-    /* background: linear-gradient( rgba(0, 94, 120, 0.921) -20% ,  #f7fcfa , #f7fcfa); */
     padding-top: 70vh;
     transition: 1.5s;
 }
@@ -24,14 +20,6 @@
     transition: 1.8s;
     opacity: 0;
     min-height: 450px;
-}
-.light{
-    width: 1px;
-    height: 1px;
-    box-shadow: var(--secondary-color) 0px 0px 200px 80px;
-    background-color: var(--secondary-color);
-    position: absolute;
-    z-index: -1;
 }
 .home h2{
     font-size: 30px;
