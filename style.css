@@ -364,7 +364,7 @@ footer h2{
         color: var(--fourd-color);
         background-color: var(--secondary-color);
       }
-      .sidbar .rate h2 i{
+      .sidbar .rate .go{
         width: 50px;
         height: 40px;
         display: flex;

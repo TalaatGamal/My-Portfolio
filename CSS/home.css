@@ -127,7 +127,7 @@
     justify-content: center;
     color: var(--main-color);
 }
-.arrow i{
+.arrow-i{
     animation: arrow 1s infinite linear;
 }
 @keyframes arrow {

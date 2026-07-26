@@ -163,8 +163,8 @@ form .btn:hover .arrow{
 
 
 @media (max-width:1100px) {
-    .contact .box{
-        width: 100vw;
+    .contact{
+        display: none;
     }
 }
 
