@@ -321,22 +321,22 @@ footer h2{
         font-size: 22px;
     }
     .sidbar{
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         width: 100vw;
         height: 55vh;
         position: fixed;
-        bottom: -60vh;
+        bottom: -10vh;
         right: 0vw;
         z-index: 8;
         background-color: #ffffffd2;
         scrollbar-width: none;
-        transition: 0.3s;
+        transition: 0.5s;
         border-radius: 40px 40px 0px 0px;
         opacity: 0;
         overflow: hidden;
-        border-top: black solid 4px;
+        border-top: var(--secondary-color) solid 5px;
     }
     .sidbar .rate{
         width: 100%;
@@ -348,6 +348,7 @@ footer h2{
         justify-content: start;
         flex-direction: column;
         gap: 10px;
+        background-image: url(https://i.pinimg.com/originals/c3/c3/8d/c3c38d9d92142e045c30c40487b69abc.gif);
         background-image: url(https://i.pinimg.com/originals/67/d0/91/67d091d49882379c4b622ab858b86e48.gif);
         background-position: top;
         background-size: 50%;
