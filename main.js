@@ -52,7 +52,7 @@ let i = 0;
 
 function typeWriter() {
     if (i < text.length) {
-        words.innerHTML = `<i class="fa-brands fa-react react"></i><span></span> ${text.substring(0, i + 1)}`;
+        words.innerHTML = `<i class="fa-brands fa-react react"></i> ${text.substring(0, i + 1)}`;
         i++;
 
         setTimeout(typeWriter, 20);
@@ -106,17 +106,16 @@ window.addEventListener("DOMContentLoaded" , function () {
     setTimeout(() => {
         home.style.height="auto"
     }, 5000);
-    header.style.width="85vw"
     header.style.top="10px"
     header.style.opacity="1"
+    header.style.width="90vw"
 
     home.style.paddingTop="0px"
     home_content.style.opacity="1"
-
-    if (document.body.style.width <= "700px") {
-    header.style.width="90vw"
-    // header.style.backgroundColor="red"
-    }
+    
+    // if (document.body.style.width <= "700px") {
+    // header.style.width="90vw"
+    // }
 
 })
 

@@ -34,7 +34,7 @@ body{
 header{
     width: 95vw;
     /* width: 0vw; */
-    height: 60px;
+    height: 63px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,6 +44,10 @@ header{
     overflow: hidden;
     transition: 1.5s;
     opacity: 0;
+    background-color: var(--fourd-color);
+    /* background-color: #000; */
+    border-radius: 30px;
+    padding: 0px 10px 0px 10px;
 }
 header h2{
     font-size: 20px;
@@ -302,9 +306,6 @@ footer h2{
 
 
 @media (max-width:1100px) {
-    header{
-        width: 100vw;
-    }
     header nav{
         display: none;
     }
@@ -336,6 +337,7 @@ footer h2{
         border-radius: 40px 40px 0px 0px;
         opacity: 0;
         overflow: hidden;
+        border: #ffffffd2 solid 5px;
         border-top: var(--secondary-color) solid 5px;
     }
     .sidbar .rate{
@@ -355,7 +357,7 @@ footer h2{
         background-repeat: no-repeat;
       }
       .sidbar .rate h2{
-        min-width: 150px;
+        width: 200px;
         height: 50px;
         display: flex;
         align-items: center;
@@ -363,6 +365,7 @@ footer h2{
         gap: 10px;
         padding-left: 10px;
         padding-right: 10px;
+        border-radius: 15px;
         font-size: 25px;
         color: var(--fourd-color);
         background-color: var(--secondary-color);

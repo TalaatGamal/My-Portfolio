@@ -55,32 +55,6 @@
     align-items: center;
     justify-content: center;
 }
-.home .words span{
-    /* display: flex; */
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: var(--secondary-color);
-    /* box-shadow: var(--secondary-color) 0px 0px 40px 20px; */
-    position: absolute;
-    z-index: -1;
-    animation: rocket 4s infinite linear;
-    margin-top: 10px;
-}
-@keyframes rocket {
-    0%{
-        transform: translateX(-300px);
-        opacity: 0;
-    }
-    50%{
-        opacity: 70%;
-        /* transform: translateX(500px); */
-    }
-    100%{
-        transform: translateX(300px);
-        opacity: 0;
-    }
-}
 .home p{
     font-size: 17px;
     text-transform: lowercase;
