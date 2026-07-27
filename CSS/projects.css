@@ -46,12 +46,11 @@
 }
 .projects .title .hint{
     width: 400px;
-    height: 50px;
+    height: 52px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--fourd-color);
-    box-shadow: var(--secondary-color) 0px 0px 8px -3px;
+    border: #00000037 solid 2px;
     padding: 0px 10px 0px 15px;
     border-radius: 20px;
     overflow: hidden;
@@ -141,9 +140,6 @@
     flex-wrap: wrap;
     gap: 40px;
     padding: 20px;
-    /* overflow-y: hidden;
-    overflow-x: auto;
-    scrollbar-width: none; */
     background-color: #00657e1a;
     border-radius: 30px;
 }
@@ -159,7 +155,7 @@
     flex-direction: column;
     padding: 10px 0px 10px 0px;
     /* border: #000000 solid 2px; */
-    box-shadow: #00000036 7px 7px 7px 0px;
+    box-shadow: #00000036 3px 3px 5px 0px;
 }
 .projects .card .img{
     width: 95%;
@@ -182,9 +178,6 @@
 }
 .projects .boxy{
     width: 95%;
-    /* height: 200px; */
-    /* background-color: #00000079; */
-    border-radius: 20px;
 }
 .projects .boxy p{
     font-size: 15px;
@@ -205,25 +198,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 13%;
+    margin-top: 10%;
+    width: 100%;
+    min-height: 52px;
+    overflow: hidden;
+    background-color:  #006f7e2c;
+    border-radius: 20px;
+
 }
 .projects .lang .btnn{
-    /* background-color: rgba(0, 87, 92, 0.834); */
+    background-color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    width: 100px;
+    width: 130px;
     height: 40px;
     border-radius: 16px;
     font-weight: 600;
-    color: #006f7e;
+    color: var(--fourd-color);
     font-size: 22px;
-    /* border: #00000000 solid 2px;
-    border-left: #0000007c solid 2px;
-    border-right: #00000080 solid 2px;
-    overflow: hidden;
-    margin-right: 10px; */
     overflow: hidden;
     transition: 0.3s;
     border: #006f7e23 solid 3px;
@@ -231,13 +225,11 @@
     cursor: pointer;
 }
 .projects .lang .btnn:hover{
-    /* background-color: #00698974; */
-    /* color: #ffffff; */
     border: #006f7e solid 3px;
 }
 .projects .lang .btnn i{
     transform: rotate(0deg);
-    color: #006f7e;
+    color: var(--fourd-color);
     font-size: 18px;
 
 }
@@ -246,11 +238,9 @@
     display: flex;
     align-items: center;
     justify-content: left;
-    /* border: #006f7e56 solid 2px; */
-    background-color:  #006f7e2c;
-    border-radius: 20px;
+    /* background-color:  #006f7e2c;
+    border-radius: 20px; */
     padding: 5px 10px 5px 10px;
-    /* width: 20px; */
     width: 220px;
     min-height: 50px;
     overflow: hidden;
@@ -442,9 +432,6 @@
     }
     .projects .box .title h4{
         font-size: 17px;
-        /* line-height: 30px;
-        overflow: hidden;
-        text-align: center; */
     }
     @keyframes com {
         0%{
@@ -470,8 +457,11 @@
     .projects .box .title{
         width: 100%;
     }
-    /* .projects .cards{
+    .projects .cards{
         width: 100vw;
-    } */
+    }
+    .projects .title .hint{
+        width: 100%;
+    }
 
 }

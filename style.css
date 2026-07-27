@@ -27,6 +27,7 @@ body{
     flex-wrap: wrap;
     width: 100vw;
     min-height: 100vh;
+    padding-bottom: 7.5vh;
     color: var(--main-color);
     /* background-color: #000000; */
     font-size: 20px;
