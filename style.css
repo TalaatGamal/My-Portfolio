@@ -35,7 +35,7 @@ body{
 header{
     width: 95vw;
     /* width: 0vw; */
-    height: 63px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
